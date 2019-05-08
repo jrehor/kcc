@@ -8,7 +8,7 @@ not for the faint of heart*
 
 `k` is basically Arthur Whitney, the principial designer of a computer language
 called `k`, who is an iconic figure in an elite, tight-knit global community
-of some of the sharpest and sophisticated programmers working for some of the most
+of some of the sharpest and most sophisticated programmers working for some of the most
 influential institutions on the planet. Since early 90's, he provides them with 
 consistently ever more powerful revisions of one single product he has been working on
 his entire life, a unique integrated platform for creating very high performance applications
