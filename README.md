@@ -124,7 +124,7 @@ with `/`. When used inline, prepend a space:
 42 /inline comment
 ```
 
-**Identation** in `k` is a painful subject. Basically, what you want is *no identation*.
+**Identation** in `k` is a painful subject. Basically, what generally you want is *no identation*.
 This means if your function body is getting so much larger than life that you are tempted to split it
 into lines, you either need to refactor, or your entire train of thought got derailed and you 
 need to go back to the blackboard. Sometimes, however, identation is ok,
@@ -155,7 +155,7 @@ only you don't need to get past any parens. `car` is not quite there because the
 no *linked lists*, because `k` is designed to be *fast*.
 
 **Implict arguments** is an empitome of brevity and wit. All functions in `k`, unless 
-stated otherwise, have up to three implict arguments, `x`, `y` and `z` respectively.
+stated otherwise, can have up to three implict arguments, `x`, `y` and `z` respectively.
 Here are your first functions:
 
 ```
