@@ -12,25 +12,28 @@ and most sophisticated programmers working for some of the most
 influential institutions on the planet. Since early 90's, he provides them with 
 consistently ever more powerful revisions of one single product he has been working on
 his entire life, a unique integrated platform for creating very high performance applications
-that deal with very large amounts of data. And they like and appreciate Arthur at least as 
+that deal with very large amounts of data. And they appreciate Arthur at least as 
 much as his magnum opus.
 
+# why is k
+
 There is a very high chance that you heard the legend of Arthur Whitney and his language; 
-a **lot** of people did; what is less likely is that you have ever met 
-someone who told you he or she is a professional k programmer, not just because there are rare,
-but because in their lines of work is often stated in their contracts that they 
-cannot talk about certain things that provide decisive competitive advantage .An this is how
-we all heard about `k`, but mostly hear that Java sucks.
+**a lot** of people did; what is less likely is that you have ever met someone who told 
+you he or she is a professional k programmer. This happens not just because there are rare,
+but because in their line of work it is often stated in their contracts that they 
+cannot talk about certain things that give their employer a decisive competitive advantage.
 
-Indeed, what you usually get to hear about implementations of similar systems in languages
-such as C++ or Java that involve thousands oflines of code written by large teams 
-and built on top of complex library stacks, and even more complex IT infrastructure. What 
-these guys are not allowed to tell tou is that the projects they are working on are 
-way over budget, totally past deadline and implementing an an utterly outdated spec.
+An this is how we all *know* about `k`, but mostly *hear* about how much Java sucks.
 
-In comparision, a typical k solution is severlmagninude less ccodel and the еуьы
-DDDUXUBR team or ever a single individual, ErwenL arely requires 
-external dependencies and is usual.
+Indeed, we hear a lot about implementations of similar systems in languages such as C++ 
+or Java that involve thousands of lines of code written by large teams, built on top 
+of complex library stacks and even more complex infrastructure. What these guys 
+are not allowed to tell you, but tell you anyway, is that their projects are desperately 
+over budget, totally past deadline and implement an an utterly outdated spec.
+
+In comparision, a k solution is typically a few factors of magnitude less code,
+implemented by a small and agile team or a single individual, hardly requires any
+external dependencies and always ships on time. 
 
 # what is k
 
