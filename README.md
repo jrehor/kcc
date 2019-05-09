@@ -16,7 +16,7 @@ that deal with very large amounts of data. And they like and appreciate Arthur a
 much as his magnum opus.
 
 There is a very high chance that you heard the legend of Arthur Whitney and his language; 
-a **lot** of people do; what is less likely is that you have ever met 
+a **lot** of people did; what is less likely is that you have ever met 
 someone who told you he or she is a professional k programmer, not just because there are rare,
 but because in their lines of work is often stated in their contracts what they can and 
 cannot talk about, and `k` language doesn't really need any extra publicity.
