@@ -19,8 +19,8 @@ There is a very high chance that you heard the legend of Arthur Whitney and his 
 a **lot** of people did; what is less likely is that you have ever met 
 someone who told you he or she is a professional k programmer, not just because there are rare,
 but because in their lines of work is often stated in their contracts that they 
-cannot talk about certain things that provide decisive competitive advantage. And this 
-is exactly how we all know about `k`, but always hear that Java sucks.
+cannot talk about certain things that provide decisive competitive advantage .An this is how
+we all heard about `k`, but mostly hear that Java sucks.
 
 Indeed, what you usually get to hear about implementations of similar systems in languages
 such as C++ or Java that involve thousands of lines of code written by large teams 
