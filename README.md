@@ -15,7 +15,7 @@ his entire life, a unique integrated platform for creating very high performance
 that deal with very large amounts of data. And they appreciate Arthur at least as 
 much as his magnum opus.
 
-# why is k
+## why is k
 
 There is a very high chance that you heard the legend of Arthur Whitney and his language; 
 **a lot** of people did; what is less likely is that you have ever met someone who told 
