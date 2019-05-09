@@ -70,7 +70,7 @@ curve will be steep, but we value your time, so it will be brutal.
 
 ## price of k
 
-It is a bit tricky. If you want to buy it, but you have to **ask**, you can't afford it. But if you know **how** to ask, you will get it 
+It is a bit tricky. If you want to buy it, but you have to ask the price, you can't afford it. But if you know **how** to ask, you will get it 
 for free and for life.
 
 ## where is k
