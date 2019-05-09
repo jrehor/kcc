@@ -19,7 +19,7 @@ as they appreciate Arthur, but we believe there are separate reasons for that.
 ## why is k
 
 There is a very high chance that you heard the legend of Arthur Whitney and his language before. 
-**a lot** of people did; what is much less likely is that you have ever met someone who told 
+**A lot** of people did; what is much less likely is that you have ever met someone who told 
 you he or she is a professional k programmer. This happens not just because there are rare,
 but because in their line of work it is often stated in their contracts that they 
 cannot talk about certain things that give their employer a decisive competitive advantage.
