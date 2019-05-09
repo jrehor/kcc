@@ -26,7 +26,7 @@ cannot talk about certain things that give their employer a decisive competitive
 
 An this is how we all *know* about `k`, but mostly *hear* about just how much Java sucks.
 
-Indeed, we hear a lot about implementations of similar systems in languages such as C++ 
+Jokes aside, we hear a lot about implementations of similar systems in languages such as C++ 
 or Java that involve thousands of lines of code written by large teams, built on top 
 of complex library stacks and even more complex infrastructure. What these guys 
 are not allowed to tell you, but tell you anyway, is that their projects are desperately 
