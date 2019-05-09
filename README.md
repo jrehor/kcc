@@ -18,12 +18,14 @@ much as his magnum opus.
 There is a very high chance that you heard the legend of Arthur Whitney and his language; 
 a **lot** of people did; what is less likely is that you have ever met 
 someone who told you he or she is a professional k programmer, not just because there are rare,
-but because in their lines of work is often stated in their contracts what they can and 
-cannot talk about, and `k` language doesn't really need any extra publicity.
+but because in their lines of work is often stated in their contracts that they 
+cannot talk about certain things, including everything that provides decisive competitive 
+advantage. And this is exactly how we all know about `k` language, but always hear about how 
+much Java sucks.
 
-What is much easier to hear is about implementations of similar systems in languages
+Indeed, what you usually get to hear about implementations of similar systems in languages
 such as C++ or Java that involve thousands of lines of code written by large teams 
-and built on top of complex library stacks and even more complex infrastructure. What 
+and built on top of complex library stacks, and even more complex IT infrastructure. What 
 these guys are not allowed to tell tou is that the projects they are working on are 
 way over budget, totally past deadline and implementing an an utterly outdated spec.
 
