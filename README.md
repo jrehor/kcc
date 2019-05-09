@@ -70,7 +70,7 @@ curve will be steep, but we value your time, so it will be brutal.
 
 ## price of k
 
-If you **have** to ask, you can't afford it. If you know **how** to ask, you will get it 
+If you have to **ask**, you can't afford it. If you know **how** to ask, you will get it 
 for free and for life.
 
 ## where is k
@@ -81,8 +81,8 @@ are on Solaris, z/OS, ARM, don't worry, good things come to those who wait.
 If you are on Windows, lets not cry over spilled Guinness.
 
 Go to https://anaconda.org/ and follow the instructions. Anaconda shell integration 
-option is recommended. Once you install Anaconda, install shaktidb, which is `k` in 
-disguise:
+option is recommended. Once you install Anaconda, install the package called  `shakti`, 
+which is `k` in disguise, but pssst:
 
 `$ conda install -c shaktidb shakti`
 
