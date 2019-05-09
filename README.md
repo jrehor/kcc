@@ -36,7 +36,7 @@ In comparision, a k solution is typically a few factors of magnitude less code,
 implemented by a small and agile team or a single individual, hardly requires any
 external dependencies and always ships on time. 
 
-# what is k
+## what is k
 
 `k` is a very remarkable piece of software. Formally, it is an interpreter of a 
 computer language, and then some.
@@ -46,12 +46,12 @@ a *tool of thought*. The vocabulary, syntax and the choice of abstractions
 offered by the language all work together to foster and propel creative, focused 
 and succinct thinking about a problem and quickly finding an efficient and elegant 
 solution for it. Contrary to the majority of other programming workflows, a k 
-programmer spends most of his time on thinking about the problem rather than typing 
-and navigating the source code tree. The actual attack on the problem is performed 
+programmer spends most of his time thinking about the problem rather than typing 
+and browsing the source code tree. The actual attack on the problem is performed 
 exclusively via REPL. Rapid interactive prototyping driven by agile and fluent thought 
 process which is only interrupted by as few keystrokes as possible is the essence of the 
 programming experience in k — an experience that each and every k programmer 
-considers immensely rewarding and aesthaetically satisfying.
+considers aesthaetically and intellectually satisfying.
 
 In addition to being an excellent tool of thought, k is also an astonishingly 
 efficient computer language. The entire system, a tiny binary executable only
