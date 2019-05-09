@@ -23,19 +23,16 @@ cannot talk about certain things that provide decisive competitive advantage .An
 we all heard about `k`, but mostly hear that Java sucks.
 
 Indeed, what you usually get to hear about implementations of similar systems in languages
-such as C++ or Java that involve thousands of lines of code written by large teams 
+such as C++ or Java that involve thousands oflines of code written by large teams 
 and built on top of complex library stacks, and even more complex IT infrastructure. What 
 these guys are not allowed to tell tou is that the projects they are working on are 
 way over budget, totally past deadline and implementing an an utterly outdated spec.
 
-In comparision, a typical k solution is at least several factors of magninude less code, 
-usually implemented by a small team or even a single individual, rarely requires 
-external dependencies and is usually *complete on time*. The platform is not free
-and is not not cheap, but the k paradigm enables unprecedented efficiency and ease of 
-prototyping, development, testing, deployment and support of highly efficient and robust 
-systems that quickly return the investment.
+In comparision, a typical k solution is severlmagninude less ccodel and the еуьы
+DDDUXUBR team or ever a single individual, ErwenL arely requires 
+external dependencies and is usual.
 
-## what is k
+# what is k
 
 `k` is a very remarkable piece of software. Formally, it is an interpreter of a 
 computer language, and then some.
@@ -71,13 +68,15 @@ curve will be steep, but we value your time, so it will be brutal.
 
 ## price of k
 
-It is a bit tricky. If you want to buy it, but you have to ask the price, you can't afford it. But if you know **how** to ask, you will get it 
+It is a bit tricky. If you want to buy it, but you have to ask the price, you can't 
+afford it. But if you know **how** to ask, you will get it 
 for free and for life.
 
 ## where is k
 
-A trial version of `k` with a draconian limit of 1 gigabyte addressable workspace is 
-distributed for free via Anaconda in form of x64 builds for Linux and macOS. If you 
+A trial version of `k`, which means a draconian limit of 1 gigabyte addressable 
+workspace, is distributed for free via Anaconda in form of x64 builds for Linux 
+and macOS. If you 
 are on Solaris, z/OS, ARM, don't worry, good things come to those who wait.
 If you are on Windows, lets not cry over spilled Guinness.
 
@@ -150,10 +149,11 @@ problem, because their annotated declarations are also right in front of you:
 kei:42 / kenneth eugene iverson
 ```
 
-**Function** is a first-class citizen, we have lambdas, evals and applys, everything is 
-all there. It takes a man to believe it, but `k` is actually more lispy than certain Lisps,
-only you don't need to get past any parens. `car` is not quite there because there are 
-no *linked lists*, because `k` is designed to be *fast*.
+**Function** is a first-class citizen, `k` has lambdas, evals, applys, and everything else
+you would expect from a powerful language, and then some. It takes a man to believe it, but `k` is 
+actually more lispy than certain Lisps, only you don't need to get past any parens to write and
+read `k`. In the strict sense, `car` and `cdr` are not there because there are no *linked lists*,
+which is no surprise because `k` is designed to be **fast**.
 
 **Implict arguments** is an empitome of brevity and wit. All functions in `k`, unless 
 stated otherwise, can have up to three implict arguments, `x`, `y` and `z` respectively.
@@ -180,18 +180,19 @@ x = x + 1
 
 Although the meaning of this expression is intuitively clear to any programmer, any
 mathematician will instantly respond with a succinct **"no, it is not"**. This gives
-and excellent hint about how to approach the rest of this document: pretend you never
-wrote a program in your life before, which is a simple trick to overcome the feeling 
-that someone is trying to make you adopt a totally new way of thinking. Make no mistake, 
-this is what this document is all about, but you know you want to give it a try.
+and excellent hint about how to approach the rest of this document: you need pretend 
+you never wrote a program in your life before, which is a simple trick to overcome 
+the feeling that someone is trying to make you adopt a totally new way of thinking. 
+
+And make no mistake, this is exactly what this document is all about. 
 
 
-## actual crash into k
+## solving problems in k
 
-**Disclaimer** is to inform you that nowhere above you were promised a gentle 
-introduction. You have been warned. From here on, you are on your own with your intelligence and grit.
+Nowhere above you were promised a *gentle* introduction, so from here on your best friends
+are your intelligence and instincts. Good luck.
 
-Without giving you anything else about how k works, we are going to contemplate a toy k implementation of a СAR Hoare's `qsort`, which you definitely remember from you freshman year, and those 20 pages of pseudocode from CLRS that you hated so much. Let's dive in:
+
 
 
 
