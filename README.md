@@ -8,22 +8,23 @@ not for the faint of heart*
 
 `k` is basically Arthur Whitney, the principial designer  of a computer language called `k`, who 
 is an iconic figure in an elite, tight-knit global community of some of the sharpest 
-and most sophisticated programmers working for some of the most
+and most sophisticated programmers and data scientists working for some of the most
 influential institutions on the planet. Since early 90's, he provides them with 
 consistently ever more powerful revisions of one single product he has been working on
 his entire life, a unique integrated platform for creating very high performance applications
-that deal with very large amounts of data. And they appreciate Arthur at least as 
-much as his magnum opus.
+that deal with very large amounts of data. This is a very lucrative job market, and all
+participants who made their careers in `k` appreciate his magnum opus at least as much
+as they appreciate Arthur, but we believe there are separate reasons for that.
 
 ## why is k
 
-There is a very high chance that you heard the legend of Arthur Whitney and his language; 
-**a lot** of people did; what is less likely is that you have ever met someone who told 
+There is a very high chance that you heard the legend of Arthur Whitney and his language before. 
+**a lot** of people did; what is much less likely is that you have ever met someone who told 
 you he or she is a professional k programmer. This happens not just because there are rare,
 but because in their line of work it is often stated in their contracts that they 
 cannot talk about certain things that give their employer a decisive competitive advantage.
 
-An this is how we all *know* about `k`, but mostly *hear* about how much Java sucks.
+An this is how we all *know* about `k`, but mostly *hear* about just how much Java sucks.
 
 Indeed, we hear a lot about implementations of similar systems in languages such as C++ 
 or Java that involve thousands of lines of code written by large teams, built on top 
