@@ -20,7 +20,7 @@ a **lot** of people did; what is less likely is that you have ever met
 someone who told you he or she is a professional k programmer, not just because there are rare,
 but because in their lines of work is often stated in their contracts that they 
 cannot talk about certain things, including everything that provides decisive competitive 
-advantage. And this is exactly how we all know about `k` language, but always hear about how 
+advantage. And this is exactly how we all know about `k`, but always hear about how 
 much Java sucks.
 
 Indeed, what you usually get to hear about implementations of similar systems in languages
