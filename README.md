@@ -1,4 +1,4 @@
-# kcc
+# k
 a crash course in k
 © 2004-2019 me@kel.as
 estimated reading time 15yrs
