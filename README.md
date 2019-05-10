@@ -2,7 +2,7 @@
 a crash course in k
 
 ## Genesis
-In the beginning was the word, and binary computers came much later. We will be writing code in a language called k, but it will help to talk about it first.
+In the beginning was the word, and binary computers came much later. We will be writing code in a language called k, but it will help to simply talk about it first.
 
 ### who is k
 
