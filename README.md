@@ -8,9 +8,11 @@ In the beginning was the word, and computers happened much later. It is importan
 
 ### who is k
 
-There is a reason behind everything. The reason behind k is a computer scientist by the name Arthur Whitney. He is the principal designer of a computer language called `k`, and he is an iconic figure in an elite, tight-knit community of some of the sharpest  and most sophisticated programmers and data scientists employed by some of the most influential institutions on the planet. Since early 90's, he provides them with ever more powerful revisions of one single concept he has been honing his entire life, a vision of an integrated platform to quickly build efficient software systems that could transform large amounts of data into large amounts of money.
+There is a reason behind everything. The reason behind k is a computer scientist by the name Arthur Whitney. He is the principal designer of a computer language called `k`, and he is an iconic figure in an elite, tight-knit community of some of the sharpest  and most sophisticated programmers and data scientists employed by some of the most influential institutions on the planet. Since early 90's, he provides them with ever more powerful revisions of one single concept he has been working on throughout his career, a vision of an integrated platform to quickly build efficient software systems to transform large amounts of data into large amounts of money. That is, k has enjoyed much success in the world of finance.
 
-The revelation that the world was in a desperate need of such a tool, and how such tool should look like, descended on this man way before the man who coined the phrase "Big Data" was big enough to lace his shoes. Those were the days when 1 megabyte of RAM would send you back $1,000, but as it seems a lot of forward-looking people have listened closely to what Arthur Whitney had to say, and all of those today who made successful careers by writing `k` appreciate the tool at least as much as they appreciate the man behind it — but we believe for that there are some separate reasons.
+The need for this kind of software was around long before the man who coined the phrase "Big Data" was big enough to lace his shoes, and a lot of forward-looking people embraced the k way of solving very difficult problems. A lot of people made successful careers by writing solutions in k, and they appreciate the tool at least as much as they appreciate the man behind it — but we believe they have their reasons for that.
+
+But nothing stands still, computers are not what they are used to be, and the technology that once used to be an exclusive privilege of top financial institutions has opened up to a much wider audience. In March 2019, a new version has become available for download, and while it is an early release in active development, the new generation of k language is the biggest and the most important evolutionary step in its history.
 
 ### why is k
 
@@ -121,7 +123,7 @@ x = x + 1
 
 This gives and excellent hint about how to approach the rest of this document: you need to pretend you never wrote a program in your life before, which is a simple trick to overcome your natural resistance to adopt a totally new way of thinking. And make no mistake, this is exactly what this document is all about.
 
-So far you only know how to start k, declare basic functions and variables, and how to comment your code. Nowhere above you were promised a *gentle* introduction, so from here your best two friends are your intelligence and intuition. Good luck!
+So far you only know how to start k, declare most basic functions and variables, and how to comment your code. Nowhere above you were promised a *gentle* introduction, so from here your best two friends are your intelligence and intuition. Good luck!
 
 
 ## solving problems in k
