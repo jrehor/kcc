@@ -29,12 +29,16 @@ An this is how we all *know* about `k`, but mostly *hear* about just how much Ja
 Jokes aside, we hear a lot about implementations of similar systems in languages such as C++ 
 or Java that involve thousands of lines of code written by large teams, built on top 
 of complex library stacks and even more complex infrastructure. What these guys 
-are not allowed to tell you, but tell you anyway, is that their projects are desperately 
-over budget, totally past deadline and implement an an utterly outdated spec.
+are not allowed to tell you, but tell you anyway, is that their project is desperately 
+over budget, totally past deadline, and was designed for the version of reality that
+simply no longer exists.
 
 In comparision, a k solution is typically a few factors of magnitude less code,
 implemented by a small and agile team or a single individual, hardly requires any
-external dependencies and always ships on time. 
+external dependencies and always ships on time. Last but not least, the comparative 
+effort of keeping 200 LoC up-to-date with reality compared to 20,000 LoC is 
+not **100** times easier. Against all intuition, it is actually **20,000** times 
+easier. And if you think we exaggerating, think again, then try prove us wrong.
 
 ## what is k
 
