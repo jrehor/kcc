@@ -10,7 +10,7 @@ In the beginning was the word, and only then there was computer code, and this i
 
 There is a reason behind everything. The reason behind k is a computer scientist by the name Arthur Whitney. He is the principal designer of a computer language called `k`, and he is an iconic figure in an elite, tight-knit global community of some of the sharpest  and most sophisticated programmers and data scientists employed by some of the most influential institutions on the planet. Since early 90's, he provides them with ever more powerful revisions of one single product he has been working on his entire life, a unique integrated platform to build very efficient software that transforms large amounts of data into large amounts of money.
 
-As you would expect, this is a fairly lucrative job market, and its participants who made careers writing in `k` appreciate Arthur’s magnum opus at least as much as they appreciate the man himself, but we believe there are separate reasons for that.
+As you would expect, this is a fairly lucrative job market, and its participants who made careers writing `k` appreciate Arthur’s magnum opus at least as much as they appreciate the man himself, but we believe there are separate reasons for that.
 
 ### why is k
 
