@@ -24,7 +24,7 @@ At first it could be hard to understand how this can even be, but lets compare t
 
 ### what is k
 
-`k` is a very remarkable piece of software that has many faces. For now, lets consider it to be an interpreter of what at first appears to be a suspiciously minimalistic computer language. This language that is immensely powerful.
+`k` is a very remarkable piece of software that has many faces. For now, lets consider it to be an interpreter of what at first appears to be a suspiciously minimalistic computer language. A language that is immensely powerful.
 
 The source of this power stems the fact that k was designed from ground up primarily as a *tool of thought*. The vocabulary, syntax and the choice of abstractions offered by the language affect you intellect in such a way that makes you think about problems in a very focused, clear and uncluttered way that quickly takes you to efficient and elegant solutions. And the reason why thinking in terms of this language is so effective is absolutely nothing supernatural. Is captured in a proverb that predates history and is known to all cultures: brevity is a soul of wit.
 
