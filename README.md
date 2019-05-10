@@ -119,6 +119,6 @@ x = x + 1
 
 Although this expression is perfectly fine with the majority of interpreted and compiled computer languages, any human mathematician will respond to this expression with a heavy sigh, followed by *"no, it is not”*.
 
-This gives and excellent hint about how to approach the rest of this document: you need to pretend you never wrote a program in your life before, which is a simple trick to overcome your natural resistance to adopt a new way of thinking. And make no mistake, this is exactly what it is all about.
+This gives and good hint about how to approach the rest of this document: pretend you never wrote a program in your life before and keep an open mind, and you just might discover there is another way of how to program.
 
 So far you only know how to start k, declare most basic functions and variables, and how to annotate your code. Nowhere above you were promised a *gentle* introduction, so from here your best two friends are your intelligence and intuition.
