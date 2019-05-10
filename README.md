@@ -1,4 +1,4 @@
-# k
+# kcc
 a crash course in k
 
 ## Genesis
