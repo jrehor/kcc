@@ -37,9 +37,10 @@ In comparision, a k solution is typically a few factors of magnitude less code,
 implemented by a small and agile team or a single individual, hardly requires any
 external dependencies and always ships on time. Last but not least, the comparative 
 effort of keeping 200 LoC up-to-date with reality compared to 20,000 LoC is not really
-**100** times easier. Against all intuition, it is actually **20,000** times 
-easier. And if you think we exaggerating, think again, then try prove us wrong, then we
-will prove you otherwise, and this will be a start of a beautiful friendship.
+**100x** easier. Against all intuition, it is actually **20,000x** easier.
+
+And if you think we exaggerating, think again, then try prove us wrong, then we will 
+prove you otherwise, and this will be a start of a beautiful friendship.
 
 ## what is k
 
