@@ -14,7 +14,7 @@ The revelation that the world was in a desperate need of such a tool, and how su
 
 ### why is k
 
-There is a very high probability that you have heard the legend of Arthur Whitney and his language.  A *lot* of people did. What is much less likely is that you have ever met someone who told you he or she is a professional k programmer. This happens not just because k programmers are rare, but also because in their line of work it is often stated in their contracts that they simply cannot talk about certain things that give their employer a decisive competitive advantage. An this is why we all have /heard/ about k, but mostly /hear/ about how much it sucks to be a Java programmer.
+There is a very high probability that you have heard about Arthur Whitney and his language. A *lot* of people did. What is much less likely is that you have ever met someone who told you he or she is a professional k programmer. This happens not just because k programmers are rare, but also because in their line of work it is often stated in their contracts that they simply cannot talk about certain things that give their employer a decisive competitive advantage. An this is why we all have /heard/ about k, but mostly /hear/ about how much it sucks to be a Java programmer.
 
 But jokes aside. Implementations of similar systems in languages like C++ or Java usually involve thousands of lines of code written by large teams, built on top of complex library stacks and even more complex infrastructure. The truth that these guys are not allowed to tell you, but always tell you anyway because they hate their jobs, it that their projects are desperately over budget, totally past deadline, and were designed for a version of reality that simply no longer exists.
 
