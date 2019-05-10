@@ -10,7 +10,7 @@ There is a reason behind everything. The reason behind k is a computer scientist
 
 The need for this kind of software was around long before the man who coined the phrase "Big Data" was big enough to lace his shoes, and a lot of forward-looking people embraced the k way of solving very difficult problems. A lot of people made successful careers by solving problems using k, and they appreciate the tool at least as much as they appreciate the man behind it — and we believe they have their reasons for that.
 
-But nothing stands still, computers are not what they are used to be, and the technology that once used to be an exclusive privilege of top financial institutions has opened up to a much wider audience. In March 2019, a new version has become available for download, and while it is an early release in active development, the new generation of k language is the biggest and the most important evolutionary step in its history.
+But nothing stands still, and the technology that used to be an exclusive privilege of top financial institutions opened up to much wider audience. In March 2019, a new version has become available for download, and while it is an early release in active development, it was exciting news for many. The new generation of k language is clearly the biggest and the most important evolutionary step in its history.
 
 ### why is k
 
