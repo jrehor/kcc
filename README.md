@@ -4,7 +4,7 @@ a crash course in k
 estimated reading time 15yrs
 
 ## Genesis
-In the beginning was the word, and the computer happened later. It is important to discuss a few important questions before we get to write any code in k. 
+In the beginning was the word, and computers happened much later. It is important to discuss a few subjects before we get to write any code in a computer language called k. 
 
 ### who is k
 
