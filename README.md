@@ -1,7 +1,5 @@
 # k
 a crash course in k
-© 2004-2019 me@kel.as
-estimated reading time 15yrs
 
 ## Genesis
 In the beginning was the word, and computers happened much later. It is important to discuss a few subjects before we get to write any code in a computer language called k. 
