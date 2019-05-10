@@ -97,27 +97,27 @@ However, at this point we highly recommend to avoid issuing any of the above com
 kei:42 / kenneth eugene iverson
 ```
 
-*Function* in k is a first-class citizen. k has lambdas, eval, apply, and everything else you would expect from a powerful language, and then some. It takes a leap of faith to believe it, but k is actually more lispy than certain Lisps, only you don't need to get past any parens. In the strict sense, `car` and `cdr` are not there because there are no /linked lists/ under the hood, which is of no surprise because k is designed to be very fast.
+*Function* in k is a first-class citizen. k has lambdas, eval, apply, and then some more. It takes a leap of faith to believe it, but k is probably more lispy than certain Lisps, only you don't need to get past any parens. In the strict sense, though, since there are no linked lists under the hood, k is clearly not lisp, which is of no surprise because it is designed to be fast.
 
-*Implicit arguments* is an epitome of brevity and wit. All functions in k, unless stated otherwise, can have up to three implicit arguments, `x`, `y` and `z` respectively. Here are your first functions:
+Most languages require you to explicitly declare arguments of your function. In k, a function can have up to three implicit arguments, called `x`, `y` and `z`, which basically means you declare them simply by using them in function body. This very convinient and not as scary as it sounds:
 
 ```
- f:{x+y+z}    /declaration
- f[1;2;3]     /call
-6             /result
+ f:{x+y+z}    /f takes 3 arguments
+ f[1;2;3]     /call f
+6
   
- f:{x*x}      /redeclaration
- f 2          /one arg, ok to omit brackets
-5             /gotcha
+ f:{x*x}      /f takes just 1 argument...
+ f 2          /...so you can omit brackets
+4
 ```
 
-*Assignment* operator, as you have correctly guessed, is a *colon*. This fact has a lot to do with k heritage, which is best elucidated by a simple and profound thought experiment. Consider the following line of code:
+*Assignment* operator, as you already guessed, is `:`. This fact has much to do with k heritage, and suddenly begins to make a lot of sense with a simple but profound thought experiment. Consider the following line of code:
 
 ```
 x = x + 1
 ```
 
-Although this expression is perfectly fine with the majority of interpreted and compiled computer languages, any human mathematician will respond to this expression with a heavy sigh, followed by *"no, it is not”*.
+Most programmers and their computer languages agree that this expression is perfectly valid, but don't be surprised if a mathematician tells you *"no, it isn't”*. And this is pretty much exactly why k wants you to use `:`.
 
 This gives and good hint about how to approach the rest of this document: pretend you never wrote a program in your life before and keep an open mind, and you just might discover there is another way of how to program.
 
