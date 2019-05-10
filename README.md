@@ -99,7 +99,7 @@ However, at this point we highly recommend to avoid issuing any of the above com
 kei:42 / kenneth eugene iverson
 ```
 
-*Function* in k is a first-class citizen. k has lambdas, evals, apply, and everything else you would expect from a powerful language, and then some. It takes a leap of faith to believe it, but k is actually more lispy than certain Lisps, only you don't need to get past any parens. In the strict sense, `car` and `cdr` are not there because there are no /linked lists/ under the hood, which is of no surprise because k is designed to be very fast.
+*Function* in k is a first-class citizen. k has lambdas, eval, apply, and everything else you would expect from a powerful language, and then some. It takes a leap of faith to believe it, but k is actually more lispy than certain Lisps, only you don't need to get past any parens. In the strict sense, `car` and `cdr` are not there because there are no /linked lists/ under the hood, which is of no surprise because k is designed to be very fast.
 
 *Implicit arguments* is an epitome of brevity and wit. All functions in k, unless stated otherwise, can have up to three implicit arguments, `x`, `y` and `z` respectively. Here are your first functions:
 
