@@ -119,7 +119,7 @@ x = x + 1
 
 > Although this expression is perfectly fine with the majority of interpreted and compiled computer languages, any human mathematician will respond to this expression with a heavy sigh, followed by *"no, it is not”*.
 
-This gives and excellent hint about how to approach the rest of this document: you need pretend you never wrote a program in your life before, which is a simple trick to overcome your natural resistance to adopt a totally new way of thinking. And make no mistake, this is exactly what this document is all about.  Nowhere above you were promised a *gentle* introduction, so from here on your best friends are your intelligence and instincts. Good luck.
+This gives and excellent hint about how to approach the rest of this document: you need to pretend you never wrote a program in your life before, which is a simple trick to overcome your natural resistance to adopt a totally new way of thinking. And make no mistake, this is exactly what this document is all about.  Nowhere above you were promised a *gentle* introduction, so from here on your best friends are your intelligence and instincts. Good luck.
 
 
 ## solving problems in k
