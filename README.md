@@ -2,7 +2,7 @@
 a crash course in k
 
 ## Genesis
-In the beginning was the word, and computers happened much later. It is important to discuss a few subjects before we get to write any code in a computer language called k. 
+In the beginning was the word, and binary computers came much later. It is important to discuss a few subjects before we get to write any code in a computer language called k. 
 
 ### who is k
 
