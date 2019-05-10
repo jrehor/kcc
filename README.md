@@ -39,7 +39,7 @@ external dependencies and always ships on time. Last but not least, the comparat
 effort of keeping 200 LoC up-to-date with reality compared to 20,000 LoC is not really
 **100** times easier. Against all intuition, it is actually **20,000** times 
 easier. And if you think we exaggerating, think again, then try prove us wrong, then we
-will prove you otherwise, and it will be a start of a beautiful friendship.
+will prove you otherwise, and this will be a start of a beautiful friendship.
 
 ## what is k
 
