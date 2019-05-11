@@ -22,9 +22,9 @@ At first it could be hard to understand how this can even be true, but compare t
 
 ### what is k
 
-`k` is a remarkable piece of software that has many faces. For now, lets consider it to be an interpreter of what at first appears to be a suspiciously minimalistic computer language. A language that is immensely powerful.
+`k` is a remarkable piece of software that has many faces. For now lets say it is simply an interpreter of a computer language. A language that is very powerful.
 
-The source of this power stems from the fact that k was designed from ground up primarily as a *tool of thought*. The vocabulary, syntax and the choice of abstractions offered by the language drive you to think about problems in a focused, clear and uncluttered way that quickly takes you to efficient and elegant solutions. And the reason why thinking in terms of this language is so effective is absolutely nothing supernatural. Is captured in a proverb that predates history and is known to all cultures: brevity is a soul of wit.
+The source of its power stems from the fact that k was designed from ground up primarily as a *tool of thought*. The vocabulary, syntax and the choice of abstractions offered by the language drive you to think about problems in a focused, clear and uncluttered way that quickly takes you to efficient and elegant solutions. And the reason why thinking in terms of this language is so effective is absolutely nothing supernatural. Is captured in a proverb that predates history and is known to all cultures: brevity is a soul of wit.
 
 Indeed, k programs tend to be very *concise*, the syntax of the language is very *terse*, and k programmers have no idea what you mean when you say “boilerplate code”. Unlike in most software development workflows, a k programmer spends most of his time thinking about the problem rather than typing stuff into the terminal and browsing the source code tree. In humans, such mechanical activities are known to interfere with abstract thinking and greatly impair their focus — and k minimizes these losses for you.
 
