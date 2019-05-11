@@ -117,6 +117,6 @@ x = x + 1
 
 Most programmers and most computer languages agree that this expression is perfectly valid, but don't be surprised if a mathematician tells you *"no, it isn't”*. And once you see what makes him think so, you'll also see why we assign with `:` in k.
 
-This is a good hint about how to approach the rest of this document: pretend you never wrote a program in your life before and keep an open mind, and you just might discover there is another way of how to program.
+This is a good hint how to approach the rest of this document: try to pretend you never wrote a program in your life before and keep an open mind, and you just might discover there is another way of how to program.
 
 So far you only know how to start k, declare most basic functions and variables, and how to annotate your code. Nowhere above you were promised a *gentle* introduction, so from here your best two friends are your intelligence and intuition.
