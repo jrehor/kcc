@@ -97,7 +97,7 @@ kei:42 / kenneth eugene iverson
 
 *Function* in k is a first-class citizen. k has lambdas, eval, apply, and then some more. It takes a leap of faith to believe it, but k is probably more lispy than certain Lisps, only you don't need to get past any parens. In the strict sense, though, since there are no linked lists under the hood, k is clearly not lisp, which is of no surprise because it is designed to be fast.
 
-Most languages require you to explicitly declare arguments of your function. In k, a function can have up to three implicit arguments, called `x`, `y` and `z`, which basically means you declare them simply by using them in function body. This very convinient and not as scary as it sounds:
+Most languages require you to explicitly declare arguments of your function. You can also do that in k if you want to, but if you don't, a function can have up to three implicit arguments, called `x`, `y` and `z`, which basically means you declare them by simply referencing them in function body. It is an extremely convinient feature, and not nearly as scary as it sounds:
 
 ```
  f:{x+y+z}    /f takes 3 arguments
