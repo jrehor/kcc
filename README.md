@@ -3,17 +3,17 @@ a crash course in k
 
 ## genesis
 
-In the beginning was the word, and binary computers came much later. We will be writing code in a language called k, but it helps to talk about it first.
+Computer languages have been around for a while, but in the beginning was the word. We will be writing code in a language called k, but it helps to talk about it first.
 
-Regardless your background, k will look different. You will question many aspects of its design, and it will respond by questioning things that you consider common sense, and this is a very constructive process. For example, you may find it puzzling why the assignment operator in k is `:` instead of `=`. But give it a chance and try a simple thought experiment. Consider the following code:
+Regardless your background, k will look different. You will question many aspects of its design, and it will respond by questioning things that you consider common sense, and this can be a very constructive process. For example, you may find it puzzling why the assignment operator in k is `:` instead of `=`. But give it a chance and try a simple thought experiment. Consider the following code:
 
 ```
 x = x + 1
 ```
 
-Most programmers and most computer languages will agree that this expression is perfectly valid, but don't be surprised if a mathematician tells you *"this is nonsense”*. And once you see what makes him think so, will see why we assign things with `:` in k.
+Most programmers and most computer languages will readily agree that this expression is perfectly valid, but don't be surprised if a mathematician tells you *"nonsense”*. And once you see what makes him think so, will see why we assign things with `:` in k.
 
-This gives a good hint how to approach k in general: a different perspective is not necessarily wrong and hostile, and nothing prevents you from changing your own. Simply put, keep an open mind.
+This gives a good hint how to approach k in general: a different perspective is not necessarily wrong and hostile, and nothing prevents you from changing your own. Keep an open mind.
 
 ### who is k
 
