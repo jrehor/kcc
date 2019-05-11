@@ -5,7 +5,7 @@ a crash course in k
 
 In the beginning was the word, and binary computers came much later. We will be writing code in a language called k, but it helps to talk about it first.
 
-Regardless your background, k will look different. You will question many aspects of its design, and it will respond by questioning things that you consider common sense, and this is a very constructive process. To give an example, you may find it puzzling why the assignment operator in k is `:` instead of `=`. But give it a chance and try a simple thought experiment. Consider the following code:
+Regardless your background, k will look different. You will question many aspects of its design, and it will respond by questioning things that you consider common sense, and this is a very constructive process. For example, you may find it puzzling why the assignment operator in k is `:` instead of `=`. But give it a chance and try a simple thought experiment. Consider the following code:
 
 ```
 x = x + 1
