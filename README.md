@@ -8,7 +8,7 @@ In the beginning was the word, and binary computers came much later. We will be 
 
 The man behind k is a computer scientist by the name Arthur Whitney. He is the principal designer of the language, and he is an iconic figure in a community of some of the sharpest and most sophisticated programmers and data scientists employed by some of the most influential institutions on the planet. Since early 90s, he delivers ever more powerful revisions of a concept he has been refining throughout his career, a system to build very efficient software that transforms large amounts of data into large amounts of money. That is, k enjoys much success in the world of finance, where this kind of problems existed long before the man who coined the phrase "Big Data" was old enough to lace his own shoes. Many forward-looking people embraced the k way and made successful careers by building solutions using k, amd they appreciate their tool as much as they appreciate the man behind it — and we believe they have their reasons.
 
-But nothing stands still, and the technology used by the top financial institutions is now addressing a much wider audience. In March 2019, a new version was released, and it was exciting news for many because the new generation of k language is clearly the biggest and the most important evolutionary step in its history.
+Nothing stands still, and the technology used by the top financial institutions is now available to much wider audience. In March 2019, a new version was released, and it was exciting news because the new generation of k language is the biggest and the most important evolutionary step in its history.
 
 ### why is k
 
