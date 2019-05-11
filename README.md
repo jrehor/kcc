@@ -109,13 +109,13 @@ Most languages require you to explicitly declare arguments of your function. You
 4
 ```
 
-*Assignment* operator, as you already guessed, is `:`. This fact has much to do with k heritage, and suddenly begins to make a lot of sense with a simple but profound thought experiment. Consider the following line of code:
+*Assignment* operator, as you already guessed, is `:`. This fact has much to do with k heritage, and suddenly begins to make a lot of sense if you try a simple and profound thought experiment. Consider the following line of code:
 
 ```
 x = x + 1
 ```
 
-Most programmers and their computer languages agree that this expression is perfectly valid, but don't be surprised if a mathematician tells you *"no, it isn't”*. And once you see what makes him think so, you'll also see why we assign with `:` in k.
+Most programmers and most computer languages agree that this expression is perfectly valid, but don't be surprised if a mathematician tells you *"no, it isn't”*. And once you see what makes him think so, you'll also see why we assign with `:` in k.
 
 This is a good hint about how to approach the rest of this document: pretend you never wrote a program in your life before and keep an open mind, and you just might discover there is another way of how to program.
 
