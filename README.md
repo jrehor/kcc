@@ -2,7 +2,18 @@
 a crash course in k
 
 ## genesis
-In the beginning was the word, and binary computers came much later. We will be writing code in a language called k, but it will help to  talk about it first.
+
+In the beginning was the word, and binary computers came much later. We will be writing code in a language called k, but it helps to talk about it first.
+
+Regardless your background, k will look different. You will question many aspects of its design, and it will respond by questioning things that you consider common sense, and this is a very constructive process. To give an example, you may find it puzzling why the assignment operator in k is `:` instead of `=`. But give it a chance and try a simple thought experiment. Consider the following code:
+
+```
+x = x + 1
+```
+
+Most programmers and most computer languages will agree that this expression is perfectly valid, but don't be surprised if a mathematician tells you *"this is nonsense”*. And once you see what makes him think so, will see why we assign things with `:` in k.
+
+This gives a good hint how to approach k in general: a different perspective is not necessarily wrong and hostile, and nothing prevents you from changing your own. Simply put, keep an open mind.
 
 ### who is k
 
@@ -109,14 +120,4 @@ Most languages require you to explicitly declare arguments of your function. You
 4
 ```
 
-*Assignment* operator, as you already guessed, is `:`. This fact has much to do with k heritage, and suddenly begins to make a lot of sense if you try a simple and profound thought experiment. Consider the following line of code:
-
-```
-x = x + 1
-```
-
-Most programmers and most computer languages agree that this expression is perfectly valid, but don't be surprised if a mathematician tells you *"no, it isn't”*. And once you see what makes him think so, you'll also see why we assign with `:` in k.
-
-This is a good hint how to approach the rest of this document: try to pretend you never wrote a program in your life before and keep an open mind, and you just might discover there is another way of how to program.
-
-So far you only know how to start k, declare most basic functions and variables, and how to annotate your code. Nowhere above you were promised a *gentle* introduction, so from here your best two friends are your intelligence and intuition.
+Lets recap. So far you only know how to start k, how to assign values, declare most basic functions and variables, and how to annotate your code. This is a good start, but tells you nothing about what makes k different. Nowhere above you were promised a *gentle* introduction, so from here your best two friends are your intelligence and intuition.
