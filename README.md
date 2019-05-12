@@ -7,7 +7,7 @@ Computer languages have been around for a while, but in the beginning was the wo
 
 Regardless your background, k will look different. You will question many aspects of its design, and it will respond by questioning things that you consider common sense, and this can be a very constructive process. For example, you may find it puzzling why the assignment operator in k is `:` instead of `=`. But give it a chance and try a simple thought experiment. Consider the following code:
 
-```
+```c
 x = x + 1
 ```
 
