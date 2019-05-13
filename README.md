@@ -1,5 +1,5 @@
 # kcc
-a crash course in k
+a gentle introduction to k is elsewhere
 
 ## genesis
 
@@ -69,7 +69,7 @@ As with all things k, the development of k language itself is happening at terri
 
 Assuming conda's `bin` is in you PATH, start your first k session, ask your first question and enjoy your first answer:
 
-```
+```q
 kelas@failbowl ~ $ k
 2019-04-21 15:38:18 40core 512gb avx2 © shakti m2.0 prod
  2+2
@@ -92,7 +92,7 @@ As any other computer language, k expects a programmer to observe and follow cer
 
 **Annotations** in your k code is the best way not to end up coding Java for food, unless you are Arthur Whitney. We dare to assume you are not there yet, so comments start with `/`. When used inline, prepend at least one space:
 
-```
+```q
 /line comment
 42
 
@@ -103,7 +103,7 @@ As any other computer language, k expects a programmer to observe and follow cer
 
 **Capitals**, by convention, are used by k programmers very sparingly, as a last resort measure. This applies both to code and comments. Identifiers in `camelCase` are considered bad form but can sometimes be tolerated, while `c_style` identifiers are not permitted at all since underscore is a k operator. Identifiers of functions and variables are very often boiled down to an absolute minimum, names 1-3 characters long are commonplace, which does not impact readability and comprehension given that their definitions are adequately annotated. Short identifiers might sound like a bad idea to Java programmers who are not accustomed to identifiers shorter than 100 bytes, but a well-structured and well-formatted k program typically fits on a single screen and requires little or no scrolling. The way our brain works is when the entire program fits into your visual buffer, "cryptic" identifiers are no longer a problem, because their annotated declarations are always right in front of you, and it will take a while before you face the problem of switching between multiple k source files:
 
-```
+```q
 kei:42 /kenneth eugene iverson
 ```
 
@@ -111,13 +111,13 @@ kei:42 /kenneth eugene iverson
 
 Most languages require you to explicitly declare arguments of your function. You can also do that in k if you want to, but if you don't, a function can have up to three **implicit arguments** called `x`, `y` and `z`, which basically means you declare them by simply referencing them in the function body. It is an extremely convinient feature, not nearly as scary as it sounds:
 
-```
+```q
  f:{x+y+z}    /f takes three arguments,
  f[1;2;3]     /and here is how to call it
 6
   
  f:{x*x}      /f only takes one argument,
- f 2          /so we can omit brackets
+ f 2          /so you can omit brackets
 4
 ```
 
