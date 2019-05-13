@@ -11,7 +11,7 @@ Regardless your background, k will look different. You will question many aspect
 x = x + 1
 ```
 
-Most programmers and most computer languages will readily agree that this expression is perfectly valid, but don't be surprised if a mathematician tells you *"nonsense”*. And once you see what makes him think so, will see why we assign things with `:` in k.
+Most programmers and most computer languages will readily agree that this expression is perfectly valid, but don't be surprised if a mathematician tells you *"nonsense”*. And once you see what makes him think so, will see one of the reasons why we assign things with `:` in k.
 
 This gives a good hint how to approach k in general: a different perspective is not necessarily wrong and hostile, and nothing prevents it from becoming your own, so keep an open mind.
 
