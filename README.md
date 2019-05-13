@@ -15,7 +15,7 @@ Most programmers and most computer languages will readily agree that this expres
 
 This gives a good hint how to approach k in general: a different perspective is not necessarily wrong and hostile, and nothing prevents you from changing your own. Keep an open mind.
 
-This crash course is not looking to make you an expert k programmer, because that, as with any other area of expertise, takes a lot of time and effort. Allegedly, it is possible to teach oneself Java in 24 hours, but we are not qualified to talk about that. Instead, we are going to talk about fundamental aspects of *thinking in k*, and the curve is going to be steep — but we value your time, so we promise it will be fast and violent.
+This crash course is not looking to make you an expert k programmer, because that, as any area of expertise, takes a lot of time and effort. Allegedly, it is possible to teach oneself Java in 24 hours, but we are not qualified to talk about that. Instead, we are going to talk about fundamental aspects of *thinking in k*, and the curve is going to be steep — but we value your time, so we promise it will be fast and violent.
 
 ### who
 
