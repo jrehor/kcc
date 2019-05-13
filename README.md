@@ -119,6 +119,10 @@ Most languages require you to explicitly declare arguments of your function. You
  f:{x*x}      /f only takes one argument,
  f 2          /so you can omit brackets
 4
+
+ f f 2        /same as f[f[2]]
+16 
+
 ```
 
 Lets recap. So far you know how to start k, how to assign values, declare most basic functions and variables, and how to annotate your code. This is a good foundation, but tells you absolutely nothing about k. Nowhere above you were promised a *gentle* introduction, so from here your best two friends are your intelligence and intuition.
