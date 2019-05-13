@@ -65,7 +65,7 @@ As with all things k, the development of k language itself is happening at terri
 
 `kelas@failbowl ~ $ conda update -c shaktidb shakti`
 
-### starting k
+### using k
 
 Assuming conda's `bin` is in you PATH, start your first k session, ask your first question and enjoy your first answer:
 
@@ -86,9 +86,11 @@ At any time during k session, you can:
 
 However, at this point we highly recommend to avoid issuing any of the above commands, especially the latter.
 
-### basics
+### remarks on style
 
-*Annotations* in your k code is the best way not to end up coding Java for food, unless you are Arthur Whitney. We dare to assume you are not quite there yet, so comments start with `/`. When used inline, prepend a space:
+As any other computer language, k expects a programmer to observe and follow certain conventions on coding style in order to understand the code written by the others and let their own code be understood. While some rules of the k house are universal, some are are not.
+
+**Annotations** in your k code is the best way not to end up coding Java for food, unless you are Arthur Whitney. We dare to assume you are not there yet, so comments start with `/`. When used inline, prepend at least one space:
 
 ```
 /line comment
@@ -97,26 +99,41 @@ However, at this point we highly recommend to avoid issuing any of the above com
 42 /inline comment
 ```
 
-*Indentation* in k is a tricky subject. Basically, what you generally want is *no indentation*. This means if your k expression is getting so much larger than life that you are tempted to split it into separate lines, you either need to refactor, or your entire train of thought got derailed and you need to go back to the blackboard. Sometimes, however, indentation is ok, and it is always *one space*. Not two, not four, one. Tabs will be frowned upon big time, because some day they will end up taking other people's precious screen real estate, and humans generally get really itchy when it comes to brick and mortar.
+**Indentation** in k is a tricky subject. Basically, what you generally want is *no indentation*. This means if your k expression is getting so much larger than life that you are tempted to split it into separate lines, you either need to refactor, or your entire train of thought got derailed and you need to go back to the blackboard. Sometimes, however, indentation is fine and even necessary, and it is always *one space*. Not two, not four, one. Tabs will be frowned upon, because some day they will end up taking other people's precious screen real estate, and humans get really itchy when it comes to brick and mortar.
 
-*Capitals*, by convention, are used by k programmers very sparingly, as a last resort measure. This applies both to code and comments. Identifiers in `camelCase` are considered bad form but can sometimes be tolerated, while `c_style` identifiers are not permitted at all since underscore is a k operator. Function and variable identifiers are very often boiled down to an absolute minimum, short identifiers 1-3 characters long are commonplace, which does not impact readability and comprehension given that definitions are adequately annotated. Short identifiers might sound like a bad idea to Java programmers who are not accustomed to identifiers shorter than 100 bytes, but a well-structured and well-formatted k program typically fits on a single screen and requires little or no scrolling. The way our brain works is when the entire program fits into your visual buffer, "cryptic" identifiers are no longer a problem, because their annotated declarations are always right in front of you, and it will take a while before you face the problem of switching between multiple k source files:
+**Capitals**, by convention, are used by k programmers very sparingly, as a last resort measure. This applies both to code and comments. Identifiers in `camelCase` are considered bad form but can sometimes be tolerated, while `c_style` identifiers are not permitted at all since underscore is a k operator. Identifiers of functions and variables are very often boiled down to an absolute minimum, names 1-3 characters long are commonplace, which does not impact readability and comprehension given that their definitions are adequately annotated. Short identifiers might sound like a bad idea to Java programmers who are not accustomed to identifiers shorter than 100 bytes, but a well-structured and well-formatted k program typically fits on a single screen and requires little or no scrolling. The way our brain works is when the entire program fits into your visual buffer, "cryptic" identifiers are no longer a problem, because their annotated declarations are always right in front of you, and it will take a while before you face the problem of switching between multiple k source files:
 
 ```
 kei:42 / kenneth eugene iverson
 ```
 
-*Function* in k is a first-class citizen. k has lambdas, eval, apply, and then some more. It takes a leap of faith to believe it, but k is probably more lispy than certain Lisps, only you don't need to get past any parens. In the strict sense, though, since there are no linked lists under the hood, k is clearly not lisp, which is of no surprise because it is designed to be fast.
+**Functions** in k are first-class citizens. k has lambdas, eval, apply, and then some more. It takes a leap of faith to believe it, but k is probably more lispy than certain Lisps, only you don't need to get past any parens to be able to read it. In a strict sense, though, since there are no linked lists under the hood, k is clearly not lisp, because it was designed to be fast.
 
-Most languages require you to explicitly declare arguments of your function. You can also do that in k if you want to, but if you don't, a function can have up to three implicit arguments, called `x`, `y` and `z`, which basically means you declare them by simply referencing them in function body. It is an extremely convinient feature, not nearly as scary as it sounds:
+Most languages require you to explicitly declare arguments of your function. You can also do that in k if you want to, but if you don't, a function can have up to three **implicit arguments** called `x`, `y` and `z`, which basically means you declare them by simply referencing them in the function body. It is an extremely convinient feature, not nearly as scary as it sounds:
 
 ```
- f:{x+y+z}    /f takes 3 arguments
- f[1;2;3]     /call f
+ f:{x+y+z}    /f takes three arguments,
+ f[1;2;3]     /and here is how to call it
 6
   
- f:{x*x}      /f takes just 1 argument...
- f 2          /...so you can omit brackets
+ f:{x*x}      /f only takes one argument,
+ f 2          /so we can omit brackets
 4
 ```
 
-Lets recap. So far you only know how to start k, how to assign values, declare most basic functions and variables, and how to annotate your code. This is a good start, but tells you nothing about what makes k different. Nowhere above you were promised a *gentle* introduction, so from here your best two friends are your intelligence and intuition.
+Lets recap. So far you know how to start k, how to assign values, declare most basic functions and variables, and how to annotate your code. This is a good foundation, but tells you absolutely nothing about k. Nowhere above you were promised a *gentle* introduction, so from here your best two friends are your intelligence and intuition.
+
+## Revelation
+
+### vectors vs scalars
+
+### no stinking loops
+
+### right to left
+
+### what does this do?
+
+
+
+
+
