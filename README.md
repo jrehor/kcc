@@ -124,7 +124,7 @@ Most languages require you to explicitly declare arguments of your function. You
 16 
 
 ```
-The last expression illustrates a fundamental design feature of k — everything that you intuitively feel you should be able to omit, can and should be omitted, and there very few exceptions to this rule.
+The last expression illustrates another cornerstone feature of k — everything that you intuitively feel you should be able to omit, can and should be omitted, and there very few exceptions to this rule.
 
 Lets recap. So far you know how to start k, how to assign values, declare most basic functions and variables, and how to annotate your code. This is a good start, but tells you absolutely nothing about what k really is. Nowhere above you were promised a *gentle* introduction, so from here your best two friends are your intelligence and intuition.
 
