@@ -55,7 +55,7 @@ All of k programming takes place in **REPL**, a concept which requires little in
 
 We will use a `trial` version of k, which comes with a reasonable limit of 1 gigabyte of workspace per k process. This limit is for your own protection, so that you don’t accidentally convert too much data into too much money too early, because, as any k programmer will tell you, with great power comes great responsibility.
 
-The k interpreter is currently available for `Linux` and `macOS` on `x86_64` architecture. If you are on Solaris, OpenBSD or z/OS — hang tight, good things come to those who wait. The same applies for `ARM64` architecture, but if you are on Windows, well, lets not cry over spilled Guinness.
+The k interpreter is currently available for `Linux` and `macOS` on `x86_64` architecture. If you are on Solaris, OpenBSD or z/OS — hang tight, good things come to those who wait. The same applies to `ARM` and `WASM` architectures, but if you are on Windows, well, lets not cry over spilled Guinness.
 
 Without further ado, go to https://anaconda.org/ and follow the instructions. Anaconda shell integration option is highly recommended. Once you install Anaconda, install the package called  `shakti`, which is nothing else but `k` in disguise:
 
@@ -128,7 +128,7 @@ The last expression illustrates a fundamental design feature of k — everything
 
 Lets recap. So far you know how to start k, how to assign values, declare most basic functions and variables, and how to annotate your code. This is a good foundation, but tells you absolutely nothing about k. Nowhere above you were promised a *gentle* introduction, so from here your best two friends are your intelligence and intuition.
 
-## revelation
+## revelations
 
 ### vectors vs scalars
 
