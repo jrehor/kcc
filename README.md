@@ -131,7 +131,9 @@ Lets recap. So far you know how to start k, how to assign values, declare most b
 
 ### right to left
 
-### what does this do?
+### how to solve it
+
+
 
 
 
