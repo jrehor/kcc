@@ -120,7 +120,7 @@ Most languages require you to explicitly declare arguments of your function. You
  f 2          /so you can omit brackets
 4
 
- f f 2        /same as f[f[2]]
+ f f 2        /same as f[f[2]] only better
 16 
 
 ```
