@@ -123,7 +123,7 @@ Most languages require you to explicitly declare arguments of your function. You
 
 Lets recap. So far you know how to start k, how to assign values, declare most basic functions and variables, and how to annotate your code. This is a good foundation, but tells you absolutely nothing about k. Nowhere above you were promised a *gentle* introduction, so from here your best two friends are your intelligence and intuition.
 
-## Revelation
+## revelation
 
 ### vectors vs scalars
 
