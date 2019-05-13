@@ -17,13 +17,13 @@ This gives a good hint how to approach k in general: a different perspective is 
 
 This crash course is not looking to make you an expert k programmer, because that, as with any other area of expertise, takes a lot of time and effort. Allegedly, it is possible to teach oneself Java in 24 hours, but we are not qualified to talk about that. Instead, we are going to talk about fundamental aspects of *thinking in k*, and the curve is going to be steep — but we value your time, so we promise it will be fast and violent.
 
-### who is k
+### who
 
 The man behind k is a computer scientist by the name Arthur Whitney. He is the principal designer of the language, and he is an iconic figure in a community of some of the sharpest and most sophisticated programmers and data scientists employed by some of the most influential institutions on the planet. Since early 90s, he delivers ever more powerful revisions of a concept he has been refining throughout his career, a system to build very efficient software that transforms large amounts of data into large amounts of money. That is, k enjoys much success in the world of finance, where this kind of problems existed long before the man who coined the term "Big Data" was old enough to tie his own shoes. Many forward-looking people embraced the k way and made successful careers by building solutions using k, and they appreciate their tool as much as they appreciate the man behind it — and we believe they have their reasons.
 
 The latest version of k is now available for testing, and this is exciting news because the new generation of k language is the biggest and the most important evolutionary step in its history that appeals to a much wider audience.
 
-### why is k
+### why
 
 There is a good chance that you have heard or read about Arthur Whitney and his language. A lot of people know the story. What is much less likely is that you have ever met a professional k programmer. This happens not just because k programmers are rare, but also because  it is sometimes stated in their contracts that they cannot talk about certain things that give their employers a decisive competitive advantage. We all heard about a language called k, but what we hear more often is how much it sucks to be a Java programmer.
 
@@ -33,7 +33,7 @@ In comparison, a k solution is typically a few factors of magnitude less code, i
 
 At first it could be hard to understand how this can even be true, but compare the effort of keeping 100 lines of code in sync with rapidly changing requirements and free of bugs, compared to 10,000 lines of code that do the same thing. No, it is not *100 times* easier. It is *10,000 times* easier. And if you think we are exaggerating, then think again and try prove us wrong, and this will be a start of a beautiful friendship.
 
-### what is k
+### what
 
 `k` is a remarkable piece of software that has many faces. For now lets say it is simply an interpreter of a computer language. A language that is very powerful.
 
@@ -43,15 +43,12 @@ Indeed, k programs tend to be very *concise*, the syntax of the language is very
 
 All of k programming takes place in *REPL*, the concept which requires little introduction these days, but is actually much older than many software developers tend to think. It has been around for at least 50 years, and is known as *dialogue approach*, a live conversation between a human and machine, a flow of questions and answers. And in k, this conversation is much more fluent than in any other modern REPL-driven system you may be familiar with, because the questions are short and the answers are fast. This is the essence of *the way of k*, an experience that all k programmers consider immensely aesthetically and intellectually satisfying. This is why people who write software in k *love their jobs*, and this has nothing to do with their paychecks.
 
-### speed of k
+### how
 
 In addition to being an excellent tool to assist efficient thinking, k is also an astonishingly efficient computer language. The entire system, a tiny binary executable only 100 kilobytes in size without a single external dependency that fits comfortably in the cache of a commodity CPU, implements a selection of fundamental algorithms, data structures, techniques and computational primitives that withstood the test of many decades of production use in some of the world's most demanding data processing environments. The inner components of the system are polished to fit together and complement each other to deliver performance which many outsiders find very difficult to believe at first. It is also not uncommon for k newcomers to experience total shock when they first realize what kind of power they can wield with just a few precise keystrokes.
 
-### cost of k
-
-This is a tricky one. If you want to buy it, and you have to ask the price — don’t bother, because you can't afford it. But if you know *how* to ask, you will get it for free and for life. And that is the only hint you get.
-
 ## exodus
+
  Since the only known way to learn how to program is to write programs, you will need a live k environment. Fortunately, as all things k, it takes very little effort.
 
 ### getting k
@@ -89,7 +86,7 @@ At any time during k session, you can:
 
 However, at this point we highly recommend to avoid issuing any of the above commands, especially the latter.
 
-### basics of k
+### basics
 
 *Annotations* in your k code is the best way not to end up coding Java for food, unless you are Arthur Whitney. We dare to assume you are not quite there yet, so comments start with `/`. When used inline, prepend a space:
 
