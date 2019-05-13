@@ -134,7 +134,7 @@ Lets recap. So far you know how to start k, how to assign values, declare most b
 
 ### no stinking loops
 
-### right to left
+### right to left and back again
 
 ### how to solve it
 
