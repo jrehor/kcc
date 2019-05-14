@@ -59,17 +59,21 @@ The k interpreter is currently available for `Linux` and `macOS` on `x86_64` arc
 
 Without further ado, go to https://anaconda.org/ and follow the instructions. Anaconda shell integration option is highly recommended. Once you install Anaconda, install the package called  `shakti`, which is nothing else but `k` in disguise:
 
-`kelas@failbowl ~ $ conda install -c shaktidb shakti`
+```sh
+kelas@failbowl ~ $ conda install -c shaktidb shakti
+```
 
 As with all things k, the development of k language itself is happening at terrifying pace. New builds are usually published several times a week, so make sure you always use the latest version:
 
-`kelas@failbowl ~ $ conda update -c shaktidb shakti`
+```sh
+kelas@failbowl ~ $ conda update -c shaktidb shakti
+```
 
 ### using k
 
 Assuming conda's `bin` is in you PATH, start your first k session, ask your first question and enjoy your first answer:
 
-```q
+```sh
 kelas@failbowl ~ $ k
 2019-04-21 15:38:18 40core 512gb avx2 © shakti m2.0 prod
  2+2
@@ -258,11 +262,8 @@ However, k has something C doesn't, a type called `name`, which is short for **i
 `n
 
  b:`kei`kei`kei      /three references to internalized instance of "kei" string
- @b                  /name vector
+ @b                  /vector of names
 `N
-
-
-
 ```
 
 
