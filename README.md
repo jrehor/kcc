@@ -145,11 +145,11 @@ The word `atom` is short for `scalar variable`. We have them in k, and they are,
 The enlightening fact about vectors is that most operations applicable to atoms work equally well to vectors, too:
 
 ```q
- a+b             /pairwise addition
+ a+b             /pairwise sum
 0 2 4 6 8 
- a-b             /pairwise substraction
-0 0 0 0 0 
- a=b             /compare elements
+ a%b             /pairwise divison (yes, division is %, and ø is nil, nan, empty set, i.e. bad news)
+ø 1 1 1 1
+ a=b             /per-item comparison
 1 1 1 1 1 
 ```
 
