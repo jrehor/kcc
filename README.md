@@ -147,10 +147,11 @@ The enlightening fact about vectors is that most operations applicable to atoms 
 ```q
  a+b             /pairwise addition
 0 2 4 6 8 
+ a-b             /pairwise substraction
+0 0 0 0 0 
+ a=b             /compare elements
+1 1 1 1 1 
 ```
-
-
-
 
 ### no stinking loops
 
