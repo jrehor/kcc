@@ -260,7 +260,7 @@ atom      vect        type
   `t        `T        time
 ```
 
-This is not very revealing, so lets see them in action. The operator to query the type of anything in k is `@`.
+This is not very revealing, so lets see them in action. The operator to query the type of anything in k is `monadic @`.
 
 ```q
  @42         /int atom
