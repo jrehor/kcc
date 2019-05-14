@@ -146,7 +146,7 @@ Lets recap. So far you know how to start k, how to assign values, declare most b
 
 ### vectors and atoms
 
-The word `atom` is another way of saying for `scalar variable`. We have them in k, and they remain as useful as ever. But k belongs to a family of **vector languages**, which basically means that the fundamental type is an ordered set. In k parlance, terms "array", "list" and "vector" are used interchageably and refer to the same thing, but we will stick with `vector` to minimise confusion, because vectors generalize the idea of classic arrays and have little to do with linked lists. Besides, `vector` is such a cool word.
+The word `atom` is another way of saying `scalar value` or simply `scalar`. We have them in k, and they remain as useful as ever. But k belongs to a family of **vector languages**, which basically means that the fundamental type is an ordered set. In k parlance, terms "array", "list" and "vector" are used interchageably and refer to the same thing, but we will stick with `vector` to minimise confusion, because vectors generalize the idea of classic arrays and have little to do with linked lists. Besides, `vector` is such a cool word.
 
 ```q
  a:(0,1,2,3,4)    /how not to declare a k vector
@@ -159,7 +159,7 @@ The word `atom` is another way of saying for `scalar variable`. We have them in 
 0 1 2 3 4
 ```
 
-The first enlightening fact about vectors is that most operations applicable to atoms work equally well for vectors, too:
+The first enlightening fact about vectors is that most operations you'd expect to work on atoms work equally well for vectors, too:
 
 ```q
  a+b             /pairwise sum
@@ -172,21 +172,33 @@ a=b             /pairwise comparison (1 reads 'truthy')
 1 1 1 1 1 
 ```
 
-Mixing atomic and vector operands makes perfect sense:
+Mixing atomic and vector operands is fine:
 
 ```q
- a+1             /add 1 to each of a
+ a+1             /increment each of a
 1 2 3 4 5 
 
  a=1             /compare each of a to 1
 0 1 0 0 0
 
- a%0              /divide each of a of a by zero (correct, ℚ%0 is ∞ except 0%0 which is ø)
+ a%0             /divide each of a by 0 (correct, ℚ%0 is ∞ except 0%0 which is ø, but use responsibly)
 ø ∞ ∞ ∞ ∞
 
  3%a             /divide 3 by each of a
 ∞ 3 1.5 1 0.75
 ```
+
+Operations on vectors of disparate dimensions make even less sense than division by zero, and with throw an error:
+
+```q
+ a:0 1 2 3 4
+ b:0 1 2
+ a+b
+a+b
+ ^
+length error
+```
+
 
 
 ### no stinking loops
