@@ -76,6 +76,21 @@ kelas@failbowl ~ $ k
 4
 ```
 
+The startup banner packs a lot of useful information:
+
+| it says             | it means                  |
+| --------------------|:--------------------------|
+| 2019-04-21 15:38:18 | stamp of your k build     |
+| 40core              | cpu cores you can use     |
+| 512gb               | max workspace, expect 1gb |
+| avx2                | best your cpu can do      |
+| shakti              | the company behing k      |
+| m                   | you are on macos          |
+| 2.0                 | nevermind that            |
+| prod                | expect to see `test`      |
+
+Once it comes to that, always include your banner in your bug reports.
+
 At any time during k session, you can:
 
 `\h` view k reference card
