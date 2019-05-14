@@ -531,7 +531,7 @@ Don't be in a hurry to paste anything into k interpreter. It is a lot more usefu
 f:{$[2>#?x;x;,/f'x@=x>rand x]} 
 ```
 
-Okay, it looks like there is almost nothing familiar here, and the whole thing is just scary. But give yourself a chance. Lets take it apart piece by piece:
+Okay, it looks like there is almost nothing familiar here, and the whole thing is just scary. But give yourself a chance. Lets take it apart brick by brick:
 
 ```q
 
