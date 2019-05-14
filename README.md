@@ -197,9 +197,22 @@ However, pairwise operations on vectors of disparate dimensions make much less s
  a:0 1 2 3 4
  b:0 1 2
  a+b
+ 
 a+b
  ^
 length error
+```
+
+### three types of types
+
+It is not a stretch to define the typing discipline of k as a good compromise between strong and weak. It gets pretty strict when it has to be, but also agrees that duck typing and type coersion have their moments too, especially when done right, which in k they are.
+
+Seeing is believing, but before we see the code, the first thing you need to know about types in k is that they are divided into two broad classes: **vector types** and **scalar types**. That is, a vector of with a single element, say, 42, does not have the same type as an atom of the same value. Besides, since functions and any other things in k are first-class assignable values, they have their place in the type system too, and those are **special types**.
+
+The operator to obtain the type of something in k is `@`.
+
+```q
+
 ```
 
 
