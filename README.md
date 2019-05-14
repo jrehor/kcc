@@ -423,7 +423,7 @@ Although the lack of precedence is deliberately illustrated using only basic ari
 
 This part could be easier to digest than the previous, especially if you are familiar with functional programming. The heading says it all - no matter how you try, you will not find a k construct that resembles an explicit `for` or `while` loop. They are simply absent, and not just because they are verbose and cause untold damages from the same trivial errors people keep on making in them. The main reason they are missing is because they are *unnecessary*. Of course k has loops, but they are *implicit* and hardly ever referred by that name.
 
-Loops are available in k as a small number of simple and expressive abstractions called **adverbs** that quickly displace thinking in explicit loops. Here they are:
+Loops are available in k in form of **five** simple and expressive abstractions called **adverbs**. Each by itself, and combined together, are enough to displace thinking in explicit loops. Here they are:
 
 adverb **over** is `f/x`
 
@@ -432,27 +432,40 @@ adverb **scan** is `f\x`
 where `f` is a function or operator that takes 2 arguments and `x` is an input vector
 
 ```q
- x:0 1 2 3 4    /some data
+ a:0 1 2 3 4    /some data
 
- +/x            /over inserts a plus between every adjacent elements (0+1+2+3+4) and returns the final result
+ +/a            /over inserts a plus between every adjacent elements (0+1+2+3+4) and returns the final result
 10
 
- +\x            /scan is exactly the same as over, but also returns all intermediate results
+ +\a            /scan is exactly the same as over, but also returns all intermediate results
 0 1 3 6 10
 ```
+
 adverb **each** is `f'x`
 
 where `f` is a function that takes 1 argument and `x` is an input vector
 
 ```q
- x:0 1 2 3 4    /some data
- f:{x*x}        /a function with one argument
+ a:0 1 2 3 4    /some data
+ f:{x*x}        /a function that takes one argument
 
- f'x            /each applies f to each element of x and returns a vector of results
-0 1 4 9 16
+ f'a            /each applies f to each element of x and returns a vector of results
+0 1 4 9 16      /each of a, squared
 ```
 
+adverb **each left** is `x f\:y`
 
+adverb **each right** is `x f/:y`
+
+where `f` is a function or operator that takes 2 arguments and `x` and `y` are input, either vectors or atoms
+
+```q
+ 10 20 30-\:5   /each left calls 10-5, 20-5, 30-5 and returns a vector of results
+5 15 25         /each of left, substracted by right
+
+ 5-/:10 20 30   /each right calls 5-10, 5-20, 5-30 and returns a vector of results
+-5 -15 -25      /left, substracted by each of right
+```
 
 
 ### how to solve it
