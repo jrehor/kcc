@@ -107,9 +107,9 @@ At any time during k session, you can:
 
 However, at this point we highly recommend to avoid issuing any of the above commands, especially the latter.
 
-### remarks on style
+### remarks on style and parlance
 
-As any other computer language, k expects a programmer to observe and follow certain conventions on coding style in order to understand the code written by the others and let their own code be understood. While some rules of the house of k are universal, some are not.
+As any other computer language, k expects a programmer to observe and follow certain conventions on coding style and terminology in order to understand the code written by the others and let their own code be understood. While some rules of the house of k are universal, some are not.
 
 **Annotations** in your k code is the best way not to end up coding Java for food, unless you are Arthur Whitney. We dare to assume you are not there yet, so comments start with `/`. When used inline, prepend at least one space:
 
