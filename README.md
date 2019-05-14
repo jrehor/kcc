@@ -37,7 +37,7 @@ At first it could be hard to understand how this can even be true, but compare t
 
 ### what
 
-`k` is a remarkable piece of software that has many faces. For now lets say it is an interpreter of a computer language. A language that is very powerful.
+`k` is a remarkable piece of software that has many faces. For now we will accept it is an interpreter of a computer language. A language that is very powerful.
 
 The source of its power stems from the fact that k was designed from ground up primarily as a *tool of thought*. The vocabulary, syntax and the choice of abstractions offered by the language drive you to think about problems in a focused, clear and uncluttered way that quickly takes you to efficient and elegant solutions. And the reason why thinking in terms of this language is so effective is absolutely nothing supernatural. Is is captured in a proverb that predates history and is known to all cultures: brevity is a soul of wit.
 
@@ -155,9 +155,9 @@ Three specific values of valence are so important that they have their own names
 * that takes **one** argument is called **monadic**
 * that takes **two** arguments is called **dyadic**
 
-As you will see, the vast majority of native operators in `k` have at least two completely unrelated semantic meanings based on the context where they are used, which is in turn defined by the number of arguments offered to the operator. To overlook this fact of life is a grave mistake, so you better get a very strong grip on the idea that some things are **monadic**, while others are **dyadic**. For valences of higher or lesser order it is fine to worry less. For example, when you used your first ever k operator in the expression `2+2`, you have used the operator **+** in a **dyadic** context, which basically meant that you offered it *two* operands to work on, left and right, respectively. However, once you discover what the **+** operator stands for when used in a **monadic** context, it will change your life forever, so let us skip this discussion for now.
+As you will see, the vast majority of native operators in `k` have at least two completely unrelated semantic meanings based on the context where they are used, which is in turn defined by the number of arguments offered to the operator. To overlook this fact is a grave mistake, so you better get a very strong grip on the idea that some things in life are **monadic**, while others are **dyadic**. For valences of higher and lesser order it is fine to worry less. For example, when you used your first ever k operator in the expression `2+2`, you have used the operator **+** in a **dyadic** context, which basically meant that you offered it *two* operands to work on, left and right, respectively. However, once you discover what the **+** operator stands for when used in a **monadic** context, it will change your life forever, so let us skip this discussion for now.
 
-So, lets recap. So far you know how to start k, how to assign values, declare most basic functions and variables, what the valence is about, and how to annotate your code. This is a good start, but tells you absolutely nothing about what k really is. Nowhere above you were promised a *gentle* introduction, so from here your best two friends are your intelligence and intuition.
+So, lets recap. So far you know how to start k, how to assign values, declare most basic functions and variables, what the valence mumble is all about, and how to annotate your code. This is a good start, but tells you absolutely nothing about what k really is. Nowhere above you were promised a *gentle* introduction, so from here your best two friends are your intelligence and intuition, and the complexity is O(n^2).
 
 ## revelations
 
