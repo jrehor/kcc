@@ -236,9 +236,9 @@ length error
 
 It is not a stretch to say the typing discipline in k is a balancing act. It gets strict when it has to, but also agrees that implicit casts and type coersion have their strengths — especially when done right, which in k they are.
 
-Seeing is believing, but before you see some examples, the first thing you need to know about types in k is that they are divided into two broad classes: **vector types** and **atomic types**. That is, a vector with a single element, say, `42`, is not the same type as atomic integer of the same value. Finally, since functions and other things in k are assignable values, they have their place in the type system too. Those are **special types** and we will not cover them here.
+Seeing is believing, but before we see some examples, the first thing you need to know about types in k is that they are divided into two broad classes: **vector types** and **atomic types**. That is, a vector with a single element, say, `42`, is not the same type as an atomic integer of the same value. Finally, since functions and other things in k are also assignable values, they have their place in type system too. Those are **special types** and we will not cover them here in detail.
 
-Here is a quick reference of k types and their symbolic names:
+Here is a quick overview of k types and their symbolic names:
 
 ```q
 atom      vect        type
@@ -250,7 +250,7 @@ atom      vect        type
   `t        `T        time
 ```
 
-This is not very revealing, so lets see some action. The operator to query the type of anything in k is `@`.
+This is not very revealing, so lets see them in action. The operator to query the type of anything in k is `@`.
 
 ```q
  @42         /int atom
@@ -263,7 +263,7 @@ This is not very revealing, so lets see some action. The operator to query the t
 `I
 
  v:0 1 .5 2
- @v          /float vector (0.5 promotes all neighbors and the vector itself to float)
+ @v          /float vector (presence of 0.5 promotes all neighbors and the vector itself to float)
 `F
 
  v 1         /2nd element is a float, hinted by the trailing f
@@ -279,22 +279,26 @@ Like in C, there is no dedicated type for strings in k. Strings are just **char 
  @"k"        /char atom
 `c
 
- @"kei"      /char vector
+ s:"kei";@s  /s is char vector
 `C
+ 
+ s 0         /1st element of s
+"k"
+
 ```
 
-However, k has something C doesn't. We have a type called **name**, which is the same concept as **internalized string** found in some other languages. This means that a single instance of an arbitrarily long string can be placed into a global hash table that persists for a lifetime of a k process and can later be referenced by its hash key as many times as necessary without creating additional copies of that string. As you will discover later, names come very handy in a lot of situations, but for now lets just see how they quack:
+However, k has something C doesn't. We have a type called **name**, which is the same concept as **internalized string** found in some other languages. This means that a single instance of an arbitrarily long string can be placed into a global hash table that persists for a lifetime of a k process and can later be referenced by its hash key as many times as necessary without creating additional copies of the string. As you will discover later, names come very handy in many situations, but for now lets just see how they quack:
 
 ```q
  a:`kei              /the string "kei" is now internalized
  @a                  /name atom
 `n
 
- b:`kei`kei`kei      /three references to a single internalized instance of "kei"
+ b:`kei`kei`kei      /vector of three references to a single instance of "kei" string
  @b                  /vector of names
 `N
 
- @`"ken iverson"     /no problem to have spaces in names
+ @`"ken iverson"     /spaces in names, no problem
 `n
 ```
 
@@ -302,7 +306,7 @@ However, k has something C doesn't. We have a type called **name**, which is the
 
 ```q
  d:1981-02-01        /yyyy-mm-dd
- @d                  /atomic date type is special, it is a capital D, same as the date vector
+ @d                  /atomic date type is special, it is a capital D, same as date vector
 `D
 
  t:12:34:56.789      /hh:mm:ss.sss
@@ -313,7 +317,7 @@ However, k has something C doesn't. We have a type called **name**, which is the
 Of special mention is the **composite vector** type. Such vectors are either a mixture of atoms of disparate types, or contain something more complex than atoms, e.g. other vectors.
 
 ```q
- a:0,1,"a",2,3          /a char impostor demotes this integer vector to composite
+ a:0,1,"a",2,3          /a char impostor demotes this integer vector to a composite
  @a                     /a composite type is denoted by a backtick
 `
 
@@ -339,7 +343,7 @@ Of special mention is the **composite vector** type. Such vectors are either a m
  1f*2                  /1f is the same as 1.0
 2f 
 
- `i$42.99              /explicit cast float to int discards mantissa, aka floor
+ `i$42.99              /explicit cast float to int discards mantissa
 42
 
  `i$42.0 42.99         /same is true for float vectors
@@ -360,7 +364,7 @@ type error
 
  a:1 2 3               /define a int vector
  a[0]:1f               /replace its first element with a float
- @a                    /ouch, the vector got demoted to composite:
+ @a                    /ouch, int vector got demoted to composite
 `
  a:`f$a                /explicitly cast composite to float
  @a                    /voila, a float vector
@@ -427,28 +431,30 @@ That is, by default all operations in a k expression are treated equally and eva
 7
 ```
 
-Once you get over the death of precedence, you will also want to avoid using parens unless you absolutely have to. The last example above shows the basic strategy of avoiding them: it is usually possible to rearrange the order of evaluation to make it linear without changing its meaning. Although overriding precedence is often inevitable and can be beneficial, it has an adverse effect on readability as it breaks the natural flow of code comprehension which otherwise goes from right to left uninterrupted.
+Once you get over the death of precedence, you will also seek to avoid parens unless you absolutely have to use them. The last example above shows the basic strategy of ditching them: it is usually possible to rearrange the order of evaluation to make it linear. Although overriding precedence is often inevitable and can be beneficial, it has an adverse effect on readability as it breaks the natural flow of code comprehension which otherwise goes from right to left uninterrupted.
 
 Although the lack of precedence is deliberately illustrated using only basic arithmetic operators, the principle holds true for the entirety of the language, without exceptions.
 
 ### no stinking loops
 
-This part could be easier to digest than the previous, especially if you are familiar with functional programming. The heading says it all - no matter how you try, you will not find a k construct that resembles an explicit `for` or `while` loop. They are simply absent, and not just because they are verbose and cause untold damages from the same trivial errors people keep on making in them. The main reason they are missing is because they are *unnecessary*. Of course k has loops, but they are *implicit* and hardly ever referred by that name.
+This part might be easier to digest than the previous, especially if you are familiar with functional programming. The heading says it all - no matter how you try, you will not find a k construct that resembles an explicit `for` loop. It is simply absent, and not just because it is verbose and causes untold damages from the same trivial errors people keep on making coding loops.
 
-Loops are available in k in form of just **five** simple and expressive abstractions known as **adverbs**. Each by itself, and when combined together, are sufficient to displace thinking in explicit loops. Finally, it comes without saying that k supports **recursion**. 
+The main reason explicit loops are missing from k is because they are *unnecessary*. Of course k has loops, but they are *implicit* and hardly ever referred to by that name. The existence of `while` construct, athough k has it, is better be ignored.
 
-But lets focus on adverbs. Here they are:
+Loops are available in k in form of **five** simple and strong abstractions known as **adverbs**. Each by itself, and even more so when combined together, are sufficient to completely displace the way of thinking in explicit loops. Also, it comes without saying that k supports **recursion**, which is no less elegant way to avoid loops in many pracatical situations.
+
+But lets focus on adverbs. Here is the majestic five:
 
 ----------------
 adverb **each** is `f'x`
 
-where `f` is a function or operator that takes 1 argument and `x` is an input vector
+where `f` is a function or operator that takes one argument and `x` is an input vector
 
 ```q
  a:0 1 2 3 4    /some data
- f:{x*x}        /a function that takes one argument
+ sq:{x*x}       /a function that takes one argument
 
- f'a            /each applies f to each element of x and returns a vector of results
+ sq'a           /each applies f to each element of x and returns a vector of results
 0 1 4 9 16      /each of a, squared
 ```
 ----------------
@@ -456,7 +462,7 @@ adverb **over** is `f/x`
 
 adverb **scan** is `f\x`
 
-where `f` is a function or operator that takes 2 arguments and `x` is an input vector
+where `f` is a function or operator that takes two arguments and `x` is an input vector
 
 ```q
  a:0 1 2 3 4    /some data
@@ -464,7 +470,7 @@ where `f` is a function or operator that takes 2 arguments and `x` is an input v
  +/a            /over inserts a plus between adjacent elements (i.e. 0+1+2+3+4) and returns the final result
 10              /sum of a
 
- +\a            /scan is exactly the same as over, but returns all intermediate results
+ +\a            /scan is exactly the same as over, but returns all intermediate results as well
 0 1 3 6 10      /running sum of a
 ```
 ----------------
@@ -472,7 +478,7 @@ adverb **each left** is `x f\:y`
 
 adverb **each right** is `x f/:y`
 
-where `f` is a function or operator that takes 2 arguments and `x` and `y` are input, either vectors or atoms
+where `f` is a function or operator that takes two arguments and `x` and `y` are left and right inputs, either vectors or atoms
 
 ```q
  10 20 30-\:5   /each left calls 10-5, 20-5, 30-5 and returns a vector of results
@@ -483,7 +489,7 @@ where `f` is a function or operator that takes 2 arguments and `x` and `y` are i
 ```
 ----------------
 
-And here is just one example of what happens when adverbs work together:
+This doesn't seem like much, but here is just one example of what happens when adverbs work together:
 
 ```q
  x:1 2 3 4 5 6 7 8 9           /input
@@ -500,25 +506,32 @@ And here is just one example of what happens when adverbs work together:
 9 18 27 36 45 54 63 72 81 
 ```
 
-These things are known to raise eyebrows at first, but in fact you already have absolutely everything you need to be able to read and understand the logic and order of execution of this tiny simple expression. Remember, right to left, no precedence, and no explicit loops.
+Such things are known to raise eyebrows at first, but in fact you already have absolutely everything you need to be able to read and understand the logic and order of execution of this simple expression. Remember, right to left, no precedence, and no explicit loops.
 
-It is a good checkpoint before you advance to the next chapter, where things will get a lot less innocent, and fast.
+Lets recap. We have seen:
 
+* what k type system looks like
+* how basic vector and atom math works
+* which way to read and comprehend k code
+* what is the only existing precedence rule
+* why we don't need `for` and why we have adverbs
+
+It is a good checkpoint before you advance to the next chapter, where things will get a lot less innocent, and very fast.
 
 ### how to solve it
 
-The title of this chapter is shamelessly borrowed from a legendary book published back in 1945, a small volume by mathematician George Pólya where he shows how to approach problems and arrive to solutions. It is a very good read.
+The title of this chapter is shamelessly borrowed from a legendary book published back in 1945, a small volume by mathematician George Pólya where he shows how to approach problems and arrive to solutions. It is a very inspiring read.
 
-Equipped with everything we covered so far, we are going to tackle a little problem. We will look at a k function that actually does something very useful and implements an algorightm that you are guaranteed to be very familiar with. The subject of game is to identify the algorighm and figure out how its implementation works in k.
+Equipped with everything we covered so far, we are going to tackle a little problem. We will look at a k function that actually does something very useful and implements an algorightm that you are guaranteed to be very familiar with. The subject of game is to identify the algorighm and figure out how it is implementented in k.
 
-Don't rush to paste anything into k interpreter. It is a lot more useful to dissect it on paper first. Once we are done, you will be very tempted to try a lot of new things on your own. So here is the code:
+Don't be in a hurry to paste anything into k interpreter. It is a lot more useful to dissect it on paper first. Once we are done, you will be very tempted to try a lot of new things on your own. So here is the code:
 
 ```q
 /what is f, and how it works?
 f:{$[2>#?x;x;,/f'x@=x>rand x]} 
 ```
 
-Okay, it looks like there is almost nothing here we have seen before, but don't panic. Lets take it apart piece by piece:
+Okay, it looks like there is almost nothing familiar here, and the whole thing is just scary. But give yourself a chance. Lets take it apart piece by piece:
 
 ```q
 
@@ -526,23 +539,27 @@ f:{...}           /okay, f is a function, that's a start
 f:{.x.}           /f takes only one implicit argument, x
 f:{.f.}           /f clearly calls f, so it is recursive
 
-$[?;?;?]          /whole body of f is this construct, known
-$[c;t;f]          /as conditional, same as if(c){t}else{f}
+$[?;?;?]          /whole body of f is this construct, it is
+$[c;t;f]          /a k conditional, same as if(c){t}else{f}
 
 2>#?x             /c:      some bool condition
 x                 /t:      do this if c is true
 ,/f'x@=x>rand x   /f:      do that if c is not
 
 2>#?x             /whatever this condition tests, it is clear that f[]
-                  /will stop recursing if it becomes true, returning x
+                  /will stop recursing as it becomes true, returning x
                   /so lets first dissect the condition, right to left:
 
 ?x                /'distinct'        -> all unique elements of x
-#x                /'count'           -> count of elements of x
+#x                /'count'           -> count the elements of x
 #?x               /'count distinct'  -> count unique elements of x
 2>x               /'greater'         -> true if x is less than 2
 
 2>#?x             /mystery solved:   -> "true if x has <2 unique items"
 
+,/f'x@=x>rand x   /so this must be the recursion step, go right to left:
 
+tmp:rand x        /pick some random atom from x (tmp added for brevity)
+x<tmp             /boolean vector, 0s where x[n]<tmp, 1s where otherwise
+=x<tmp            /''
 ```
