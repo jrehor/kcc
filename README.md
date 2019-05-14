@@ -467,6 +467,28 @@ where `f` is a function or operator that takes 2 arguments and `x` and `y` are i
  5-/:10 20 30   /each right calls 5-10, 5-20, 5-30 and returns a vector of results
 -5 -15 -25      /left, substracted by each of right
 ```
+----------------
+
+And here is just one example of what happens when adverbs work together:
+
+```q
+ a:1 2 3 4 5 6 7 8 9           /input
+
+ x*\:/:x                       /x times each left each right x
+1 2  3  4  5  6  7  8  9    
+2 4  6  8  10 12 14 16 18
+3 6  9  12 15 18 21 24 27
+4 8  12 16 20 24 28 32 36
+5 10 15 20 25 30 35 40 45
+6 12 18 24 30 36 42 48 54
+7 14 21 28 35 42 49 56 63
+8 16 24 32 40 48 56 64 72
+9 18 27 36 45 54 63 72 81 
+```
+
+Such things are known to raise eyebrows at first, but in fact you already have absolutely everything you need to be able to read and understand the logic and order of execution of this tiny expression. Remember, right to left, no precedence, no loops.
+
+It is a good checkpoint before you advance to the next chapter, where things will get a lot less innocent, and fast.
 
 
 ### how to solve it
