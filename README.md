@@ -423,7 +423,9 @@ Although the lack of precedence is deliberately illustrated using only basic ari
 
 This part could be easier to digest than the previous, especially if you are familiar with functional programming. The heading says it all - no matter how you try, you will not find a k construct that resembles an explicit `for` or `while` loop. They are simply absent, and not just because they are verbose and cause untold damages from the same trivial errors people keep on making in them. The main reason they are missing is because they are *unnecessary*. Of course k has loops, but they are *implicit* and hardly ever referred by that name.
 
-Loops are available in k in form of just **five** simple and expressive abstractions known as **adverbs**. Each by itself, and when combined together, are sufficient to displace thinking in explicit loops. Here they are:
+Loops are available in k in form of just **five** simple and expressive abstractions known as **adverbs**. Each by itself, and when combined together, are sufficient to displace thinking in explicit loops. Finally, it comes without saying that k supports **recursion**. 
+
+But lets focus on adverbs. Here they are:
 
 ----------------
 adverb **each** is `f'x`
@@ -495,14 +497,14 @@ It is a good checkpoint before you advance to the next chapter, where things wil
 
 The title of this chapter is shamelessly borrowed from a legendary book published back in 1945, a small volume by mathematician George Pólya where he shows how to approach problems and arrive to solutions. It is a very good read.
 
-Equipped with everything we covered so far, we are going to solve a little problem. We will look at a k function that actually does something very useful and implements an algorightm that you are guaranteed to be very familiar with. The subject of game is to identify the algorighm and figure out how its k implementation works.
+Equipped with everything we covered so far, we are going to attack a little problem. We will look at a k function that actually does something very useful and implements an algorightm that you are guaranteed to be very familiar with. The subject of game is to identify the algorighm and figure out how its implementation works in k.
 
-Don't rush to paste it into k interpreter. It is a lot more useful to dissect it on paper first, and there is a lot of new material here.
+Don't rush to paste anything into k interpreter. It is a lot more useful to dissect it on paper first, and there is a lot of new material here.
 
 Here's the code:
 
 ```q
-/what is f good for, and how?
+/what is f for, how it works?
 f:{$[2>#?x;x;,/f'x@=x>rand x]} 
 ```
 
