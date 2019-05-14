@@ -417,7 +417,13 @@ That is, by default all operations in a k expression are treated equally and eva
 
 Once you get over the death of precedence, you will also want to avoid using parens unless you absolutely have to. The last example above shows the basic strategy of avoiding them: it is usually possible to rearrange the order of execution to make it linear. Although overriding precedence is often inevitable and can be beneficial, it has an adverse effect on readability as it breaks the natural flow of code comprehension which otherwise goes from right to left, uninterrupted.
 
+Although the lack of precedence is deliberately illustrated using only basic arithmetic operators, the principle holds true for the entirety of the language, without exceptions.
+
 ### no stinking loops
+
+This part could be easier to process than the previous, especially if you are familiar with functional programming. The heading says it all - no matter how hard you try, you will not find a k construct that resembles an explicit `for` or `while` loop declaration. They are simply absent, and not just because they are too verbose and cause untold damages from the same trivial errors people keep on making in them. The main reason they are gone is because they are *not necessary*. Of course k has loops, but they are *implicit* and hardly ever referred to by that name. Loops are present in k as a small number of simple and expressive abstractions that quickly displace thinking in explicit loops.
+
+
 
 ### how to solve it
 
