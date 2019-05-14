@@ -474,7 +474,7 @@ where `f` is a function or operator that takes 2 arguments and `x` and `y` are i
 And here is just one example of what happens when adverbs work together:
 
 ```q
- a:1 2 3 4 5 6 7 8 9           /input
+ x:1 2 3 4 5 6 7 8 9           /input
 
  x*\:/:x                       /x times each left each right x
 1 2  3  4  5  6  7  8  9    
