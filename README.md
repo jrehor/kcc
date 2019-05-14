@@ -392,7 +392,7 @@ There is more to be said about the type system, but we have more than enough to 
 
 ### right to left and back again
 
-It could not escape your attention that the notation for indexing vectors and calling functions is identical:
+It could not possibly escape your attention that the syntax for indexing vectors and calling functions is the same:
 
 ```q
  f:{x+x}      /some function
