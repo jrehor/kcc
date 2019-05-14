@@ -146,7 +146,7 @@ Lets recap. So far you know how to start k, how to assign values, declare most b
 
 ### vectors and atoms
 
-The word `atom` is short for `scalar variable`. We have them in k, and they remain as useful as ever. But k belongs to a family of **vector languages**, which basically means that the fundamental type is an ordered set. In k parlance, terms "array", "list" and "vector" are used interchageably and refer to the same idea, but we will stick with `vector`, because vectors are more general than classic *arrays* and have nothing to do with *linked lists*. Besides, `vector` is such a cool word.
+The word `atom` is short for `scalar variable`. We have them in k, and they remain as useful as ever. But k belongs to a family of **vector languages**, which basically means that the fundamental type is an ordered set. In k parlance, terms "array", "list" and "vector" are used interchageably and refer to the same idea, but we will stick with `vector` to minimise confusion, because k vectors generalize the idea of classic arrays and have little to do with linked lists. Besides, `vector` is such a cool word.
 
 ```q
  a:(0,1,2,3,4)    /how not to declare a k vector
@@ -157,7 +157,7 @@ The word `atom` is short for `scalar variable`. We have them in k, and they rema
 0 1 2 3 4
 ```
 
-The enlightening fact about vectors is that most operations applicable to atoms work equally well for vectors, too:
+The first enlightening fact about vectors is that most operations applicable to atoms work equally well for vectors, too:
 
 ```q
  a+b             /pairwise sum
