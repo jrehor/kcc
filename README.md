@@ -415,13 +415,40 @@ That is, by default all operations in a k expression are treated equally and eva
 7
 ```
 
-Once you get over the death of precedence, you will also want to avoid using parens unless you absolutely have to. The last example above shows the basic strategy of avoiding them: it is usually possible to rearrange the order of execution to make it linear. Although overriding precedence is often inevitable and can be beneficial, it has an adverse effect on readability as it breaks the natural flow of code comprehension which otherwise goes from right to left, uninterrupted.
+Once you get over the death of precedence, you will also want to avoid using parens unless you absolutely have to. The last example above shows the basic strategy of avoiding them: it is usually possible to rearrange the order of evaluation to make it linear without changing its meaning. Although overriding precedence is often inevitable and can be beneficial, it has an adverse effect on readability as it breaks the natural flow of code comprehension which otherwise goes from right to left uninterrupted.
 
 Although the lack of precedence is deliberately illustrated using only basic arithmetic operators, the principle holds true for the entirety of the language, without exceptions.
 
 ### no stinking loops
 
-This part could be easier to process than the previous, especially if you are familiar with functional programming. The heading says it all - no matter how hard you try, you will not find a k construct that resembles an explicit `for` or `while` loop declaration. They are simply absent, and not just because they are too verbose and cause untold damages from the same trivial errors people keep on making in them. The main reason they are gone is because they are *not necessary*. Of course k has loops, but they are *implicit* and hardly ever referred to by that name. Loops are present in k as a small number of simple and expressive abstractions that quickly displace thinking in explicit loops.
+This part could be easier to digest than the previous, especially if you are familiar with functional programming. The heading says it all - no matter how you try, you will not find a k construct that resembles an explicit `for` or `while` loop. They are simply absent, and not just because they are verbose and cause untold damages from the same trivial errors people keep on making in them. The main reason they are missing is because they are *unnecessary*. Of course k has loops, but they are *implicit* and hardly ever referred by that name.
+
+Loops are available in k as a small number of simple and expressive abstractions called **adverbs** that quickly displace thinking in explicit loops. Here they are:
+
+adverb **over** is `f/x`
+adverb **scan** is `f\x`
+where `f` is a function or operator that takes 2 arguments and `x` is an input vector
+
+```q
+ x:0 1 2 3 4    /some data
+
+ +/x            /over inserts a plus between every adjacent elements (0+1+2+3+4) and returns the final result
+10
+
+ +\x            /scan is exactly the same as over, but also returns all intermediate results
+0 1 3 6 10
+```
+adverb **each** is `f'x`
+where `f` is a function that takes 1 argument and `x` is an input vector
+
+```q
+ x:0 1 2 3 4    /some data
+ f:{x*x}        /a function with one argument
+
+ f'x            /each applies f to each element of x and returns a vector of results
+0 1 4 9 16
+```
+
 
 
 
