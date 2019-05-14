@@ -154,7 +154,7 @@ The word `atom` is a synonym of `scalar value`, or simply `scalar`. We have them
 
 ```q
  a:(0,1,2,3,4)    /one way of declaring an integer vector
- b:0 1 2 3 4      /the same vector with the noise omitted
+ b:0 1 2 3 4      /same result using more informal syntax
 
  a
 0 1 2 3 4
@@ -163,16 +163,16 @@ The word `atom` is a synonym of `scalar value`, or simply `scalar`. We have them
 0 1 2 3 4
 ```
 
-The first enlightening fact about vectors is that most operations you'd expect to work on atoms work equally well for vectors, too:
+The enlightening fact about vectors is that most operations you would expect to work for atoms work equally well for vectors, too:
 
 ```q
  a-b             /pairwise substraction
 0 0 0 0 0 
 
- a%b             /pairwise divison (yes, division is %, and ø is nil, nan, empty set and other bad news)
+ a%b             /pairwise divison (yes, division in k is %, and ø means nil, nan, void and other bad news)
 ø 1 1 1 1
 
- a=b             /pairwise comparison (1 reads 'truthy')
+ a=b             /pairwise comparison (1 means truthy)
 1 1 1 1 1 
 
  a*a             /don't get mad, get even
@@ -188,7 +188,7 @@ Mixing atomic and vector operands is perfectly fine:
  a=1             /compare each of a to 1
 0 1 0 0 0
 
- a%0             /divide each of a by 0 (correct, ℚ%0 is ∞ except 0%0 which is ø, but use responsibly)
+ a%0             /divide each of a by 0 (correct, ℚ%0 is ∞ except 0%0 which is ø, use responsibly)
 ø ∞ ∞ ∞ ∞
 
  3%a             /divide 3 by each of a
@@ -207,7 +207,7 @@ a+b
 length error
 ```
 
-Vector indexing is zero-based as you would expect, but there are pleasant surprises:
+**Indexing** is zero-based as you would expect, but there are pleasant surprises:
 
 ```q
  a:2 4 8 16 32
@@ -225,7 +225,7 @@ Vector indexing is zero-based as you would expect, but there are pleasant surpri
 4 32
 
  b:1 4         /b is an index vector
- a b           /more punch than a[b]
+ a b           /a[b] with more punch
 4 32
 ```
 
@@ -233,9 +233,9 @@ Vector indexing is zero-based as you would expect, but there are pleasant surpri
 
 It is not a stretch to define the typing discipline of k as a good compromise between strong and weak. It gets pretty strict when it has to, but also agrees that duck typing and type coersion have their moments too — especially when done right, which in k they are.
 
-Seeing is believing, but before we see some examples, the first thing you need to know about types in k is that they are divided into two broad classes: **vector types** and **scalar types**. That is, a vector of with a single element, say, 42, does not have the same type as an atom of the same value. Besides, since functions and any other things in k are first-class assignable values, they have their place in the type system too, and those are **special types**.
+Seeing is believing, but before we see some examples, the first thing you need to know about types in k is that they are divided into two broad classes: **vector types** and **scalar types**. That is, a vector of with a single element, say, 42, is not the same type as atom of the same value. Finally, since functions and some other things in k are assignable values, they have their place in the type system too, and those are **special types**.
 
-The operator to obtain the type of something in k is `@`.
+The operator to obtain the type of something is `@`.
 
 ```q
  @42         /int atom
@@ -248,17 +248,17 @@ The operator to obtain the type of something in k is `@`.
 `I
 
  v:0 1 .5 2
- @v          /float vector (0.5 promotes all its neighbors and the vector itself to float)
+ @v          /float vector (0.5 promotes all neighbors and the vector itself to float)
 `F
 
- v 1         /2nd element is a float, hinted by trailing f
+ v 1         /2nd element is a float, hinted by the trailing f
 1f
 
- @v 1        /just to make sure
+ @v 1        /just making sure
 `f
 ```
 
-Just like in C, k has no dedicated string type. Strings are just vectors of characters:
+Just like in C, there is no dedicated string type in k. Strings are just **char vectors**:
 
 ```q
  @"k"        /char atom
@@ -268,18 +268,18 @@ Just like in C, k has no dedicated string type. Strings are just vectors of char
 `C
 ```
 
-However, k has something C doesn't, a type called `name`, which is short for **internalized string**. This means that a single instance of an arbitrarily long string can be placed into a global hash table that persists for a lifetime of a k process and can later be referenced by its hash key as many times as necessary without creating additional copies of the string itself. As you will discover later, names come very handy in a lot of practical situations, but for now lets just see how they quack:
+However, k has something that C doesn't. We have a type called **name**, which is the same as **internalized string**. This means that a single instance of an arbitrarily long string can be placed into a global hash table that persists for a lifetime of a k process and can later be referenced by its hash key as many times as necessary without creating additional copies of that string. As you will discover later, names come very handy in a lot of situations, but for now lets just see how they quack:
 
 ```q
  a:`kei              /the string "kei" is now internalized
  @a                  /name atom
 `n
 
- b:`kei`kei`kei      /three references to internalized instance of "kei"
+ b:`kei`kei`kei      /three references to a single internalized instance of "kei"
  @b                  /vector of names
 `N
 
- @`"ken iverson"     /no problem to have names with spaces
+ @`"ken iverson"     /no problem to put spaces in names
 `n
 ```
 
@@ -295,7 +295,7 @@ There are two **temporal types** in k, `date` and `time`:
 `t
 ```
 
-Of special mention is the **composite vector** type. It is about vectors that are either a mixture of atoms of disparate types, or consist of something other than atoms, e.g. other vectors:
+Of special mention is the **composite vector** type. It is about vectors that are either a mixture of atoms of disparate types, or consist of anything more complex than atoms, e.g. other vectors:
 
 ```q
  a:0,1,"a",2,3          /a char impostor demotes this integer vector to composite
@@ -310,7 +310,7 @@ Of special mention is the **composite vector** type. It is about vectors that ar
  @a
 `
 
- a:{x},{x+x},{x*x}      /nothing prevents you from having a vector of lambdas
+ a:{x},{x+x},{x*x}      /a vector of lambdas, why not?
  @a
 `
 ```
@@ -320,7 +320,6 @@ Now, lets see how far we can push type coersion:
 ```q
 
 ```
-
 
 ### no stinking loops
 
