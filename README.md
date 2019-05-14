@@ -225,7 +225,7 @@ length error
 4 32
 
  b:1 4         /b is an index vector
- a b           /a[b] with more punch
+ a b           /same as a[b] less []
 4 32
 ```
 
