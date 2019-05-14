@@ -164,7 +164,7 @@ The first enlightening fact about vectors is that most operations applicable to 
 0 2 4 6 8 
  a%b             /pairwise divison (yes, division is %, and ø is nil, nan, empty set and other bad news)
 ø 1 1 1 1
- a=b             /per-item comparison (1 reads as 'true')
+ a=b             /per-element comparison (1 reads 'truthy')
 1 1 1 1 1 
 ```
 
