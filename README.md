@@ -131,15 +131,15 @@ kei:42 /kenneth eugene iverson
 Most languages require you to explicitly declare arguments of your function. You can also do that in k if you want to, but if you don't, a function can have up to three **implicit arguments** called `x`, `y` and `z`, which basically means you declare them by simply referencing them in the function body. It is an extremely convinient feature, not nearly as scary as it sounds:
 
 ```q
- f:{x+y+z}    /f takes three arguments,
+ f:{x+y+z}    /f takes three arguments
  f[1;2;3]     /and here is how to call it
 6
   
- f:{x*x}      /f only takes one argument,
- f 2          /so you can omit brackets
+ f:{x*x}      /f only takes one argument
+ f 2          /and you can omit brackets
 4
 
- f f 2        /same as f[f[2]] only better
+ f f 2        /better way of saying f[f[2]]
 16 
 ```
 The last expression illustrates another cornerstone feature of k — everything that you intuitively feel you should be able to omit, can and should be omitted, and there very few exceptions to this rule.
@@ -154,7 +154,7 @@ The word `atom` is another way of saying `scalar value` or simply `scalar`. We h
 
 ```q
  a:(0,1,2,3,4)    /one way of declaring an integer vector
- b:0 1 2 3 4      /but what feels noisy should be omitted
+ b:0 1 2 3 4      /the same vector with the noise omitted
 
  a
 0 1 2 3 4
