@@ -1,4 +1,3 @@
-# kcc
 a gentle introduction to k is elsewhere
 
 # genesis
