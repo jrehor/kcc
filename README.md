@@ -513,37 +513,26 @@ Yes, it looks like there is almost nothing here you have seen before, but don't 
 ```q
 
 f:{...}           /okay, f is a function, that's a start
-                  /f takes only one implicit argument, x
-                  /f clearly calls itself - is recursive
+f:{.x.}           /f takes only one implicit argument, x
+f:{.f.}           /f clearly calls f, so it is recursive
 
-$[?;?;?]          /the entire body of f is this construct, rewrite it like so:
-$[c;t;f]          /this is a conditional, you would say if(c){t}else{f}
+$[?;?;?]          /whole body of f is this construct, known
+$[c;t;f]          /as conditional, same as if(c){t}else{f}
 
-2>#?x             /cond:   a bool condition
-x                 /true:   return if c is true
-,/f'x@=x>rand x   /else:   return if c is not
+2>#?x             /c:      some bool condition
+x                 /t:      do this if c is true
+,/f'x@=x>rand x   /f:      do that if c is not
 
 2>#?x             /whatever this condition tests, it is clear that f[]
-                  /will stop recursion if it becomes true, returning x
+                  /will stop recursing if it becomes true, returning x
+                  /so lets first dissect the condition, right to left:
 
-                  /so, lets parse the condition, right to left:
+?x                /'distinct'        -> all unique elements of x
+#x                /'count'           -> count of elements of x
+#?x               /'count distinct'  -> count unique elements of x
+2>x               /'greater'         -> true if x is less than 2
 
-?x                /?x is 'distinct'  -> all unique elements in x
-#x                /#x is 'count'     -> the count of elements in x
-#?x               /'count distinct'  -> the count of unique elements in x
-2>x               /this is a simple greater sign, true if x is less than 2
-
-2>#?x             /mystery solved:   -> f will exit when x has less than 2 unique elements
-```
-
-
-                  
-
+2>#?x             /mystery solved:   -> "true if x has <2 unique items"
 
 
 ```
-
-
-
-
-
