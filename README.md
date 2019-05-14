@@ -142,14 +142,14 @@ The word `atom` is short for `scalar variable`. We have them in k, and they are,
 0 1 2 3 4
 ```
 
-The enlightening fact about vectors is that most operations applicable to atoms work equally well to vectors, too:
+The enlightening fact about vectors is that most operations applicable to atoms work equally well for vectors, too:
 
 ```q
  a+b             /pairwise sum
 0 2 4 6 8 
- a%b             /pairwise divison (yes, division is %, and ø is nil, nan, empty set, i.e. bad news)
+ a%b             /pairwise divison (yes, division is %, and ø is nil, nan, empty set and bad news)
 ø 1 1 1 1
- a=b             /per-item comparison
+ a=b             /per-item comparison (1 reads as 'true' here)
 1 1 1 1 1 
 ```
 
