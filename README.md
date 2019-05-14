@@ -426,7 +426,9 @@ This part could be easier to digest than the previous, especially if you are fam
 Loops are available in k as a small number of simple and expressive abstractions called **adverbs** that quickly displace thinking in explicit loops. Here they are:
 
 adverb **over** is `f/x`
+
 adverb **scan** is `f\x`
+
 where `f` is a function or operator that takes 2 arguments and `x` is an input vector
 
 ```q
@@ -439,6 +441,7 @@ where `f` is a function or operator that takes 2 arguments and `x` is an input v
 0 1 3 6 10
 ```
 adverb **each** is `f'x`
+
 where `f` is a function that takes 1 argument and `x` is an input vector
 
 ```q
