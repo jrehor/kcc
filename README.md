@@ -172,12 +172,14 @@ Atomic operands play nicely with vectors, too:
 
 
 ```q
- a+1             /increment all elements of a
+ a+1             /add 1 to each of a
 1 2 3 4 5 
- a%0             /divide all elements of a by zero (correct, ℚ%0 is ∞, 0%0 is ø)
-ø ∞ ∞ ∞ ∞
  a=1             /compare each of a to 1
 0 1 0 0 0
+a%0              /divide each of a of a by zero (correct, ℚ%0 is ∞ except 0%0 which is ø)
+ø ∞ ∞ ∞ ∞
+ 3%a             /divide 3 by each of a
+∞ 3 1.5 1 0.75
 ```
 
 
