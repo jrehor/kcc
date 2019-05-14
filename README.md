@@ -508,6 +508,40 @@ Here's the code:
 f:{$[2>#?x;x;,/f'x@=x>rand x]} 
 ```
 
+Yes, it looks like there is almost nothing here you have seen before, but don't panic. Lets take it apart piece by piece:
+
+```q
+
+f:{...}           /okay, f is a function, that's a start
+                  /f takes only one implicit argument, x
+                  /f clearly calls itself - is recursive
+
+$[?;?;?]          /the entire body of f is this construct, rewrite it like so:
+$[c;t;f]          /this is a conditional, you would say if(c){t}else{f}
+
+2>#?x             /cond:   a bool condition
+x                 /true:   return if c is true
+,/f'x@=x>rand x   /else:   return if c is not
+
+2>#?x             /whatever this condition tests, it is clear that f[]
+                  /will stop recursion if it becomes true, returning x
+
+                  /so, lets parse the condition, right to left:
+
+?x                /?x is 'distinct'  -> all unique elements in x
+#x                /#x is 'count'     -> the count of elements in x
+#?x               /'count distinct'  -> the count of unique elements in x
+2>x               /this is a simple greater sign, true if x is less than 2
+
+2>#?x             /mystery solved:   -> f will exit when x has less than 2 unique elements
+```
+
+
+                  
+
+
+
+```
 
 
 
