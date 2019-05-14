@@ -428,7 +428,7 @@ Loops are available in k in form of just **five** simple and expressive abstract
 ----------------
 adverb **each** is `f'x`
 
-where `f` is a function that takes 1 argument and `x` is an input vector
+where `f` is a function or operator that takes 1 argument and `x` is an input vector
 
 ```q
  a:0 1 2 3 4    /some data
@@ -447,10 +447,10 @@ where `f` is a function or operator that takes 2 arguments and `x` is an input v
 ```q
  a:0 1 2 3 4    /some data
 
- +/a            /over inserts a plus between every adjacent elements (0+1+2+3+4) and returns the final result
+ +/a            /over inserts a plus between every adjacent elements (i.e. 0+1+2+3+4) and returns the final result
 10              /sum of a
 
- +\a            /scan is exactly the same as over, but also returns all intermediate results
+ +\a            /scan is exactly the same as over, but returns all intermediate results
 0 1 3 6 10      /running sum of a
 ```
 ----------------
