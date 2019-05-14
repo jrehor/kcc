@@ -87,15 +87,15 @@ The startup banner packs a lot of useful information:
 | it says             | it means                      |
 | :-------------------|:------------------------------|
 | 2019-04-21 15:38:18 | timestamp of your k build     |
-| 40core              | cpu cores you can use         |
+| 40core              | cpu cores you can use in k    |
 | 512gb               | max workspace, expect 1gb     |
-| avx2                | best your cpu can do          |
+| avx2                | the best your cpu can do      |
 | shakti              | the company behind k          |
 | m                   | `m` for macos, `l` for linux  |
 | 2.0                 | 2.0 is better than 1.0        |
-| prod                | expect to see `test`          |
+| prod                | be prepared to see `test`     |
 
-Once it comes to that, always include your banner in your bug reports.
+If it ever comes to that, always include your banner in your bug reports.
 
 At any time during k session, you can:
 
