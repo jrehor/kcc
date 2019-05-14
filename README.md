@@ -147,7 +147,14 @@ Most languages require you to explicitly declare arguments of your function. You
 
 This illustrates a core principle of k syntax — everything that you intuitively feel you should be able to omit, can and should be omitted, and there very few exceptions to this rule. The lesser you type, the better your code will get.
 
-Lets recap. So far you know how to start k, how to assign values, declare most basic functions and variables, and how to annotate your code. This is a good start, but tells you absolutely nothing about what k really is. Nowhere above you were promised a *gentle* introduction, so from here your best two friends are your intelligence and intuition.
+**Valence** is a fancy word that describes a pretty simple idea that is still very important to be understood well. /Valence/ of an operator or a function is basically the count of arguments it takes. Two user-defined functions show above have valence of 3 and 1, respectively. Two specific values valence are so important that they have their own names. A function or an operator...
+
+* that takes **one** argument is called **monadic**
+* that takes **two** arguments is called **dyadic**
+
+As you will see, the vast majority of native operators in `k` have at least two different semantic meanings based on the context where they are used, which is in turn defined by the number of arguments offered to an operator. To overlook this fact of life is a grave mistake, so you better get a strong grip on the idea that some things are **monadic** and others are **dyadic**. For valences of higher order it is fine to worry less.
+
+So, lets recap. So far you know how to start k, how to assign values, declare most basic functions and variables, what the valence is about, and how to annotate your code. This is a good start, but tells you absolutely nothing about what k really is. Nowhere above you were promised a *gentle* introduction, so from here your best two friends are your intelligence and intuition.
 
 ## revelations
 
