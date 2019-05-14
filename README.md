@@ -175,7 +175,7 @@ The first enlightening fact about vectors is that most operations you'd expect t
 0 2 4 6 8
 ```
 
-Mixing atomic and vector operands is totally fine:
+Mixing atomic and vector operands is perfectly fine:
 
 ```q
  a+1             /increment each of a
@@ -238,6 +238,31 @@ The operator to obtain the type of something in k is `@`.
 
  @v 1        /just to make sure
 `f
+```
+
+Just like in C, there is no dedicated string type in k either. Strings are just vectors of characters:
+
+```q
+ @"k"        /char atom
+`c
+
+ @"kei"      /char vector
+`C
+```
+
+However, k has something C doesn't, a type called `name`, which is short for **internalized string**. This means that a single instance of a arbitrarily long string can be placed into a global hash table that exists for a lifetime of a k process, and can later be referenced by its hash key as many times as necessary without creating additional copies of the string itself. As you will discover later, names come very handy in a lot of practical situations, but for now lets just see how they quack:
+
+```q
+ a:`kei              /the string "kei" is now internalized
+ @a                  /name atom
+`n
+
+ b:`kei`kei`kei      /three references to internalized instance of "kei" string
+ @b                  /name vector
+`N
+
+
+
 ```
 
 
