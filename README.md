@@ -122,7 +122,6 @@ Most languages require you to explicitly declare arguments of your function. You
 
  f f 2        /same as f[f[2]] only better
 16 
-
 ```
 The last expression illustrates another cornerstone feature of k — everything that you intuitively feel you should be able to omit, can and should be omitted, and there very few exceptions to this rule.
 
@@ -130,7 +129,28 @@ Lets recap. So far you know how to start k, how to assign values, declare most b
 
 ## revelations
 
-### vectors vs scalars
+### vectors and atoms
+
+The word `atom` is short for `scalar variable`. We have them in k, and they are, and will remain as useful as ever. But k belongs to a family of **vector languages**, which means that the fundamental type is an ordered set. In k literature, terms "array", "list" and "vector" are used interchageably and refer to the same idea, but we will stick with `vector`, because vectors are more general than classic *arrays* and have nothing to do with *linked lists*. Besides, `vector` is such a cool word.
+
+```q
+ a:(0,1,2,3,4)    /how not to declare a k vector
+ b:0 1 2 3 4      /the k way of declaring things
+ a
+0 1 2 3 4
+ b
+0 1 2 3 4
+```
+
+The enlightening fact about vectors is that most operations applicable to atoms work equally well to vectors, too:
+
+```q
+ a+b             /pairwise addition
+0 2 4 6 8 
+```
+
+
+
 
 ### no stinking loops
 
