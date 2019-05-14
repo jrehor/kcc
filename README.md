@@ -380,7 +380,7 @@ It could not escape your attention that the notation for indexing vectors and ca
  f[d[i]]      /compose the two
 4 32 
 ```
-But also know that k actively encourages you to omit brackets whenever possible. Lets do exactly that:
+You also know that k actively encourages you to omit brackets whenever possible. Lets do exactly that:
 
 ```q
  f d i        /same as f[d[i]]
