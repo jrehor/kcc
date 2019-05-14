@@ -504,7 +504,7 @@ Don't rush to paste anything into k interpreter. It is a lot more useful to diss
 Here's the code:
 
 ```q
-/what is f for, how it works?
+/what is f, and how it works?
 f:{$[2>#?x;x;,/f'x@=x>rand x]} 
 ```
 
