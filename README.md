@@ -189,7 +189,7 @@ Mixing atomic and vector operands is perfectly fine:
  a=1             /compare each of a to 1
 0 1 0 0 0
 
- a%0             /divide each of a by 0 (correct, ℚ%0 is ∞ except 0%0 which is ø, use responsibly)
+ a%0             /divide each of a by 0 (correct, ℚ%0 is ∞ except 0%0 which is ø, enjoy responsibly)
 ø ∞ ∞ ∞ ∞
 
  3%a             /divide 3 by each of a
@@ -220,17 +220,17 @@ length error
 8
 
  a[1 4]        /2nd and 5th elements
-4 32
+4 32           /gives another vector
 
  a 1 4         /same thing less work
 4 32
 
  b:1 4         /b is an index vector
  a b           /same as a[b] less []
-4 32
+4 32           
 ```
 
-### three types of types
+### two types of types
 
 It is not a stretch to say the typing discipline of k is a balancing act between strong and weak. It gets strict when it has to, but also agrees that duck typing and coersion have their benefits — especially when done right, which in k they are.
 
@@ -269,7 +269,7 @@ Just like in C, there is no dedicated string type in k. Strings are just **char 
 `C
 ```
 
-However, k has something that C doesn't. We have a type called **name**, which is the same as **internalized string**. This means that a single instance of an arbitrarily long string can be placed into a global hash table that persists for a lifetime of a k process and can later be referenced by its hash key as many times as necessary without creating additional copies of that string. As you will discover later, names come very handy in a lot of situations, but for now lets just see how they quack:
+However, k has something that C doesn't. We have a type called **name**, which is the same concept as **internalized string** found in some languages. This means that a single instance of an arbitrarily long string can be placed into a global hash table that persists for a lifetime of a k process and can later be referenced by its hash key as many times as necessary without creating additional copies of that string. As you will discover later, names come very handy in a lot of situations, but for now lets just see how they quack:
 
 ```q
  a:`kei              /the string "kei" is now internalized
@@ -280,7 +280,7 @@ However, k has something that C doesn't. We have a type called **name**, which i
  @b                  /vector of names
 `N
 
- @`"ken iverson"     /no problem to put spaces in names
+ @`"ken iverson"     /no problem to have spaces in names
 `n
 ```
 
@@ -296,7 +296,7 @@ However, k has something that C doesn't. We have a type called **name**, which i
 `t
 ```
 
-Of special mention is the **composite vector** type. Such vectors that are either a mixture of atoms of disparate types, or consist of anything more complex than atoms, e.g. other vectors:
+Of special mention is the **composite vector** type. Such vectors are either a mixture of atoms of disparate types, or contain something more complex than atoms, e.g. other vectors.
 
 ```q
  a:0,1,"a",2,3          /a char impostor demotes this integer vector to composite
@@ -316,7 +316,7 @@ Of special mention is the **composite vector** type. Such vectors that are eithe
 `
 ```
 
-The below demonstrates explicit and implicit **casting**, and gives a general feel of how type coersion behaves:
+**Casting**, both explicit and implicit, is demonstrated by the following examples which and also give a general feel of how type coersion behaves:
 
 ```q
  1+.5                  /int plus float is float, no surprises here
@@ -344,25 +344,80 @@ The below demonstrates explicit and implicit **casting**, and gives a general fe
   ^
 type error
 
- a:1 2 3               /int vector
- a[0]:1f               /replace first element with a float
- @a                    /vector got demoted to composite, ouch
+ a:1 2 3               /define a int vector
+ a[0]:1f               /replace its first element with a float
+ @a                    /ouch, the vector got demoted to composite:
 `
- a:`f$a                /explicitly cast composite to float vector
+ a:`f$a                /explicitly cast composite to float
  @a                    /voila, a float vector
 `F
 
  `i$1981-02-01         /integer representation of dates is puzzling at first
 -15674
 
- 15674+1981-02-01      /adding 15674 days solves the mystery: dates in k are simply offsets from:
+ 15674+1981-02-01      /adding 15674 days solves the mystery: all dates in k are simply offsets from:
 2024-01-01
 
 ```
 
-There is more to be said about the type system, but we have enough to proceed.
+There is more to be said about the type system, but we have more than enough to proceed.
 
 ### right to left and back again
+
+It could not escape your attention that the notation for vector indexing and function calls is identical:
+
+```q
+ f:{x+x}      /some function
+ d:2 4 8 16   /some data items
+ i:0 3        /some indices
+
+ f[d]         /call a function
+4 8 16 32
+
+ d[i]         /index a vector
+2 16
+
+ f[d[i]]      /compose the two
+4 32 
+```
+By now you also know that k actively encourages you to omit brackets whenever possible. Lets do exactly that:
+
+```q
+ f d i        /same as f[d[i]]
+4 32
+```
+
+This tiny example reveals an astonishing truth. Once we drop the brackets, it suddenly becomes absolutely natural to read this expression *from right to left*. Take your time to contemplate and process this statement. In very little time you will see how this works in practice, and once you put it to practice yourself, you will see that this way of functional composition is beautiful, elegant and intuituve.
+
+**Reading and writing k expressions is done right to left.**
+
+Now that we know which way the rivers flow in k land, we are ready to discuss a related, no less important subject.
+
+Precedence in k obeys different laws compared to those we were taught in primary school. We take it for granted that multiplication and division bind stronger than addition and substraction, and it almost feels natural for computer languages to have very complex precedence hierarchies in order to be useful. That is not the case with k.
+
+**There is no operator precedence in k unless explicitly defined by round brackets.**
+
+That is, by default all operations in a k expression are treated equally and evaluated strictly from right to left. Lets see how this works:
+
+```q
+ 3+2+1        /take 1, add 2, add 3
+6
+
+ 3*2+1        /take 1, add 2, multiply by 3
+9
+
+ (3*2)+1      /take 2, multiply by 3, add 1
+7
+
+ 1+3*2        /same as above, without parens
+7
+```
+
+Once you come to terms with the death of precedence, you will also want to avoid using parens unless you absolutely have to, and the last example shows the basic strategy of avoiding them: it is usually possible to rearrange the order of execution to make it more linear. Although overriding precedence is often inevitable and can be beneficial, it has an adverse effect on readability as it breaks the natural flow of code comprehension which otherwise goes from right to left uninterrupted.
+
+
+
+
 
 ### no stinking loops
 
