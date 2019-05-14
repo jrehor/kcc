@@ -195,7 +195,7 @@ Mixing atomic and vector operands is perfectly fine:
 ∞ 3 1.5 1 0.75
 ```
 
-However, pairwise operations on vectors of disparate lengths and dimensions make much less sense to k than division by zero, and will throw an error:
+However, pairwise operations on vectors of disparate lengths or dimensions make much less sense to k than division by zero, and will throw an error:
 
 ```q
  a:0 1 2 3 4
@@ -231,9 +231,9 @@ length error
 
 ### three types of types
 
-It is not a stretch to define the typing discipline of k as a good compromise between strong and weak. It gets pretty strict when it has to, but also agrees that duck typing and type coersion have their moments too — especially when done right, which in k they are.
+It is not a stretch to say the typing discipline of k is a balancing act between strong and weak. It gets strict when it has to, but also agrees that duck typing and coersion have their benefits — especially when done right, which in k they are.
 
-Seeing is believing, but before we see some examples, the first thing you need to know about types in k is that they are divided into two broad classes: **vector types** and **scalar types**. That is, a vector of with a single element, say, 42, is not the same type as atom of the same value. Finally, since functions and some other things in k are assignable values, they have their place in the type system too, and those are **special types**.
+Seeing is believing, but before we see some examples, the first thing you need to know about types in k is that they are divided into two broad classes: **vector types** and **atomic types**. That is, a vector of a single element, say, `42`, is not the same type as atomic integer of the same value. Finally, since functions and some other things in k are assignable values, they have their place in the type system too, and those are **special types**, but we will not cover them here.
 
 The operator to obtain the type of something is `@`.
 
@@ -283,11 +283,11 @@ However, k has something that C doesn't. We have a type called **name**, which i
 `n
 ```
 
-There are two **temporal types** in k, `date` and `time`:
+**Temporal types** in k are `date` and `time`:
 
 ```q
  d:1981-02-01        /yyyy-mm-dd
- @d                  /atomic date type is special, it is a capital D
+ @d                  /atomic date type is special, it is a capital D, same as the date vector
 `D
 
  t:12:34:56.789      /hh:mm:ss.sss
@@ -295,14 +295,14 @@ There are two **temporal types** in k, `date` and `time`:
 `t
 ```
 
-Of special mention is the **composite vector** type. It is about vectors that are either a mixture of atoms of disparate types, or consist of anything more complex than atoms, e.g. other vectors:
+Of special mention is the **composite vector** type. Such vectors that are either a mixture of atoms of disparate types, or consist of anything more complex than atoms, e.g. other vectors:
 
 ```q
  a:0,1,"a",2,3          /a char impostor demotes this integer vector to composite
  @a                     /a composite type is denoted by a backtick
 `
 
- a:(1 2 3;4 5 6;7 8 9)  /vector of vectors is also a composite
+ a:(1 2 3;4 5 6;7 8 9)  /vector of vectors is a composite
  a
 1 2 3
 4 5 6
@@ -315,10 +315,17 @@ Of special mention is the **composite vector** type. It is about vectors that ar
 `
 ```
 
-Now, lets see how far we can push type coersion:
+The below demonstrates explicit and implicit casting, and gives a taste of how type coersion:
 
 ```q
+ 0+"abc"               /adding an int atom to char vector gives an int vector of ascii codes
+97 98 99
 
+ `c$1+"HAL9000"        /increment ascii codes by one, then cast back to char, surprise:
+ "IBM:111"
+
+ "012"+"345"           /sum of char vectors adds their ascii codes pairwise, result is still a char vector
+"ceg"
 ```
 
 ### no stinking loops
