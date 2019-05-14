@@ -86,7 +86,7 @@ The startup banner packs a lot of useful information:
 | avx2                | best your cpu can do          |
 | shakti              | the company behind k          |
 | m                   | `m` for macos, `l` for linux  |
-| 2.0                 | nevermind that                |
+| 2.0                 | don't worry about that        |
 | prod                | expect to see `test`          |
 
 Once it comes to that, always include your banner in your bug reports.
