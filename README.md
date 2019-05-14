@@ -315,7 +315,7 @@ Of special mention is the **composite vector** type. Such vectors that are eithe
 `
 ```
 
-The below demonstrates explicit and implicit casting, and gives a taste of how type coersion works:
+The below demonstrates explicit and implicit casting, and gives a general feel of how type coersion works:
 
 ```q
  1+.5                  /int plus float is float, no surprises here
@@ -327,7 +327,7 @@ The below demonstrates explicit and implicit casting, and gives a taste of how t
  `i$42.99              /explicit cast float to int discards mantissa, i.e. floor
 42
 
- `i$42.0 42.5 42.99    /same goes for float vectors
+ `i$42.0 42.99         /same goes for float vectors
 42 42 42
 
  0+"abc"               /adding an int atom to char vector yields an int vector of ascii codes
@@ -338,7 +338,29 @@ The below demonstrates explicit and implicit casting, and gives a taste of how t
 
  "012"+"345"           /sum of char vectors adds their ascii codes pairwise, result is still a char vector
 "ceg"
+
+ 1+`kei                /no math for names
+  ^
+type error
+
+ a:1 2 3               /int vector
+ a[0]:1f               /replace first element with a float
+ @a                    /vector got demoted to composite, ouch
+`
+ a:`f$a                /explicitly cast composite to float vector
+ @a                    /voila, a float vector
+`F
+
+ `i$1981-02-01         /integer representation of dates is puzzling at first
+-15674
+
+ 15674+1981-02-01      /add 15674 days to Feb 1 1981, mystery solved, a date is just an offset of:
+2024-01-01
+
 ```
+
+There is more to be learned about the type system
+
 
 ### no stinking loops
 
