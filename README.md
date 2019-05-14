@@ -232,9 +232,9 @@ length error
 
 ### two types of types
 
-It is not a stretch to say the typing discipline of k is a balancing act between strong and weak. It gets strict when it has to, but also agrees that duck typing and coersion have their benefits — especially when done right, which in k they are.
+It is not a stretch to say the typing discipline of k is a balancing act. It gets strict when it has to, but also agrees that duck typing and coersion have their benefits — especially when done right, which in k they are.
 
-Seeing is believing, but before we see some examples, the first thing you need to know about types in k is that they are divided into two broad classes: **vector types** and **atomic types**. That is, a vector of a single element, say, `42`, is not the same type as atomic integer of the same value. Finally, since functions and some other things in k are assignable values, they have their place in the type system too, and those are **special types**, but we will not cover them here.
+Seeing is believing, but before we see some examples, the first thing you need to know about types in k is that they are divided into two broad classes: **vector types** and **atomic types**. That is, a vector with a single element, say, `42`, is not the same type as atomic integer of the same value. Finally, since functions and other things in k are assignable values, they have their place in the type system too. Those are **special types** and we will not cover them here.
 
 The operator to obtain the type of something is `@`.
 
