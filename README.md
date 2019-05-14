@@ -269,26 +269,39 @@ However, k has something C doesn't, a type called `name`, which is short for **i
 `n
 ```
 
-Of special mention is the **mix vector** type. As the name suggests, such vectors can contain heterogeneous elements:
+There are two **temporal types** in k, `date` and `time`:
 
 ```q
- a:0,1,"a",2,3          /the char element is an impostor among integers, and the the entire vector becomes a mix
- @a                     /mix type is denoted by a backtick
-`
- a:{x},{x+x},{x*x}      /vector of functions is also a mix
- @a
+ d:1981-02-01        /yyyy-mm-dd
+ @d                  /atomic date type is special, it is a capital D
+`D
+
+ t:12:34:56.789      /hh:mm:ss.sss
+ @t
+`t
+```
+
+Of special mention is the **composite vector** type. It is about vectors that are either a mixture of atoms of disparate types, or consist of something other than atoms, e.g. other vectors:
+
+```q
+ a:0,1,"a",2,3          /a char impostor demotes this integer vector to composite
+ @a                     /a composite type is denoted by a backtick
 `
 
- a:(1 2 3;4 5 6;7 8 9)  /vector of vectors is a mix, too
+ a:(1 2 3;4 5 6;7 8 9)  /vector of vectors is also mix
  a
 1 2 3
 4 5 6
 7 8 9
  @a
 `
+
+ a:{x},{x+x},{x*x}      /nothing prevents us from having a vector of lambdas
+ @a
+`
 ```
 
-Now, lets see how far we can go with type inference and coersion:
+Now, lets see how far we can push type coersion:
 
 ```q
 
