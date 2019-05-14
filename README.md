@@ -92,7 +92,7 @@ The startup banner packs a lot of useful information:
 | avx2                | the best your cpu can do      |
 | shakti              | the company behind k          |
 | m                   | `m` for macos, `l` for linux  |
-| 2.0                 | 2.0 is better than 1.0        |
+| 2.0                 | well, 2.0 is better than 1.0  |
 | prod                | be prepared to see `test`     |
 
 If it ever comes to that, always include your banner in your bug reports.
@@ -163,7 +163,7 @@ So, lets recap. So far you know how to start k, how to assign values, declare mo
 
 ### vectors and atoms
 
-The word `atom` is a synonym for `scalar value` or simply `scalar`. We have them in k, and they are as useful as everywhere. But k belongs to a family of *vector languages*, which basically means its fundamental type is an ordered set of atoms or other sets. In k parlance, terms "array", "list" and "vector" are used interchageably and refer to the same thing, but we will stick with `vector` to minimise confusion, because vectors are much more general than classic *arrays* and have nothing to do with *linked lists*. Besides, it is such a cool word.
+The word `atom` is a synonym for `scalar value`, or simply `scalar`. Every language has them, we have them in k, and they are as useful as elsewhere. But k belongs to a family of *vector languages*, which basically means its fundamental type is an ordered set of atoms or other ordered sets. In k parlance, terms "array", "list" and "vector" are often used interchageably and refer to the same thing, but we will stick with `vector` to avoid confusing you, because vectors are much more general than classic *arrays* and have nothing to do with *linked lists*. Besides, it also a cool word.
 
 ```q
  a:(0,1,2,3,4)    /one way of declaring an integer vector
@@ -179,17 +179,17 @@ The word `atom` is a synonym for `scalar value` or simply `scalar`. We have them
 The first enlightening fact about vectors is that most operations you expect to work for atoms work equally well for vectors, too:
 
 ```q
- a-b             /pairwise substraction
+ a*a             /don't get mad, get even
+0 2 4 6 8
+
+a-b              /pairwise substraction
 0 0 0 0 0 
 
  a%b             /pairwise divison (yes, division in k is %, and ø means nil, nan, void and other bad news)
 ø 1 1 1 1
 
- a=b             /pairwise comparison (1 means truthy)
+ a=b             /pairwise comparison (1 in k means 'truthy')
 1 1 1 1 1 
-
- a*a             /don't get mad, get even
-0 2 4 6 8
 ```
 
 Mixing atomic and vector operands is perfectly fine:
@@ -220,7 +220,7 @@ a+b
 length error
 ```
 
-**Indexing** is zero-based as you would expect, but there are pleasant surprises:
+**Indexing** is zero-based as you would expect, but there is a very pleasant surprise there:
 
 ```q
  a:2 4 8 16 32
@@ -408,7 +408,8 @@ It could not possibly escape your attention that the syntax for indexing vectors
  f[d[i]]      /compose the two
 4 32 
 ```
-You also know that k actively encourages you to omit brackets whenever possible. Lets do exactly that:
+
+You also know that k actively encourages you to **omit brackets whenever possible**, so lets do exactly that:
 
 ```q
  f d i        /same as f[d[i]]
@@ -441,9 +442,9 @@ That is, by default all operations in a k expression are treated equally and eva
 7
 ```
 
-Once you get over the death of precedence, you will also seek to avoid parens unless you absolutely have to use them. The last example above shows the basic strategy of ditching them: it is usually possible to rearrange the order of evaluation to make it linear. Although overriding precedence is often inevitable and can be beneficial, it has an adverse effect on readability as it breaks the natural flow of code comprehension which otherwise goes from right to left uninterrupted.
+Once you get over the death of precedence, you will start to seek to avoid parens as well unless you absolutely have to use them. The last example above shows the basic strategy of ditching them: it is usually possible to rearrange the order of evaluation to make it linear. Although overriding precedence is often inevitable and can be beneficial, it has an adverse effect on readability as it breaks the natural flow of code comprehension which otherwise goes from right to left uninterrupted.
 
-Although the lack of precedence is deliberately illustrated using only basic arithmetic operators, the principle holds true for the entirety of the language, without exceptions.
+Although the lack of precedence is deliberately illustrated using only most basic arithmetic, the principle holds true for the entirety of the language, without exceptions.
 
 ### no stinking loops
 
@@ -541,7 +542,7 @@ Don't be in a hurry to paste anything into k interpreter. It is a lot more usefu
 f:{$[2>#?x;x;,/f'x@=x>rand x]} 
 ```
 
-Okay, it looks like there is almost nothing familiar here, and the whole thing is just scary. But give yourself a chance. Lets take it apart brick by brick:
+Okay, it looks like there is almost nothing familiar here, and the whole thing is just creepy. But before you head for the fire exit, as so many before you, give yourself a chance. Lets take it apart brick by brick, and you will see how *trivial* is is, really:
 
 ```q
 
