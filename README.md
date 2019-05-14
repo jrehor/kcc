@@ -254,7 +254,7 @@ Just like in C, there is no dedicated string type in k either. Strings are just 
 `C
 ```
 
-However, k has something C doesn't, a type called `name`, which is short for **internalized string**. This means that a single instance of a arbitrarily long string can be placed into a global hash table that exists for a lifetime of a k process, and can later be referenced by its hash key as many times as necessary without creating additional copies of the string itself. As you will discover later, names come very handy in a lot of practical situations, but for now lets just see how they quack:
+However, k also has something C doesn't, a type called `name`, which is short for **internalized string**. This means that a single instance of a arbitrarily long string can be placed into a global hash table that exists for a lifetime of a k process, and can later be referenced by its hash key as many times as necessary without creating additional copies of the string itself. As you will discover later, names come very handy in a lot of practical situations, but for now lets just see how they quack:
 
 ```q
  a:`kei              /the string "kei" is now internalized
@@ -264,6 +264,9 @@ However, k has something C doesn't, a type called `name`, which is short for **i
  b:`kei`kei`kei      /three references to internalized instance of "kei" string
  @b                  /vector of names
 `N
+
+ @`"ken iverson"     /names can have spaces
+`n
 ```
 
 
