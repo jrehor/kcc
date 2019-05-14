@@ -162,17 +162,20 @@ The word `atom` is another way of saying `scalar value` or simply `scalar`. We h
 The first enlightening fact about vectors is that most operations you'd expect to work on atoms work equally well for vectors, too:
 
 ```q
- a+b            /pairwise sum
-0 2 4 6 8 
+ a-b             /pairwise substraction
+0 0 0 0 0 
 
-a%b             /pairwise divison (yes, division is %, and ø is nil, nan, empty set and other bad news)
+ a%b             /pairwise divison (yes, division is %, and ø is nil, nan, empty set and other bad news)
 ø 1 1 1 1
 
-a=b             /pairwise comparison (1 reads 'truthy')
+ a=b             /pairwise comparison (1 reads 'truthy')
 1 1 1 1 1 
+
+ a*a             /don't get mad, get even
+0 2 4 6 8
 ```
 
-Mixing atomic and vector operands is fine:
+Mixing atomic and vector operands is totally fine:
 
 ```q
  a+1             /increment each of a
@@ -188,7 +191,7 @@ Mixing atomic and vector operands is fine:
 ∞ 3 1.5 1 0.75
 ```
 
-Pairwise operations on vectors of disparate dimensions make much less sense than division by zero, and with throw an error:
+However, pairwise operations on vectors of disparate dimensions make much less sense to k than division by zero, and will throw an error:
 
 ```q
  a:0 1 2 3 4
