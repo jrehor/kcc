@@ -142,7 +142,8 @@ Most languages require you to explicitly declare arguments of your function. You
  f f 2        /a nice way to say f[f[2]] 
 16 
 ```
-The last expression illustrates another cornerstone feature of k — everything that you intuitively feel you should be able to omit, can and should be omitted, and there very few exceptions to this rule.
+
+This illustrates a core principle of k syntax — everything that you intuitively feel you should be able to omit, can and should be omitted, and there very few exceptions to this rule. The lesser you type, the better your code will get.
 
 Lets recap. So far you know how to start k, how to assign values, declare most basic functions and variables, and how to annotate your code. This is a good start, but tells you absolutely nothing about what k really is. Nowhere above you were promised a *gentle* introduction, so from here your best two friends are your intelligence and intuition.
 
@@ -315,10 +316,10 @@ Of special mention is the **composite vector** type. Such vectors that are eithe
 `
 ```
 
-The below demonstrates explicit and implicit casting, and gives a general feel of how type coersion works:
+The below demonstrates explicit and implicit **casting**, and gives a general feel of how type coersion behaves:
 
 ```q
- 1+.5                  /int + float is float, no surprises here
+ 1+.5                  /int plus float is float, no surprises here
 1.5
 
  1f*2                  /1f is the same as 1.0
@@ -354,17 +355,16 @@ type error
  `i$1981-02-01         /integer representation of dates is puzzling at first
 -15674
 
- 15674+1981-02-01      /add 15674 days and the mystery is solved, dates are simply offsets of:
+ 15674+1981-02-01      /adding 15674 days solves the mystery: dates in k are simply offsets from:
 2024-01-01
 
 ```
 
 There is more to be said about the type system, but we have enough to proceed.
 
+### right to left and back again
 
 ### no stinking loops
-
-### right to left and back again
 
 ### how to solve it
 
