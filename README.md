@@ -202,17 +202,42 @@ a+b
  ^
 length error
 ```
+Vector indexing is zero-based as you would expect, but there are pleasant surprises:
+
+```q
+ a:0 1 2 3 4
+ a[2]          /3rd element of a
+2
+ a 2
+```
 
 ### three types of types
 
-It is not a stretch to define the typing discipline of k as a good compromise between strong and weak. It gets pretty strict when it has to be, but also agrees that duck typing and type coersion have their moments too, especially when done right, which in k they are.
+It is not a stretch to define the typing discipline of k as a good compromise between strong and weak. It gets pretty strict when it has to, but also agrees that duck typing and type coersion have their moments too — especially when done right, which in k they are.
 
 Seeing is believing, but before we see the code, the first thing you need to know about types in k is that they are divided into two broad classes: **vector types** and **scalar types**. That is, a vector of with a single element, say, 42, does not have the same type as an atom of the same value. Besides, since functions and any other things in k are first-class assignable values, they have their place in the type system too, and those are **special types**.
 
 The operator to obtain the type of something in k is `@`.
 
 ```q
+ @42         /int atom
+`i
 
+ @.5         /float atom
+`f
+
+ @0 1 2      /int vector
+`I
+
+ v:0 1 .5 2
+ @v          /float vector (0.5 promotes all others and the vector itself to float)
+`F
+
+ v 1         /2nd element is a float, hinted by f
+1f
+
+ @v 1        /just to make sure
+`f
 ```
 
 
