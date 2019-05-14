@@ -73,7 +73,7 @@ kelas@failbowl ~ $ conda update -c shaktidb shakti
 
 ### using k
 
-Assuming conda's `bin` is in you PATH, start your first k session, ask your first question and enjoy your first answer:
+Assuming conda's `bin` is in your PATH, go ahead and start your very first k session, ask your first question and enjoy your first answer:
 
 ```sh
 kelas@failbowl ~ $ k
