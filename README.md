@@ -486,7 +486,7 @@ And here is just one example of what happens when adverbs work together:
 9 18 27 36 45 54 63 72 81 
 ```
 
-These things are known to raise eyebrows at first, but in fact you already have absolutely everything you need to be able to read and understand the logic and order of execution of this tiny simple expression. Remember, right to left, no precedence, and no thinking no loops.
+These things are known to raise eyebrows at first, but in fact you already have absolutely everything you need to be able to read and understand the logic and order of execution of this tiny simple expression. Remember, right to left, no precedence, and no explicit loops.
 
 It is a good checkpoint before you advance to the next chapter, where things will get a lot less innocent, and fast.
 
