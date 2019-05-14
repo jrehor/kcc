@@ -288,7 +288,7 @@ Of special mention is the **composite vector** type. It is about vectors that ar
  @a                     /a composite type is denoted by a backtick
 `
 
- a:(1 2 3;4 5 6;7 8 9)  /vector of vectors is also mix
+ a:(1 2 3;4 5 6;7 8 9)  /vector of vectors is also a composite
  a
 1 2 3
 4 5 6
@@ -296,7 +296,7 @@ Of special mention is the **composite vector** type. It is about vectors that ar
  @a
 `
 
- a:{x},{x+x},{x*x}      /nothing prevents us from having a vector of lambdas
+ a:{x},{x+x},{x*x}      /nothing prevents you from having a vector of lambdas
  @a
 `
 ```
