@@ -206,13 +206,27 @@ a+b
  ^
 length error
 ```
+
 Vector indexing is zero-based as you would expect, but there are pleasant surprises:
 
 ```q
- a:0 1 2 3 4
- a[2]          /3rd element of a
-2
- a 2
+ a:2 4 8 16 32
+ 
+ a[2]          /get 3rd element of a
+8
+
+ a 2           /same but less typing
+8
+
+ a[1 4]        /2nd and 5th elements
+4 32
+
+ a 1 4         /same thing less work
+4 32
+
+ b:1 4         /b is an index vector
+ a b           /more punch than a[b]
+4 32
 ```
 
 ### three types of types
