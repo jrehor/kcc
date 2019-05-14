@@ -151,7 +151,7 @@ Lets recap. So far you know how to start k, how to assign values, declare most b
 
 ### vectors and atoms
 
-The word `atom` is a synonym of `scalar value`, or simply `scalar`. We have them in k, and they are very useful. But k belongs to a family of **vector languages**, which basically means the fundamental type is an ordered set of atoms or subsets. In k parlance, terms "array", "list" and "vector" are used interchageably and refer to the same thing, but we will stick with `vector` to minimise confusion, because vectors generalize the idea of classic arrays and have little to do with linked lists. Besides, `vector` is such a cool word.
+The word `atom` is a synonym for `scalar value` or simply `scalar`. We have them in k, and they are as useful as everywhere. But k belongs to a family of *vector languages*, which basically means its fundamental type is an ordered set of atoms or other sets. In k parlance, terms "array", "list" and "vector" are used interchageably and refer to the same thing, but we will stick with `vector` to minimise confusion, because vectors are much more general than classic *arrays* and have nothing to do with *linked lists*. Besides, it is such a cool word.
 
 ```q
  a:(0,1,2,3,4)    /one way of declaring an integer vector
@@ -164,7 +164,7 @@ The word `atom` is a synonym of `scalar value`, or simply `scalar`. We have them
 0 1 2 3 4
 ```
 
-The enlightening fact about vectors is that most operations you would expect to work for atoms work equally well for vectors, too:
+The first enlightening fact about vectors is that most operations you expect to work for atoms work equally well for vectors, too:
 
 ```q
  a-b             /pairwise substraction
@@ -219,7 +219,7 @@ length error
  a 2           /same but less typing
 8
 
- a[1 4]        /2nd and 5th elements
+ a[1 4]        /get 2nd and 5th item
 4 32           /gives another vector
 
  a 1 4         /same thing less work
@@ -232,9 +232,9 @@ length error
 
 ### two types of types
 
-It is not a stretch to say the typing discipline of k is a balancing act. It gets strict when it has to, but also agrees that duck typing and coersion have their benefits — especially when done right, which in k they are.
+It is not a stretch to say the typing discipline in k is a balancing act. It gets strict when it has to, but also agrees that implicit casts and type coersion have their strengths — especially when done right, which in k they are.
 
-Seeing is believing, but before we see some examples, the first thing you need to know about types in k is that they are divided into two broad classes: **vector types** and **atomic types**. That is, a vector with a single element, say, `42`, is not the same type as atomic integer of the same value. Finally, since functions and other things in k are assignable values, they have their place in the type system too. Those are **special types** and we will not cover them here.
+Seeing is believing, but before you see some examples, the first thing you need to know about types in k is that they are divided into two broad classes: **vector types** and **atomic types**. That is, a vector with a single element, say, `42`, is not the same type as atomic integer of the same value. Finally, since functions and other things in k are assignable values, they have their place in the type system too. Those are **special types** and we will not cover them here.
 
 The operator to obtain the type of something is `@`.
 
@@ -259,7 +259,7 @@ The operator to obtain the type of something is `@`.
 `f
 ```
 
-Just like in C, there is no dedicated string type in k. Strings are just **char vectors**:
+Like in C, there is no dedicated type for strings in k. Strings are just **char vectors**:
 
 ```q
  @"k"        /char atom
@@ -269,7 +269,7 @@ Just like in C, there is no dedicated string type in k. Strings are just **char 
 `C
 ```
 
-However, k has something that C doesn't. We have a type called **name**, which is the same concept as **internalized string** found in some languages. This means that a single instance of an arbitrarily long string can be placed into a global hash table that persists for a lifetime of a k process and can later be referenced by its hash key as many times as necessary without creating additional copies of that string. As you will discover later, names come very handy in a lot of situations, but for now lets just see how they quack:
+However, k has something C doesn't. We have a type called **name**, which is the same concept as **internalized string** found in some other languages. This means that a single instance of an arbitrarily long string can be placed into a global hash table that persists for a lifetime of a k process and can later be referenced by its hash key as many times as necessary without creating additional copies of that string. As you will discover later, names come very handy in a lot of situations, but for now lets just see how they quack:
 
 ```q
  a:`kei              /the string "kei" is now internalized
@@ -316,7 +316,7 @@ Of special mention is the **composite vector** type. Such vectors are either a m
 `
 ```
 
-**Casting**, both explicit and implicit, is demonstrated by the following examples which and also give a general feel of how type coersion behaves:
+**Casting**, both explicit and implicit, is demonstrated by the following examples which also give a general feel of how type coersion behaves:
 
 ```q
  1+.5                  /int plus float is float, no surprises here
@@ -325,13 +325,13 @@ Of special mention is the **composite vector** type. Such vectors are either a m
  1f*2                  /1f is the same as 1.0
 2f 
 
- `i$42.99              /explicit cast float to int discards mantissa, i.e. floor
+ `i$42.99              /explicit cast float to int discards mantissa, aka floor
 42
 
- `i$42.0 42.99         /same goes for float vectors
+ `i$42.0 42.99         /same is true for float vectors
 42 42
 
- 0+"abc"               /adding an int atom to a char vector yields an int vector of ascii codes
+ 0+"abc"               /adding an int atom to a char vector yields an int vector of its ascii codes
 97 98 99
 
  `c$1+"HAL9000"        /increment ascii codes by one, cast back to char, surprise:
@@ -364,7 +364,7 @@ There is more to be said about the type system, but we have more than enough to 
 
 ### right to left and back again
 
-It could not escape your attention that the notation for vector indexing and function calls is identical:
+It could not escape your attention that the notation for indexing vectors and calling functions is identical:
 
 ```q
  f:{x+x}      /some function
@@ -380,20 +380,20 @@ It could not escape your attention that the notation for vector indexing and fun
  f[d[i]]      /compose the two
 4 32 
 ```
-By now you also know that k actively encourages you to omit brackets whenever possible. Lets do exactly that:
+But also know that k actively encourages you to omit brackets whenever possible. Lets do exactly that:
 
 ```q
  f d i        /same as f[d[i]]
 4 32
 ```
 
-This tiny example reveals an astonishing truth. Once we drop the brackets, it suddenly becomes absolutely natural to read this expression *from right to left*. Take your time to contemplate and process this statement. In very little time you will see how this works in practice, and once you put it to practice yourself, you will see that this way of functional composition is beautiful, elegant and intuituve.
+This tiny example reveals an astonishing truth. Once we drop the brackets, it suddenly becomes absolutely natural to read this expression *from right to left*. Take your time to contemplate and process this statement. In very little time you will see how it works in practice, and once you put it to practice yourself, you will see that this way of functional composition is beautiful, elegant and intuituve.
 
 **Reading and writing k expressions is done right to left.**
 
 Now that we know which way the rivers flow in k land, we are ready to discuss a related, no less important subject.
 
-Precedence in k obeys different laws compared to those we were taught in primary school. We take it for granted that multiplication and division bind stronger than addition and substraction, and it almost feels natural for computer languages to have very complex precedence hierarchies in order to be useful. That is not the case with k.
+Precedence in k obeys different laws compared to those we were taught in primary school. We take it for granted that multiplication and division bind stronger than addition and substraction, and it almost feels natural that computer languages must have very complex precedence hierarchies in order to be useful. That is not the case with k.
 
 **There is no operator precedence in k unless explicitly defined by round brackets.**
 
@@ -413,11 +413,7 @@ That is, by default all operations in a k expression are treated equally and eva
 7
 ```
 
-Once you come to terms with the death of precedence, you will also want to avoid using parens unless you absolutely have to, and the last example shows the basic strategy of avoiding them: it is usually possible to rearrange the order of execution to make it more linear. Although overriding precedence is often inevitable and can be beneficial, it has an adverse effect on readability as it breaks the natural flow of code comprehension which otherwise goes from right to left uninterrupted.
-
-
-
-
+Once you get over the death of precedence, you will also want to avoid using parens unless you absolutely have to. The last example above shows the basic strategy of avoiding them: it is usually possible to rearrange the order of execution to make it linear. Although overriding precedence is often inevitable and can be beneficial, it has an adverse effect on readability as it breaks the natural flow of code comprehension which otherwise goes from right to left, uninterrupted.
 
 ### no stinking loops
 
