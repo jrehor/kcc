@@ -79,7 +79,7 @@ kelas@failbowl ~ $ k
 The startup banner packs a lot of useful information:
 
 | it says             | it means                      |
-| --------------------|:------------------------------|
+| :-------------------|:------------------------------|
 | 2019-04-21 15:38:18 | stamp of your k build         |
 | 40core              | cpu cores you can use         |
 | 512gb               | max workspace, expect 1gb     |
