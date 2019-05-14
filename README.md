@@ -80,7 +80,7 @@ The startup banner packs a lot of useful information:
 
 | it says             | it means                      |
 | :-------------------|:------------------------------|
-| 2019-04-21 15:38:18 | stamp of your k build         |
+| 2019-04-21 15:38:18 | timestamp of your k build     |
 | 40core              | cpu cores you can use         |
 | 512gb               | max workspace, expect 1gb     |
 | avx2                | best your cpu can do          |
@@ -164,7 +164,7 @@ The first enlightening fact about vectors is that most operations applicable to 
 0 2 4 6 8 
  a%b             /pairwise divison (yes, division is %, and ø is nil, nan, empty set and other bad news)
 ø 1 1 1 1
- a=b             /per-element comparison (1 reads 'truthy')
+ a=b             /pairwise comparison (1 reads 'truthy')
 1 1 1 1 1 
 ```
 
