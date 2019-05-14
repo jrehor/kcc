@@ -311,7 +311,7 @@ Of special mention is the **composite vector** type. Such vectors that are eithe
  @a
 `
 
- a:{x},{x+x},{x*x}      /a vector of lambdas, why not?
+ a:{x},{x+x},{x*x}      /a vector of lambdas, sure, why not
  @a
 `
 ```
