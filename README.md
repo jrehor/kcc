@@ -315,13 +315,25 @@ Of special mention is the **composite vector** type. Such vectors that are eithe
 `
 ```
 
-The below demonstrates explicit and implicit casting, and gives a taste of how type coersion:
+The below demonstrates explicit and implicit casting, and gives a taste of how type coersion works:
 
 ```q
- 0+"abc"               /adding an int atom to char vector gives an int vector of ascii codes
+ 1+.5                  /int plus float is float, no surprises here
+1.5
+
+ 1f*2                  /1f is the same as 1.0
+2f 
+
+ `i$42.99              /explicit cast float to int discards mantissa, i.e. floor
+42
+
+ `i$42.0 42.5 42.99    /same goes for float vectors
+42 42 42
+
+ 0+"abc"               /adding an int atom to char vector yields an int vector of ascii codes
 97 98 99
 
- `c$1+"HAL9000"        /increment ascii codes by one, then cast back to char, surprise:
+ `c$1+"HAL9000"        /increment ascii codes by one, cast back to char, surprise:
  "IBM:111"
 
  "012"+"345"           /sum of char vectors adds their ascii codes pairwise, result is still a char vector
