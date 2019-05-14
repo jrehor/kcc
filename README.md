@@ -163,7 +163,7 @@ So, lets recap. So far you know how to start k, how to assign values, declare mo
 
 ### vectors and atoms
 
-The word `atom` is a synonym for `scalar value`, or simply `scalar`. Every language has them, we have them in k, and they are as useful as elsewhere. But k belongs to a family of *vector languages*, which basically means its fundamental type is an ordered set of atoms or other ordered sets. In k parlance, terms "array", "list" and "vector" are often used interchageably and refer to the same thing, but we will stick with `vector` to avoid confusing you, because vectors are much more general than classic *arrays* and have nothing to do with *linked lists*. Besides, it also a cool word.
+The word `atom` is a synonym for `scalar values`, or simply `scalars`. Every language has them, and we have them in k, and they are as useful as elsewhere. But k belongs to a family of *vector languages*, which basically means its fundamental type is an ordered set of atoms or other ordered sets. In k parlance, terms "array", "list" and "vector" are often used interchageably and refer to the same thing, but we will stick with `vector` to avoid confusing you, because vectors are much more general than classic *arrays* and have nothing to do with *linked lists*. Besides, it also a cool word.
 
 ```q
  a:(0,1,2,3,4)    /one way of declaring an integer vector
