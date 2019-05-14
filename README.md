@@ -151,8 +151,10 @@ The word `atom` is another way of saying for `scalar variable`. We have them in 
 ```q
  a:(0,1,2,3,4)    /how not to declare a k vector
  b:0 1 2 3 4      /the k way of declaring things
+
  a
 0 1 2 3 4
+
  b
 0 1 2 3 4
 ```
@@ -162,22 +164,26 @@ The first enlightening fact about vectors is that most operations applicable to 
 ```q
  a+b             /pairwise sum
 0 2 4 6 8 
- a%b             /pairwise divison (yes, division is %, and ø is nil, nan, empty set and other bad news)
+
+a%b             /pairwise divison (yes, division is %, and ø is nil, nan, empty set and other bad news)
 ø 1 1 1 1
- a=b             /pairwise comparison (1 reads 'truthy')
+
+a=b             /pairwise comparison (1 reads 'truthy')
 1 1 1 1 1 
 ```
 
-Atomic operands play nicely with vectors, too:
-
+Mixing atomic and vector operands makes perfect sense:
 
 ```q
  a+1             /add 1 to each of a
 1 2 3 4 5 
+
  a=1             /compare each of a to 1
 0 1 0 0 0
-a%0              /divide each of a of a by zero (correct, ℚ%0 is ∞ except 0%0 which is ø)
+
+ a%0              /divide each of a of a by zero (correct, ℚ%0 is ∞ except 0%0 which is ø)
 ø ∞ ∞ ∞ ∞
+
  3%a             /divide 3 by each of a
 ∞ 3 1.5 1 0.75
 ```
