@@ -238,7 +238,19 @@ It is not a stretch to say the typing discipline in k is a balancing act. It get
 
 Seeing is believing, but before you see some examples, the first thing you need to know about types in k is that they are divided into two broad classes: **vector types** and **atomic types**. That is, a vector with a single element, say, `42`, is not the same type as atomic integer of the same value. Finally, since functions and other things in k are assignable values, they have their place in the type system too. Those are **special types** and we will not cover them here.
 
-The operator to obtain the type of something is `@`.
+Here is a quick reference of k types and their symbolic names:
+
+```q
+atom      vect        type
+  `i        `I        int
+  `f        `F        float
+  `c        `C        char
+  `n        `N        name
+  `D        `D        date
+  `t        `T        time
+```
+
+This is not very revealing, so lets see some action. The operator to query the type of anything in k is `@`.
 
 ```q
  @42         /int atom
@@ -257,7 +269,7 @@ The operator to obtain the type of something is `@`.
  v 1         /2nd element is a float, hinted by the trailing f
 1f
 
- @v 1        /just making sure
+ @v 1        /just to make sure
 `f
 ```
 
