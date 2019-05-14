@@ -150,7 +150,7 @@ Lets recap. So far you know how to start k, how to assign values, declare most b
 
 ### vectors and atoms
 
-The word `atom` is another way of saying `scalar value` or simply `scalar`. We have them in k, and they are very useful. But k belongs to a family of **vector languages**, which basically means the fundamental type is an ordered set of atoms or subsets. In k parlance, terms "array", "list" and "vector" are used interchageably and refer to the same thing, but we will stick with `vector` to minimise confusion, because vectors generalize the idea of classic arrays and have little to do with linked lists. Besides, `vector` is such a cool word.
+The word `atom` is a synonym of `scalar value`, or simply `scalar`. We have them in k, and they are very useful. But k belongs to a family of **vector languages**, which basically means the fundamental type is an ordered set of atoms or subsets. In k parlance, terms "array", "list" and "vector" are used interchageably and refer to the same thing, but we will stick with `vector` to minimise confusion, because vectors generalize the idea of classic arrays and have little to do with linked lists. Besides, `vector` is such a cool word.
 
 ```q
  a:(0,1,2,3,4)    /one way of declaring an integer vector
@@ -234,7 +234,7 @@ The operator to obtain the type of something in k is `@`.
 `I
 
  v:0 1 .5 2
- @v          /float vector (0.5 promotes all others and the vector itself to float)
+ @v          /float vector (0.5 promotes all its neighbors and the vector itself to float)
 `F
 
  v 1         /2nd element is a float, hinted by trailing f
@@ -244,7 +244,7 @@ The operator to obtain the type of something in k is `@`.
 `f
 ```
 
-Just like in C, there is no dedicated string type in k either. Strings are just vectors of characters:
+Just like in C, k has no dedicated string type. Strings are just vectors of characters:
 
 ```q
  @"k"        /char atom
@@ -254,7 +254,7 @@ Just like in C, there is no dedicated string type in k either. Strings are just 
 `C
 ```
 
-However, k also has something C doesn't, a type called `name`, which is short for **internalized string**. This means that a single instance of an arbitrarily long string can be placed into a global hash table that persists for a lifetime of a k process and can later be referenced by its hash key as many times as necessary without creating additional copies of the string itself. As you will discover later, names come very handy in a lot of practical situations, but for now lets just see how they quack:
+However, k has something C doesn't, a type called `name`, which is short for **internalized string**. This means that a single instance of an arbitrarily long string can be placed into a global hash table that persists for a lifetime of a k process and can later be referenced by its hash key as many times as necessary without creating additional copies of the string itself. As you will discover later, names come very handy in a lot of practical situations, but for now lets just see how they quack:
 
 ```q
  a:`kei              /the string "kei" is now internalized
@@ -265,8 +265,27 @@ However, k also has something C doesn't, a type called `name`, which is short fo
  @b                  /vector of names
 `N
 
- @`"ken iverson"     /names can have spaces no problem
+ @`"ken iverson"     /no problem to have names with spaces
 `n
+```
+
+Of special mention is the **mix vector** type. As the name suggests, such vectors can contain heterogeneous elements:
+
+```q
+ a:0,1,"a",2,3          /the char element is an impostor among integers, and the the entire vector becomes a mix
+ @a                     /mix type is denoted by a backtick
+`
+ a:{x},{x+x},{x*x}      /vector of functions is also a mix
+ @a
+`
+
+ a:(1 2 3;4 5 6;7 8 9)  /vector of vectors is a mix, too
+ a
+1 2 3
+4 5 6
+7 8 9
+ @a
+`
 ```
 
 Now, lets see how far we can go with type inference and coersion:
