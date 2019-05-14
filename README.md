@@ -195,7 +195,7 @@ Mixing atomic and vector operands is perfectly fine:
 ∞ 3 1.5 1 0.75
 ```
 
-However, pairwise operations on vectors of disparate lengths dimensions make much less sense to k than division by zero, and will throw an error:
+However, pairwise operations on vectors of disparate lengths and dimensions make much less sense to k than division by zero, and will throw an error:
 
 ```q
  a:0 1 2 3 4
