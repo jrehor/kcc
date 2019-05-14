@@ -1,7 +1,7 @@
 # kcc
 a gentle introduction to k is elsewhere
 
-## genesis
+# genesis
 
 Computer languages have been around for a while, but in the beginning was the word. We will be writing code in a language called k, but it really helps to talk about it first.
 
@@ -49,7 +49,7 @@ In addition to being an excellent tool to assist efficient thinking, k is also a
 
 All of k programming takes place in **REPL**, a concept which requires little introduction these days, but is actually much older than many seem to think. It has been around for at least 50 years, and is known as *dialogue approach*, a live conversation between a human and machine as a flow of questions and answers. And in k, this conversation is much more fluent than in any other modern REPL-driven system you may be familiar with, because the questions are short and the answers are fast. This is the essence of *the way of k*, an experience that all k programmers consider immensely aesthetically and intellectually satisfying. This is why people who write software in k *love their jobs*, and this has nothing to do with their paychecks.
 
-## exodus
+# exodus
 
  Since the only known way to learn how to program is to write programs, you will need a live k environment. Fortunately, as all things k, it takes very little effort.
 
@@ -159,7 +159,7 @@ As you will see, the vast majority of native operators in `k` have at least two 
 
 So, lets recap. So far you know how to start k, how to assign values, declare most basic functions and variables, what the valence mumble is all about, and how to annotate your code. This is a good start, but tells you absolutely nothing about what k really is. Nowhere above you were promised a *gentle* introduction, so from here your best two friends are your intelligence and intuition, and the complexity is O(n^2).
 
-## revelations
+# numbers
 
 ### vectors and atoms
 
@@ -528,6 +528,8 @@ Lets recap. We have seen:
 * why we don't need `for` and why we have adverbs
 
 It is a good checkpoint before you advance to the next chapter, where things will get a lot less innocent, and very fast.
+
+# proverbs
 
 ### how to solve it
 
