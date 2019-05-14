@@ -153,8 +153,8 @@ Lets recap. So far you know how to start k, how to assign values, declare most b
 The word `atom` is another way of saying `scalar value` or simply `scalar`. We have them in k, and they remain as useful as ever. But k belongs to a family of **vector languages**, which basically means that the fundamental type is an ordered set. In k parlance, terms "array", "list" and "vector" are used interchageably and refer to the same thing, but we will stick with `vector` to minimise confusion, because vectors generalize the idea of classic arrays and have little to do with linked lists. Besides, `vector` is such a cool word.
 
 ```q
- a:(0,1,2,3,4)    /how not to declare a k vector
- b:0 1 2 3 4      /the k way of declaring things
+ a:(0,1,2,3,4)    /one way of declaring an integer vector
+ b:0 1 2 3 4      /but what feels noisy should be omitted
 
  a
 0 1 2 3 4
@@ -195,7 +195,7 @@ Mixing atomic and vector operands is perfectly fine:
 ∞ 3 1.5 1 0.75
 ```
 
-However, pairwise operations on vectors of disparate dimensions make much less sense to k than division by zero, and will throw an error:
+However, pairwise operations on vectors of disparate lengths dimensions make much less sense to k than division by zero, and will throw an error:
 
 ```q
  a:0 1 2 3 4
@@ -219,7 +219,7 @@ Vector indexing is zero-based as you would expect, but there are pleasant surpri
 
 It is not a stretch to define the typing discipline of k as a good compromise between strong and weak. It gets pretty strict when it has to, but also agrees that duck typing and type coersion have their moments too — especially when done right, which in k they are.
 
-Seeing is believing, but before we see the code, the first thing you need to know about types in k is that they are divided into two broad classes: **vector types** and **scalar types**. That is, a vector of with a single element, say, 42, does not have the same type as an atom of the same value. Besides, since functions and any other things in k are first-class assignable values, they have their place in the type system too, and those are **special types**.
+Seeing is believing, but before we see some examples, the first thing you need to know about types in k is that they are divided into two broad classes: **vector types** and **scalar types**. That is, a vector of with a single element, say, 42, does not have the same type as an atom of the same value. Besides, since functions and any other things in k are first-class assignable values, they have their place in the type system too, and those are **special types**.
 
 The operator to obtain the type of something in k is `@`.
 
@@ -237,7 +237,7 @@ The operator to obtain the type of something in k is `@`.
  @v          /float vector (0.5 promotes all others and the vector itself to float)
 `F
 
- v 1         /2nd element is a float, hinted by f
+ v 1         /2nd element is a float, hinted by trailing f
 1f
 
  @v 1        /just to make sure
@@ -254,21 +254,26 @@ Just like in C, there is no dedicated string type in k either. Strings are just 
 `C
 ```
 
-However, k also has something C doesn't, a type called `name`, which is short for **internalized string**. This means that a single instance of a arbitrarily long string can be placed into a global hash table that exists for a lifetime of a k process, and can later be referenced by its hash key as many times as necessary without creating additional copies of the string itself. As you will discover later, names come very handy in a lot of practical situations, but for now lets just see how they quack:
+However, k also has something C doesn't, a type called `name`, which is short for **internalized string**. This means that a single instance of an arbitrarily long string can be placed into a global hash table that persists for a lifetime of a k process and can later be referenced by its hash key as many times as necessary without creating additional copies of the string itself. As you will discover later, names come very handy in a lot of practical situations, but for now lets just see how they quack:
 
 ```q
  a:`kei              /the string "kei" is now internalized
  @a                  /name atom
 `n
 
- b:`kei`kei`kei      /three references to internalized instance of "kei" string
+ b:`kei`kei`kei      /three references to internalized instance of "kei"
  @b                  /vector of names
 `N
 
- @`"ken iverson"     /names can have spaces
+ @`"ken iverson"     /names can have spaces no problem
 `n
 ```
 
+Now, lets see how far we can go with type inference and coersion:
+
+```q
+
+```
 
 
 ### no stinking loops
