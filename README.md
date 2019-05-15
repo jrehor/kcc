@@ -124,12 +124,12 @@ As any other computer language, k expects a programmer to observe and follow cer
 **Capitals** are used by k programmers very sparingly, as a last resort measure. This applies both to code and comments. Identifiers in `camelCase` are considered bad form but can sometimes be tolerated, while `c_style` identifiers are not permitted at all since underscore is a k operator. Identifiers of functions and variables are very often boiled down to an absolute minimum, names 1-3 characters long are commonplace, which does not impact readability and comprehension given that their definitions are adequately annotated. Short identifiers might sound like a bad idea to Java programmers who are not accustomed to identifiers shorter than 100 bytes, but a well-structured and well-formatted k program typically fits on a single screen and requires little or no scrolling. The way our brain works is when the entire program fits into your visual buffer, "cryptic" identifiers are no longer a problem, because their annotated declarations are always right in front of you, and it will take a while before you face the problem of switching between multiple k source files:
 
 ```q
-kei:42 /kenneth eugene iverson
+kei:42         /kenneth eugene iverson
 ```
 
 **Functions** in k are first-class citizens. k has lambdas, eval, apply, and then some more. It takes a leap of faith to believe it, but k is probably more lispy than certain Lisps, only you don't need to get past any parens to be able to read it. In a strict sense, though, since there are no linked lists under the hood, k is clearly not lisp, because it was designed to be fast.
 
-Most languages require you to explicitly declare arguments of your function. You can also do that in k if you want to, but if you don't, a function can have up to three **implicit arguments** called `x`, `y` and `z`, which basically means you declare them by simply referencing them in the function body. It is an extremely convinient feature, not nearly as scary as it sounds:
+**Implicit arguments** is something that will make you wonder at first, since most languages require you to explicitly declare arguments of your functions. Sure you can also do that in k if you want to, but if you don't, a k function can have up to three **implicit arguments** called `x`, `y` and `z`, which basically means you declare them by simply referencing them in the function body. It is an extremely convinient feature, not nearly as scary as it sounds:
 
 ```q
  f:{x+y+z}    /f[] takes three arguments
@@ -155,7 +155,15 @@ Two specific ranks are so important that they have their own names. A function o
 
 As you will see, the vast majority of native operators in `k` have at least two completely unrelated meanings based on the context where they are used, which is in turn defined by the number of arguments offered to the operator. To overlook this fact is a grave mistake, so you better get a very strong grip on the idea that some things in life are **monadic**, while others are **dyadic**. For ranks of higher and lesser order it is fine to worry less. For example, when you used your first ever k operator in the expression `2+2`, you have used the **+** operator in a **dyadic** context, which basically meant that you offered it *two* operands to work on, left and right, respectively. However, once you discover what the **+** operator stands for when used in a **monadic** context, it will change your life forever, so let us skip this discussion for now.
 
-So, lets recap. So far you know how to start k, how to assign values, declare most basic functions and variables, the importance of rank, and how to annotate your code. This is a good start, but tells you absolutely nothing about what k really is. Nowhere above you were promised a *gentle* introduction, so from here your best two friends are your intelligence and intuition, and the complexity is O(n^2).
+So, lets recap. So far you know how to:
+
+* start k
+* assign values
+* declare most basic functions and variables
+* appreciate the importance of rank
+* annotate your code
+
+This is a good start, but tells you absolutely nothing about what k really is. Nowhere above you were promised a *gentle* introduction, so from here your best two friends are your intelligence and intuition, and the complexity is O(n*n).
 
 # numbers
 
@@ -514,7 +522,23 @@ This doesn't seem like much, but here is just one example of what happens when a
 9 18 27 36 45 54 63 72 81 
 ```
 
-Such things are known to raise eyebrows at first, but in fact you already have absolutely everything you need to be able to read and understand the logic and order of execution of this simple expression. Remember, right to left, no precedence, and no explicit loops.
+Yes, we know. These things are known for having have raised a lot of eyebrows over the years. But in fact you already have absolutely everything you need to be able to read and understand the logic and order of evaluation of this simple expression. Remember, right to left, no precedence, and no explicit loops.
+
+As a little bonus for your effort, we are ready to give away the answer you were dying to hear: **the meaning of monadic + operator**:
+
+```q
+ mat:(1 2 3;4 5 6;7 8 9)       /shall there be mat
+
+ mat                           /print matrix as is
+1 2 3
+4 5 6
+7 8 9 
+
+ +mat                          /flip aka transpose
+1 4 7
+2 5 8
+3 6 9
+```
 
 Lets recap. We have seen:
 
@@ -523,6 +547,7 @@ Lets recap. We have seen:
 * which way to read and comprehend k code
 * what is the only existing precedence rule
 * why we don't need `for` and why we have adverbs
+* how to flip a matrix (or to transpose it, if you will)
 
 It is a good checkpoint before you advance to the next chapter, where things will get a lot less innocent, and very fast.
 
