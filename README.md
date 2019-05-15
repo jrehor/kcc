@@ -157,7 +157,7 @@ As you will see, the vast majority of native operators in `k` have at least two 
 
 So, lets recap. So far you know how to:
 
-* start k
+* sum integers
 * assign values
 * declare most basic functions and variables
 * appreciate the importance of rank
