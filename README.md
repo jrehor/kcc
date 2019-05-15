@@ -10,7 +10,7 @@ Regardless your background, k will look different. You will question many aspect
 x = x + 1
 ```
 
-Most programmers and most computer languages will readily agree that this expression is perfectly valid, but don't be surprised if a mathematician tells you *"nonsense”*. And once you see what makes him think so, will see one of the reasons why we assign things with `:` in k.
+Most programmers and most computer languages will readily agree that this expression is perfectly valid, but don't be surprised if a mathematician tells you *"nonsense”*. And once you see what makes him think so, you will see one of the reasons why we assign things with `:` in k.
 
 This gives a good hint how to approach k in general: a different perspective is not necessarily wrong and hostile, and nothing prevents it from becoming your own, so keep an open mind.
 
@@ -50,7 +50,7 @@ All of k programming takes place in **REPL**, a concept which requires little in
 
 # exodus
 
- Since the only known way to learn how to program is to write programs, you will need a live k environment. Fortunately, as all things k, it takes very little effort.
+Since the only known way to learn how to program is to write programs, you will need a live k environment. Fortunately, as all things k, it takes very little effort.
 
 ### getting k
 
@@ -58,7 +58,7 @@ We will use a `trial` version of k, which comes with a reasonable limit of 1 gig
 
 The k interpreter is currently available for `Linux` and `macOS` on `x86_64` architecture. If you are on Solaris, OpenBSD or z/OS — hang tight, good things come to those who wait. The same applies to `ARM` and `WASM` architectures, but if you are on Windows, well, lets not cry over spilled Guinness.
 
-Without further ado, go to https://anaconda.org/ and follow the instructions. Anaconda shell integration option is highly recommended. Once you install Anaconda, install the package called  `shakti`, which is nothing else but `k` in disguise:
+Without further ado, go to https://anaconda.org and follow the instructions. Anaconda shell integration option is recommended. Once you install Anaconda, install the package called `shakti`, which is nothing else but `k` in disguise:
 
 ```sh
 kelas@failbowl ~ $ conda install -c shaktidb shakti
@@ -146,17 +146,16 @@ Most languages require you to explicitly declare arguments of your function. You
 
 This illustrates a core principle of k syntax — everything that you intuitively feel you should be able to omit, can and should be omitted, and there very few exceptions to this rule. The lesser you type, the better your code will get.
 
-**Valence** is a fancy word that describes a pretty simple idea that is still very important to be understood well. *Valence* of an operator or a function is basically the count of arguments they take. Two functions shown above have valences of 3 and 1, respectively. 
+**Rank** is a less fancy way to say *valence*, a word that describes pretty simple idea that is extremely important to be understood well. *Rank* of an operator or a function is basically the count of arguments they take. Two functions shown above have ranks of 3 and 1, respectively. 
 
-Three specific values of valence are so important that they have their own names. A function or an operator...
+Two specific ranks are so important that they have their own names. A function or an operator...
 
-* that takes **no** arguments is called **niladic**
 * that takes **one** argument is called **monadic**
 * that takes **two** arguments is called **dyadic**
 
-As you will see, the vast majority of native operators in `k` have at least two completely unrelated semantic meanings based on the context where they are used, which is in turn defined by the number of arguments offered to the operator. To overlook this fact is a grave mistake, so you better get a very strong grip on the idea that some things in life are **monadic**, while others are **dyadic**. For valences of higher and lesser order it is fine to worry less. For example, when you used your first ever k operator in the expression `2+2`, you have used the operator **+** in a **dyadic** context, which basically meant that you offered it *two* operands to work on, left and right, respectively. However, once you discover what the **+** operator stands for when used in a **monadic** context, it will change your life forever, so let us skip this discussion for now.
+As you will see, the vast majority of native operators in `k` have at least two completely unrelated meanings based on the context where they are used, which is in turn defined by the number of arguments offered to the operator. To overlook this fact is a grave mistake, so you better get a very strong grip on the idea that some things in life are **monadic**, while others are **dyadic**. For ranks of higher and lesser order it is fine to worry less. For example, when you used your first ever k operator in the expression `2+2`, you have used the **+** operator in a **dyadic** context, which basically meant that you offered it *two* operands to work on, left and right, respectively. However, once you discover what the **+** operator stands for when used in a **monadic** context, it will change your life forever, so let us skip this discussion for now.
 
-So, lets recap. So far you know how to start k, how to assign values, declare most basic functions and variables, what the valence mumble is all about, and how to annotate your code. This is a good start, but tells you absolutely nothing about what k really is. Nowhere above you were promised a *gentle* introduction, so from here your best two friends are your intelligence and intuition, and the complexity is O(n^2).
+So, lets recap. So far you know how to start k, how to assign values, declare most basic functions and variables, the importance of rank, and how to annotate your code. This is a good start, but tells you absolutely nothing about what k really is. Nowhere above you were promised a *gentle* introduction, so from here your best two friends are your intelligence and intuition, and the complexity is O(n^2).
 
 # numbers
 
@@ -293,7 +292,6 @@ Like in C, there is no dedicated type for strings in k. Strings are just **char 
  
  s 0         /1st element of s
 "k"
-
 ```
 
 However, k has something C doesn't. We have a type called **name**, which is the same concept as **internalized string** found in some other languages. This means that a single instance of an arbitrarily long string can be placed into a global hash table that persists for a lifetime of a k process and can later be referenced by its hash key as many times as necessary without creating additional copies of the string. As you will discover later, names come very handy in many situations, but for now lets just see how they quack:
