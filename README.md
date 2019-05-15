@@ -258,7 +258,7 @@ atom      vect        type
   `t        `T        time
 ```
 
-This is not very revealing, so lets see them in action. The operator to query the type of anything in k is `monadic @`.
+This is not very revealing, so lets see them in action. The operator to query the type of anything in k is `monadic @`, and if you are not sure what we mean by `monadic`, it is a good time for you to hit 'home' and start over.
 
 ```q
  @42         /int atom
@@ -347,10 +347,10 @@ Of special mention is the **composite vector** type. Such vectors are either a m
  1+.5                  /int plus float is float, no surprises here
 1.5
 
- 1f*2                  /1f is the same as 1.0
+ 1f*2                  /1f is the same as 1.0, saves one keystroke
 2f 
 
- `i$42.99              /explicit cast float to int discards mantissa
+ `i$42.99              /explicit cast `f to `i just drops mantissa
 42
 
  `i$42.0 42.99         /same is true for float vectors
