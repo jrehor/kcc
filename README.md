@@ -140,7 +140,7 @@ kei:42         /kenneth eugene iverson
  f 2          /and you can omit brackets
 4
 
- f f 2        /a nice way to say f[f[2]] 
+ f f 2        /neater way to say f[f[2]] 
 16 
 ```
 
@@ -158,8 +158,9 @@ As you will see, the vast majority of native operators in `k` have at least two 
 So, lets recap. So far you know how to:
 
 * sum integers
-* assign values
-* declare most basic functions and variables
+* assign values to variables
+* declare most basic functions
+* not be afraid of `x`, `y` and `z`
 * appreciate the importance of rank
 * annotate your code
 
