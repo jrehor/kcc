@@ -12,7 +12,7 @@ x = x + 1
 
 Most programmers and most computer languages will readily agree that this expression is perfectly valid, but if you show it to a mathematician, be ready to hear "no, it isn't". And once you see what makes him think so, you will see why we assign things with `:` in k.
 
-A different perspective is not necessarily and wrong and hostile, and nothing prevents it from becoming your own, so keep an open mind.
+A different perspective is not necessarily wrong and hostile, and nothing prevents it from becoming your own, so keep an open mind.
 
 This crash course is not looking to make you an expert k programmer, because that, as any area of expertise, takes a lot of time and effort. We heard it is possible to teach oneself Java in 24 easy steps, but we are not qualified to talk about that. Instead, we are going to talk about fundamental aspects of *thinking in k*, and the curve is going to be steep — but we value your time, so we promise it will be fast and violent.
 
