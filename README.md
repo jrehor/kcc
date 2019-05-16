@@ -549,11 +549,11 @@ Checkpoint exercise:
  x                             /tada, we have all ints up to 8
 0 1 2 3 4 5 6 7 8
 
- x:1+x                         /this increments each of x by 1
+ x+:1                          /add 1 to each of x, also x:x+1
  x
 1 2 3 4 5 6 7 8 9
 
- x*\:/:x                       /x times eachleft eachright x
+ x*\:/:x                       /"x times eachleft eachright x"
 1 2  3  4  5  6  7  8  9    
 2 4  6  8  10 12 14 16 18
 3 6  9  12 15 18 21 24 27
