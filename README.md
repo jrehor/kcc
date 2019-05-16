@@ -607,7 +607,7 @@ x                 /t:      do this if c is true
 
 ,/f'x@=x>rand x   /so this must be the recursion step, go right to left:
 
-tmp:rand x        /pick some random atom from x (tmp added for brevity)
-x<tmp             /boolean vector, 0s where x[n]<tmp, 1s where otherwise
+rnd:rand x        /pick a random element from x (rnd added for clarity)
+x<rnd             /bool vector of 0s where x[n]<rnd, 1s where otherwise
 =x<tmp            /''
 ```
