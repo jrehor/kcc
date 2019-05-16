@@ -175,7 +175,7 @@ The word `atom` is a synonym for `scalar values`, or simply `scalars`. Every lan
 
 ```q
  a:(0,1,2,3,4)    /one way of declaring an integer vector
- b:0 1 2 3 4      /same result using more informal syntax
+ b:0 1 2 3 4      /same effect using more informal syntax
 
  a
 0 1 2 3 4
