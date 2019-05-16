@@ -159,14 +159,14 @@ Two specific ranks are so important that they have their own names. A function o
 
 As you will see, the vast majority of native operators in `k` have exactly two completely different meanings based on the context where they are used, which is in turn defined by the number of arguments offered to the operator. To overlook this fact is a grave mistake, so you better get a very strong grip on the idea that some things in life are **monadic**, while others are **dyadic**. For ranks of higher and lesser order it is fine to worry less. For example, when you used your first ever k operator in the expression `2+2`, you have used the **+** operator in a **dyadic** context, which basically meant that you offered it *two* operands to work on, left and right, respectively. However, once you discover what the **+** operator stands for when used in a **monadic** context, it will change your life forever, so let us skip this discussion for now.
 
-Lets recap. So far you know how to:
+**Recap.** So far you know how to:
 
 * sum integers
 * assign values to variables
 * declare most basic functions
 * be friends with `x`, `y` and `z`
 * appreciate the importance of rank
-* read up on Ken Iverson
+* google up "ken iverson" 
 * annotate your code
 
 This is a good start, but tells you absolutely nothing about what k really is. Nowhere above you were promised a *gentle* introduction, so from here your best two friends are your intelligence and intuition, and the complexity is O(n*n).
@@ -530,6 +530,14 @@ second form is `seedless eachprior` where `f` is a dyadic function or operator, 
 ```
 ----------------
 
+**Recap.** We have seen:
+
+* what k type system looks like
+* how basic vector and atom math works
+* which way to read and comprehend k code
+* what is the only existing precedence rule
+* why there is no `for` and why there are `adverbs`
+
 This doesn't seem like much, but here is just one example of what happens when adverbs work together:
 
 ```q
@@ -553,11 +561,20 @@ This doesn't seem like much, but here is just one example of what happens when a
 9 18 27 36 45 54 63 72 81 
 ```
 
-Yes, we know, we've been there. But in fact you already have absolutely everything you need to be able to read and understand the logic and order of evaluation of this expression. Remember, right to left, no precedence, and no explicit loops.
+Yes, we know, we've all been there - *"what?"*. But you already have everything you need to be able to read and understand the logic and the order of evaluation of this expression.
+
+Checkpoint exercise:
+
+* right to left
+* no precedence
+* no thinking in explicit loops
+* k interpreter to the rescue
+
+Make sure you get it before you advance to the next chapter, where things will get a lot less innocent, and very fast.
 
 -------------------
 
-If you could do that, here is the bonus you've been waiting for, **the meaning of monadic +**. You have been warned, your life is just about to change forever:
+Well done! Here is the bonus you've been waiting for. **The meaning of monadic +**:
 
 ```q
  mat:(1 2 3;4 5 6;7 8 9)       /shall there be mat
@@ -573,16 +590,7 @@ If you could do that, here is the bonus you've been waiting for, **the meaning o
 3 6 9
 ```
 
-Lets recap. We have seen:
-
-* what k type system looks like
-* how basic vector and atom math works
-* which way to read and comprehend k code
-* what is the only existing precedence rule
-* why there is no `for` and why there are `adverbs`
-* how to flip a matrix — or to transpose it, if you will
-
-It makes sense to revisit topics you feel less confident about before you advance to the next chapter, where things will get a lot less innocent, and very fast.
+Your life just changed forever, and there's no going back, so keep on reading.
 
 # proverbs
 
@@ -691,7 +699,7 @@ The annotated workflow above gives a pretty good idea of what is happening insid
 
 -------------------
 
-Lets recap. While analysing `qs` code, you have learned:
+**Recap.** While analysing `qs` code, you have learned:
 
 * ctf conditional `$[c;t;f]`
 * monadic `?x distinct`
@@ -703,7 +711,7 @@ Lets recap. While analysing `qs` code, you have learned:
 
 -------------------
 
-A checkpoint exercise:
+Checkpoint exercise:
 
 1. take another good look at the code of `qs` function.
 2. try to retrace the steps of the analysis we did above.
