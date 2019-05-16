@@ -26,7 +26,7 @@ There is a good chance that you have heard or read about Arthur Whitney and his 
 
 But jokes aside. Implementations of similar systems in languages like C++ or Java usually involve thousands of lines of code written by large teams, built on top of complex library stacks and even more complex infrastructure. The truth that these guys are not supposed to tell you, but always tell you anyway because they hate their jobs, it that their projects are desperately over budget, totally past deadline, and were designed for a version of reality that is no longer real.
 
-In comparison, a k solution is typically a few factors of magnitude less code, implemented by a small and agile team or a single individual, rarely requires external dependencies and always ships on time. 
+In comparison, a k solution is typically a few factors of magnitude less code, implemented by a small and agile team, sometimes by a single individual, rarely requires external dependencies and always ships on time. 
 
 At first it could be hard to understand how this can even be true, but compare the effort of keeping 100 lines of code in sync with rapidly changing requirements and free of bugs, compared to 10,000 lines of code that do the same thing. Against all intuition, it is not 100 times easier, but 10,000 times easier. And if you think we are exaggerating, revisit the idea of cyclomatic complexity, then try prove us wrong, and this will be a start of a beautiful friendship.
 
