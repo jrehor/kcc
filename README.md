@@ -4,7 +4,7 @@ a gentle introduction to k is elsewhere
 
 Computer languages have been around for a while, but in the beginning was the word. We will be writing code in a language called k, but it will help to talk about it first.
 
-`k` is *different*. You will question many aspects of its design, and it will respond by questioning things that you consider common sense, and this can be a very constructive conversation. For example, you may find it puzzling why the assignment operator in k is `:` instead of `=`. But give it a chance and try a simple thought experiment. Consider the following code:
+*`k` is different*. You will question many aspects of its design, and it will respond by questioning things that you consider common sense, and this can be a very constructive conversation. For example, you may find it puzzling why the assignment operator in k is `:` instead of `=`. But give it a chance and try a simple thought experiment. Consider the following code:
 
 ```java
 x = x + 1
