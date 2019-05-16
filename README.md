@@ -7,7 +7,7 @@
 **[exodus](#exodus)**
 
 * getting started → [install](#install-k) | [run](#run-k)
-* conventions and terminology → [style](#remarks-on-parlance) | [parlance](#remarks-on-parlance)
+* conventions and terminology → [style](#remarks-on-style) | [parlance](#remarks-on-parlance)
 
 **[numbers](#numbers)**
 
