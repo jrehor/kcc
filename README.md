@@ -7,7 +7,7 @@
 **[exodus](#exodus)**
 
 * [get](#getting-k) | [use](#using-k)
-* [on style and parlance](#remarks-on-style-and-parlance)
+* [style](#remarks-on-parlance) | [parlance](#remarks-on-parlance)
 
 **[numbers](#numbers)**
 
@@ -133,7 +133,7 @@ At any time during k session, you can:
 
 However, at this point we highly recommend to avoid issuing any of the above commands, especially the latter.
 
-### remarks on style and parlance
+### remarks on style
 
 As any other computer language, k expects a programmer to observe and follow certain conventions on coding style and terminology in order to understand the code written by the others and let their own code be understood. While some rules of the house of k are universal, some are not.
 
@@ -153,6 +153,8 @@ As any other computer language, k expects a programmer to observe and follow cer
 ```q
 kei:42         /kenneth eugene iverson
 ```
+
+## remarks on parlance
 
 **Functions** in k are first-class citizens. k has lambdas, eval, apply, and then some more. It takes a leap of faith to believe it, but k is probably more lispy than certain Lisps, only you don't need to get past any parens to be able to read it. In a strict sense, though, since there are no linked lists under the hood, k is clearly not lisp, because it was designed to be fast.
 
