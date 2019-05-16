@@ -516,7 +516,7 @@ where `f` is a function or operator that takes two arguments and `x` and `y` are
 
 adverb **eachprior** is `x f':y` and `(f':)x`
 
-first form is `seeded eachprior` where `f` is a dyadic function or operator, and `x` is seed value and `y` is an input vector
+first form is `seeded eachprior` where `f` is a dyadic function or operator, and `x` is a seed value and `y` is an input vector
 
 second form is `seedless eachprior` where `f` is a dyadic function or operator, and `x` is an input vector
 
