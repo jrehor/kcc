@@ -6,7 +6,7 @@
 
 **[exodus](#exodus)**
 
-* getting k to work: [get](#getting-k) | [use](#using-k)
+* getting started: [install](#getting-k) | [use](#using-k)
 * conventions and terminology: [style](#remarks-on-parlance) | [parlance](#remarks-on-parlance)
 
 **[numbers](#numbers)**
