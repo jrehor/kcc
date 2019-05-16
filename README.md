@@ -638,7 +638,7 @@ This gives us all the confidence we need to wrestle down the rest:
 0|4 2
 1|0 1
 
-pts:x@=x>rand x    /ok, 'split x in two parts below and above some item'
+pts:x@=x>rand x    /so: 'split x in two parts below and above some item'
 
 x:f'pts            /adverb 'each': apply f to each part, recurse further
 
