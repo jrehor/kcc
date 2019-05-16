@@ -2,23 +2,23 @@
 
 **[genesis](#genesis)**
 
-* [who](#who) | [why](#why) | [what](#what) | [how](#how) (about k)
+* about k: [who](#who) | [why](#why) | [what](#what) | [how](#how)
 
 **[exodus](#exodus)**
 
-* [get](#getting-k) | [use](#using-k) (installing and using k)
-* [style](#remarks-on-parlance) | [parlance](#remarks-on-parlance) (coding style and terminology)
+* getting k to work: [get](#getting-k) | [use](#using-k)
+* conventions and terminology: [style](#remarks-on-parlance) | [parlance](#remarks-on-parlance)
 
 **[numbers](#numbers)**
 
-* [vectors and atoms](#vectors-and-atoms) (vector arithmetic)
-* [types of types](#two-types-of-types) (k type system)
-* [from right to left](#right-to-left-and-back-again) (order of evaluation)
-* [no stinking loops](#no-stinking-loops) (overview of adverbs)
+* vector arithmetic: [vectors and atoms](#vectors-and-atoms)
+* type system: [types of types](#two-types-of-types)
+* order of evaluation: [from right to left](#right-to-left-and-back-again)
+* adverbs: [no stinking loops](#no-stinking-loops)
 
 **[proverbs](#proverbs)**
 
-* [how to solve it](#how-to-solve-it) (how to read code)
+* how to read code: [how to solve it](#how-to-solve-it)
 
 ## genesis
 
