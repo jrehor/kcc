@@ -691,8 +691,8 @@ A checkpoint excercise:
 
 1. take another close look at the code of `qs` function.
 2. try to retrace the steps of the analysis we did above.
-3. in a new k session, reproduce the `qs` from your memory.
+3. in a new k session, reproduce the `qs` from memory.
 
-Take our word, it sounds much harder than it is. It might take more than one attempt, but you will be amazed how fast you will get there.
+Take our word, it sounds much harder than it actually is. It might take more than one attempt, but you will be amazed how fast you will get there. However, before advancing to the next chapter, make sure that you do.
 
 
