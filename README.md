@@ -10,13 +10,13 @@ Regardless your background, k will look different. You will question many aspect
 x = x + 1
 ```
 
-Most programmers and most computer languages will readily agree that this expression is perfectly valid, but if you show it to any mathematician, you will hear "no, it isn't". And once you see what makes them say so, you will see why we assign things with `:` in k.
+Most programmers and most computer languages will readily agree that this expression is perfectly valid, but if you show it to a mathematician, don't be surprised to hear "no, it isn't". And once you see what makes him think so, you will see why we assign things with `:` in k.
 
-This gives a good hint how to approach k in general: a different perspective is not necessarily wrong and hostile, and nothing prevents it from becoming your own. Keep an open mind.
+This is a good hint how to approach k in general: a different perspective is not necessarily wrong and hostile, and nothing prevents it from becoming your own. Keep an open mind.
 
 This crash course is not looking to make you an expert k programmer, because that, as any area of expertise, takes a lot of time and effort. Allegedly, it is possible to teach oneself Java in 24 hours, but we are not qualified to talk about that. Instead, we are going to talk about fundamental aspects of *thinking in k*, and the curve is going to be steep — but we value your time, so we promise it will be fast and violent.
 
-The document assumes general proficiency with programming concepts and terminology, and hence will cut a lot of corners at some expense of readability.
+The text assumes good proficiency in general programming concepts, and hence will cut a lot of corners at some expense of readability. Although the narrative is strictly linear, each chapter builds on previous and there are no optional parts, we hope it is lightweight enough to be doable in one sitting.
 
 ### who
 
@@ -658,7 +658,7 @@ New stuff:
 * dyadic `@x index`
 * monadic `,/x raze`
 
-Now that we have read all of the code, you can zoom out and try to see how the recursion step and stop condition work together. When it doubt, feel free to use the interpreter to play around and test your ideas. In very little time, the ansewer should be right in front of you.
+Now that we have read and understood all components of our function, you can zoom out and try to see how the recursion step and stop condition work together. When it doubt, feel free to use the interpreter to play around and test your ideas. In very little time, the ansewer should be right in front of you.
 
 -------------------
 
