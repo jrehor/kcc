@@ -2,7 +2,7 @@
 
 **[genesis](#genesis)**
 
-* about k → [who](#who) | [why](#why) | [what](#what) | [how](#how)
+* k → [who](#who) | [why](#why) | [what](#what) | [how](#how)
 
 **[exodus](#exodus)**
 
