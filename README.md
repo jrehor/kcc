@@ -159,7 +159,9 @@ Two specific ranks are so important that they have their own names. A function o
 
 As you will see, the vast majority of native operators in `k` have exactly two completely different meanings based on the context where they are used, which is in turn defined by the number of arguments offered to the operator. To overlook this fact is a grave mistake, so you better get a very strong grip on the idea that some things in life are **monadic**, while others are **dyadic**. For ranks of higher and lesser order it is fine to worry less. For example, when you used your first ever k operator in the expression `2+2`, you have used the **+** operator in a **dyadic** context, which basically meant that you offered it *two* operands to work on, left and right, respectively. However, once you discover what the **+** operator stands for when used in a **monadic** context, it will change your life forever, so let us skip this discussion for now.
 
-**Recap.** So far you know how to:
+**Recap:**
+
+So far you know how to:
 
 * sum integers
 * assign values to variables
@@ -530,7 +532,9 @@ second form is `seedless eachprior` where `f` is a dyadic function or operator, 
 ```
 ----------------
 
-**Recap.** We have seen:
+**Recap:**
+
+We have seen:
 
 * what k type system looks like
 * how basic vector and atom math works
@@ -540,9 +544,9 @@ second form is `seedless eachprior` where `f` is a dyadic function or operator, 
 
 ----------------
 
-Checkpoint exercise:
+**Checkpoint exercise:**
 
-* Consider this example of two adverbs working together:
+Consider this example of two adverbs working together:
 
 ```q
  x:!9                          /! is til, get first n integers
@@ -701,7 +705,7 @@ The annotated breakdown of `qs` code gives a good impression of what is going on
 
 -------------------
 
-**Recap.**
+**Recap:**
 
 While analysing `qs` code, you have learned:
 
@@ -724,7 +728,7 @@ Finally, for completeness sake:
 
 -------------------
 
-Checkpoint exercise:
+**Checkpoint exercise:**
 
 1. take another good look at the code of `qs` function.
 2. retrace the steps of the analysis we did together.
