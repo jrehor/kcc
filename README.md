@@ -587,8 +587,8 @@ f:{...}           /f is a function, that is a good start
 f:{.x.}           /f takes only one implicit argument, x
 f:{.f.}           /f clearly calls f, so it is recursive
 
-$[?;?;?]          /the entire body of f[] is this construct
-$[c;t;f]          /ctf conditional, same as if(c){t}else{f}
+$[?;?;?]          /the entire body of f is nothing more but
+$[c;t;f]          /a ctf conditional, think if(c){t}else{f}
 
 2>#?x             /c:      some bool condition
 x                 /t:      do this if c is true
@@ -596,7 +596,7 @@ x                 /t:      do this if c is true
 
 2>#?x             /whatever this condition tests, it is clear that f[]
                   /will halt recursion once it turns true, returning x
-                  /so lets first dissect the condition, right to left:
+                  /so lets figure out what it says, from right to left
 
 ?x                /monadic ? is 'distinct'        unique elements of x
 #x                /monadic # is 'count'        count the elements of x
