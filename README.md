@@ -2,7 +2,7 @@
 
 **[genesis](#genesis)**
 
-* [who](#who) | [why](#why) | [what](#what) | [how](#how) > all you need to know about k
+* [who](#who) | [why](#why) | [what](#what) | [how](#how) **all you need to know about k**
 
 **[exodus](#exodus)**
 
