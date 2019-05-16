@@ -701,7 +701,9 @@ The annotated breakdown of `qs` code gives a good impression of what is going on
 
 -------------------
 
-**Recap.** While analysing `qs` code, you have learned:
+**Recap.**
+
+While analysing `qs` code, you have learned:
 
 * ctf cond `$[c;t;f]`
 * monadic `?x distinct`
@@ -716,7 +718,7 @@ Also, at the end of the previous chapter you have seen:
 * monadic `!x til (first x integers)`
 * monadic `+x flip/transpose`
 
-For completeness sake, you also have:
+Finally, for completeness sake:
 
 * monadic `@x typeof`
 
