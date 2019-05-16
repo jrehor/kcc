@@ -658,7 +658,7 @@ New stuff:
 * dyadic `@x index`
 * monadic `,/x raze`
 
-Now, if you zoom out and try to see how the recursion step and stop condition work together, the answer should be right in front of you.
+Now, if you zoom out and try to see how the recursion step and stop condition work together, the answer to the riddle should be right in front of you.
 
 -------------------
 
