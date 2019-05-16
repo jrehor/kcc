@@ -603,7 +603,7 @@ x                 /t:      do this if c is true
 #?x               /'count distinct'         count unique elements of x
 2>x               /'greater'                  true if x is less than 2
 
-$[2>#?x;x;...]    /so this is just 'return x if x has <2 unique items'
+$[2>#?x;x;...]    /so this is just "return x if x has <2 unique items"
 ```
 
 Pit stop, so far we know:
@@ -638,7 +638,7 @@ This gives us confidence and pace to quickly wrestle down the rest:
 0|4 2
 1|0 1
 
-pts:x@=x>rand x    /'partition x by pivot: items < rnd and items >= rnd'
+pts:x@=x>rand x    /"partition x by pivot: items < rnd and items >= rnd"
 
 x:f'pts            /adverb 'each': call f recursively for each partition
 
@@ -658,7 +658,7 @@ New stuff:
 * dyadic `@x index`
 * monadic `,/x raze`
 
-Now that we know what every specific part does, we can zoom out and see the big picture. When it doubt, feel free to use the interpreter to play around and test your ideas. In very little time, the ansewer should be right in front of you.
+Now that we know what every specific part does, we can zoom out and see the big picture. Feel free to use the interpreter to play around and test your ideas. In very little time, the answer should be right in front of you.
 
 -------------------
 
