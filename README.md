@@ -601,9 +601,9 @@ x                 /t:      do this if c is true
 ?x                /monadic ? is 'distinct'        unique elements of x
 #x                /monadic # is 'count'        count the elements of x
 #?x               /'count distinct'         count unique elements of x
-2>x               /'greater'            turns true if x is less than 2
+2>x               /'greater'                  true if x is less than 2
 
-$[2>#?x;x;...]    /mystery solved: 'return x if x has <2 unique items'
+$[2>#?x;x;...]    /so this is just 'return x if x has <2 unique items'
 ```
 
 Pit stop, so far we know:
