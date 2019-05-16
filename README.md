@@ -626,14 +626,14 @@ And now for the best part of it:
 
  cmp:x<rnd         /bool vector of 0s where x[n]<rnd, 1s where otherwise
  cmp
-0 1 0 0
+0 1 1 0
 
  idx:=cmp          /= is 'group': 2 vectors, indices of 0s and 1s in cmp
  idx
 0|0 3
 1|1 2
 
- pts:x@idx         /dyadic @ is 'index': values of x at indices from pos
+ pts:x@idx         /dyadic @ is 'index': elements of x at indices in idx
  pts
 0|4 2
 1|0 1
