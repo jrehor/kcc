@@ -133,7 +133,7 @@ kei:42         /kenneth eugene iverson
 
 **Functions** in k are first-class citizens. k has lambdas, eval, apply, and then some more. It takes a leap of faith to believe it, but k is probably more lispy than certain Lisps, only you don't need to get past any parens to be able to read it. In a strict sense, though, since there are no linked lists under the hood, k is clearly not lisp, because it was designed to be fast.
 
-**Implicit arguments** is something that will make you wonder at first, since most languages require you to explicitly declare arguments of your functions. Sure you can also do that in k if you want to, but if you don't, a k function can have up to three **implicit arguments** called `x`, `y` and `z`, which basically means you declare them by simply referencing them in the function body. It is an extremely convinient feature, not nearly as scary as it sounds:
+**Implicit arguments** is something that will make you wonder at first, since most languages require you to explicitly declare arguments of your functions. Sure you can also do that in k if you want to, but if you don't, a k function can have up to three implicit arguments called `x`, `y` and `z`, which basically means you declare them by simply referencing them in the function body. It is an extremely convinient feature, not nearly as scary as it sounds:
 
 ```q
  f:{x+y+z}    /f[] takes three arguments
