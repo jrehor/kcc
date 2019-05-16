@@ -716,7 +716,7 @@ While analysing `qs` code, you have learned:
 Also, at the end of the previous chapter you have seen:
 
 * monadic `!x til (first x integers)`
-* monadic `+x flip/transpose`
+* monadic `+x flip (transpose)`
 
 Finally, for completeness sake:
 
