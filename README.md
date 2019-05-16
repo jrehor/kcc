@@ -12,7 +12,7 @@
 **[numbers](#numbers)**
 
 * vector arithmetic: [vectors and atoms](#vectors-and-atoms)
-* type system: [types of types](#two-types-of-types)
+* type system: [two types of types](#two-types-of-types)
 * order and precedence: [from right to left](#right-to-left-and-back-again)
 * adverbs: [no stinking loops](#no-stinking-loops)
 
