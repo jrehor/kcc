@@ -538,7 +538,11 @@ second form is `seedless eachprior` where `f` is a dyadic function or operator, 
 * what is the only existing precedence rule
 * why there is no `for` and why there are `adverbs`
 
-This doesn't seem like much, but here is just one example of what happens when adverbs work together:
+----------------
+
+Checkpoint exercise:
+
+* Consider this example of two adverbs working together:
 
 ```q
  x:!9                          /! is til, get first n integers
@@ -561,20 +565,18 @@ This doesn't seem like much, but here is just one example of what happens when a
 9 18 27 36 45 54 63 72 81 
 ```
 
-Yes, we know, we've all been there - *"what?"*. But you already have everything you need to be able to read and understand the logic and the order of evaluation of this expression.
+The goal is to make sure you understand the logic and the order of evaluation of this expression. You have everything you need:
 
-Checkpoint exercise:
-
-* right to left
-* no precedence
+* read right to left
+* there is no precedence
 * no thinking in explicit loops
-* k interpreter to the rescue
+* k interpreter is your friend
 
-Make sure you get it before you advance to the next chapter, where things will get a lot less innocent, and very fast.
+Take your time, Make sure you got it before advancing to the next chapter, where things will get a lot less innocent, and fast.
 
 -------------------
 
-Well done! Here is the bonus you've been waiting for. **The meaning of monadic +**:
+Well done! Here is the bonus you were waiting for: **The meaning of monadic +**:
 
 ```q
  mat:(1 2 3;4 5 6;7 8 9)       /shall there be mat
@@ -590,7 +592,7 @@ Well done! Here is the bonus you've been waiting for. **The meaning of monadic +
 3 6 9
 ```
 
-Your life just changed forever, and there's no going back, so keep on reading.
+As promised, your life just changed forever, there is no going back, so keep on reading.
 
 # proverbs
 
@@ -717,6 +719,6 @@ Checkpoint exercise:
 2. try to retrace the steps of the analysis we did above.
 3. in a new k session, reproduce the `qs` from memory.
 
-Take our word, it sounds much harder than it really is. It might take more than one attempt, but you will be amazed how fast you will get there. However, before advancing to the next chapter, make sure that you do.
+It sounds much harder than it really is. It might take more than one attempt, but you will be amazed how fast you will get there. However, before advancing to the next chapter, make sure that you *do* get there.
 
 
