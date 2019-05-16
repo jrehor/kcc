@@ -716,6 +716,10 @@ Also, at the end of the previous chapter you have seen:
 * monadic `!x til (first x integers)`
 * monadic `+x flip/transpose`
 
+For completeness sake, you also have:
+
+* monadic `@x typeof`
+
 -------------------
 
 Checkpoint exercise:
