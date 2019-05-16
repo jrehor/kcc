@@ -685,6 +685,8 @@ Lets recap. While analysing `qs` code, you have learned:
 * monadic `,/x raze`
 * dyadic `x@y index`
 
+-------------------
+
 A checkpoint excercise:
 
 1. take another close look at the code of `qs` function.
