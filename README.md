@@ -568,7 +568,7 @@ It is a good checkpoint before you advance to the next chapter, where things wil
 
 The title of this chapter is shamelessly borrowed from a legendary book published back in 1945, a small volume by mathematician George Pólya where he shows how to approach problems and arrive to solutions. It is a very inspiring read.
 
-Equipped with everything we covered so far, we are going to tackle a little problem. We will look at a k function that actually does something very useful and implements an algorightm that you are guaranteed to be very familiar with. The subject of game is to identify the algorighm and figure out how it is implementented in k.
+Equipped with everything we have so far, we are going to tackle a little problem. We will look at a k function that actually does something very useful and implements a very familiar algorightm. The subject of game is to identify the algorighm and figure out how it is implementented in k.
 
 Don't be in a hurry to paste anything into k interpreter. It is a lot more useful to dissect it on paper first. Once we are done, you will be very tempted to try a lot of new things on your own. So here is the code:
 
