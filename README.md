@@ -468,7 +468,7 @@ The main reason explicit loops are missing from k is because they are *unnecessa
 
 Loops are available in k in form of **six** simple and strong abstractions known as **adverbs**. Each by itself, and even more so when combined together, are sufficient to completely displace the way of thinking in explicit loops. Also, it comes without saying that k supports **recursion**, which is no less elegant way to avoid loops in many pracatical situations.
 
-But lets focus on adverbs. Here is the majestic six:
+But lets focus on adverbs. Here is the magnificent six:
 
 ----------------
 adverb **each** is `f'x`
@@ -516,7 +516,10 @@ where `f` is a function or operator that takes two arguments and `x` and `y` are
 
 adverb **eachprior** is `x f':y` and `(f':)x`
 
-where `f` is a function or operator that takes two arguments and `x` and `y` are left and right inputs
+first form is `seeded eachprior` where `f` is a dyadic function or operator, and `x` is seed value and `y` is an input vector
+
+second form is `seedless eachprior` where `f` is a dyadic function or operator, and `x` is an input vector
+
 
 ```q
  2+':4 8 16          /seeded eachprior        gives (2+4),(4+8),(8+16)
