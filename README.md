@@ -572,11 +572,11 @@ The goal is to make sure you understand the logic and the order of evaluation of
 * no thinking in explicit loops
 * k interpreter is your friend
 
-Take your time, Make sure you got it before advancing to the next chapter, where things will get a lot less innocent, and fast.
+Take your time, make sure you got it before advancing to the next chapter, where things will get a lot less innocent, and fast.
 
 -------------------
 
-Well done! Here is the bonus you were waiting for: **The meaning of monadic +**:
+Well done! Here is the bonus you were waiting for: **the meaning of monadic +**:
 
 ```q
  mat:(1 2 3;4 5 6;7 8 9)       /shall there be mat
@@ -697,7 +697,7 @@ You didn't need a second guess:
 
 Of course, in real life you would simply use the built-in sorting operator, which is a lot more efficient. What this toy example demonstrates is the principle of **doing more with less**, and that is what k is all about.
 
-The annotated workflow above gives a pretty good idea of what is happening inside programmer's head, but tells you very little about how fast it happens. A proficient k programmer would read and understand `qs` in well under 2 minutes. With a bit more practice, you will agree that reading k programs is easy and fun, but even sooner you will see why k programmers enjoy writing them so much.
+The annotated workflow above gives a good idea of what happens inside k programmer's head, but tells you nothing about how fast it happens. A proficient k programmer would read and understand `qs` in well under 2 minutes. With a bit more practice, you will agree that reading k programs is easy and fun, but even sooner you will see why k programmers enjoy writing them so much.
 
 -------------------
 
