@@ -18,7 +18,7 @@
 
 **[proverbs](#proverbs)**
 
-* [how to solve it](#how-to-solve-it) (how to read k)
+* [how to solve it](#how-to-solve-it) **< how to read k**
 
 ## genesis
 
