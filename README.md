@@ -616,17 +616,19 @@ x                 /t:      do this if c is true
  cmp
 0 1 0 0
 
- pos:=cmp          /= is 'group': 2 vectors, indices of 0s and 1s in cmp
- pos
+ idx:=cmp          /= is 'group': 2 vectors, indices of 0s and 1s in cmp
+ idx
 0|0 3
 1|1 2
 
- pts:x@pos         /dyadic @ is 'index': values of x at indices from pos
+ pts:x@idx         /dyadic @ is 'index': values of x at indices from pos
  pts
 0|4 2
 1|0 1
 
- x:f'pts           /adverb 'each': apply f to each pts and return resuts
+pts:x@=x>rand x    /ok, 'split x in two parts below and above some item'
+
+x:f'pts            /adverb 'each': apply f to each part, recurse further
 
 ,/x                /,/ is 'raze': unwind aka flatten a vector of vectors
                    /but equally valid way to express ,/ is 'enlist over'
