@@ -350,7 +350,7 @@ Of special mention is the **composite vector** type. Such vectors are either a m
  @a
 `
 
- a[2]16                 /calls 2nd lambda, same as a[2][16]
+ a[2]16                 /calls 3rd lambda, same as a[2][16]
 256
 ```
 
