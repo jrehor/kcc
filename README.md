@@ -612,11 +612,11 @@ x                 /t:      do this if c is true
 $[2>#?x;x;...]    /so this is just "return x if x has <2 unique items"
 ```
 
-Pit stop, so far we know:
+Pit stop, here is what we know so far:
 
 * the general control flow of the function
-* two new monadic operators,  `?x distinct` and `#x count`
-* one new construct, if-then-else aka `ctf`
+* two new monadic operators, `?x distinct` and `#x count`
+* one new construct, `$[c;t;f]` aka if-then-else
 * the condition that stops recursion
 
 This gives us confidence and pace to quickly wrestle down the rest:
