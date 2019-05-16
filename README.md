@@ -613,7 +613,7 @@ Pit stop, so far we know:
 * one new construct, if-then-else aka `ctf`
 * the condition that stops recursion
 
-This gives us all the confidence we need to wrestle down the best part:
+This gives us all the confidence we need to wrestle down the rest:
 
 ```q
 
