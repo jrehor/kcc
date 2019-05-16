@@ -70,10 +70,16 @@ kelas@failbowl ~ $ conda update -c shaktidb shakti
 
 ### using k
 
-Assuming conda's `bin` is in your PATH, go ahead and start your very first k session, ask your first question and enjoy your first answer:
+Assuming conda's `bin` is in your PATH, make sure you have `rlwrap` utility installed, and put an alias `alias k="rlwrap k"` in your shell rc file. Start your very first k session like so:
 
 ```sh
+kelas@failbowl ~ $ alias k="rlwrap k"
 kelas@failbowl ~ $ k
+```
+
+Type in your first k expression, and enjoy your first answer:
+
+```q
 2019-04-21 15:38:18 40core 512gb avx2 © shakti m2.0 prod
  2+2
 4
