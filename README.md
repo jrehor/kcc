@@ -196,7 +196,7 @@ a-b              /pairwise substraction
  a%b             /pairwise divison (yes, division in k is %, and ø means nil, nan, void and other bad news)
 ø 1 1 1 1
 
- a=b             /pairwise comparison (1 in k means 'truthy')
+ a=b             /pairwise comparison (everything >0 in k is truthy)
 1 1 1 1 1 
 ```
 
