@@ -12,11 +12,11 @@ x = x + 1
 
 Most programmers and most computer languages will readily agree that this expression is perfectly valid, but if you show it to a mathematician, don't be surprised to hear "no, it isn't". And once you see what makes him think so, you will see why we assign things with `:` in k.
 
-This is a good hint how to approach k in general: a different perspective is not necessarily wrong and hostile, and nothing prevents it from becoming your own. Keep an open mind.
+A different perspective is not necessarily and wrong and hostile, and nothing prevents it from becoming your own, so keep an open mind.
 
-This crash course is not looking to make you an expert k programmer, because that, as any area of expertise, takes a lot of time and effort. Allegedly, it is possible to teach oneself Java in 24 hours, but we are not qualified to talk about that. Instead, we are going to talk about fundamental aspects of *thinking in k*, and the curve is going to be steep — but we value your time, so we promise it will be fast and violent.
+This crash course is not looking to make you an expert k programmer, because that, as any area of expertise, takes a lot of time and effort. We heard it is possible to teach oneself Java in 24 easy steps, but we are not qualified to talk about that. Instead, we are going to talk about fundamental aspects of *thinking in k*, and the curve is going to be steep — but we value your time, so we promise it will be fast and violent.
 
-The text assumes good proficiency in general programming concepts, and hence will cut a lot of corners at some expense of readability. Although the narrative is strictly linear, each chapter builds on previous and there are no optional parts, we hope it is lightweight enough to be doable in one sitting.
+The text assumes proficiency in general programming concepts, and hence will cut a lot of corners at some expense of readability. Although the narrative is strictly linear and each chapter builds on previous with no optional parts, we hope we kept it lightweight enough to be doable in one sitting.
 
 ### who
 
