@@ -577,7 +577,7 @@ Don't be in a hurry to paste anything into your interpreter, it is a lot more us
 f:{$[2>#?x;x;,/f'x@=x>rand x]} 
 ```
 
-Okay, almost nothing looks familiar here, and the whole little monster is just creepy. But before you head for the fire exit, give it a chance. Once we take it apart brick by brick, you will agree how **trivial** it is, really:
+Okay, almost nothing looks familiar here, and the whole little monster is just creepy. But before you head for the fire exit, give it a chance. Once we take it apart brick by brick, you will agree that it is actually very simple and totally readable:
 
 ```q
 
