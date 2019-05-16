@@ -658,7 +658,7 @@ New stuff:
 * dyadic `@x index`
 * monadic `,/x raze`
 
-Now that we know what every specific part does, we can zoom out and see the big picture. Feel free to use the interpreter to play around and test your ideas. In very little time, the answer should be right in front of you.
+Now that we know what every specific part does, we can zoom out and try to see the big picture. Feel free to use the interpreter to play around and test your ideas. The answer should be right in front of you in no time.
 
 -------------------
 
