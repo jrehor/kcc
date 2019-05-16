@@ -711,13 +711,18 @@ The annotated workflow above gives a pretty good idea of what is happening insid
 * monadic `,/x raze`
 * dyadic `x@y index`
 
+At the end of the previous chapter we have seen:
+
+* monadic `!x til (first x integers)'
+* monadic `+x flip/transpose'
+
 -------------------
 
 Checkpoint exercise:
 
 1. take another good look at the code of `qs` function.
-2. try to retrace the steps of the analysis we did above.
-3. in a new k session, reproduce the `qs` from memory.
+2. try to retrace the steps of the analysis we did together.
+3. in a new k session, try to reproduce `qs` from memory.
 
 It sounds much harder than it really is. It might take more than one attempt, but you will be amazed how fast you will get there. However, before advancing to the next chapter, make sure that you *do* get there.
 
