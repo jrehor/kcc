@@ -146,7 +146,7 @@ kei:42         /kenneth eugene iverson
 
 This illustrates a core principle of k syntax — everything that you intuitively feel you should be able to omit, can and should be omitted, and there very few exceptions to this rule. The lesser you type, the better your code will get.
 
-**Rank** is a less fancy way to say *valence*, a word that describes pretty simple idea that is extremely important to be understood well. *Rank* of an operator or a function is basically the count of arguments they take. Two functions shown above have ranks of 3 and 1, respectively. 
+**Rank** is another way of saying *valence*, a fancy word that describes a simple idea that is extremely important to be understood well. Rank of an operator or a function is basically the count of arguments they take. Two functions shown above have ranks of 3 and 1, respectively. 
 
 Two specific ranks are so important that they have their own names. A function or an operator...
 
@@ -703,4 +703,4 @@ You didn't need a second guess:
 1 1 1 2 3 5 5 6 8 9 
 ```
 
-In practice, you don't want to sort stuff this way because k has an efficient built-in sorting operator. What this toy example is all about is the principle of **doing more with less**, and that is what all of k is all about. Last but not least, it means to show that the process of reading k programs is nothing less than entertaininig.
+Sure enough, you don't want to sort stuff this way in practice because k has a very efficient built-in sorting operator. What this toy example is all about is the principle of **doing more with less**, and that is what all of k is all about. Last but not least, it means to show that the process of reading k programs is nothing less of entertaining, and why we think that writing them is just pure joy.
