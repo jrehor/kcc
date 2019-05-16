@@ -18,7 +18,7 @@
 
 **[proverbs](#proverbs)**
 
-* how to read code → [how to solve it](#how-to-solve-it)
+* reading code → [how to solve it](#how-to-solve-it)
 
 ## genesis
 
