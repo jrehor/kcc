@@ -519,14 +519,13 @@ adverb **eachprior** is `x f':y` and `(f':)x`
 where `f` is a function or operator that takes two arguments and `x` and `y` are left and right inputs
 
 ```q
- 2+':4 8 16          /eachprior seed 2      gives (2+4),(4+8),(8+16)
-6 12 24
+ 2+':4 8 16          /seeded eachprior        gives (2+4),(4+8),(8+16)
+6 12 24              /sum of first item and seed, then sum of each item and the item prior to it
 
- (+':)4 8 16         /seedless eachprior    gives (4),(4+8),(8+16)
-4 12 24
+ (+':)4 8 16         /seedless eachprior      gives (4),(4+8),(8+16)
+4 12 24              /first item stays as is, then sum of each item and the item prior to it
 ```
 ----------------
-
 
 This doesn't seem like much, but here is just one example of what happens when adverbs work together:
 
@@ -628,10 +627,10 @@ $[2>#?x;x;...]    /so this is just "return x if x has <2 unique items"
 
 Here is what we know so far:
 
-* the general control flow of the function
+* the control flow of the recursive function
 * the condition that stops recursion
 
-This gives us confidence to quickly wrestle down the rest:
+This gives us confidence to quickly wrestle down the last part, the recursion step:
 
 ```q
 
