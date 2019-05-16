@@ -10,7 +10,7 @@ Regardless your background, k will look different. You will question many aspect
 x = x + 1
 ```
 
-Most programmers and most computer languages will readily agree that this expression is perfectly valid, but if you show it to a mathematician, don't be surprised to hear "no, it isn't". And once you see what makes him think so, you will see why we assign things with `:` in k.
+Most programmers and most computer languages will readily agree that this expression is perfectly valid, but if you show it to a mathematician, be ready to hear "no, it isn't". And once you see what makes him think so, you will see why we assign things with `:` in k.
 
 A different perspective is not necessarily and wrong and hostile, and nothing prevents it from becoming your own, so keep an open mind.
 
