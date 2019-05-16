@@ -689,7 +689,7 @@ Lets recap. While analysing `qs` code, you have learned:
 
 A checkpoint exercise:
 
-1. take another close look at the code of `qs` function.
+1. take another good look at the code of `qs` function.
 2. try to retrace the steps of the analysis we did above.
 3. in a new k session, reproduce the `qs` from memory.
 
