@@ -612,11 +612,9 @@ x                 /t:      do this if c is true
 $[2>#?x;x;...]    /so this is just "return x if x has <2 unique items"
 ```
 
-Pit stop, here is what we know so far:
+Here is what we know so far:
 
 * the general control flow of the function
-* two new monadic operators, `?x distinct` and `#x count`
-* one new construct, `$[c;t;f]` aka if-then-else
 * the condition that stops recursion
 
 This gives us confidence to quickly wrestle down the rest:
@@ -658,12 +656,6 @@ x:f'pts            /adverb 'each': call f recursively for each partition
 1 2 3 4 5 6
 ```
 
-New stuff:
-
-* monadic `rand x` and `=x group`
-* dyadic `@x index`
-* monadic `,/x raze`
-
 Now that we know what every specific part does, we can zoom out and try to see the big picture. Feel free to use the interpreter to play around and test your ideas. The answer should be right in front of you in no time.
 
 -------------------
@@ -677,4 +669,26 @@ You didn't need a second guess:
 1 1 1 2 3 5 5 6 8 9 
 ```
 
-Of course, in real life you would simply use the built-in sorting operator, which is a lot more efficient. What this toy example is all about is the principle of **doing more with less**, and that's what k is all about. It also hopes to show that reading k code is easy and fun, and gives a hint why k programmers enjoy writing it.
+Of course, in real life you would simply use the built-in sorting operator, which is a lot more efficient. What this toy example demonstrates is the principle of **doing more with less**, and that is what k is all about.
+
+The annotated workflow above gives a pretty good idea of what is happening inside programmer's head, but tells you very little about how fast it happens. For a proficient k programmer, the complete analysis of `qs` would be done in about 3-5 minutes. With a bit more practice, you will agree that reading k is fast, easy and fun, and why k programmers enjoy writing it so much.
+
+Lets recap. While analysing `qs` code, you have learned:
+
+* ctf conditional `$[c;t;f]`
+* monadic `?x distinct`
+* monadic `#x count`
+* monadic `rand x`
+* monadic `=x group`
+* monadic `,/x raze`
+* dyadic `x@y index`
+
+A checkpoint excercise:
+
+1. take another close look at the code of `qs` function.
+2. try to retrace the steps of the analysis we did above.
+3. start a new k session and reproduce the code from your memory
+
+It only sounds hard. It might take more than one attempt, but you will be amazed how fast you will get there.
+
+
