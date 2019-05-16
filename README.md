@@ -671,4 +671,4 @@ You didn't need a second guess:
 1 1 1 2 3 5 5 6 8 9 
 ```
 
-Of course, in real life you would simply use the built-in sorting operator, which is a lot more efficient. What this toy example is all about is the principle of **doing more with less**, and that's what k is all about. It also hopes to show that reading k programs is nothing less of entertaining, and give a hint why we believe that writing them is pure joy.
+Of course, in real life you would simply use the built-in sorting operator, which is a lot more efficient. What this toy example is all about is the principle of **doing more with less**, and that's what k is all about. It also hopes to show that reading k code is easy and fun, and gives a hint why k programmers enjoy writing it.
