@@ -659,42 +659,7 @@ New stuff:
 * dyadic `@x index`
 * idiom `,/x raze`
 
-We are done, and the answer is right in front of us. Just to make sure, lets take a small vector and apply the recursion steps manually to make sure our assumption is correct:
-
-```q
-
- d:9 2 5 5 1 8 1 3 6 1    /a random sample
- r:{x@=x>rand x}          /recursion step (without recurrence and raze)
-
- d0:r d                   /depth 0
-0|2 1 1 1
-1|9 5 5 8 3 6
-
- d10:r d0 0               /depth 1,0
-0|1 1 1                   /done
-1|,2                      /done
-
- d11:r d0 1               /depth 1,1
-0|5 5 3 6
-1|9 8
-
- d20:r d11 0              /depth 2,0
-0|,3                      /done
-1|5 5 6
-
- d21:r d11 1              /depth 2,1
-0|,8                      /done
-1|,9                      /done
-
- d31:r d20 1              /depth 3,1
-0|5 5                     /done
-1|,6                      /done
-
- ,/i10[0 1],i20[0],i31[0 1],i21[0 1] /assemble and raze
-1 1 1 2 3 5 5 6 8 9
-```
-
-But you didn't need a second guess:
+You are done, the answer is right in front of you. Once you see how recursion step and stop condition work together, you won't need a second guess:
 
 ```q
  qs:{$[2>#?x;x;,/qs'x@=x>rand x]}        /quicksort
@@ -703,4 +668,4 @@ But you didn't need a second guess:
 1 1 1 2 3 5 5 6 8 9 
 ```
 
-Of course, in real life we would simply use the built-in sorting operator, which is a lot more efficient. What this toy example is all about is the principle of **doing more with less**, and that's what k is all about. It also means to show that reading k programs is nothing less of entertaining, and give a hint why we believe that writing them is pure joy.
+Of course, in real life you would simply use the built-in sorting operator, which is a lot more efficient. What this toy example is all about is the principle of **doing more with less**, and that's what k is all about. It also means to show that reading k programs is nothing less of entertaining, and give a hint why we believe that writing them is pure joy.
