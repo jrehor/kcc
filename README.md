@@ -711,7 +711,7 @@ The annotated workflow above gives a pretty good idea of what is happening insid
 * monadic `,/x raze`
 * dyadic `x@y index`
 
-At the end of the previous chapter we have seen:
+Also, at the end of the previous chapter you have seen:
 
 * monadic `!x til (first x integers)'
 * monadic `+x flip/transpose'
@@ -726,4 +726,4 @@ Checkpoint exercise:
 
 It sounds much harder than it really is. It might take more than one attempt, but you will be amazed how fast you will get there. However, before advancing to the next chapter, make sure that you *do* get there.
 
-
+-------------------
