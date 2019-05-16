@@ -577,9 +577,7 @@ Don't be in a hurry to paste anything into k interpreter. It is a lot more usefu
 f:{$[2>#?x;x;,/f'x@=x>rand x]} 
 ```
 
-Okay, it looks like there is almost nothing familiar here, and the whole thing is just creepy. But before you head for the fire exit as so many before you, give it a chance.
-
-Once we take it apart brick by brick, you will agree how *trivial* it is, really:
+Okay, it looks like there is almost nothing familiar here, and the whole thing is just creepy. But before you head for the fire exit as so many before you, give it a chance. Once we take it apart brick by brick, you will agree how **trivial** it is, really:
 
 ```q
 
@@ -598,13 +596,17 @@ x                 /t:      do this if c is true
                   /will stop recursing once it turns true, returning x
                   /so lets first dissect the condition, right to left:
 
-?x                /'distinct'        -> all unique elements of x
-#x                /'count'           -> count the elements of x
-#?x               /'count distinct'  -> count unique elements of x
-2>x               /'greater'         -> true if x is less than 2
+?x                /monadic ? is 'distinct'        unique elements of x
+#x                /monadic # is 'count'        count the elements of x
+#?x               /'count distinct'         count unique elements of x
+2>x               /'greater'            turns true if x is less than 2
 
-2>#?x             /mystery solved:   -> "true if x has <2 unique items"
+2>#?x             /mystery solved: 'turn true if x has <2 unique items'
+```
 
+Quick pitstop. So far so good, we have 
+
+```q
 ,/f'x@=x>rand x   /so this must be the recursion step, go right to left:
 
  x:4 0 1 2         /an imaginary dataset to assist the analysis of above
