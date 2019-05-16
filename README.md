@@ -673,6 +673,8 @@ Of course, in real life you would simply use the built-in sorting operator, whic
 
 The annotated workflow above gives a pretty good idea of what is happening inside programmer's head, but tells you very little about how fast it happens. For a proficient k programmer, the complete analysis of `qs` would be done in about 3-5 minutes. With a bit more practice, you will agree that reading k is fast, easy and fun, and why k programmers enjoy writing it so much.
 
+-------------------
+
 Lets recap. While analysing `qs` code, you have learned:
 
 * ctf conditional `$[c;t;f]`
