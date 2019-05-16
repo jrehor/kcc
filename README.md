@@ -349,6 +349,9 @@ Of special mention is the **composite vector** type. Such vectors are either a m
  a:{x},{x+x},{x*x}      /a vector of lambdas, sure, why not
  @a
 `
+
+ a[2]16                 /calls 2nd lambda, same as a[2][16]
+256
 ```
 
 **Casting**, both explicit and implicit, is demonstrated by the following examples which also give a general feel of how type coersion behaves:
