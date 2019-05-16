@@ -656,7 +656,7 @@ New stuff:
 
 * monadic `rand x` and `=x group`
 * dyadic `@x index`
-* idiom `,/x raze`
+* monadic `,/x raze`
 
 Now, if you zoom out and try to see how the recursion step and stop condition work together, the answer should be right in front of you.
 
