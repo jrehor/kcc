@@ -581,7 +581,7 @@ Okay, it looks like there is almost nothing familiar here, and the whole thing i
 
 ```q
 
-f:{...}           /okay, f is a function, that's a start
+f:{...}           /f is a function, that is a good start
 f:{.x.}           /f takes only one implicit argument, x
 f:{.f.}           /f clearly calls f, so it is recursive
 
