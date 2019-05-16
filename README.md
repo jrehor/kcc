@@ -1,7 +1,13 @@
 a gentle introduction to k is elsewhere
 
 **[genesis](#genesis)** | [who](#who) | [why](#why) | [what](#what) | [how](#how)
+
 **[exodus](#exodus)** | [getting](#getting-k) | [using](#using-k) | [style and parlance](#remarks-on-style-and-parlance)
+
+**[numbers](#numbers)** | [vectors and atoms](#vectors-and-atoms) | [two types of types](#two-types-of-types) | [right to left](#right-to-left-and-back-again) | [no stinking loops](#no-stinking-loops)
+
+**[proverbs](#proverbs)** | [how to solve it](#how-to-solve-it)
+
 
 # genesis
 
