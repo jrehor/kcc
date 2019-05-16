@@ -619,7 +619,7 @@ Pit stop, here is what we know so far:
 * one new construct, `$[c;t;f]` aka if-then-else
 * the condition that stops recursion
 
-This gives us confidence and pace to quickly wrestle down the rest:
+This gives us confidence to quickly wrestle down the rest:
 
 ```q
 
