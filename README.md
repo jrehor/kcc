@@ -1,6 +1,7 @@
 a gentle introduction to k is elsewhere
 
 **[genesis](#genesis)** | [who](#who) | [why](#why) | [what](#what) | [how](#how)
+**[exodus](#exodus)** | [getting](#getting-k) | [using](#using-k) | [style and parlance](#remarks-on-style-and-parlance)
 
 # genesis
 
