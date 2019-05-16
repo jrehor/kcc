@@ -160,8 +160,9 @@ So, lets recap. So far you know how to:
 * sum integers
 * assign values to variables
 * declare most basic functions
-* not be afraid of `x`, `y` and `z`
+* be friends with `x`, `y` and `z`
 * appreciate the importance of rank
+* read up on Ken Iverson
 * annotate your code
 
 This is a good start, but tells you absolutely nothing about what k really is. Nowhere above you were promised a *gentle* introduction, so from here your best two friends are your intelligence and intuition, and the complexity is O(n*n).
@@ -456,7 +457,7 @@ Although the lack of precedence is deliberately illustrated using only most basi
 
 This part might be easier to digest than the previous, especially if you are familiar with functional programming. The heading says it all - no matter how you try, you will not find a k construct that resembles an explicit `for` loop. It is simply absent, and not just because it is verbose and causes untold damages from the same trivial errors people keep on making coding loops.
 
-The main reason explicit loops are missing from k is because they are *unnecessary*. Of course k has loops, but they are *implicit* and hardly ever referred to by that name. The existence of `while` construct, athough k has it, is better be ignored.
+The main reason explicit loops are missing from k is because they are *unnecessary*. Of course k has loops, but they are *implicit* and hardly ever referred to by that name. The existence of `while` construct, although k has it, is better be ignored.
 
 Loops are available in k in form of **five** simple and strong abstractions known as **adverbs**. Each by itself, and even more so when combined together, are sufficient to completely displace the way of thinking in explicit loops. Also, it comes without saying that k supports **recursion**, which is no less elegant way to avoid loops in many pracatical situations.
 
