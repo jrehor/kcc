@@ -703,4 +703,4 @@ You didn't need a second guess:
 1 1 1 2 3 5 5 6 8 9 
 ```
 
-Sure enough, you don't want to sort stuff this way in practice because k has a very efficient built-in sorting operator. What this toy example is all about is the principle of **doing more with less**, and that is what all of k is all about. Last but not least, it means to show that the process of reading k programs is nothing less of entertaining, and why we think that writing them is just pure joy.
+In practice you don't want to sort stuff this way because k has a very efficient built-in sorting operator. What this toy example is all about is the principle of **doing more with less**, and that is what all of k is all about. It also means to show that the process of reading k programs is nothing less of entertaining, and why k programmers think that writing them is just pure joy.
