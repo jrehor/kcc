@@ -2,23 +2,23 @@
 
 **[genesis](#genesis)**
 
-* [who](#who) | [why](#why) | [what](#what) | [how](#how)
+* [who](#who) | [why](#why) | [what](#what) | [how](#how) | things you need to know about k
 
 **[exodus](#exodus)**
 
-* [get](#getting-k) | [use](#using-k)
-* [style](#remarks-on-parlance) | [parlance](#remarks-on-parlance)
+* [get](#getting-k) | [use](#using-k) | installing and using k
+* [style](#remarks-on-parlance) | [parlance](#remarks-on-parlance) | essential conventions and terminology
 
 **[numbers](#numbers)**
 
-* [vectors and atoms](#vectors-and-atoms)
-* [two types of types](#two-types-of-types)
-* [from right to left](#right-to-left-and-back-again)
-* [no stinking loops](#no-stinking-loops)
+* [vectors and atoms](#vectors-and-atoms) | introduction to vector and scalar arithmetic
+* [two types of types](#two-types-of-types) | overview of type system
+* [from right to left](#right-to-left-and-back-again) | precedence and order of evaluation
+* [no stinking loops](#no-stinking-loops) | overview of k adverbs
 
 **[proverbs](#proverbs)**
 
-* [how to solve it](#how-to-solve-it)
+* [how to solve it](#how-to-solve-it) | how to read and analyze a k program
 
 
 ## genesis
