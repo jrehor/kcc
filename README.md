@@ -7,7 +7,7 @@
 **[exodus](#exodus)**
 
 * bootstrap → [install](#install-k) | [run](#run-k)
-* learn the ropes → [style](#remarks-on-style) | [parlance](#remarks-on-parlance)
+* learning the ropes → [style](#remarks-on-style) | [parlance](#remarks-on-parlance)
 
 **[numbers](#numbers)**
 
