@@ -2,19 +2,19 @@
 
 **[genesis](#genesis)**
 
-* [who](#who) | [why](#why) | [what](#what) | [how](#how) **all you need to know about k**
+* [who](#who) | [why](#why) | [what](#what) | [how](#how) | **all you need to know about k**
 
 **[exodus](#exodus)**
 
-* [get](#getting-k) | [use](#using-k) (installing and using k)
-* [style](#remarks-on-parlance) | [parlance](#remarks-on-parlance) (conventions and terminology)
+* [get](#getting-k) | [use](#using-k) | **installing and using k**
+* [style](#remarks-on-parlance) | [parlance](#remarks-on-parlance) | **conventions and terminology**
 
 **[numbers](#numbers)**
 
-* [vectors and atoms](#vectors-and-atoms) (introduction to vector and scalar arithmetic)
-* [two types of types](#two-types-of-types) (introduction to type system)
-* [from right to left](#right-to-left-and-back-again) (evaluation and precedence)
-* [no stinking loops](#no-stinking-loops) (overview of adverbs)
+* [vectors and atoms](#vectors-and-atoms) | **vector and scalar arithmetic**
+* [two types of types](#two-types-of-types) | **introduction to type system**
+* [from right to left](#right-to-left-and-back-again) | **evaluation and precedence**
+* [no stinking loops](#no-stinking-loops) | **overview of adverbs**
 
 **[proverbs](#proverbs)**
 
