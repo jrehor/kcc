@@ -570,14 +570,14 @@ The title of this chapter is shamelessly borrowed from a legendary book publishe
 
 Equipped with everything we have so far, we are going to tackle a little problem. We will look at a k function that actually does something very useful and implements a very familiar algorightm. The subject of game is to identify the algorighm and figure out how it is implementented in k.
 
-Don't be in a hurry to paste anything into k interpreter. It is a lot more useful to dissect it on paper first. Once we are done, you will be very tempted to try a lot of new things on your own. So here is the code:
+Don't be in a hurry to paste anything into your interpreter, it is a lot more useful to dissect it on paper first. Once we are done, you will be very tempted to try a lot of new things on your own. So here is the code:
 
 ```q
 /what is f, and how it works?
 f:{$[2>#?x;x;,/f'x@=x>rand x]} 
 ```
 
-Okay, it looks like there is almost nothing familiar here, and the whole thing is just creepy. But before you head for the fire exit as so many before you, give it a chance. Once we take it apart brick by brick, you will agree how **trivial** it is, really:
+Okay, almost nothing looks familiar here, and the whole little monster is just creepy. But before you head for the fire exit, give it a chance. Once we take it apart brick by brick, you will agree how **trivial** it is, really:
 
 ```q
 
@@ -703,4 +703,4 @@ You didn't need a second guess:
 1 1 1 2 3 5 5 6 8 9 
 ```
 
-In practice, you don't want to sort stuff this way — k comes with a much more efficient built-in sorting operator. What this toy example is all about is the principle of **doing more with less**, and this is what k is all about.
+In practice, you don't want to sort stuff this way — k comes with a much more efficient built-in sorting operator. What this toy example is all about is the principle of **doing more with less**, and that is what all of k is all about.
