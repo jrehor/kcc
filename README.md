@@ -13,7 +13,7 @@
 
 * vector arithmetic → [vectors plus atoms](#vectors-plus-atoms)
 * type system → [two types of types](#two-types-of-types)
-* order of evaluation → [from right to left](#right-to-left-and-back-again)
+* order of evaluation → [from right to left](#from-right-to-left)
 * adverbs → [no stinking loops](#no-stinking-loops)
 
 **[proverbs](#proverbs)**
@@ -430,7 +430,7 @@ type error
 
 There is more to be said about the type system, but we have more than enough to proceed.
 
-### right to left and back again
+### from right to left
 
 It could not possibly escape your attention that the syntax for indexing vectors and calling functions is the same:
 
