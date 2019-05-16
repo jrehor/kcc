@@ -557,7 +557,7 @@ Yes, we know, we've been there. But in fact you already have absolutely everythi
 
 -------------------
 
-If you can do that, you are ready to know the answer you were dying to hear: **the meaning of monadic +**. You have been warned, your life is just about to change forever:
+If you could do that, here is the bonus you've been waiting for, **the meaning of monadic +**. You have been warned, your life is just about to change forever:
 
 ```q
  mat:(1 2 3;4 5 6;7 8 9)       /shall there be mat
