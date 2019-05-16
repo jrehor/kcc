@@ -34,7 +34,7 @@ Most programmers and most computer languages will agree that this expression is 
 
 This crash course is not looking to make you an expert k programmer, because that, as any area of expertise, takes a lot of time and effort. We heard it is possible to teach oneself Java in 24 hours, but we are not qualified to talk about that. Instead, we are going to talk about fundamental aspects of *thinking in k*, and the curve is going to be steep — but we value your time, so we promise it will be fast and violent.
 
-The text assumes proficiency in general programming concepts, and hence will cut a lot of corners at some expense of readability. Although the narrative is strictly linear and each chapter builds on previous and **exercises are not optional**, we hope we kept it lightweight enough to be doable in one go.
+The text assumes proficiency in general programming concepts, and hence will cut a lot of corners at some expense of readability. Although the narrative is strictly linear, each chapter builds on all previous and **none of the exercises are optional**, we hope we kept it lightweight enough to be doable in one go.
 
 The present document is **not a k reference** and not to be treated as such, the majority of subjects are covered at depth sufficient to support progress but by no means exhaustive.
 
