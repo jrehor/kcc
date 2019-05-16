@@ -662,7 +662,7 @@ New stuff:
 The answer is right in front of you. Once you see how recursion step and stop condition play together, you won't need a second guess:
 
 ```q
- qs:{$[2>#?x;x;,/qs'x@=x>rand x]}        /quicksort
+ qs:{$[2>#?x;x;,/qs'x@=x>rand x]}        /quicksort on random pivot
 
  qs 9 2 5 5 1 8 1 3 6 1
 1 1 1 2 3 5 5 6 8 9 
