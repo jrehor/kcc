@@ -581,6 +581,8 @@ Okay, it looks like there is almost nothing familiar here, and the whole thing i
 
 ```q
 
+f:{$[2>#?x;x;,/f'x@=x>rand x]} 
+
 f:{...}           /f is a function, that is a good start
 f:{.x.}           /f takes only one implicit argument, x
 f:{.f.}           /f clearly calls f, so it is recursive
@@ -604,12 +606,20 @@ x                 /t:      do this if c is true
 2>#?x             /mystery solved: 'turn true if x has <2 unique items'
 ```
 
-Quick pitstop. So far so good, we have 
+Quick pit stop. We so far we have:
+
+* the general control flow of the function
+* two new monadic operators,  `? distinct` and `# count`
+* one new construct, if-then-else aka `ctf`
+* the condition that stops recursion
+
+Now for the best part:
 
 ```q
-,/f'x@=x>rand x   /so this must be the recursion step, go right to left:
 
- x:4 0 1 2         /an imaginary dataset to assist the analysis of above
+,/f'x@=x>rand x    /this must be the recursion step, read right to left:
+
+ x:4 0 1 2         /an imaginary dataset to better see what is happening
  rnd:rand x        /pick a random element from x (rnd added for clarity)
  rnd
 2 
