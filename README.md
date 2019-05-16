@@ -566,7 +566,7 @@ Lets recap. We have seen:
 * why there is no `for` and why there are `adverbs`
 * how to flip a matrix — or to transpose it, if you will
 
-It is a good checkpoint before you advance to the next chapter, where things will get a lot less innocent, and very fast.
+It makes sense to revisit topics you feel less confident about before you advance to the next chapter, where things will get a lot less innocent, and very fast.
 
 # proverbs
 
