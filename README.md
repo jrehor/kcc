@@ -2,7 +2,7 @@
 
 **[genesis](#genesis)**
 
-* k → [Ø](#Ø) | [who](#who) | [why](#why) | [what](#what) | [how](#how)
+* k → [ø](#ø) | [who](#who) | [why](#why) | [what](#what) | [how](#how)
 
 **[exodus](#exodus)**
 
@@ -22,7 +22,7 @@
 
 ## genesis
 
-### Ø
+### ø
 
 Computer languages have been around for a while, but in the beginning was the word. We will be writing code in a language called k, but it will help to talk about it first.
 
