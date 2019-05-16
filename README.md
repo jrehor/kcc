@@ -607,7 +607,27 @@ x                 /t:      do this if c is true
 
 ,/f'x@=x>rand x   /so this must be the recursion step, go right to left:
 
-rnd:rand x        /pick a random element from x (rnd added for clarity)
-x<rnd             /bool vector of 0s where x[n]<rnd, 1s where otherwise
-=x<tmp            /''
+ x:4 0 1 2         /an imaginary dataset to assist the analysis of above
+ rnd:rand x        /pick a random element from x (rnd added for clarity)
+ rnd
+2 
+
+ cmp:x<rnd         /bool vector of 0s where x[n]<rnd, 1s where otherwise
+ cmp
+0 1 0 0
+
+ pos:=cmp          /= is 'group': 2 vectors, indices of 0s and 1s in cmp
+ pos
+0|0 3
+1|1 2
+
+ pts:x@pos         /dyadic @ is 'index': values of x at indices from pos
+ pts
+0|4 2
+1|0 1
+
+ x:f'pts           /adverb 'each': apply f to each pts and return resuts
+
+,/x                /,/ is 'raze': unwind aka flatten a vector of vectors
+                   /but equally valid way to express ,/ is 'enlist over'
 ```
