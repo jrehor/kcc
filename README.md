@@ -510,7 +510,13 @@ where `f` is a function or operator that takes two arguments and `x` and `y` are
 This doesn't seem like much, but here is just one example of what happens when adverbs work together:
 
 ```q
- x:1 2 3 4 5 6 7 8 9           /input
+ x:!9                          /! is til, get first n integers
+ x                             /tada, we have all ints up to 8
+0 1 2 3 4 5 6 7 8
+
+ x:1+x                         /this increments each of x by 1
+ x
+1 2 3 4 5 6 7 8 9
 
  x*\:/:x                       /x times each left each right x
 1 2  3  4  5  6  7  8  9    
