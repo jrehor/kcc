@@ -1,15 +1,13 @@
 # kcc
 
-a gentle introduction to k is elsewhere.
-
 **[genesis](#genesis)**
 
 [who](#who) | [why](#why) | [what](#what) | [how](#how)
 
 **[exodus](#exodus)**
 
-* [getting](#getting-k)
-* [using](#using-k)
+* [getting k](#getting-k)
+* [using k](#using-k)
 * [on style and parlance](#remarks-on-style-and-parlance)
 
 **[numbers](#numbers)**
@@ -24,7 +22,7 @@ a gentle introduction to k is elsewhere.
 * [how to solve it](#how-to-solve-it)
 
 
-# genesis
+## genesis
 
 Computer languages have been around for a while, but in the beginning was the word. We will be writing code in a language called k, but it will help to talk about it first.
 
@@ -72,7 +70,7 @@ In addition to being an excellent tool to assist efficient thinking, k is also a
 
 All of k programming takes place in **REPL**, a concept which requires little introduction these days, but is actually much older than many seem to think. It has been around for at least 50 years, and is known as *dialogue approach*, a live conversation between a human and machine as a flow of questions and answers. And in k, this conversation is much more fluent than in any other modern REPL-driven system you may be familiar with, because the questions are short and the answers are fast. This is the essence of the way of k, an experience that all k programmers consider immensely aesthetically and intellectually satisfying. This is why people who write software in k love their jobs, and this has nothing to do with their paychecks.
 
-# exodus
+## exodus
 
 Since the only known way to learn how to program is to write programs, you will need a live k environment. Fortunately, as all things k, it takes very little effort.
 
@@ -199,7 +197,7 @@ So far you know how to:
 
 This is a good start, but tells you absolutely nothing about what k really is. Nowhere above you were promised a *gentle* introduction, so from here your best two friends are your intelligence and intuition, and the complexity is O(n*n).
 
-# numbers
+## numbers
 
 ### vectors and atoms
 
@@ -624,7 +622,7 @@ Well done! Here is the bonus you were waiting for: **the meaning of monadic +**:
 
 As promised, your life just changed forever, there is no going back, so keep on reading.
 
-# proverbs
+## proverbs
 
 ### how to solve it
 
