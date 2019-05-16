@@ -587,8 +587,8 @@ f:{...}           /okay, f is a function, that's a start
 f:{.x.}           /f takes only one implicit argument, x
 f:{.f.}           /f clearly calls f, so it is recursive
 
-$[?;?;?]          /whole body of f is this construct, it is
-$[c;t;f]          /a k conditional, same as if(c){t}else{f}
+$[?;?;?]          /the entire body of f[] is this construct
+$[c;t;f]          /ctf conditional, same as if(c){t}else{f}
 
 2>#?x             /c:      some bool condition
 x                 /t:      do this if c is true
