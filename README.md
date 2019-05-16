@@ -643,7 +643,6 @@ pts:x@=x>rand x    /ok, 'split x in two parts below and above some item'
 x:f'pts            /adverb 'each': apply f to each part, recurse further
 
 ,/x                /,/ is 'raze': unwind aka flatten a vector of vectors
-                   /but equally valid way to express ,/ is 'enlist over'
 
  v:(1 2 3;4 5 6)
  v
@@ -659,7 +658,7 @@ New stuff:
 * dyadic `@x index`
 * idiom `,/x raze`
 
-Now, if you zoom out and see how the recursion step and stop condition work together, the answer should be right in front of you.
+Now, if you zoom out and try to see how the recursion step and stop condition work together, the answer should be right in front of you.
 
 -------------------
 
