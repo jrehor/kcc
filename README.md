@@ -13,7 +13,7 @@
 
 * [vectors and atoms](#vectors-and-atoms) **< vector and scalar arithmetic**
 * [two types of types](#two-types-of-types) **< overview of k type system**
-* [from right to left](#right-to-left-and-back-again) **< evaluation order and precedence**
+* [from right to left](#right-to-left-and-back-again) **< order of evaluation**
 * [no stinking loops](#no-stinking-loops) **< overview of adverbs**
 
 **[proverbs](#proverbs)**
