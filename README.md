@@ -466,9 +466,9 @@ This part might be easier to digest than the previous, especially if you are fam
 
 The main reason explicit loops are missing from k is because they are *unnecessary*. Of course k has loops, but they are *implicit* and hardly ever referred to by that name. The existence of `while` construct, although k has it, is better be ignored.
 
-Loops are available in k in form of **five** simple and strong abstractions known as **adverbs**. Each by itself, and even more so when combined together, are sufficient to completely displace the way of thinking in explicit loops. Also, it comes without saying that k supports **recursion**, which is no less elegant way to avoid loops in many pracatical situations.
+Loops are available in k in form of **six** simple and strong abstractions known as **adverbs**. Each by itself, and even more so when combined together, are sufficient to completely displace the way of thinking in explicit loops. Also, it comes without saying that k supports **recursion**, which is no less elegant way to avoid loops in many pracatical situations.
 
-But lets focus on adverbs. Here is the majestic five:
+But lets focus on adverbs. Here is the majestic six:
 
 ----------------
 adverb **each** is `f'x`
@@ -499,20 +499,34 @@ where `f` is a function or operator that takes two arguments and `x` is an input
 0 1 3 6 10      /running sum of a
 ```
 ----------------
-adverb **each left** is `x f\:y`
+adverb **eachleft** is `x f\:y`
 
-adverb **each right** is `x f/:y`
+adverb **eachright** is `x f/:y`
 
 where `f` is a function or operator that takes two arguments and `x` and `y` are left and right inputs, either vectors or atoms
 
 ```q
- 10 20 30-\:5   /each left calls 10-5, 20-5, 30-5 and returns a vector of results
+ 10 20 30-\:5   /eachleft gives (10-5),(20-5),(30-5)
 5 15 25         /each of left, substracted by right
 
- 5-/:10 20 30   /each right calls 5-10, 5-20, 5-30 and returns a vector of results
+ 5-/:10 20 30   /eachright gives (5-10),(5-20),(5-30)
 -5 -15 -25      /left, substracted by each of right
 ```
 ----------------
+
+adverb **eachprior** is `x f':y` and `(f':)x`
+
+where `f` is a function or operator that takes two arguments and `x` and `y` are left and right inputs
+
+```q
+ 2+':4 8 16          /eachprior seed 2      gives (2+4),(4+8),(8+16)
+6 12 24
+
+ (+':)4 8 16         /seedless eachprior    gives (4),(4+8),(8+16)
+4 12 24
+```
+----------------
+
 
 This doesn't seem like much, but here is just one example of what happens when adverbs work together:
 
@@ -525,7 +539,7 @@ This doesn't seem like much, but here is just one example of what happens when a
  x
 1 2 3 4 5 6 7 8 9
 
- x*\:/:x                       /x times each left each right x
+ x*\:/:x                       /x times eachleft eachright x
 1 2  3  4  5  6  7  8  9    
 2 4  6  8  10 12 14 16 18
 3 6  9  12 15 18 21 24 27
