@@ -157,7 +157,7 @@ As any other computer language, k expects a programmer to observe and follow cer
 kei:42         /kenneth eugene iverson
 ```
 
-## remarks on parlance
+### remarks on parlance
 
 **Functions** in k are first-class citizens. k has lambdas, eval, apply, and then some more. It takes a leap of faith to believe it, but k is probably more lispy than certain Lisps, only you don't need to get past any parens to be able to read it. In a strict sense, though, since there are no linked lists under the hood, k is clearly not lisp, because it was designed to be fast.
 
