@@ -13,7 +13,7 @@
 
 * [vectors and atoms](#vectors-and-atoms)
 * [two types of types](#two-types-of-types)
-* [right to left](#right-to-left-and-back-again)
+* [reading right to left](#right-to-left-and-back-again)
 * [no stinking loops](#no-stinking-loops)
 
 **[proverbs](#proverbs)**
