@@ -12,9 +12,9 @@
 **[numbers](#numbers)**
 
 * [vectors and atoms](#vectors-and-atoms) (introduction to vector and scalar arithmetic)
-* [two types of types](#two-types-of-types) (overview of type system)
-* [from right to left](#right-to-left-and-back-again) (precedence and order of evaluation)
-* [no stinking loops](#no-stinking-loops) (overview of k adverbs)
+* [two types of types](#two-types-of-types) (introduction to type system)
+* [from right to left](#right-to-left-and-back-again) (evaluation and precedence)
+* [no stinking loops](#no-stinking-loops) (overview of adverbs)
 
 **[proverbs](#proverbs)**
 
