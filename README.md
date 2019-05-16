@@ -4,13 +4,13 @@ a gentle introduction to k is elsewhere
 
 Computer languages have been around for a while, but in the beginning was the word. We will be writing code in a language called k, but it will help to talk about it first.
 
-**`k` is different**. You will question many aspects of its design, and it will respond by questioning things that you consider common sense, and this can be a very constructive conversation. For example, you may find it puzzling why the assignment operator in k is `:` instead of `=`. But give it a chance and try a simple thought experiment. Consider the following code:
+**k is different**. You will question many aspects of its design, and it will respond by questioning things that you consider common sense, and this can be a very constructive conversation. The first thing about k newcomers often find puzzling is that the assignment operator is `:` instead of `=`. But give it the benefit of the doubt and try a simple thought experiment. Consider the following code:
 
 ```java
 x = x + 1
 ```
 
-Most programmers and most computer languages will readily agree that this expression is perfectly valid, but if you show it to a mathematician, be ready to hear "no, it isn't". And once you see what makes him think so, you will see why we assign things with `:` in k, gives a good advice: a different perspective is not necessarily wrong and hostile, and nothing prevents it from becoming your own, so keep an open mind.
+Most programmers and most computer languages will readily agree that this expression is perfectly valid, but if you show it to a mathematician, be ready to hear "no, it isn't". And once you see what makes him think so, you will see why we assign things with `:` in k. Once we see that a different perspective is not necessarily wrong, nothing prevents it from becoming our own, and that is the right mindset to approach k.  
 
 This crash course is not looking to make you an expert k programmer, because that, as any area of expertise, takes a lot of time and effort. We heard it is possible to teach oneself Java in 24 easy steps, but we are not qualified to talk about that. Instead, we are going to talk about fundamental aspects of *thinking in k*, and the curve is going to be steep — but we value your time, so we promise it will be fast and violent.
 
