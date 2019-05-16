@@ -1,5 +1,7 @@
 a gentle introduction to k is elsewhere
 
+**[genesis](#genesis)** | [who](#who) | [why](#why) | [what](#what) | [how](#how)
+
 # genesis
 
 Computer languages have been around for a while, but in the beginning was the word. We will be writing code in a language called k, but it will help to talk about it first.
