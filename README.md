@@ -606,14 +606,14 @@ x                 /t:      do this if c is true
 $[2>#?x;x;...]    /mystery solved: 'return x if x has <2 unique items'
 ```
 
-Quick pit stop. We so far we have:
+Pit stop, so far we know:
 
 * the general control flow of the function
 * two new monadic operators,  `?x distinct` and `#x count`
 * one new construct, if-then-else aka `ctf`
 * the condition that stops recursion
 
-And now for the best part of it:
+This gives us all the confidence we need to wrestle down the best part:
 
 ```q
 
@@ -659,7 +659,7 @@ New stuff:
 * dyadic `@x index`
 * idiom `,/x raze`
 
-The answer is right in front of us. Just to make sure, lets take a small vector and apply the recursion steps manually to make sure our assumption is correct:
+We are done, and the answer is right in front of us. Just to make sure, lets take a small vector and apply the recursion steps manually to make sure our assumption is correct:
 
 ```q
 
@@ -694,7 +694,7 @@ The answer is right in front of us. Just to make sure, lets take a small vector 
 1 1 1 2 3 5 5 6 8 9
 ```
 
-You didn't need a second guess:
+But you didn't need a second guess:
 
 ```q
  qs:{$[2>#?x;x;,/qs'x@=x>rand x]}        /quicksort
@@ -703,4 +703,4 @@ You didn't need a second guess:
 1 1 1 2 3 5 5 6 8 9 
 ```
 
-Of course, in real life you would simply use the built-in sorting operator, which is a lot more efficient. What this toy example is all about is the principle of **doing more with less**, and that's what k is all about. It also means to show that reading k programs is nothing less of entertaining, and give a hint why we believe that writing them is pure joy.
+Of course, in real life we would simply use the built-in sorting operator, which is a lot more efficient. What this toy example is all about is the principle of **doing more with less**, and that's what k is all about. It also means to show that reading k programs is nothing less of entertaining, and give a hint why we believe that writing them is pure joy.
