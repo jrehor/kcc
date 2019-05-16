@@ -155,7 +155,7 @@ Two specific ranks are so important that they have their own names. A function o
 
 As you will see, the vast majority of native operators in `k` have at least two completely unrelated meanings based on the context where they are used, which is in turn defined by the number of arguments offered to the operator. To overlook this fact is a grave mistake, so you better get a very strong grip on the idea that some things in life are **monadic**, while others are **dyadic**. For ranks of higher and lesser order it is fine to worry less. For example, when you used your first ever k operator in the expression `2+2`, you have used the **+** operator in a **dyadic** context, which basically meant that you offered it *two* operands to work on, left and right, respectively. However, once you discover what the **+** operator stands for when used in a **monadic** context, it will change your life forever, so let us skip this discussion for now.
 
-So, lets recap. So far you know how to:
+Lets recap. So far you know how to:
 
 * sum integers
 * assign values to variables
@@ -526,7 +526,7 @@ This doesn't seem like much, but here is just one example of what happens when a
 
 Yes, we know. These things are known for having have raised a lot of eyebrows over the years. But in fact you already have absolutely everything you need to be able to read and understand the logic and order of evaluation of this simple expression. Remember, right to left, no precedence, and no explicit loops.
 
-As a little bonus for your effort, we are ready to give away the answer you were dying to hear: **the meaning of monadic + operator**:
+If you can do that, you are ready to know the answer you were dying to hear: **the meaning of monadic +**. You have been warned. Your life is just about to change forever:
 
 ```q
  mat:(1 2 3;4 5 6;7 8 9)       /shall there be mat
