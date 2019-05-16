@@ -609,7 +609,7 @@ $[2>#?x;x;...]    /mystery solved: 'return x if x has <2 unique items'
 Quick pit stop. We so far we have:
 
 * the general control flow of the function
-* two new monadic operators,  `? distinct` and `# count`
+* two new monadic operators,  `?x distinct` and `#x count`
 * one new construct, if-then-else aka `ctf`
 * the condition that stops recursion
 
@@ -653,7 +653,13 @@ x:f'pts            /adverb 'each': apply f to each part, recurse further
 1 2 3 4 5 6
 ```
 
-Okay, we are all done, and the answer is right in front of us. But just to make sure, lets take a small vector and apply the recursion steps manually to make sure our guess is correct:
+New stuff:
+
+* monadic `rand x` and `=x group`
+* dyadic `@x index`
+* idiom `,/x raze`
+
+The answer is right in front of us. Just to make sure, lets take a small vector and apply the recursion steps manually to make sure our assumption is correct:
 
 ```q
 
@@ -688,5 +694,13 @@ Okay, we are all done, and the answer is right in front of us. But just to make 
 1 1 1 2 3 5 5 6 8 9
 ```
 
+You didn't need a second guess:
 
+```q
+ qs:{$[2>#?x;x;,/qs'x@=x>rand x]}        /quicksort, random pivot
 
+ qs 9 2 5 5 1 8 1 3 6 1
+1 1 1 2 3 5 5 6 8 9 
+```
+
+In practice, you don't want to sort stuff this way — k comes with a much more efficient built-in sorting operator. What this toy example is all about is the principle of **doing more with less**, and this is what k is all about.
