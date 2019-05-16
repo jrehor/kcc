@@ -595,7 +595,7 @@ x                 /t:      do this if c is true
 ,/f'x@=x>rand x   /f:      do that if c is not
 
 2>#?x             /whatever this condition tests, it is clear that f[]
-                  /will stop recursing as it becomes true, returning x
+                  /will stop recursing once it turns true, returning x
                   /so lets first dissect the condition, right to left:
 
 ?x                /'distinct'        -> all unique elements of x
