@@ -638,9 +638,9 @@ This gives us confidence and pace to quickly wrestle down the rest:
 0|4 2
 1|0 1
 
-pts:x@=x>rand x    /so: 'split x in two parts below and above some item'
+pts:x@=x>rand x    /'partition x by pivot: items < rnd and items >= rnd'
 
-x:f'pts            /adverb 'each': apply f to each part, recurse further
+x:f'pts            /adverb 'each': call f recursively for each partition
 
 ,/x                /,/ is 'raze': unwind aka flatten a vector of vectors
 
@@ -658,7 +658,7 @@ New stuff:
 * dyadic `@x index`
 * monadic `,/x raze`
 
-Now that we have read and understood all components of our function, you can zoom out and try to see how the recursion step and stop condition work together. When it doubt, feel free to use the interpreter to play around and test your ideas. In very little time, the ansewer should be right in front of you.
+Now that we know what every specific part does, we can zoom out and see the big picture. When it doubt, feel free to use the interpreter to play around and test your ideas. In very little time, the ansewer should be right in front of you.
 
 -------------------
 
