@@ -85,7 +85,7 @@ Type in your first k expression, and enjoy your first answer:
 4
 ```
 
-The startup banner packs a lot of useful information:
+There isn't much to write home about your k skills, so let's focus on the startup banner which packs a lot of useful information:
 
 | it says             | it means                      |
 | :-------------------|:------------------------------|
