@@ -603,7 +603,7 @@ x                 /t:      do this if c is true
 #?x               /'count distinct'         count unique elements of x
 2>x               /'greater'            turns true if x is less than 2
 
-2>#?x             /mystery solved: 'turn true if x has <2 unique items'
+$[2>#?x;x;...]    /mystery solved: 'return x if x has <2 unique items'
 ```
 
 Quick pit stop. We so far we have:
@@ -613,7 +613,7 @@ Quick pit stop. We so far we have:
 * one new construct, if-then-else aka `ctf`
 * the condition that stops recursion
 
-Now for the best part:
+And now for the best part of it:
 
 ```q
 
