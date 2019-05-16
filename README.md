@@ -535,7 +535,7 @@ This doesn't seem like much, but here is just one example of what happens when a
 
 Yes, we know. These things are known for having have raised a lot of eyebrows over the years. But in fact you already have absolutely everything you need to be able to read and understand the logic and order of evaluation of this simple expression. Remember, right to left, no precedence, and no explicit loops.
 
-If you can do that, you are now ready to know the answer you were dying to hear: **the meaning of monadic +**. As you have been warned earlier, your life is just about to change forever:
+If you can do that, you are now ready to know the answer you were dying to hear: **the meaning of monadic +**. You have been warned, your life is just about to change forever:
 
 ```q
  mat:(1 2 3;4 5 6;7 8 9)       /shall there be mat
