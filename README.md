@@ -6,8 +6,8 @@
 
 **[exodus](#exodus)**
 
-* getting started → [install](#install-k) | [run](#run-k)
-* learning the ropes → [style](#remarks-on-style) | [parlance](#remarks-on-parlance)
+* bootstrap → [install](#install-k) | [run](#run-k)
+* learn the ropes → [style](#remarks-on-style) | [parlance](#remarks-on-parlance)
 
 **[numbers](#numbers)**
 
