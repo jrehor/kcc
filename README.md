@@ -703,7 +703,7 @@ The annotated workflow above gives a good idea of what happens inside k programm
 
 **Recap.** While analysing `qs` code, you have learned:
 
-* ctf conditional `$[c;t;f]`
+* ctf cond `$[c;t;f]`
 * monadic `?x distinct`
 * monadic `#x count`
 * monadic `rand x`
