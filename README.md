@@ -1,4 +1,6 @@
-a gentle introduction to k is elsewhere
+# kcc
+
+a gentle introduction to k is elsewhere.
 
 **[genesis](#genesis)** | [who](#who) | [why](#why) | [what](#what) | [how](#how)
 
