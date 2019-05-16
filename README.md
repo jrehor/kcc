@@ -6,8 +6,7 @@
 
 **[exodus](#exodus)**
 
-* [getting k](#getting-k)
-* [using k](#using-k)
+* [getting k](#getting-k) | [using k](#using-k)
 * [on style and parlance](#remarks-on-style-and-parlance)
 
 **[numbers](#numbers)**
