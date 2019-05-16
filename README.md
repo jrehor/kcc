@@ -659,7 +659,7 @@ New stuff:
 * dyadic `@x index`
 * idiom `,/x raze`
 
-You are done, the answer is right in front of you. Once you see how recursion step and stop condition work together, you won't need a second guess:
+The answer is right in front of you. Once you see how recursion step and stop condition play together, you won't need a second guess:
 
 ```q
  qs:{$[2>#?x;x;,/qs'x@=x>rand x]}        /quicksort
