@@ -557,7 +557,7 @@ Lets recap. We have seen:
 * how basic vector and atom math works
 * which way to read and comprehend k code
 * what is the only existing precedence rule
-* why there is no `for` and what are the five adverbs
+* why there is no `for` and why there are `adverbs`
 * how to flip a matrix — or to transpose it, if you will
 
 It is a good checkpoint before you advance to the next chapter, where things will get a lot less innocent, and very fast.
