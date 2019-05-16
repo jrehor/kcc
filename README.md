@@ -579,7 +579,7 @@ f:{$[2>#?x;x;,/f'x@=x>rand x]}
 
 Okay, it looks like there is almost nothing familiar here, and the whole thing is just creepy. But before you head for the fire exit as so many before you, give it a chance.
 
-Once we take it apart brick by brick, will see how *trivial* it is, really:
+Once we take it apart brick by brick, you will agree how *trivial* it is, really:
 
 ```q
 
