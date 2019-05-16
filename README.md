@@ -7,7 +7,7 @@
 **[exodus](#exodus)**
 
 * getting started → [install](#install-k) | [run](#run-k)
-* learning ropes → [style](#remarks-on-style) | [parlance](#remarks-on-parlance)
+* learning the ropes → [style](#remarks-on-style) | [parlance](#remarks-on-parlance)
 
 **[numbers](#numbers)**
 
