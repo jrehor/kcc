@@ -13,7 +13,7 @@
 
 * vector arithmetic: [vectors and atoms](#vectors-and-atoms)
 * type system: [types of types](#two-types-of-types)
-* order of evaluation: [from right to left](#right-to-left-and-back-again)
+* order and precedence: [from right to left](#right-to-left-and-back-again)
 * adverbs: [no stinking loops](#no-stinking-loops)
 
 **[proverbs](#proverbs)**
