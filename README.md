@@ -574,7 +574,7 @@ This is a convincing proof of our earlier conjecture that `type name` of a `type
 
 ### no stinking loops
 
-This part might be easier to digest than the previous, especially if you are fond of functional programming. The heading says it all - no matter how you try, you will not find a k construct that resembles an explicit `for` loop. It is simply absent, and not just because it is verbose and causes untold damages from the same trivial errors people keep on making coding `for` loops. Technically speaking, `while` construct does exist in k, but this fact is better be ignored just to avoid temptation.
+This part might be easier to digest than the previous, especially if you are familiar with functional programming. The heading says it all - no matter how you try, you will not find a k construct that resembles an explicit `for` loop. It is simply absent, and not just because it is verbose and causes untold damages from the same trivial errors people keep on making coding `for` loops. Technically speaking, `while` construct does exist in k, but this fact is better be ignored just to avoid temptation.
 
 The main reason explicit loops are missing from k is because they are *unnecessary*. Of course k has loops, but they are *implicit* and hardly ever referred to by that name. Also, it comes without saying that k supports **recursion**, which is a no less elegant way to avoid loops in many situations.
 
