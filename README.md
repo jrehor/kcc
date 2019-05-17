@@ -80,7 +80,7 @@ The latest version of k is now available for testing, and this is exciting news 
 
 ### how
 
-In addition to being an excellent tool to assist efficient thinking, k is also an astonishingly efficient computer language. The entire system, a tiny binary executable only 100 kilobytes in size without a single external dependency that fits comfortably in the cache of a commodity CPU, implements a selection of fundamental algorithms, data structures, techniques and computational primitives that withstood the test of many decades of production use in some of the world's most demanding data processing environments. The inner components of the system are polished to fit together and complement each other to deliver performance which many outsiders find very difficult to believe at first. It is also not uncommon for k newcomers to experience total shock when they first realize what kind of power they can wield with just a few precise keystrokes.
+In addition to being an excellent tool to assist efficient thinking, k is also an astonishingly efficient computer language. The entire system, a tiny binary executable only **200Kb** in size without a single external dependency that fits comfortably in the cache of a commodity CPU, implements a selection of fundamental algorithms, data structures, techniques and computational primitives that withstood the test of many decades of production use in some of the world's most demanding data processing environments. The inner components of the system are polished to fit together and complement each other to deliver performance which many outsiders find very difficult to believe at first. It is also not uncommon for k newcomers to experience total shock when they first realize what kind of power they can wield with just a few precise keystrokes.
 
 All of k programming takes place in **REPL**, a concept which requires little introduction these days, but is actually much older than many seem to think. It has been around for at least half a century, and is known as *dialogue approach*, a live conversation between a human and machine as a flow of questions and answers. And in k, this conversation is much more fluent than in any other modern REPL-driven system you may be familiar with, because the questions are short and the answers are fast. This is the essence of the way of k, an experience that all k programmers consider immensely aesthetically and intellectually satisfying. This is why people who write software in k love their jobs, and this has nothing to do with their paychecks.
 
@@ -561,16 +561,44 @@ Okay, this was a tough one, but we are done.
 
 This part might be easier to digest than the previous, especially if you are fond of functional programming. The heading says it all - no matter how you try, you will not find a k construct that resembles an explicit `for` loop. It is simply absent, and not just because it is verbose and causes untold damages from the same trivial errors people keep on making coding `for` loops. Technically speaking, `while` construct does exist in k, but this fact is better be ignored just to avoid temptation.
 
-The main reason explicit loops are missing from k is because they are *unnecessary*. Of course k has loops, but they are *implicit* and hardly ever referred to by that name. 
+The main reason explicit loops are missing from k is because they are *unnecessary*. Of course k has loops, but they are *implicit* and hardly ever referred to by that name. Also, it comes without saying that k supports **recursion**, which is no less elegant way to avoid loops.
 
-Loops are available in k in form of **six** simple and strong abstractions known as **adverbs**. Each by itself, and even more so when combined together, are sufficient to completely displace the way of thinking in explicit loops. Also, it comes without saying that k supports **recursion**, which is no less elegant way to avoid loops in many pracatical situations.
+An idea that displaces thinking in explicit loops is a simple and strong abstraction known as **adverbs**. Before we see them in action, it helps to understand why they are call that way:
 
-But lets focus on adverbs. Here is the magnificent six:
+An adverb if a **modifier** that takes some **verb**, which is a user-defined function or a native operator, and makes that verb's action applicable to an **input vector** in some desirable way to produce an **output**, which can be a scalar value or another vector, depending on the adverb.
+
+A classic example to show how adverbs replace loops is `sum`. Say, we have an input `in:1 2 3 4 5`, and what we want is to obtain a sum of all its elements. Thinking in implicit loops suggests something like that:
+
+```c
+int sum(int[] in){
+  int res = 0;
+  for(int i=0; i<sizeof(in); ++i)res+=in[i];
+  return res;
+}
+```
+
+But what if you rephrase the action of this loop in the following way:
+
+"insert a plus between every two adjacent elements of `in`, apply its action everywhere and return the final result"
+
+And that is exactly what adverb `over` does in k, when it is used to modify the action of dyadic `+`. Only `over` is *universal* will happily modify *any* dyadic operator or function, so it becomes:
+
+**"insert a verb `v` between every two adjacent elements of `x`, apply it everywhere and return the final result"**
+
+And since the k adverb `over` is `v/x`, this is how `sum` function looks like in k:
+
+```q
+ s:{+/x} 
+ s 1 2 3 4 5
+15 
+```
+
+It is a good moment to look back at C version of the same idea, and then you get to learn there are **6 adverbs** in k that modify verbs in different ways. Please welcome the magnificent six:
 
 ----------------
 adverb **each** is `f'x`
 
-where `f` is a function or operator that takes one argument and `x` is an input vector
+where `f` is a `monadic` function or an operator and `x` is an input vector
 
 ```q
  a:0 1 2 3 4    /some data
@@ -584,7 +612,7 @@ adverb **over** is `f/x`
 
 adverb **scan** is `f\x`
 
-where `f` is a function or operator that takes two arguments and `x` is an input vector
+where `f` is a `dyadic` function or an operator and `x` is an input vector
 
 ```q
  a:0 1 2 3 4    /some data
@@ -600,7 +628,7 @@ adverb **eachleft** is `x f\:y`
 
 adverb **eachright** is `x f/:y`
 
-where `f` is a function or operator that takes two arguments and `x` and `y` are left and right inputs, either vectors or atoms
+where `f` is a `dyadic` function or an operator and `x` and `y` are left and right inputs, either vectors or atoms
 
 ```q
  10 20 30-\:5   /eachleft gives (10-5),(20-5),(30-5)
@@ -613,9 +641,9 @@ where `f` is a function or operator that takes two arguments and `x` and `y` are
 
 adverb **eachprior** is `x f':y` and `(f':)x`
 
-first form is `seeded eachprior` where `f` is a dyadic function or operator, and `x` is a seed value and `y` is an input vector
+first form is `seeded eachprior` where `f` is a `dyadic` function or an operator, and `x` is a seed value and `y` is an input vector
 
-second form is `seedless eachprior` where `f` is a dyadic function or operator, and `x` is an input vector
+second form is `seedless eachprior` where `f` is a `dyadic` function or an operator, and `x` is an input vector
 
 
 ```q
@@ -626,6 +654,8 @@ second form is `seedless eachprior` where `f` is a dyadic function or operator, 
 4 12 24              /first item stays as is, then sum of each item and the item prior to it
 ```
 ----------------
+
+Okay, this doesn't seem like much, adverbs appear to be doing pretty simple stuff. But hold that thought for a minute.
 
 **Recap:**
 
@@ -641,7 +671,7 @@ We have seen:
 
 **Checkpoint exercise:**
 
-Consider this example of two adverbs working together:
+Okay, we are back to your doubts about adverbs. Consider this example of two adverbs working together:
 
 ```q
  x:!9                          /! is til, get first n integers
@@ -664,7 +694,7 @@ Consider this example of two adverbs working together:
 9 18 27 36 45 54 63 72 81 
 ```
 
-The goal is to make sure you understand the logic and the order of evaluation of this expression. You have everything you need:
+And your goal here is to make sure you understand the logic and the order of evaluation of this expression, which only consists of one operator and two adverbs. And you have everything you need:
 
 * read right to left
 * there is no precedence
