@@ -593,15 +593,15 @@ int sum(int[]in){
 }
 ```
 
-But what if we rephrase the logic of this loop in the following way:
+But imagine you could state the problem to a computer like this:
 
-"insert a plus between every two adjacent elements of `in`, apply its action everywhere and return the final result"
+"put a `+` between all adjacent items and give me the grand total."
 
-And that is exactly what adverb `over` does in k, when it is used to modify the action of dyadic verb `+`. Only `over` is *universal* and will happily modify *any* dyadic operator or function, so it becomes:
+And that is the simplest way to describe what k adverb `over` does when it is used to modify dyadic `+`. Only `over`, as all other adverbs, is *general* and will happily modify *any* dyadic operator or function. Described in less informal language, the general case of `over` is:
 
-1. **insert a dyadic verb `v` between every two adjacent elements of `x`**
-2. **apply it *over* `x` going left to right**
-3. **return the rightmost result**
+1. **set `acc` to 0 (accumulator)**
+2. **until no more `x`, set `acc` to result of `verb`[`acc`;next `x`]**
+3. **return `acc`**
 
 And since the k adverb `over` is `v/x`, this is how `sum` function looks like in k:
 
