@@ -54,7 +54,7 @@ This crash course is not looking to make you an expert k programmer, because tha
 
 This might feel a bit intense, but we also hope the whole thing is still lightweight and entertaining enough to be completed in just one focused session.
 
-This document is **not a k reference** and not to be treated as such. The majority of subjects are covered at depth sufficient to give a good general overview but by no means exhaustive.
+This document is **not a k reference** and is not to be treated as such. The majority of subjects are covered at depth sufficient to give a good general overview but by no means exhaustive.
 
 ### who
 
