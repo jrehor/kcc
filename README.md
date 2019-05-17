@@ -622,12 +622,13 @@ You could be tempted to see of what other use `over` could be. Let's introduce a
  x                             /tada, we have all ints up to 8
 0 1 2 3 4 5 6 7 8
 
- fact:{*/1+!x}                 / factorial of x: 'mul over 1 plus til x'
+ fact:{*/1+!x}                 /fact x 'mul over 1 plus til x'
  fact 10 
 3628800 
 ```
 
-Now that we parted ways with loops, you get to learn there are **6 adverbs** in k that modify verbs in different ways. Please welcome the magnificent six:
+Now that we parted ways with loops, you get to learn there are **6 adverbs** in k that modify verbs in different ways. Please welcome the magnificent six, and note that o
+most trivial:
 
 ----------------
 adverb **each** is `f'x`
