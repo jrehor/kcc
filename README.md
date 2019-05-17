@@ -595,7 +595,7 @@ int sum(int[] in){
 
 But imagine you could state the problem to a computer like this:
 
-**"put a `+` between all adjacent items and give me the total."**
+**"put a `+` between all adjacent items and give me the grand total"**
 
 And that is the simplest way to describe what k adverb `over` does when it is used to modify dyadic `+`. Only `over`, as all other adverbs, is *general* and will happily modify *any* dyadic operator or function. Described more formally, `over` looks like this pseudocode:
 
