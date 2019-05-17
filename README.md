@@ -440,7 +440,7 @@ Of special mention is the **composite vector** type. Such vectors are either a m
 ```
 
 <a name="typ-cast"></a>
-**Type casting**, both explicit and implicit, is demonstrated by the following examples which also give a general feel of how type coersion behaves. The `cast` operator in k is a dyadic `t$x`, where `t` is the name of target type and `x` is a cast subject. Note that there is nice wordplay going on here, becase the `name of the type` is itself of a type `name`, which we already seen and know the syntax for. Type names are `\`i`, `\`f`, etc.
+**Type cast**, both explicit and implicit, is demonstrated by the following examples which also give a general feel of how type coersion behaves. The `cast` operator in k is a dyadic `t$x`, where `t` is the name of target type and `x` is a cast subject. Note that there is nice wordplay going on here, becase the `name of the type` is itself of a type `name`, which we already seen and know the syntax for, names start with a backtick.
 
 ```q
  1+.5                  /int plus float is float, no surprises here
@@ -481,9 +481,15 @@ type error
 
  15674+1981-02-01      /adding 15674 days solves the mystery: all dates in k are simply offsets from:
 2024-01-01
+
+ @10                   /a type name of 10
+`i 
+
+ @@10                  /type name of a type name of 10
+`n
 ```
 
-There is more to be said about the type system, but we have more than enough to proceed.
+There is a lot more to be said about the type system, but the very last expression we just seen urges us to proceed to the next section, which is all about giving a rational explantation how `@@10` actually works.
 
 ### right to left and back again
 
@@ -554,6 +560,15 @@ That is, by default **all operators** in a k expression are treated equally and 
 It is much easier to get used to lack of precedence than you may think, and once you do, you will generally want to avoid using parens unless you absolutely have to. The last example from above shows the basic strategy of ditching them: it is usually possible to rearrange the expressions so that the order of evaluation becomes linear. Although precedence override is often inevitable and can be beneficial, it can also have an adverse effect on readability, because it breaks the natural flow of code comprehension. That is:
 
 **Once you learn to read k expressions right to left, you want to go fast and uninterrupted, and round brackets get in your way.**
+
+Finally, we can revisit the question raised at the end of a type system discussion:
+
+```q
+ @@10             /"type name of a type name of 10" is actually, right to left...
+ `n               /..."get 10, apply monadic @, get `i, apply monadic @, get `n"
+```
+
+This is also a convincing proof of our earlier conjecture that `type name` of a `type name` in k is `name`.∎
 
 Okay, this was a tough one, but we are done.
 
