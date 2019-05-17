@@ -585,23 +585,23 @@ An **adverb** if a **modifier** that takes some **verb**, which is a short way o
 A classic example to show how adverbs replace loops is `sum`. Say, we have an input `in:1 2 3 4 5`, and what we want is a sum of its elements. Thinking in implicit loops suggests something like that:
 
 ```c
-int sum(int[]in){
-  int int=0,res=0;
+int sum(int[] in){
+  int i=0,acc=0;
   for(;i<sizeof(in);++i)
-    res+=in[i];
-  return res;
+    acc+=in[i];
+  return acc;
 }
 ```
 
 But imagine you could state the problem to a computer like this:
 
-"put a `+` between all adjacent items and give me the grand total."
+**"put a `+` between all adjacent items and give me the grand total."**
 
-And that is the simplest way to describe what k adverb `over` does when it is used to modify dyadic `+`. Only `over`, as all other adverbs, is *general* and will happily modify *any* dyadic operator or function. Described in a less informal language, the general case of `over` looks like this:
+And that is the simplest way to describe what k adverb `over` does when it is used to modify dyadic `+`. Only `over`, as all other adverbs, is *general* and will happily modify *any* dyadic operator or function. Described in a less informal language, the general case of `over` looks like this pseudocode:
 
 1. set `acc` to 0 (a.k.a. accumulator)
-2. until no more `x`, **set `acc` to the result of `v[acc;next x]`**
-3. return `acc`
+2. **until last `x`:** set `acc` to the result of `v[acc;next x]`
+3. return value of `acc`
 
 And since the k adverb `over` is `v/x`, this is how `sum` function looks like in k:
 
