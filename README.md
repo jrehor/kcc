@@ -384,7 +384,7 @@ Like in C, there is no dedicated type for strings in k. Strings are just **char 
 ```
 
 <a name="typ-name"></a>
-However, k has something C doesn't. We have a type called **name**, which is the same concept as **internalized string** found in some other languages. This means that a single instance of an arbitrarily long string can be placed into a global hash table that persists for a lifetime of a k process and can later be referenced by its hash key as many times as necessary without creating additional copies of the string. As you will discover later, names come very handy in many situations, but for now lets just see how they quack:
+However, k has something C doesn't. We have a type called **name**, which is the same idea as **internalized string** found in some other languages. This means that a single instance of an arbitrarily long string can be placed into a global hash table that persists for a lifetime of a k process and can later be referenced by its hash key as many times as necessary without creating additional copies of the string. As you will discover later, names come very handy in many situations, but for now lets just see how they quack:
 
 ```q
  a:`kei              /the string "kei" is now internalized
