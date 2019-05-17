@@ -601,7 +601,7 @@ And that is exactly what adverb `over` does in k, when it is used to modify the 
 
 1. **insert a dyadic verb `v` between every two adjacent elements of `x`**
 2. **apply it *over* `x` going left to right**
-3. **return the rightmost result"**
+3. **return the rightmost result**
 
 And since the k adverb `over` is `v/x`, this is how `sum` function looks like in k:
 
