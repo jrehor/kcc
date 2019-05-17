@@ -702,8 +702,8 @@ $[2>#?x;x;...]    /so this is just "return x if x has <2 unique items"
 
 Here is what we know so far:
 
-* the control flow of the recursive function
-* the condition that stops recursion
+1. the control flow of the recursive function
+2. the condition that stops recursion
 
 This gives us confidence to quickly wrestle down the last part, the recursion step:
 
