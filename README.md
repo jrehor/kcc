@@ -403,7 +403,7 @@ However, k has something C doesn't. We have a type called **name**, which is the
  dt:d+t;dt           /date + time... = datetime!
 1981-02-01T12:34:56.789 
 
- @dt                 /operations on temporal types is a complex subject for another day
+ @dt                 /operations on temporal types is a story for another day
 `T 
 ```
 
