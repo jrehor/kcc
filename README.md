@@ -938,6 +938,8 @@ Finally, for completeness sake:
 * monadic `@x type`
 * monadic `^x sort`
 
+* dyadic `x:y assign`
+
 Although this is still a small part of the complete k operator arsenal, if you can do `quicksort` with this much, you can do a lot more. And then add vector arithmetic, and then take everything to the power of 6 adverbs. We're not in Kansas anymore.
 
 -------------------
