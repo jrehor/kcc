@@ -529,7 +529,7 @@ Just to be clear, when we say "expressions" we don't mean "programs", and this i
  **k programs are read, written and evaluated left to right.**
 
 <a name="rtl-precedence"></a>
-Now that we know which way the rivers flow in k land, we are ready to discuss a related, no less important subject of **precedence**.
+Now that we know which way the rivers flow in k land, we are ready to discuss a related, no less important subject of precedence.
 
 We all take it for granted that multiplication and division bind stronger than addition and substraction and should be calculated first, and it feels almost natural that a computer language must have complex operator precedence hierarchy to do anything useful, and k disagrees with that:
 
