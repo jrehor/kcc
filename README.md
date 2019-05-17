@@ -565,7 +565,7 @@ The main reason explicit loops are missing from k is because they are *unnecessa
 
 An idea that displaces thinking in explicit loops is a simple and strong abstraction known as *adverbs*. Before we see them in action, it helps to understand why they are called that way:
 
-An **adverb** if a **modifier** that takes some **verb**, which is a user-defined function or a native operator, and makes that verb's action applicable to an **input vector** in some desirable way to produce an **output**, which can be a scalar value or another vector, depending on the adverb used.
+An **adverb** if a **modifier** that takes some **verb**, which is a short way of saying "a user-defined function or a native operator", and makes that verb's action applicable to an **input vector** in some desirable way to produce an **output**, which can be a scalar value or another vector, depending on the adverb used.
 
 A classic example to show how adverbs replace loops is `sum`. Say, we have an input `in:1 2 3 4 5`, and what we want is to obtain a sum of all its elements. Thinking in implicit loops suggests something like that:
 
@@ -599,7 +599,7 @@ It is a good moment to look back at C version of the same idea, and then you get
 ----------------
 adverb **each** is `f'x`
 
-where `f` is a `monadic` function or an operator and `x` is an input vector
+where `f` is a `monadic` verb and `x` is an input vector
 
 ```q
  a:0 1 2 3 4    /some data
@@ -613,7 +613,7 @@ adverb **over** is `f/x`
 
 adverb **scan** is `f\x`
 
-where `f` is a `dyadic` function or an operator and `x` is an input vector
+where `f` is a `dyadic` verb and `x` is an input vector
 
 ```q
  a:0 1 2 3 4    /some data
@@ -629,7 +629,7 @@ adverb **eachleft** is `x f\:y`
 
 adverb **eachright** is `x f/:y`
 
-where `f` is a `dyadic` function or an operator and `x` and `y` are left and right inputs, either vectors or atoms
+where `f` is a `dyadic` verb and `x` and `y` are left and right inputs, either vectors or atoms
 
 ```q
  10 20 30-\:5   /eachleft gives (10-5),(20-5),(30-5)
@@ -642,9 +642,9 @@ where `f` is a `dyadic` function or an operator and `x` and `y` are left and rig
 
 adverb **eachprior** is `x f':y` and `(f':)x`
 
-first form is `seeded eachprior` where `f` is a `dyadic` function or an operator, and `x` is a seed value and `y` is an input vector
+first form is `seeded eachprior` where `f` is a `dyadic` verb, and `x` is a seed value and `y` is an input vector
 
-second form is `seedless eachprior` where `f` is a `dyadic` function or an operator, and `x` is an input vector
+second form is `seedless eachprior` where `f` is a `dyadic` verb, and `x` is an input vector
 
 
 ```q
