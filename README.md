@@ -716,7 +716,7 @@ Here is what we know so far:
 1. the control flow of the recursive function
 2. the condition that stops recursion
 
-This gives us confidence to quickly wrestle down the last part, the recursion step:
+This gives enough confidence to wrestle down the last part, the recursion step:
 
 ```q
 
