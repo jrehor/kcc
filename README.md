@@ -778,7 +778,7 @@ Of course, in real life you would simply use the built-in sorting operator, whic
 
 The annotated breakdown of `qs` code gives a good impression of what is going on inside of k programmer's head, but tells you nothing about how fast it usually happens. A proficient k programmer would read and understand `qs` in well under two minutes. With a bit more practice, you will agree that reading k programs is easy and fun, but even sooner you will see why k programmers enjoy writing them so much.
 
-Speaking of fun, take a look at these two programs:
+Speaking of fun, compare functionality of these two programs:
 
 ```java
 public final class qs{public void s(int[] x){}} //java
