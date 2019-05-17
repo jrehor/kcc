@@ -33,7 +33,7 @@ Computer languages have been around for a while, but in the beginning was the w�
 x = x + 1
 ```
 
-Most programmers and most computer languages will agree that this expression is perfectly valid, but if you show it to a mathematician, be ready to hear "no, it isn't". And once you see what makes him think so, you will see why we assign values with `:` in k. The above expression, although not entirely nonsensical, in k is **always false**. A different perspective is not necessarily wrong, as there is no tragedy if it someday becomes your own — and that is the right mindset to approach k. 
+Most programmers and most computer languages will agree that this expression is perfectly valid, but if you show it to a mathematician, be ready to hear "no, it isn't". And once you see what makes him think so, you will see why we assign values with `:` in k. The above expression, although not entirely nonsensical, in k is pretty much **always false**. A different perspective is not necessarily wrong, as there is no tragedy if it someday becomes your own — and that is the right mindset to approach k. 
 
 This crash course is not looking to make you an expert k programmer, because that, as any area of expertise, takes a lot of time and effort. We heard it is possible to teach oneself Java in 24 hours, but we are not qualified to talk about that. Instead, we are going to talk about fundamental aspects of *thinking in k*, and the curve is going to be steep — but we value your time, so we promise it will be fast and violent.
 
