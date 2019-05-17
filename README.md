@@ -609,7 +609,9 @@ And since the k adverb `over` is `v/x`, this is how `sum` function looks like in
 15 
 ```
 
-It is a good moment to look back at C version of the same idea, and then you get to learn there are **6 adverbs** in k that modify verbs in different ways. Please welcome the magnificent six:
+It is a good moment to look back at the C version of the same idea, and be surprised to hear that its `for` loop declaration contains a terrible, ancient and extremely popular [bug](https://stackoverflow.com/questions/37538/how-do-i-determine-the-size-of-my-array-in-c), which k version does not. And, by the way, the broken C version only works for integers.
+
+and then you get to learn there are **6 adverbs** in k that modify verbs in different ways. Please welcome the magnificent six:
 
 ----------------
 adverb **each** is `f'x`
