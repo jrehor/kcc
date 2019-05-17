@@ -561,18 +561,19 @@ Okay, this was a tough one, but we are done.
 
 This part might be easier to digest than the previous, especially if you are fond of functional programming. The heading says it all - no matter how you try, you will not find a k construct that resembles an explicit `for` loop. It is simply absent, and not just because it is verbose and causes untold damages from the same trivial errors people keep on making coding `for` loops. Technically speaking, `while` construct does exist in k, but this fact is better be ignored just to avoid temptation.
 
-The main reason explicit loops are missing from k is because they are *unnecessary*. Of course k has loops, but they are *implicit* and hardly ever referred to by that name. Also, it comes without saying that k supports **recursion**, which is no less elegant way to avoid loops.
+The main reason explicit loops are missing from k is because they are *unnecessary*. Of course k has loops, but they are *implicit* and hardly ever referred to by that name. Also, it comes without saying that k supports **recursion**, which is a no less elegant way to avoid loops in many situations.
 
-An idea that displaces thinking in explicit loops is a simple and strong abstraction known as **adverbs**. Before we see them in action, it helps to understand why they are call that way:
+An idea that displaces thinking in explicit loops is a simple and strong abstraction known as *adverbs*. Before we see them in action, it helps to understand why they are called that way:
 
-An adverb if a **modifier** that takes some **verb**, which is a user-defined function or a native operator, and makes that verb's action applicable to an **input vector** in some desirable way to produce an **output**, which can be a scalar value or another vector, depending on the adverb.
+An **adverb** if a **modifier** that takes some **verb**, which is a user-defined function or a native operator, and makes that verb's action applicable to an **input vector** in some desirable way to produce an **output**, which can be a scalar value or another vector, depending on the adverb used.
 
 A classic example to show how adverbs replace loops is `sum`. Say, we have an input `in:1 2 3 4 5`, and what we want is to obtain a sum of all its elements. Thinking in implicit loops suggests something like that:
 
 ```c
 int sum(int[] in){
   int res = 0;
-  for(int i=0; i<sizeof(in); ++i)res+=in[i];
+  for(int i=0; i<sizeof(in); ++i)
+    res+=in[i];
   return res;
 }
 ```
