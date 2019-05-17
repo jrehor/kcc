@@ -14,7 +14,7 @@
 
 * vector math → [vectors vs atoms](#vectors-vs-atoms) | [v+v](#v-plus-v) | [v+a](#v-plus-a) | [indexing](#v-indexing)
 * type system → [two types of types](#two-types-of-types) | [num](#typ-num) | [char](#typ-char) | [name](#typ-name) | [time](#typ-time) | [composite](#typ-composite) | [cast](#typ-cast)
-* evaluation → [right to left](#right-to-left) | [precedence](#rtl-precedence)
+* evaluation → [right to left](#right-to-left-and-back-again) | [precedence](#rtl-precedence)
 * adverbs → [no stinking loops](#no-stinking-loops)
 
 **[proverbs](#proverbs)**
@@ -474,7 +474,7 @@ type error
 
 There is more to be said about the type system, but we have more than enough to proceed.
 
-### right to left
+### right to left and back again
 
 It could not possibly escape your attention that the syntax for indexing vectors and calling functions is the same:
 
@@ -502,34 +502,51 @@ What you also know that k actively encourages you to omit brackets whenever poss
 
 This tiny example reveals an astonishing truth. Once we drop the brackets, it suddenly becomes absolutely natural to read this expression *from right to left*. Take your time to contemplate and process this statement. In very little time you will see how it works in practice, and once you put it to practice yourself, you will see that this way of functional composition is beautiful, elegant and intuituve.
 
-**Reading and writing k expressions is done right to left.**
+**k expressions are read, written and evaluated right to left.**
+
+Just to be clear, when we say "expressions" we don't mean "programs", and this is a very important distinction. Below is a diagram of a small **k program** that consists of three identical expressions `f d i` with parens added for clarity. Further down is the order of evaluation of the entire program:
+
+```q
+/   L       T       R
+/(f d i);(f d i);(f d i)
+
+/   I   >   II  >  III
+/(3 2 1);(6 5 4);(9 8 7)
+/   <       <       <
+```
+
+In other words:
+ 
+ **k programs are read, written and evaluated left to right.**
 
 Now that we know which way the rivers flow in k land, we are ready to discuss a related, no less important subject.
 
 <a name="rtl-precedence"></a>
-Precedence in k obeys different laws compared to those we were taught in primary school. We take it for granted that multiplication and division bind stronger than addition and substraction, and it almost feels natural that computer languages must have very complex precedence hierarchies in order to be useful. That is not the case with k.
+We all take it for granted that multiplication and division bind stronger than addition and substraction and should be calculated first, and it almost feels natural that computer languages must have complex operator precedence hierarchies to do anything useful. That is not the case with k:
 
-**There is no operator precedence in k unless explicitly defined by round brackets.**
+**There is no operator precedence in k unless it is explicitly defined by round brackets.**
 
-That is, by default all operations in a k expression are treated equally and evaluated strictly from right to left. Lets see how this works:
+That is, by default all operators in a k expression are treated equally and evaluated strictly from **right to left**, and that includes **arithmetic** operators, e.g. `*` has no precedence over `+`. Here are some basic math expressions, annotated with their order of evaluation:
 
 ```q
- 3+2+1        /take 1, add 2, add 3
+ 3+2+1        /"take 1, add 2, add 3"
 6
 
- 3*2+1        /take 1, add 2, multiply by 3
+ 3*2+1        /"take 1, add 2, multiply by 3"
 9
 
- (3*2)+1      /take 2, multiply by 3, add 1
-7
+ (3*2)-1      /"take 2, multiply by 3, sub 1"
+5
 
- 1+3*2        /same as above, without parens
-7
+ -1+3*2       /same as above, without parens
+5
 ```
 
-Once you get over the death of precedence, you will start to seek to avoid parens as well unless you absolutely have to use them. The last example above shows the basic strategy of ditching them: it is usually possible to rearrange the order of evaluation to make it linear. Although overriding precedence is often inevitable and can be beneficial, it has an adverse effect on readability as it breaks the natural flow of code comprehension which otherwise goes from right to left uninterrupted.
+It is much easier to get used to lack of precedence than you may think, and once you do, you will generally want to avoid using parens unless you absolutely have to. The last example from above shows the basic strategy of ditching them: it is usually possible to rearrange the expressions so that the order of evaluation becomes linear. Although precedence override is often inevitable and can be beneficial, it can also have an adverse effect on readability, because it breaks the natural flow of code comprehension. That is:
 
-Although the lack of precedence is deliberately illustrated using only most basic arithmetic, the principle holds true for the entirety of the language, without exceptions.
+**Once you learn to read k expressions from right to left, you want to go fast and uninterrupted, and round brackets get in your way**
+
+Okay, this was a tough one, but we are done.
 
 ### no stinking loops
 
