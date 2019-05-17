@@ -778,17 +778,17 @@ Of course, in real life you would simply use the built-in sorting operator, whic
 
 The annotated breakdown of `qs` code gives a good impression of what is going on inside of k programmer's head, but tells you nothing about how fast it usually happens. A proficient k programmer would read and understand `qs` in well under two minutes. With a bit more practice, you will agree that reading k programs is easy and fun, but even sooner you will see why k programmers enjoy writing them so much.
 
-Here are a few typical qsort implementations in [C++](https://gist.github.com/christophewang/ad056af4b3ab0ceebacf), [Python](https://gist.github.com/anirudhjayaraman/897ca0d97a249180a48b50d62c87f239), [JavaScript](https://gist.github.com/claudiahdz/39a86084edaaabe7fc17c321c0bb6896) and [Java](https://github.com/Code2Bits/Algorithms-in-Java/blob/master/sort/src/main/java/com/code2bits/algorithm/sort/QuickSort.java).
-
 Just for fun, here are two programs of comparable size:
 
 ```java
-public final class qs {public void s(int[] x){}} //java
+public final class qs {public void s(int[] x){}}//java
 ```
 
 ```q
 qs:{$[2>#?x;x;,/qs'x@=x>rand x]} /k
 ```
+
+But jokes aside, here are some typical qsort implementations in [C++](https://gist.github.com/christophewang/ad056af4b3ab0ceebacf), [Python](https://gist.github.com/anirudhjayaraman/897ca0d97a249180a48b50d62c87f239), [JavaScript](https://gist.github.com/claudiahdz/39a86084edaaabe7fc17c321c0bb6896) and [Java](https://github.com/Code2Bits/Algorithms-in-Java/blob/master/sort/src/main/java/com/code2bits/algorithm/sort/QuickSort.java).
 
 
 -------------------
