@@ -571,7 +571,7 @@ A classic example to show how adverbs replace loops is `sum`. Say, we have an in
 
 ```c
 int sum(int[] in){
-  int res = 0;
+  int res=0;
   for(int i=0; i<sizeof(in); ++i)
     res+=in[i];
   return res;
