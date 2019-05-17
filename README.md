@@ -582,7 +582,7 @@ An idea that displaces thinking in explicit loops is a simple and strong abstrac
 
 An **adverb** if a **modifier** that takes some **verb**, which is a short way of saying "a user-defined function or a native operator", and makes that verb's action applicable to an **input vector** in some desirable way to produce an **output**, which can be a scalar value or another vector, depending on the adverb used.
 
-A classic example to show how adverbs replace loops is `sum`. Say, we have an input `in:1 2 3 4 5`, and what we want is a sum of its elements. Thinking in implicit loops suggests something like that:
+A good example of how adverbs replace loops is `sum`. Say, we have an input `in:1 2 3 4 5`, and what we want is a sum of its elements. Thinking in implicit loops suggests something like that:
 
 ```c
 int sum(int[] in){
