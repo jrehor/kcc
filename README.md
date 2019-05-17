@@ -12,7 +12,7 @@
 
 **[numbers](#numbers)**
 
-* vector math → [vectors vs atoms](#vector-and-atom) | [v+v](#v-plus-v) | [v+a](#v-plus-a) | [indexing](#v-indexing)
+* vector math → [vectors vs atoms](#vectors-vs-atoms) | [v+v](#v-plus-v) | [v+a](#v-plus-a) | [indexing](#v-indexing)
 * type system → [two types of types](#two-types-of-types) | [num](#typ-num) | [char](#typ-char) | [name](#typ-name) | [time](#typ-time) | [composite](#typ-composite) | [cast](#typ-cast)
 * order of evaluation → [from right to left](#from-right-to-left) | [precedence](#rtl-precedence)
 * adverbs → [no stinking loops](#no-stinking-loops)
@@ -221,7 +221,7 @@ This is a good start, but tells you absolutely nothing about what k really is. N
 
 ## numbers
 
-### vector and atom
+### vectors vs atoms
 
 The word `atom` is a synonym for `scalar values`, or simply `scalars`. Every language has them, and we have them in k, and they are as useful as elsewhere. But k belongs to a family of *vector languages*, which basically means its fundamental type is an ordered set of atoms or other ordered sets. In k parlance, terms "array", "list" and "vector" are often used interchageably and refer to the same thing, but we will stick with `vector` to avoid confusing you, because vectors are much more general than classic *arrays* and have nothing to do with *linked lists*. Besides, it also a cool word.
 
