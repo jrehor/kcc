@@ -824,7 +824,7 @@ qs:{$[2>#?x;x;,/qs'x@=x>rand x]}
 
 -------------------
 
-And now compare the source code of these two, and the associated file listing:
+And now compare the source code of these two:
 
 ```java
 import java.util.Arrays;  
