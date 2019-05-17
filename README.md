@@ -755,14 +755,12 @@ x:f'pts            /adverb 'each': call f recursively for each partition
 1 2 3 4 5 6
 ```
 
-Now that we know what every specific part does, we can zoom out and try to see the big picture. Feel free to use the interpreter to play around and test your ideas. The answer should be right in front of you in no time.
+Now that we know what every specific part does, we can zoom out and try to see the big picture. Feel free to use the interpreter to play around and test your ideas. And of course, `f` is nothing else but:
 
 -------------------
 
-You didn't need a second guess:
-
 ```q
- qs:{$[2>#?x;x;,/qs'x@=x>rand x]}        /quicksort on random pivot
+ qs:{$[2>#?x;x;,/qs'x@=x>rand x]}        /quicksort by random pivot
 
  qs 9 2 5 5 1 8 1 3 6 1                  /sort an int vector
 1 1 1 2 3 5 5 6 8 9
