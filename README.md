@@ -6,7 +6,7 @@
 
 **[exodus](#exodus)**
 
-* [install](#install-k) | [run](#run-k)
+* [install](#install) | [run](#run)
 * [style](#remarks-on-style) → [comments](#style-annot) | [tabs](#style-ident) | [caps](#style-caps)
 * [parlance](#remarks-on-parlance) → [xyz](#parl-xyz) | [rank](#parl-rank)
 
@@ -77,7 +77,7 @@ All of k programming takes place in **REPL**, a concept which requires little in
 
 Since the only known way to learn how to program is to write programs, you will need a live k environment. Fortunately, as all things k, it takes very little effort.
 
-### install k
+### install
 
 We will use a trial version of k, which comes with a reasonable limit of 1 gigabyte of workspace per k process. This limit is for your own protection, so that you don’t accidentally convert too much data into too much money too early, because, as any k programmer will tell you, with great power comes great responsibility.
 
@@ -95,7 +95,7 @@ As with all things k, the development of k language itself is happening at terri
 kelas@failbowl ~ $ conda update -c shaktidb shakti
 ```
 
-### run k
+### run
 
 Assuming conda's `bin` is in your PATH, make sure you have `rlwrap` utility installed, and put an alias `alias k="rlwrap k"` in your shell rc file. Start your very first k session like so:
 
