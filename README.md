@@ -671,7 +671,7 @@ As promised, your life just changed forever, there is no going back, so keep on 
 
 ### how to solve it
 
-The title of this chapter is shamelessly borrowed from a legendary book published back in 1945, a small volume by mathematician George Pólya where he shows how to approach problems and arrive to solutions. It is a very inspiring read.
+The title of this chapter is borrowed from a legendary book published back in 1945, a small volume by mathematician George Pólya where he shows how to approach problems and arrive to solutions. It is a very inspiring read.
 
 Equipped with everything we have so far, we are going to tackle a little problem. We will look at a k function that actually does something very useful and implements a very familiar algorithm. The subject of the game is to identify the algorithm and figure out how it is implementented in k (actually, in reverse order).
 
