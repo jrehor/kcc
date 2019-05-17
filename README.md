@@ -584,7 +584,7 @@ But what if you rephrase the logic of this loop in the following way:
 
 And that is exactly what adverb `over` does in k, when it is used to modify the action of dyadic `+`. Only `over` is *universal* will happily modify *any* dyadic operator or function, so it becomes:
 
-**"insert a verb `v` between every two adjacent elements of `x`, apply it everywhere and return the final result"**
+**"insert a dyadic verb `v` between every two adjacent elements of `x`, apply it everywhere and return the final result"**
 
 And since the k adverb `over` is `v/x`, this is how `sum` function looks like in k:
 
