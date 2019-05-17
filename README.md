@@ -582,7 +582,7 @@ An idea that displaces thinking in explicit loops is a simple and strong abstrac
 
 An **adverb** if a **modifier** that takes some **verb**, which is a short way of saying "a user-defined function or a native operator", and makes that verb's action applicable to an **input vector** in some desirable way to produce an **output**, which can be a scalar value or another vector, depending on the adverb used.
 
-A classic example to show how adverbs replace loops is `sum`. Say, we have an input `in:1 2 3 4 5`, and what we want is to obtain a sum of all its elements. Thinking in implicit loops suggests something like that:
+A classic example to show how adverbs replace loops is `sum`. Say, we have an input `in:1 2 3 4 5`, and what we want is a sum of its elements. Thinking in implicit loops suggests something like that:
 
 ```c
 int sum(int[]in){
@@ -593,11 +593,11 @@ int sum(int[]in){
 }
 ```
 
-But what if you rephrase the logic of this loop in the following way:
+But what if we rephrase the logic of this loop in the following way:
 
 "insert a plus between every two adjacent elements of `in`, apply its action everywhere and return the final result"
 
-And that is exactly what adverb `over` does in k, when it is used to modify the action of dyadic `+`. Only `over` is *universal* will happily modify *any* dyadic operator or function, so it becomes:
+And that is exactly what adverb `over` does in k, when it is used to modify the action of dyadic verb `+`. Only `over` is *universal* and will happily modify *any* dyadic operator or function, so it becomes:
 
 **"insert a dyadic verb `v` between every two adjacent elements of `x`, apply it everywhere and return the final result"**
 
@@ -609,7 +609,7 @@ And since the k adverb `over` is `v/x`, this is how `sum` function looks like in
 15 
 ```
 
-It is a good moment to look back at the C version of the same idea, and be surprised to hear that its `for` loop declaration contains a terrible, ancient and extremely popular [bug](https://stackoverflow.com/questions/37538/how-do-i-determine-the-size-of-my-array-in-c), which k version does not. And, by the way, the broken C version only works for integers.
+It is a good moment to look back at the C version of the same idea, and be surprised to hear that its `for` loop declaration contains a terrible, ancient and extremely popular [bug](https://stackoverflow.com/questions/37538/how-do-i-determine-the-size-of-my-array-in-c), which k version does not. And, by the way, if the C version could work, it would only work for integers.
 
 and then you get to learn there are **6 adverbs** in k that modify verbs in different ways. Please welcome the magnificent six:
 
