@@ -35,7 +35,7 @@ Computer languages have been around for a while, but in the beginning was the WÃ
 x = x + 1
 ```
 
-Most programmers will readily agree that this expression is making perfect sense, but if you show it to a mathematician, be ready to hear "no, it isn't". And once you see what makes him think so, you will see why we assign values with `:` in k. The above expression, although not entirely nonsensical, in k is pretty much always **false**. A different perspective is not necessarily wrong, as there is no tragedy if it someday becomes your own. That is the right mindset to approach k, and by the way, once you make it far enough to be able to provide an example when `x=x+1` is **true** in k, don't be a stranger and submit a pull request.
+Most programmers will readily agree that this expression makes perfect sense, but if you show it to a mathematician, be ready to hear "no, it isn't". And once you see why he didn't say "doesn't", and why he used a negative to begin with, you will also see why we assign values with `:` in k. The above expression looks nonsensical to a k programmer for *exactly* the same reason it is to a math guy, and k interpreter will most always evaluate it to false. The point here is that a different perspective is not necessarily wrong. It can just as well be right, but in a diferent way, and if someday you start to see it the same way, it only means *your perspective has changed*, and there is nothing wrong about that either. And that is the right mindset to approach k. And by the way, once you make it far enough to be able to provide an example when `x=x+1` is **true** in k, don't be a stranger and submit a pull request.
 
 ---------------------
 
