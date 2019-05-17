@@ -6,14 +6,14 @@
 
 **[exodus](#exodus)**
 
-* bootstrap → [install](#install-k) | [run](#run-k)
+* boot → [install](#install-k) | [run](#run-k)
 * [style](#remarks-on-style) → [comments](#style-annot) | [tabs](#style-ident) | [caps](#style-caps)
 * [parlance](#remarks-on-parlance) → [xyz](#parl-xyz) | [rank](#parl-rank)
 
 **[numbers](#numbers)**
 
 * vector arithmetic → [vector and atom](#vector-and-atom) ([v+v](#v-plus-v) | [v+a](#v-plus-a) | [idx](#v-indexing))
-* type system → [two types of types](#two-types-of-types)
+* type system → [two types of types](#two-types-of-types) ([num](#typ-num) | [char](#typ-char) | [name](#typ-name) | [time](#typ-time) | [composite](#typ-composite) [casts](#typ-cast))
 * order of evaluation → [from right to left](#from-right-to-left)
 * adverbs → [no stinking loops](#no-stinking-loops)
 
@@ -325,6 +325,7 @@ atom      vect        type
 
 This is not very revealing, so lets see them in action. The operator to query the type of anything in k is `monadic @`, and if you are not sure what we mean by `monadic`, it is a good time for you to hit 'home' and start over.
 
+<a name="typ-num"></a>
 ```q
  @42         /int atom
 `i
@@ -346,6 +347,7 @@ This is not very revealing, so lets see them in action. The operator to query th
 `f
 ```
 
+<a name="typ-char"></a>
 Like in C, there is no dedicated type for strings in k. Strings are just **char vectors**:
 
 ```q
@@ -359,6 +361,7 @@ Like in C, there is no dedicated type for strings in k. Strings are just **char 
 "k"
 ```
 
+<a name="typ-name"></a>
 However, k has something C doesn't. We have a type called **name**, which is the same concept as **internalized string** found in some other languages. This means that a single instance of an arbitrarily long string can be placed into a global hash table that persists for a lifetime of a k process and can later be referenced by its hash key as many times as necessary without creating additional copies of the string. As you will discover later, names come very handy in many situations, but for now lets just see how they quack:
 
 ```q
@@ -374,6 +377,7 @@ However, k has something C doesn't. We have a type called **name**, which is the
 `n
 ```
 
+<a name="typ-time"></a>
 **Temporal types** in k are `date` and `time`:
 
 ```q
@@ -386,6 +390,7 @@ However, k has something C doesn't. We have a type called **name**, which is the
 `t
 ```
 
+<a name="typ-composite"></a>
 Of special mention is the **composite vector** type. Such vectors are either a mixture of atoms of disparate types, or contain something more complex than atoms, e.g. other vectors.
 
 ```q
@@ -409,6 +414,7 @@ Of special mention is the **composite vector** type. Such vectors are either a m
 256
 ```
 
+<a name="typ-cast"></a>
 **Casting**, both explicit and implicit, is demonstrated by the following examples which also give a general feel of how type coersion behaves:
 
 ```q
