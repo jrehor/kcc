@@ -824,6 +824,6 @@ Finally, for completeness sake:
 2. retrace the steps of the analysis we did together.
 3. in a new k session, try to reproduce `qs` from scratch.
 
-It sounds much harder than it really is. It might take more than one attempt, but you will be amazed how fast you will get there. However, before advancing to the next chapter, make sure that you *do* get there.
+It sounds much harder than it really is. It might take more than one attempt, but you will be amazed how fast you will get there. However, before advancing to the next chapter, make sure that you **do** get there.
 
 -------------------
