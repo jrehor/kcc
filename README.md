@@ -35,12 +35,14 @@ x = x + 1
 
 Most programmers will readily agree that this expression is making perfect sense, but if you show it to a mathematician, be ready to hear "no, it isn't". And once you see what makes him think so, you will see why we assign values with `:` in k. The above expression, although not entirely nonsensical, in k is pretty much always **false**. A different perspective is not necessarily wrong, as there is no tragedy if it someday becomes your own. That is the right mindset to approach k, and by the way, once you make it far enough to be able to provide an example when `x=x+1` is **true** in k, don't be a stranger and submit a pull request to this repo.
 
+---------------------
+
 This crash course is not looking to make you an expert k programmer, because that, as any area of expertise, takes a lot of time and effort. We heard it is possible to teach oneself Java in 24 hours, but we are not qualified to talk about that. Instead, we are going to talk about fundamental aspects of *thinking in k*, and the goal is to give enough proficiency, confidence and motivation for you to continue on your own, and the curve is going to be steep — but we value your time, so we promise it will be fast and violent.
 
 * The text assumes proficiency in general programming concepts, and cuts a lot of corners at some expense of readability.
 * The course is entirely driven by densely annotated code which expects your undivided attention and intuition.
 * New syntax is often introduced inline, some meanings are left to be inferred when assumed to be self-explanatory.
-* The majority of code annotations contain essential material.
+* The majority of code  contain essential material.
 * The narrative is strictly linear, each chapter builds on all previous.
 * None of the exercises are optional, skipping them will halt your progress.
 
