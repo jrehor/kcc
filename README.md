@@ -440,7 +440,7 @@ Of special mention is the **composite vector** type. Such vectors are either a m
 ```
 
 <a name="typ-cast"></a>
-**Type casting**, both explicit and implicit, is demonstrated by the following examples which also give a general feel of how type coersion behaves. The `cast` operator in k is a dyadic `t$x`, where `t` is the name of target type and `x` is a cast subject. Note that there is nice wordplay going on here, becase the `name of the type` is itself of a type `name`, which we already seen and know the syntax for. Type names are ```i`, ```f`, etc.
+**Type casting**, both explicit and implicit, is demonstrated by the following examples which also give a general feel of how type coersion behaves. The `cast` operator in k is a dyadic `t$x`, where `t` is the name of target type and `x` is a cast subject. Note that there is nice wordplay going on here, becase the `name of the type` is itself of a type `name`, which we already seen and know the syntax for. Type names are `\`i`, `\`f`, etc.
 
 ```q
  1+.5                  /int plus float is float, no surprises here
