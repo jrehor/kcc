@@ -855,7 +855,7 @@ This is definitely not the fastest `quicksort` ever written, but in real life yo
 -∞ 1.7 2.6 π 3.5 5.6 8.6 ∞
 ```
 
-But what our DYI sort function demonstrates very well is the principle of **doing more with less**, and that is what k is all about.
+But what our DIY sort function demonstrates very well is the principle of **doing more with less**, and that is what k is all about.
 
 The annotated breakdown of `qs` code gives a good impression of what is typically going on inside of k programmer's head, but tells you nothing about how fast it usually happens. A proficient k programmer would read and understand `qs` in well under two minutes. With a bit more practice, you will agree that reading k programs is easy and fun, but even sooner you will see why k programmers enjoy writing them so much.
 
