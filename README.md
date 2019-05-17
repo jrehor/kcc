@@ -232,9 +232,11 @@ This is a good start, but tells you absolutely nothing about what k really is. N
 
 ### vectors vs atoms
 
-The word `atom` is a synonym for `scalar values`, or simply `scalars`. Every language has them, and we have them in k, and they are as useful as elsewhere. But k belongs to a family of *vector languages*, which basically means its fundamental type is an ordered set of atoms or other ordered sets. In k parlance, terms "array", "list" and "vector" are often used interchageably and refer to the same thing, but we will stick with `vector` to avoid confusing you, because vectors are much more general than classic *arrays* and have nothing to do with *linked lists*. Besides, it also a cool word.
+The word `atom` is a synonym for `scalar value`, or simply `scalar`. Every language has them, and in k they are as useful as elsewhere. But k belongs to a family of *vector languages*, which basically means its fundamental type is an ordered set of atoms or other ordered sets. In k parlance, terms "array", "list" and "vector" are often used interchageably and refer to the same thing, but we will stick with `vector` to avoid confusing you, because vectors are much more general than classic *arrays* and have nothing to do with *linked lists*. Besides, it also a cool word.
 
 ```q
+ s:42             /an atom with a name is scalar variable
+ 
  a:(0,1,2,3,4)    /one way of declaring an integer vector
  b:0 1 2 3 4      /same effect using more informal syntax
 
