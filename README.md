@@ -43,7 +43,7 @@ This crash course is not looking to make you an expert k programmer, because tha
 
 * The text assumes proficiency in general programming concepts, and cuts a lot of corners at some expense of readability.
 * The course is entirely driven by densely annotated code which expects your undivided attention and intuition.
-* New syntax is often introduced inline, some meanings are left to be inferred when assumed to be self-explanatory.
+* New syntax is often introduced inline, some meanings are left to be inferred or assumed self-explanatory.
 * Most annotations in the code contain essential learning material that cannot be overlooked.
 * The narrative is strictly linear, each chapter builds on all previous.
 * None of the exercises are optional, skipping them will halt your progress.
