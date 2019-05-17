@@ -11,7 +11,7 @@
 
 **[numbers](#numbers)**
 
-* vector arithmetic → [vector and atom](#vector-and-atom) ([v+v](#v-plus-v) | [v+a](#v-plus-v) | [idx](#v-indexing))
+* vector arithmetic → [vector and atom](#vector-and-atom) ([v+v](#v-plus-v) | [v+a](#v-plus-a) | [idx](#v-indexing))
 * type system → [two types of types](#two-types-of-types)
 * order of evaluation → [from right to left](#from-right-to-left)
 * adverbs → [no stinking loops](#no-stinking-loops)
