@@ -860,9 +860,9 @@ Although this is still a small part of k operator arsenal, you already have enou
 
 **Checkpoint exercise:**
 
-1. take another good look at the code of `qs` function.
-2. retrace the steps of the analysis we did together.
-3. in a new k session, try to reproduce `qs` from scratch.
+1. take another good look at the code of `qs` function
+2. retrace the steps of the analysis we did together
+3. in a new k session, try to reproduce `qs` from scratch
 
 It sounds much harder than it really is. It might take more than one attempt, but you will be amazed how fast you will get there. However, before advancing to the next chapter, make sure that you **do** get there.
 
