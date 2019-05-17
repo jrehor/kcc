@@ -263,7 +263,7 @@ Mixing atomic and vector operands makes total sense and is enormously useful:
  a=1             /compare each of a to 1
 0 1 0 0 0
 
- a%0             /divide each of a by 0 (correct, ℚ%0 is ∞ except 0%0 which is ø, enjoy responsibly)
+ a%0             /divide each of a by 0 (correct, ℚ%0 is ±∞ except 0%0 which is ø, enjoy responsibly)
 ø ∞ ∞ ∞ ∞
 
  3%a             /divide 3 by each of a
