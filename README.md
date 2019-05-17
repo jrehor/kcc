@@ -578,7 +578,7 @@ int sum(int[] in){
 }
 ```
 
-But what if you rephrase the action of this loop in the following way:
+But what if you rephrase the logic of this loop in the following way:
 
 "insert a plus between every two adjacent elements of `in`, apply its action everywhere and return the final result"
 
