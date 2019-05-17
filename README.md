@@ -39,7 +39,7 @@ Most programmers will readily agree that this expression is making perfect sense
 
 ---------------------
 
-This crash course is not looking to make you an expert k programmer, because that, as any area of expertise, takes a lot of time and effort. We heard it is possible to teach oneself Java in 24 hours, but we are not qualified to talk about that. Instead, we are going to talk about fundamental aspects of *thinking in k*, and the goal is to give enough proficiency, confidence and motivation for you to continue on your own, and the curve is going to be steep — but we value your time, so we promise it will be fast and violent.
+This crash course is not looking to make you an expert k programmer, because that takes a lot of time and effort. We heard it is possible to teach oneself Java in 24 hours, but we are not qualified to talk about that. Instead, we are going to talk about fundamental aspects of *thinking in k*, and the goal is to give enough proficiency, confidence and motivation for you to continue on your own, and the curve is going to be steep — but we value your time, so we promise it will be fast and violent.
 
 * The text assumes proficiency in general programming concepts, and cuts a lot of corners at some expense of readability.
 * The course is entirely driven by densely annotated code which expects your undivided attention and intuition.
