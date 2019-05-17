@@ -648,7 +648,7 @@ By the way, by now it should be pretty clear for you:
 * **why division is `x%y`?**
 * **why do we need at least one space before an inline comment `/cmt`?**
 
-Now that we parted ways with loops, you are ready to discover there are **6 adverbs** in k that modify verbs in very different ways. Please welcome the magnificent six, and note that only most trivial use cases are shown:
+Now that you parted ways with loops, you are ready to discover there are **6 adverbs** in k that modify verbs in very different ways. Please welcome the magnificent six, and note that only most trivial use cases are shown:
 
 ----------------
 adverb **each** is `f'x`
