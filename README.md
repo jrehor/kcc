@@ -779,11 +779,12 @@ The annotated breakdown of `qs` code gives a good impression of what is going on
 Speaking of fun, compare functionality of these two programs:
 
 ```java
-public final class qs{public void s(int[] x){}} //java
+package com.less.with.more.doing.sort;
+public final class qs{public void s(int[] x){}}
 ```
 
 ```q
-qs:{$[2>#?x;x;,/qs'x@=x>rand x]} /k
+qs:{$[2>#?x;x;,/qs'x@=x>rand x]}
 ```
 
 Check out more implementations in [C++](https://gist.github.com/christophewang/ad056af4b3ab0ceebacf), [Python](https://gist.github.com/anirudhjayaraman/897ca0d97a249180a48b50d62c87f239), [JavaScript](https://gist.github.com/claudiahdz/39a86084edaaabe7fc17c321c0bb6896) and [Java](https://github.com/Code2Bits/Algorithms-in-Java/blob/master/sort/src/main/java/com/code2bits/algorithm/sort/QuickSort.java).
