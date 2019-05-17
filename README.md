@@ -54,7 +54,7 @@ This crash course is not looking to make you an expert k programmer, because tha
 
 This might feel a bit intense, but we also hope the whole thing is still lightweight and entertaining enough to be completed in just one focused session.
 
-This document is **not a k reference** and is not to be treated as such. The majority of subjects are covered at depth sufficient to give a good general overview but by no means exhaustive.
+This document is **not a k reference** and is not to be treated as such. The majority of subjects are covered at depth sufficient to give a good general overview and encourage further research but by no means exhaustive.
 
 ### who
 
@@ -227,7 +227,6 @@ Two specific ranks are so important that they have their own names. A function o
 As you will see, the vast majority of native operators in `k` have exactly two completely different meanings based on the context where they are used, which is in turn defined by the number of arguments offered to the operator. To overlook this fact is a grave mistake, so you better get a very strong grip on the idea that some things in life are **monadic**, while others are **dyadic**. For ranks of higher and lesser order it is fine to worry less. For example, when you used your first ever k operator in the expression `2+2`, you have used the **+** operator in a **dyadic** context, which basically meant that you offered it *two* operands to work on, left and right, respectively. However, once you discover what the **+** operator stands for when used in a **monadic** context, it will change your life forever, so let us skip this discussion for now.
 
 -------------------
-
 
 **Recap:**
 
@@ -644,7 +643,12 @@ You could be tempted to see of what other use `over` could be. Let's introduce a
 3628800 
 ```
 
-Now that we parted ways with loops, you get to learn there are **6 adverbs** in k that modify verbs in different ways. Please welcome the magnificent six, and note that only most trivial use cases are shown:
+By the way, by now it should be pretty clear for you:
+
+* **why division is `x%y`?**
+* **why do we need at least one space before an inline comment `/cmt`?**
+
+Now that we parted ways with loops, you are ready to discover there are **6 adverbs** in k that modify verbs in very different ways. Please welcome the magnificent six, and note that only most trivial use cases are shown:
 
 ----------------
 adverb **each** is `f'x`
@@ -675,6 +679,7 @@ where `f` is a `dyadic` verb and `x` is an input vector
 0 1 3 6 10      /running sum of a
 ```
 ----------------
+
 adverb **eachleft** is `x f\:y`
 
 adverb **eachright** is `x f/:y`
@@ -890,7 +895,7 @@ The annotated breakdown of `qs` code gives a good impression of what is typicall
 
 -------------------
 
-Speaking of fun, compare functionality of these two programs:
+Speaking of fun, compare the functionality of these two programs:
 
 ```java
 package com.less.with.more.doing.sort;
@@ -952,6 +957,8 @@ Finally, for completeness sake:
 * monadic `^x sort`
 
 * dyadic `x:y assign`
+* dyadic `x=y equal`
+
 
 Although this is still a small part of the complete k operator arsenal, if you can do `quicksort` with this much, you can do a lot more. And then add vector arithmetic, and then take everything to the power of 6 adverbs. We're not in Kansas anymore.
 
