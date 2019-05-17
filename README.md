@@ -493,7 +493,7 @@ It could not possibly escape your attention that the syntax for indexing vectors
 4 32 
 ```
 
-You also know that k actively encourages you to **omit brackets whenever possible**, so lets do exactly that:
+What you also know that k actively encourages you to omit brackets whenever possible, so lets do exactly that:
 
 ```q
  f d i        /same as f[d[i]]
