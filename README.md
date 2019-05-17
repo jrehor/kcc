@@ -162,10 +162,10 @@ As any other computer language, k expects a programmer to observe and follow cer
 **Annotations** in your k code is the best way not to end up coding Java for food, unless you are Arthur Whitney. We dare to assume you are not there yet, so comments start with `/`. When used inline, prepend at least one space. Here is an annotated declaration of two variables:
 
 ```q
-/line comment
+/annotations are your friends
 a:42
 
-b:42 /inline comment
+b:42 /now, always and forever
 ```
 -------------------
 
