@@ -772,9 +772,16 @@ Now that we know what every specific part does, we can zoom out and try to see t
 "deffggiijllnopprrt" 
 ```
 
-Of course, in real life you would simply use the built-in sorting operator, which is a lot more efficient. What this toy example demonstrates is the principle of **doing more with less**, and that is what k is all about.
+Of course, in real life you would simply use the built-in sorting operator, which is a lot more efficient, which is just monadic `^x`:
 
-The annotated breakdown of `qs` code gives a good impression of what is going on inside of k programmer's head, but tells you nothing about how fast it usually happens. A proficient k programmer would read and understand `qs` in well under two minutes. With a bit more practice, you will agree that reading k programs is easy and fun, but even sooner you will see why k programmers enjoy writing them so much.
+```q
+ ^2.6 -∞ 8.6 π 1.7 ∞ 3.5 5.6             /^x is 'sort'
+-∞ 1.7 2.6 π 3.5 5.6 8.6 ∞
+```
+
+But what out toy example demonstrates well is the principle of **doing more with less**, and that is what k is all about.
+
+The annotated breakdown of `qs` code gives a good impression of what is typically going on inside of k programmer's head, but tells you nothing about how fast it usually happens. A proficient k programmer would read and understand `qs` in well under two minutes. With a bit more practice, you will agree that reading k programs is easy and fun, but even sooner you will see why k programmers enjoy writing them so much.
 
 Speaking of fun, compare functionality of these two programs:
 
@@ -812,6 +819,7 @@ Also, at the end of the previous chapter you have seen:
 Finally, for completeness sake:
 
 * monadic `@x typeof`
+* monadic `^x sort`
 
 > Although this is still a tiny part of k heavy artillery, you already have enough to do `quicksort` and a galaxy or other useful programs. And don't forget to multiply your degrees of freedom by vector arithmetic, and then take everything to the power of 6 adverbs. Yes, school is out, we're not in Kansas anymore.
 
