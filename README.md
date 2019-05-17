@@ -248,7 +248,7 @@ The word `atom` is a synonym for `scalar value`, or simply `scalar`. Every langu
 ```
 
 <a name="v-plus-v"></a>
-The first enlightening fact about vectors is that most operations you expect to work for atoms work equally well for vectors, too:
+The most enlightening fact about vectors is that most operations you expect to work for atoms work equally well for vectors, too:
 
 ```q
  a*a             /don't get mad, get even
