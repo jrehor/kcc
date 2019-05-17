@@ -46,11 +46,11 @@ And if you are able to produce a k expression where `x=x+1` evaluates to **true*
 This crash course is not looking to make you an expert k programmer, because that takes a lot of time and effort. We heard it is possible to teach oneself Java in 24 hours, but we are not qualified to talk about that. Instead, we are going to talk about fundamental aspects of *thinking in k*, and the goal is to give you enough skill, confidence and motivation for you to continue on your own. The curve is going to be steep, but we value your time, so we promise it will be fast and violent.
 
 * This text assumes a fair amount of insight and will cut a lot of corners on general programming and CS at some expense of readability.
-* The course is entirely driven by densely annotated code which expects your undivided attention and intuition.
-* New syntax is often introduced inline, some meanings are left to be inferred or assumed self-explanatory.
+* The course is driven entirely by densely annotated code which expects undivided attention.
+* New syntax is often introduced inline, some meanings are left to be inferred, some assumed self-explanatory, some rely on your intuition.
 * Most annotations in the code contain essential learning material that cannot be overlooked.
 * The narrative is strictly linear, each chapter builds on all previous.
-* None of the exercises are optional, skipping them will halt your progress.
+* Skipping any exercise is guaranteed to halt any further progress.
 
 This might feel a bit intense, but we also hope the whole thing is still lightweight and entertaining enough to be completed in just one focused session.
 
