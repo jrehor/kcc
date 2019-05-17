@@ -706,7 +706,7 @@ Take your time, make sure you got it before advancing to the next chapter, where
 
 -------------------
 
-Well done, here is the bonus you were waiting for: the meaning of monadic `+`:
+Well done. There is a bonus waiting for you, you finally get to know the meaning of monadic `+`:
 
 ```q
  mat:(1 2 3;4 5 6;7 8 9)       /shall there be mat
