@@ -611,7 +611,7 @@ And since the k adverb `over` is `v/x`, this is how `sum` function looks like in
 15 
 ```
 
-It is a good moment to look back at the C version of the same idea, and be surprised to hear that its `for` loop declaration contains an ancient, but ever so popular [bug](https://stackoverflow.com/questions/37538/how-do-i-determine-the-size-of-my-array-in-c), which k version does not. And, by the way, if the C version could work, it would only work for integers.
+It is a good moment to look back at the C version of the same idea one last time. Be surprised to hear that its `for` loop declaration contains an ancient, but ever so popular [bug](https://stackoverflow.com/questions/37538/how-do-i-determine-the-size-of-my-array-in-c), which k version does not because finding and fixing bugs in `+/x` is much easier. Besides, if the C code wasn't broken, it would only work for integers.
 
 Now that we parted ways with loops, you get to learn there are **6 adverbs** in k that modify verbs in different ways. Please welcome the magnificent six:
 
@@ -768,8 +768,8 @@ f:{...}           /f is a function, that is a good start
 f:{.x.}           /f takes only one implicit argument, x
 f:{.f.}           /f clearly calls f, so it is recursive
 
-$[?;?;?]          /the entire body of f is nothing more but
-$[c;t;f]          /a ctf conditional, think if(c){t}else{f}
+$[?;?;?]          /the entire body of f is nothing else but
+$[c;t;f]          /a ctf cond, aka if-then-else aka ternary
 
 2>#?x             /c:      some bool condition
 x                 /t:      do this if c is true
