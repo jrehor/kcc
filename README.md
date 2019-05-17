@@ -815,7 +815,7 @@ qs:{$[2>#?x;x;,/qs'x@=x>rand x]}
 
 -------------------
 
-And now these two:
+And now these source code of these two:
 
 ```java
 import java.util.Arrays;  
