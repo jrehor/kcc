@@ -585,9 +585,9 @@ An **adverb** if a **modifier** that takes some **verb**, which is a short way o
 A classic example to show how adverbs replace loops is `sum`. Say, we have an input `in:1 2 3 4 5`, and what we want is to obtain a sum of all its elements. Thinking in implicit loops suggests something like that:
 
 ```c
-int sum(int[] in){
-  int res=0;
-  for(int i=0; i<sizeof(in); ++i)
+int sum(int[]in){
+  int int=0,res=0;
+  for(;i<sizeof(in);++i)
     res+=in[i];
   return res;
 }
