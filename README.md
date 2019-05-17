@@ -595,15 +595,17 @@ int sum(int[] in){
 
 But imagine you could state the problem to a computer like this:
 
-**"put a `+` between all adjacent items and give me the grand total."**
+**"put a `+` between all adjacent items and give me the total."**
 
-And that is the simplest way to describe what k adverb `over` does when it is used to modify dyadic `+`. Only `over`, as all other adverbs, is *general* and will happily modify *any* dyadic operator or function. Described in a less informal language, the general case of `over` looks like this pseudocode:
+And that is the simplest way to describe what k adverb `over` does when it is used to modify dyadic `+`. Only `over`, as all other adverbs, is *general* and will happily modify *any* dyadic operator or function. Described more formally, `over` looks like this pseudocode:
 
 1. set `acc` to 0 (a.k.a. accumulator)
 2. while `next x`, set `acc` to the result of `v[acc;next x]`
 3. return `acc`
 
-And since the k adverb `over` is `v/x`, this is how `sum` function looks like in k:
+The above is nothing else but a general case of the explicit loop found in `sum()`, as well as of **all other** explicit loops of this particiular family, which is known as `fold` or `reduce` among functional folks.
+
+And since `over` is just `v/x`, this is how `sum` function looks like in k:
 
 ```q
  s:{+/x} 
@@ -611,7 +613,7 @@ And since the k adverb `over` is `v/x`, this is how `sum` function looks like in
 15 
 ```
 
-It is a good moment to look back at the C version of the same idea one last time. Be surprised to hear that its `for` loop declaration contains an ancient, but ever so popular [bug](https://stackoverflow.com/questions/37538/how-do-i-determine-the-size-of-my-array-in-c), which k version does not because finding and fixing bugs in `+/x` is much easier. Besides, if the C code wasn't broken, it would only work for integers.
+It is a good moment to look back at the C version, one last time. Be surprised to hear that its `for` loop declaration contains an ancient, but ever so popular [bug](https://stackoverflow.com/questions/37538/how-do-i-determine-the-size-of-my-array-in-c), which k version does not because fixing bugs in `+/x` is much easier. Besides, eben if the C code wasn't broken, it would only work for integers.
 
 Now that we parted ways with loops, you get to learn there are **6 adverbs** in k that modify verbs in different ways. Please welcome the magnificent six:
 
