@@ -11,7 +11,7 @@
 
 **[numbers](#numbers)**
 
-* vector arithmetic → [vector and atom](#vector-and-atom)
+* vector arithmetic → [vector and atom](#vector-and-atom) ([v+v](#v-plus-v) | [v+a](#v-plus-v) | [idx](#v-indexing))
 * type system → [two types of types](#two-types-of-types)
 * order of evaluation → [from right to left](#from-right-to-left)
 * adverbs → [no stinking loops](#no-stinking-loops)
@@ -230,6 +230,7 @@ The word `atom` is a synonym for `scalar values`, or simply `scalars`. Every lan
 0 1 2 3 4
 ```
 
+<a name="v-plus-v"></a>
 The first enlightening fact about vectors is that most operations you expect to work for atoms work equally well for vectors, too:
 
 ```q
@@ -246,6 +247,7 @@ a-b              /pairwise substraction
 1 1 1 1 1 
 ```
 
+<a name="v-plus-a"></a>
 Mixing atomic and vector operands makes total sense and is enormously useful:
 
 ```q
@@ -274,6 +276,7 @@ a+b
 length error
 ```
 
+<a name="v-indexing"></a>
 **Indexing** is zero-based as you would expect, but there is a very pleasant surprise there:
 
 ```q
