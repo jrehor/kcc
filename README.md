@@ -767,8 +767,8 @@ You didn't need a second guess:
  qs 9 2 5 5 1 8 1 3 6 1                  /sort an int vector
 1 1 1 2 3 5 5 6 8 9
 
- qs 2.6 8.6 1.7 3.5 5.6                  /sort a float vector
-1.7 2.6 3.5 5.6 8.6 
+ qs 2.6 -∞ 8.6 π 1.7 ∞ 3.5 5.6           /sort a float vector (hello π)
+-∞ 1.7 2.6 π 3.5 5.6 8.6 ∞
 
  qs "edrofgtnljgrpliifp"                 /sort a char vector
 "deffggiijllnopprrt" 
