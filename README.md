@@ -440,7 +440,7 @@ Of special mention is the **composite vector** type. Such vectors are either a m
 ```
 
 <a name="typ-cast"></a>
-**Type cast**, both explicit and implicit, is demonstrated by the following examples which also give a general feel of how type coersion behaves. The `cast` operator in k is a dyadic `t$x`, where `t` is the name of target type and `x` is a cast subject. Note that there is nice wordplay going on here, becase the `name of the type` is itself of a type `name`, which we already seen and know the syntax for, names start with a backtick.
+**Type cast**, both explicit and implicit, is demonstrated by the following examples which also give a general feel of how type coersion behaves. The `cast` operator in k is a dyadic `t$x`, where `t` is the type name and `x` is a cast subject. If you look closer at the argument `t`, you could say there is some wordplay going on here, "type name of a type name is name". It could be a valid observation, but the proof of this conjecture will have to wait until the end of next chapter.
 
 ```q
  1+.5                  /int plus float is float, no surprises here
@@ -489,7 +489,7 @@ type error
 `n
 ```
 
-There is a lot more to be said about the type system, but the very last expression we just seen urges us to proceed to the next section, which is all about giving a rational explantation how `@@10` actually works.
+There is a lot more to be said about the type system, but this last expression above urges us to proceed to the next section, which is all about giving a rational explantation how `@@10` actually works.
 
 ### right to left and back again
 
@@ -561,16 +561,16 @@ It is much easier to get used to lack of precedence than you may think, and once
 
 **Once you learn to read k expressions right to left, you want to go fast and uninterrupted, and round brackets get in your way.**
 
-Finally, we can revisit the question raised at the end of a type system discussion:
+----------------
+
+Finally, we can revisit the question raised in the type system discussion:
 
 ```q
  @@10             /"type name of a type name of 10" is actually, right to left...
- `n               /..."get 10, apply monadic @, get `i, apply monadic @, get `n"
+`n                /..."get 10, apply monadic @, get `i, apply monadic @, get `n"
 ```
 
-This is also a convincing proof of our earlier conjecture that `type name` of a `type name` in k is `name`.∎
-
-Okay, this was a tough one, but we are done.
+This is a convincing proof of our earlier conjecture that `type name` of a `type name` in k is `name`.∎
 
 ### no stinking loops
 
