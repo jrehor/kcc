@@ -388,6 +388,12 @@ However, k has something C doesn't. We have a type called **name**, which is the
  t:12:34:56.789      /hh:mm:ss.sss
  @t
 `t
+
+ dt:d+t;dt           /date + time... = datetime!
+1981-02-01T12:34:56.789 
+
+ @dt                 /operations on temporal types is a complex subject for another day
+`T 
 ```
 
 <a name="typ-composite"></a>
@@ -456,6 +462,8 @@ type error
 
  15674+1981-02-01      /adding 15674 days solves the mystery: all dates in k are simply offsets from:
 2024-01-01
+
+
 
 ```
 
