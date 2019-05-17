@@ -784,12 +784,13 @@ x                 /t:      do this if c is true
 #?x               /'count distinct'         count unique elements of x
 2>x               /'greater'                  true if x is less than 2
 
-$[2>#?x;x;...]    /so this is just "return x if x has <2 unique items"
+$[2>#?x;x;...]    /simply "if x has <2 unique items return x else ..."
 ```
 
-Here is what we know so far:
+Coffee break, here is what we know so far:
 
-1. the control flow of the recursive function
+1. the function is recursive
+1. the overall control flow
 2. the condition that stops recursion
 
 This gives enough confidence to wrestle down the last part, the recursion step:
