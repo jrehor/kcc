@@ -824,7 +824,7 @@ qs:{$[2>#?x;x;,/qs'x@=x>rand x]}
 
 -------------------
 
-And now compare the source code of these two, then the size their runtimes:
+And now compare the source code of these two programs, and then the size of their runtimes:
 
 ```java
 import java.util.Arrays;  
