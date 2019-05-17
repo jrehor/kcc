@@ -782,7 +782,8 @@ Finally, for completeness sake:
 
 * monadic `@x typeof`
 
-> Although this is still a tiny part of k repertoire, we have enough to do `quicksort` and a galaxy or other useful programs. Don't forget we also have vector arithmetic and adverbs.
+> Although this is still a tiny part of k repertoire, you already have enough to do `quicksort` and a galaxy or other useful programs. And don't forget to multiply your degrees of freedom by the vector math operators, and then take everything to the power of 6 adverbs. Ye,s 
+school is out, and we're not in Kansas anymore.
 
 -------------------
 
