@@ -400,11 +400,11 @@ However, k has something C doesn't. We have a type called **name**, which is the
 Of special mention is the **composite vector** type. Such vectors are either a mixture of atoms of disparate types, or contain something more complex than atoms, e.g. other vectors.
 
 ```q
- a:0,1,"a",2,3          /a char impostor demotes this integer vector to a composite
- @a                     /a composite type is denoted by a backtick
+ c:0,1,"a",2,3          /a char impostor among ints, c is composite
+ @c                     /a composite type symbol is just a backtick
 `
 
- a:(1 2 3;4 5 6;7 8 9)  /vector of vectors is a composite
+ a:(1 2 3;4 5 6;7 8 9)  /a vector of vectors is a composite vector
  a
 1 2 3
 4 5 6
@@ -413,9 +413,6 @@ Of special mention is the **composite vector** type. Such vectors are either a m
 `
 
  a:{x},{x+x},{x*x}      /a vector of lambdas, sure, why not
- @a
-`
-
  a[2]16                 /calls 3rd lambda, same as a[2][16]
 256
 ```
@@ -462,9 +459,6 @@ type error
 
  15674+1981-02-01      /adding 15674 days solves the mystery: all dates in k are simply offsets from:
 2024-01-01
-
-
-
 ```
 
 There is more to be said about the type system, but we have more than enough to proceed.
