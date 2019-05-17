@@ -781,7 +781,7 @@ The annotated breakdown of `qs` code gives a good impression of what is going on
 Speaking of fun, take a look at these two programs:
 
 ```java
-public final class qs {public void s(int[] x){}}//java
+public final class qs{public void s(int[] x){}} //java
 ```
 
 ```q
