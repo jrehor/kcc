@@ -794,7 +794,20 @@ public final class qs{public void s(int[] x){}}
 qs:{$[2>#?x;x;,/qs'x@=x>rand x]}
 ```
 
-Check out more implementations in [C++](https://gist.github.com/christophewang/ad056af4b3ab0ceebacf), [Python](https://gist.github.com/anirudhjayaraman/897ca0d97a249180a48b50d62c87f239), [JavaScript](https://gist.github.com/claudiahdz/39a86084edaaabe7fc17c321c0bb6896) and [Java](https://github.com/Code2Bits/Algorithms-in-Java/blob/master/sort/src/main/java/com/code2bits/algorithm/sort/QuickSort.java).
+And now these two:
+
+```java
+import java.util.Arrays;  
+public class S{public static void main(String[] a){ 
+int[] x={5,4,3,2,1};Arrays.sort(x);
+System.out.printf("%s",Arrays.toString(x));}} 
+```
+
+```q
+ ^5 4 3 2 1
+```
+
+Check out more `quicksort` implementations in [C++](https://gist.github.com/christophewang/ad056af4b3ab0ceebacf), [Python](https://gist.github.com/anirudhjayaraman/897ca0d97a249180a48b50d62c87f239), [JavaScript](https://gist.github.com/claudiahdz/39a86084edaaabe7fc17c321c0bb6896) and [Java](https://github.com/Code2Bits/Algorithms-in-Java/blob/master/sort/src/main/java/com/code2bits/algorithm/sort/QuickSort.java).
 
 
 -------------------
