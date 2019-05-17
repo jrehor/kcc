@@ -580,7 +580,7 @@ The main reason explicit loops are missing from k is because they are *unnecessa
 
 An idea that displaces thinking in explicit loops is a simple and strong abstraction known as *adverbs*. Before we see them in action, it helps to understand why they are called that way:
 
-An **adverb** if a **modifier** that takes some **verb**, which is a short way of saying "a user-defined function or a native operator", and makes that verb's action applicable to an **input vector** in some desirable way to produce an **output**, which can be a scalar value or another vector, depending on the adverb used.
+An **adverb** if a **modifier** that takes some **verb** (which is a short way of saying "a user-defined function or a native operator"), and makes that verb's action applicable to an **input vector** in some desirable way to produce an **output**, which can be a scalar value or another vector, depending on which adverb is used.
 
 A good example of how adverbs replace loops is `sum`. Say, we have an input `in:1 2 3 4 5`, and what we want is a sum of its elements. Thinking in implicit loops suggests something like that:
 
@@ -627,8 +627,7 @@ You could be tempted to see of what other use `over` could be. Let's introduce a
 3628800 
 ```
 
-Now that we parted ways with loops, you get to learn there are **6 adverbs** in k that modify verbs in different ways. Please welcome the magnificent six, and note that o
-most trivial:
+Now that we parted ways with loops, you get to learn there are **6 adverbs** in k that modify verbs in different ways. Please welcome the magnificent six, and note that only most trivial use cases are shown:
 
 ----------------
 adverb **each** is `f'x`
@@ -690,7 +689,7 @@ second form is `seedless eachprior` where `f` is a `dyadic` verb, and `x` is an 
 ```
 ----------------
 
-Okay, this doesn't seem like much, adverbs appear to be doing pretty simple stuff. But hold that thought for a minute.
+Okay, this doesn't seem like much, adverbs seem to be doing pretty basic stuff. But hold that thought for a minute.
 
 **Recap:**
 
