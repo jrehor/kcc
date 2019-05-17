@@ -29,7 +29,7 @@ Computer languages have been around for a while, but in the beginning was the WÃ
 
 ---------------------
 
-**k is different**. At first, you will be questioning its design, and it will respond by questioning things that you consider common sense, but soon enough it will become a constructive conversation, and here is how. The first thing newcomers frown upon is why the assignment operator is `:` instead of `=`. But give it the benefit of the doubt by trying a simple thought experiment. Consider the following code:
+**k is different**. At first, you will be questioning its design, and it will respond by questioning things that you consider common sense, but soon enough it will become a constructive conversation, and here is how. The first thing newcomers frown upon is why the assignment operator is `:` instead of `=`. But before you close the tab, try a simple thought experiment. Consider the following code:
 
 ```java
 x = x + 1
