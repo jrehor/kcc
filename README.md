@@ -6,7 +6,7 @@
 
 **[exodus](#exodus)**
 
-* boot → [install](#install-k) | [run](#run-k)
+* [install](#install-k) | [run](#run-k)
 * [style](#remarks-on-style) → [comments](#style-annot) | [tabs](#style-ident) | [caps](#style-caps)
 * [parlance](#remarks-on-parlance) → [xyz](#parl-xyz) | [rank](#parl-rank)
 
