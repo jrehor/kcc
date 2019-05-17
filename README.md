@@ -772,7 +772,7 @@ Now that we know what every specific part does, we can zoom out and try to see t
 "deffggiijllnopprrt" 
 ```
 
-This is definitely not the fastest `qsort` ever written, but in real life you would simply use the built-in sorting operator which is a lot more efficient. It is just monadic `^x`:
+This is definitely not the fastest `qsort` ever written, but in real life you would simply use the built-in operator which is a lot more efficient. It is just monadic `^x`:
 
 ```q
  ^2.6 -∞ 8.6 π 1.7 ∞ 3.5 5.6             /^x is 'sort'
