@@ -148,8 +148,6 @@ As any other computer language, k expects a programmer to observe and follow cer
 
 ```q
 /line comment
-42
-
 42 /inline comment
 ```
 
