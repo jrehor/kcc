@@ -144,17 +144,18 @@ As any other computer language, k expects a programmer to observe and follow cer
 -------------------
 
 <a name="style-annot"></a>
-**Annotations** in your k code is the best way not to end up coding Java for food, unless you are Arthur Whitney. We dare to assume you are not there yet, so comments start with `/`. When used inline, prepend at least one space:
+**Annotations** in your k code is the best way not to end up coding Java for food, unless you are Arthur Whitney. We dare to assume you are not there yet, so comments start with `/`. When used inline, prepend at least one space. Here is an annotated declaration of two variables:
 
 ```q
 /line comment
-42 /inline comment
-```
+a:42
 
+b:42 /inline comment
+```
 -------------------
 
 <a name="style-sep"></a>
-**Separator** character in k is `;` and it is used for one thing and one thing only, to separate **k expressions**. As you have seen above, if there is just one expression on the line, k doesn't require you to terminate it explicitly. Later we will see that separator is an essential part of certain language constructs, but even there it has the same meaning:
+**Separator** character in k is `;` and it is used for one thing and one thing only, to separate **k expressions**. As you have seen above, if there is just one expression on the line, k doesn't require you to terminate it explicitly because it is terminated by a newline. The same is true for the last expression on the line if you have more than one. Separator is used the same way and means the same thing everywhere, e.g. inside functions. Later we will see that separator is an essential part of certain language constructs, but even there it has the same meaning:
 
 ```q
 a:1; b:2; c:3       /one line three expressions
