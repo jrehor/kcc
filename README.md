@@ -782,6 +782,8 @@ Finally, for completeness sake:
 
 * monadic `@x typeof`
 
+> Although this is still a tiny part of k repertoire, we have enough to do `quicksort` and a galaxy or other useful programs. Don't forget we also have vector arithmetic and adverbs.
+
 -------------------
 
 **Checkpoint exercise:**
