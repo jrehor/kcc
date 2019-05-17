@@ -7,7 +7,7 @@
 **[exodus](#exodus)**
 
 * [install](#install) | [run](#run)
-* [style](#remarks-on-style) → [comments](#style-annot) | [separator](#parl-sep) | [tabs](#style-ident) | [caps](#style-caps)
+* [style](#remarks-on-style) → [comments](#style-annot) | [separator](#style-sep) | [tabs](#style-ident) | [caps](#style-caps)
 * [parlance](#remarks-on-parlance) → [xyz](#parl-xyz) | [rank](#parl-rank)
 
 **[numbers](#numbers)**
@@ -154,7 +154,7 @@ As any other computer language, k expects a programmer to observe and follow cer
 -------------------
 
 <a name="style-sep"></a>
-**Separator** character in k is `;` and it is used for one thing and one thing only, to separate **k expressions**. As you have seen above, if there is just one expression on the line, k doesn't require you to terminate it explicitly. However, when we were calling a function with three arguments `f[1;2;3]` we had to use a separator, because each argument is a separate k expression. Later we will see that separator is an essential part of certain language constructs, but even there it has the same meaning:
+**Separator** character in k is `;` and it is used for one thing and one thing only, to separate **k expressions**. As you have seen above, if there is just one expression on the line, k doesn't require you to terminate it explicitly. Later we will see that separator is an essential part of certain language constructs, but even there it has the same meaning:
 
 ```q
 a:1; b:2; c:3       /one line three expressions
@@ -192,12 +192,11 @@ The most important terminology in k that is essential for you to learn revolves 
  f:{x*x}      /f[] has only one argument
  f 2          /and you can omit brackets
 4
-
- f f 2        /neater way to say f[f[2]] 
-16 
 ```
 
-This illustrates a core principle of k syntax — everything that you intuitively feel you should be able to omit, can and should be omitted, and there very few exceptions to this rule. The lesser you type, the better your code will get.
+Note that when calling a function with three arguments `f[1;2;3]` we had to use square brackets and use an expression separator, because each argument passed to a function is an expression in its own right. However, second function only takes one argument, and we were allowed to omit brackets, although we could also say `f[2]`.
+
+This illustrates a core principle of k syntax — almost everything that you intuitively feel you should be able to omit, can and should be omitted. Top candidates for omission are square `[]` and round brackets `()`. The lesser you type, the better your code will get.
 
 -------------------
 
