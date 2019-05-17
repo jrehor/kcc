@@ -14,7 +14,7 @@
 
 * vector math → [vectors vs atoms](#vectors-vs-atoms) | [v+v](#v-plus-v) | [v+a](#v-plus-a) | [indexing](#v-indexing)
 * type system → [two types of types](#two-types-of-types) | [num](#typ-num) | [char](#typ-char) | [name](#typ-name) | [time](#typ-time) | [composite](#typ-composite) | [cast](#typ-cast)
-* order of evaluation → [from right to left](#from-right-to-left) | [precedence](#rtl-precedence)
+* order of evaluation → [right to left](#right-to-left) | [precedence](#rtl-precedence)
 * adverbs → [no stinking loops](#no-stinking-loops)
 
 **[proverbs](#proverbs)**
@@ -469,7 +469,7 @@ type error
 
 There is more to be said about the type system, but we have more than enough to proceed.
 
-### from right to left
+### right to left
 
 It could not possibly escape your attention that the syntax for indexing vectors and calling functions is the same:
 
