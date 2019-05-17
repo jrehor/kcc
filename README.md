@@ -834,7 +834,7 @@ Finally, for completeness sake:
 * monadic `@x typeof`
 * monadic `^x sort`
 
-> Although this is still a tiny part of k heavy artillery, you already have enough to do `quicksort` and a galaxy or other useful programs. And don't forget to multiply your degrees of freedom by vector arithmetic, and then take everything to the power of 6 adverbs. Yes, school is out, we're not in Kansas anymore.
+> Although this is still a small part of k operator arsenal, you already have enough to do `quicksort` and a galaxy or other useful programs. Then add vector arithmetic, and then take everything to the power of 6 adverbs. We're not in Kansas anymore.
 
 -------------------
 
