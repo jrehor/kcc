@@ -576,6 +576,19 @@ Finally, we can revisit the question raised in the type system discussion:
 
 This is a convincing proof of our earlier conjecture that `type name` of a `type name` in k is `name`.∎
 
+----------------
+
+**Practice:**
+
+Last but not least, lets revisit the code from the very first snippet in this entire document:
+
+```q
+ x:(1 2 3;4 5 6;7 8 9)
+
+/x=x+1            /we hope you now agree the problem here is fairly obvious
+```
+
+
 ### no stinking loops
 
 This part might be easier to digest than the previous, especially if you are familiar with functional programming. The heading says it all - no matter how you try, you will not find a k construct that resembles an explicit `for` loop. It is simply absent, and not just because it is verbose and causes untold damages from the same trivial errors people keep on making coding `for` loops. Technically speaking, `while` construct does exist in k, but this fact is better be ignored just to avoid temptation.
@@ -707,7 +720,7 @@ We have seen:
 
 ----------------
 
-**Checkpoint exercise:**
+**Practice:**
 
 Okay, we are back to your doubts about adverbs. Consider this example of two adverbs working together:
 
