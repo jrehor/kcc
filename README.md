@@ -923,7 +923,7 @@ While analysing `qs` code, you have learned:
 * monadic `,/x raze`
 * dyadic `x@y index`
 
-Also, at the end of the previous chapter you have seen:
+Also, in the previous chapter you have seen:
 
 * monadic `!x til (first x integers)`
 * monadic `+x flip (transpose)`
