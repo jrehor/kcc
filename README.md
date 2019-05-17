@@ -526,13 +526,11 @@ Just to be clear, when we say "expressions" we don't mean "programs", and this i
 /   <       <       <
 ```
 
-In other words:
- 
  **k programs are read, written and evaluated left to right.**
 
-Now that we know which way the rivers flow in k land, we are ready to discuss a related, no less important subject.
-
 <a name="rtl-precedence"></a>
+Now that we know which way the rivers flow in k land, we are ready to discuss a related, no less important subject of **precedence**.
+
 We all take it for granted that multiplication and division bind stronger than addition and substraction and should be calculated first, and it almost feels natural that computer languages must have complex operator precedence hierarchies to do anything useful. That is not the case with k:
 
 **There is no operator precedence in k unless it is explicitly defined by round brackets.**
