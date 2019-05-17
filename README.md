@@ -7,9 +7,8 @@
 **[exodus](#exodus)**
 
 * bootstrap → [install](#install-k) | [run](#run-k)
-* learning the ropes
-  * [style](#remarks-on-style) → [comments](#style-annot) | [tabs](#style-ident) | [caps](#style-caps)
-  * [parlance](#remarks-on-parlance) → [xyz](#parl-xyz) | [rank](#parl-rank)
+* [style](#remarks-on-style) → [comments](#style-annot) | [tabs](#style-ident) | [caps](#style-caps)
+* [parlance](#remarks-on-parlance) → [xyz](#parl-xyz) | [rank](#parl-rank)
 
 **[numbers](#numbers)**
 
