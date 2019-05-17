@@ -12,8 +12,8 @@
 
 **[numbers](#numbers)**
 
-* vector arithmetic → [vector and atom](#vector-and-atom) ([vv](#v-plus-v) | [va](#v-plus-a) | [indexing](#v-indexing))
-* type system → [two types of types](#two-types-of-types) ([num](#typ-num) | [char](#typ-char) | [name](#typ-name) | [time](#typ-time) | [composite](#typ-composite) | [casts](#typ-cast))
+* vector arithmetic → [vector and atom](#vector-and-atom) | [vv](#v-plus-v) | [va](#v-plus-a) | [indexing](#v-indexing)
+* type system → [two types of types](#two-types-of-types) | [num](#typ-num) | [char](#typ-char) | [name](#typ-name) | [time](#typ-time) | [composite](#typ-composite) | [casts](#typ-cast)
 * order of evaluation → [from right to left](#from-right-to-left) | [precedence](#rtl-precedence)
 * adverbs → [no stinking loops](#no-stinking-loops)
 
