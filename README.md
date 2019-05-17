@@ -597,10 +597,10 @@ But imagine you could state the problem to a computer like this:
 
 "put a `+` between all adjacent items and give me the grand total."
 
-And that is the simplest way to describe what k adverb `over` does when it is used to modify dyadic `+`. Only `over`, as all other adverbs, is *general* and will happily modify *any* dyadic operator or function. Described in less informal language, the general case of `over` is:
+And that is the simplest way to describe what k adverb `over` does when it is used to modify dyadic `+`. Only `over`, as all other adverbs, is *general* and will happily modify *any* dyadic operator or function. Described in less informal language, the general case of `over` looks like this:
 
-1. **set `acc` to 0 (accumulator)**
-2. **until no more `x`, set `acc` to result of `verb`[`acc`;next `x`]**
+1. **set `acc` to 0 (a.k.a. accumulator)**
+2. **until no more `x`, set `acc` to result of `verb[acc;next x]`**
 3. **return `acc`**
 
 And since the k adverb `over` is `v/x`, this is how `sum` function looks like in k:
