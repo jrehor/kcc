@@ -535,7 +535,7 @@ We all take it for granted that multiplication and division bind stronger than a
 
 **There is no operator precedence in k unless it is explicitly defined by round brackets.**
 
-That is, by default all operators in a k expression are treated equally and evaluated strictly from **right to left**, and that includes **arithmetic** operators, e.g. `*` has no precedence over `+`. Here are some basic math expressions, annotated with their order of evaluation:
+That is, by default **all operators** in a k expression are treated equally and evaluated strictly from **right to left**, and that includes **arithmetic** operators, e.g. `*` has no precedence over `+`. Here are some basic math expressions, annotated with their order of evaluation:
 
 ```q
  3+2+1        /"take 1, add 2, add 3"
@@ -553,15 +553,15 @@ That is, by default all operators in a k expression are treated equally and eval
 
 It is much easier to get used to lack of precedence than you may think, and once you do, you will generally want to avoid using parens unless you absolutely have to. The last example from above shows the basic strategy of ditching them: it is usually possible to rearrange the expressions so that the order of evaluation becomes linear. Although precedence override is often inevitable and can be beneficial, it can also have an adverse effect on readability, because it breaks the natural flow of code comprehension. That is:
 
-**Once you learn to read k expressions from right to left, you want to go fast and uninterrupted, and round brackets get in your way.**
+**Once you learn to read k expressions right to left, you want to go fast and uninterrupted, and round brackets get in your way.**
 
 Okay, this was a tough one, but we are done.
 
 ### no stinking loops
 
-This part might be easier to digest than the previous, especially if you are fond of functional programming. The heading says it all - no matter how you try, you will not find a k construct that resembles an explicit `for` loop. It is simply absent, and not just because it is verbose and causes untold damages from the same trivial errors people keep on making coding loops.
+This part might be easier to digest than the previous, especially if you are fond of functional programming. The heading says it all - no matter how you try, you will not find a k construct that resembles an explicit `for` loop. It is simply absent, and not just because it is verbose and causes untold damages from the same trivial errors people keep on making coding `for` loops. Technically speaking, `while` construct does exist in k, but this fact is better be ignored just to avoid temptation.
 
-The main reason explicit loops are missing from k is because they are *unnecessary*. Of course k has loops, but they are *implicit* and hardly ever referred to by that name. The existence of `while` construct, although k has it, is better be ignored.
+The main reason explicit loops are missing from k is because they are *unnecessary*. Of course k has loops, but they are *implicit* and hardly ever referred to by that name. 
 
 Loops are available in k in form of **six** simple and strong abstractions known as **adverbs**. Each by itself, and even more so when combined together, are sufficient to completely displace the way of thinking in explicit loops. Also, it comes without saying that k supports **recursion**, which is no less elegant way to avoid loops in many pracatical situations.
 
