@@ -8,7 +8,7 @@
 
 * [install](#install) | [run](#run)
 * [style](#remarks-on-style) → [comments](#style-annot) | [tabs](#style-ident) | [caps](#style-caps)
-* [parlance](#remarks-on-parlance) → [xyz](#parl-xyz) | [rank](#parl-rank)
+* [parlance](#remarks-on-parlance) → [xyz](#parl-xyz) | [rank](#parl-rank) | [separator](#parl-sep)
 
 **[numbers](#numbers)**
 
@@ -202,6 +202,17 @@ Two specific ranks are so important that they have their own names. A function o
 As you will see, the vast majority of native operators in `k` have exactly two completely different meanings based on the context where they are used, which is in turn defined by the number of arguments offered to the operator. To overlook this fact is a grave mistake, so you better get a very strong grip on the idea that some things in life are **monadic**, while others are **dyadic**. For ranks of higher and lesser order it is fine to worry less. For example, when you used your first ever k operator in the expression `2+2`, you have used the **+** operator in a **dyadic** context, which basically meant that you offered it *two* operands to work on, left and right, respectively. However, once you discover what the **+** operator stands for when used in a **monadic** context, it will change your life forever, so let us skip this discussion for now.
 
 -------------------
+
+<a name="parl-sep"></a>
+**Separator** character in k is `;` and it is used for one thing and one thing only, to separate **k expressions**. As you have seen above, if there is just one expression on the line, k doesn't require you to terminate it explicitly. However, when we were calling a function with three arguments `f[1;2;3]` we had to use a separator, because each argument is a separate k expression. Later we will see that separator is an essential part of certain language constructs, but even there it has the same meaning:
+
+```q
+a:1; b:2; c:3       /one line three expressions
+a:1;b:2;c:3         /dense version of the above
+```
+-------------------
+
+
 
 **Recap:**
 
