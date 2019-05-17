@@ -613,7 +613,19 @@ And since `over` is just `v/x`, this is how `sum` function looks like in k:
 15 
 ```
 
-It is a good moment to look back at the C version, one last time. Be surprised to hear that its `for` loop declaration contains an ancient, but ever so popular [bug](https://stackoverflow.com/questions/37538/how-do-i-determine-the-size-of-my-array-in-c), which k version does not because fixing bugs in `+/x` is much easier. Besides, eben if the C code wasn't broken, it would only work for integers.
+It is a good moment to look back at the C version, one last time. Be surprised to hear that its `for` loop declaration contains an ancient, but ever so popular [bug](https://stackoverflow.com/questions/37538/how-do-i-determine-the-size-of-my-array-in-c), which k version does not because fixing bugs in `+/x` is much easier. Besides, even if the C code wasn't broken, it would only work for integers.
+
+You could be tempted to see of what other use `over` could be. Let's introduce a new k operator, `!x til`, and implement another obvious candidate for `over`:
+
+```q
+ x:!9                          /! is til, get first n integers
+ x                             /tada, we have all ints up to 8
+0 1 2 3 4 5 6 7 8
+
+ fact:{*/1+!x}                 / factorial of x: 'mul over 1 plus til x'
+ fact 10 
+3628800 
+```
 
 Now that we parted ways with loops, you get to learn there are **6 adverbs** in k that modify verbs in different ways. Please welcome the magnificent six:
 
@@ -696,10 +708,7 @@ We have seen:
 Okay, we are back to your doubts about adverbs. Consider this example of two adverbs working together:
 
 ```q
- x:!9                          /! is til, get first n integers
- x                             /tada, we have all ints up to 8
-0 1 2 3 4 5 6 7 8
-
+ x:!9                          /til 9
  x+:1                          /add 1 to each of x, also x:x+1
  x
 1 2 3 4 5 6 7 8 9
