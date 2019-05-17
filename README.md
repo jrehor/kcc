@@ -14,7 +14,7 @@
 
 * vector math → [vectors vs atoms](#vectors-vs-atoms) | [v+v](#v-plus-v) | [v+a](#v-plus-a) | [indexing](#v-indexing)
 * type system → [two types of types](#two-types-of-types) | [num](#typ-num) | [char](#typ-char) | [name](#typ-name) | [time](#typ-time) | [composite](#typ-composite) | [cast](#typ-cast)
-* order of evaluation → [right to left](#right-to-left) | [precedence](#rtl-precedence)
+* evaluation → [right to left](#right-to-left) | [precedence](#rtl-precedence)
 * adverbs → [no stinking loops](#no-stinking-loops)
 
 **[proverbs](#proverbs)**
