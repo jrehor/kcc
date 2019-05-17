@@ -642,7 +642,7 @@ The goal is to make sure you understand the logic and the order of evaluation of
 
 * read right to left
 * there is no precedence
-* no thinking in explicit loops
+* no explicit loops either
 * k interpreter is your friend
 
 Take your time, make sure you got it before advancing to the next chapter, where things will get a lot less innocent, and fast.
