@@ -39,7 +39,7 @@ This crash course is not looking to make you an expert k programmer, because tha
 
 The text assumes proficiency in general programming concepts, and cuts a lot of corners at some expense of readability. The course is entirely driven by code snippets which expect your full undivided attention and good intuition. New syntax is often introduced inline, some of it is left to be inferred. The vast majority of code annotations contain essential learning material. The code and annotations are very dense and require full attention to detail. The narrative is strictly linear, each chapter builds on all previous. None of the exercises are optional, skipping an excercise will halt your progress. Despite its intensity, we hope we kept the course lightweight and entertaining enough to be digestible in one sitting.
 
-The present document is **not a k reference** and not to be treated as such, the majority of subjects are covered at depth sufficient to support progress but by no means exhaustive.
+This document is **not a k reference** and not to be treated as such, the majority of subjects are covered at depth sufficient to support progress but by no means exhaustive.
 
 ### who
 
