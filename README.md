@@ -555,7 +555,7 @@ That is, by default all operators in a k expression are treated equally and eval
 
 It is much easier to get used to lack of precedence than you may think, and once you do, you will generally want to avoid using parens unless you absolutely have to. The last example from above shows the basic strategy of ditching them: it is usually possible to rearrange the expressions so that the order of evaluation becomes linear. Although precedence override is often inevitable and can be beneficial, it can also have an adverse effect on readability, because it breaks the natural flow of code comprehension. That is:
 
-**Once you learn to read k expressions from right to left, you want to go fast and uninterrupted, and round brackets get in your way**
+**Once you learn to read k expressions from right to left, you want to go fast and uninterrupted, and round brackets get in your way.**
 
 Okay, this was a tough one, but we are done.
 
