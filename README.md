@@ -13,8 +13,8 @@
 **[numbers](#numbers)**
 
 * vector arithmetic → [vector and atom](#vector-and-atom) ([v+v](#v-plus-v) | [v+a](#v-plus-a) | [idx](#v-indexing))
-* type system → [two types of types](#two-types-of-types) ([num](#typ-num) | [char](#typ-char) | [name](#typ-name) | [time](#typ-time) | [composite](#typ-composite) [casts](#typ-cast))
-* order of evaluation → [from right to left](#from-right-to-left)
+* type system → [two types of types](#two-types-of-types) ([num](#typ-num) | [char](#typ-char) | [name](#typ-name) | [time](#typ-time) | [composite](#typ-composite) | [casts](#typ-cast))
+* order of evaluation → [from right to left](#from-right-to-left) ([precedence](#rtl-precedence))
 * adverbs → [no stinking loops](#no-stinking-loops)
 
 **[proverbs](#proverbs)**
@@ -493,6 +493,7 @@ This tiny example reveals an astonishing truth. Once we drop the brackets, it su
 
 Now that we know which way the rivers flow in k land, we are ready to discuss a related, no less important subject.
 
+<a name="rtl-precedence"></a>
 Precedence in k obeys different laws compared to those we were taught in primary school. We take it for granted that multiplication and division bind stronger than addition and substraction, and it almost feels natural that computer languages must have very complex precedence hierarchies in order to be useful. That is not the case with k.
 
 **There is no operator precedence in k unless explicitly defined by round brackets.**
