@@ -215,9 +215,9 @@ kei:42         /kenneth eugene iverson
 
 <a name="style-bad"></a>
 
-Expanding on the subject of space|time tradeoff in modern software industry, we need to add that by writing **bad code** you are wasting everybody's time and space directly, including your own, and that is not ok, so don't. **Avoid writing new source code** as much as you can — there is too much of it written already into the world, and most of it **extremely bad**. Decrease entropy of the Universe by destroying all inessential source code within your reach, good or bad, yours or not, and typing as little new source code into the Universe as you can.
+Expanding on the previous subject, it is important to add that by writing **bad code** you are wasting everybody's time and space, including your own, so don't. **Avoid writing code** as much as you can — there is too much of it written already into the world, and most of it pretty bad. Decrease entropy by destroying all inessential source code within your reach, good or bad, yours or not.
 
-But if you are forced to, please write:
+But if you absolutely have to, please write:
 
 * useful, secure,
 * compact, maintainable,
@@ -230,15 +230,15 @@ On this high note, we will conclude the chapter on style.
 
 **Practice:**
 
-This is your first, and a tough one. Make an effort not to type any new instructions into your local binary computer terminal. Just join us in celebrating life, for a short 30 seconds.
+This is your first, and a tough one. Make an effort not to type any new instructions into your local binary computer. Just join us in celebrating life, for a short 30 seconds.
 
 -------------------
 
-You managed to do that, so we have some spare entropy in the Universe for some more source code, so push on.
+You managed to do that, so we have some spare entropy in the Universe for some extra source code, so push on.
 
 ### remarks on parlance
 
-The most important terminology in k that is essential for you to learn revolves around functions. Functions in k are first-class citizens. k has lambdas, eval, apply, recursion, and then some. It takes a leap of faith to believe it, but k is probably more lispy than certain Lisps, only you don't need to get past any parens to be able to read it. In a strict sense, though, since there are no linked lists under the hood, k is clearly not lisp, because it was designed to be fast.
+The most important terminology in k revolves around functions. Functions in k are first-class citizens. k has lambdas, eval, apply, recursion, and then some. It takes a leap of faith to believe it, but k is probably more lispy than certain Lisps, only you don't need to get past any parens to be able to read it. In a strict sense, though, since there are no linked lists under the hood, k is clearly not lisp, because it was designed to be fast.
 
 -------------------
 
@@ -262,7 +262,11 @@ The most important terminology in k that is essential for you to learn revolves 
 
 Note that when calling a function with three arguments `f[1;2;3]` we had to use square brackets and use an expression separator, because each argument passed to a function is an expression in its own right. However, second function only takes one argument, and we were allowed to omit brackets, although we could also say `f[2]`.
 
-This illustrates a core principle of k syntax — almost everything that you intuitively feel you should be able to omit, can and should be omitted. Top candidates for omission are square `[]` and round brackets `()`. The lesser you type, the better your code will get.
+This illustrates a core principle of k syntax — almost everything that you intuitively feel you should be able to omit, can and should be omitted. Top candidates for omission are square `[]` and round brackets `()`.
+
+Syntax for explicit argument declaration `{[a;b]}` is just a side remark, it will not be used in this text again. In case you're curious, a function can have up to 9 explicit arguments in k, but but we wouldn't worry about that.
+
+The lesser you type, the better your code will get. Comments are part of the code and also take space and waste time, so boil them down too to some reasonable size.
 
 -------------------
 
