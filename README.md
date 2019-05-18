@@ -7,7 +7,7 @@
 **[exodus](#exodus)**
 
 * [install](#install) | [run](#run)
-* [style](#remarks-on-style) → [comments](#style-annot) | [separator](#style-sep) | [tabs](#style-ident) | [caps](#style-caps) | [**space=time**](#style-space)
+* [style](#remarks-on-style) → [comments](#style-annot) | [separator](#style-sep) | [tabs](#style-ident) | [caps](#style-caps) | [spacetime](#style-space)
 * [parlance](#remarks-on-parlance) → [xyz](#parl-xyz) | [rank](#parl-rank)
 
 **[numbers](#numbers)**
