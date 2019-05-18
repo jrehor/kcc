@@ -159,7 +159,7 @@ However, at this point we highly recommend to avoid issuing any of the above com
 ∞               /and this happens to be correct
 ```
 
-Unfortunately, we are not equipped yet to discuss what this is, but no worries, the answers are very simple and only few pages away.
+Unfortunately, we are not equipped yet to discuss what this is, but no worries, the answers are very simple and only few pages away. And excercise isn't even all that fruitless, if you think about it.
 
 ### remarks on style
 
