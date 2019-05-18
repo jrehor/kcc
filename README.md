@@ -199,6 +199,8 @@ kei:42         /kenneth eugene iverson
 
 * "Screen space" is often misunderstood. The actual physical screen size, DPI and window dimensions are not a problem for anyone, we are all professionals and can all afford some decent eyesight hardware. Screen space conversation is mostly all about the following three keystrokes: **`tab`, `newline`**, and perhaps less surprisingly, **`space`**.
 
+* **Scrolling** direction often seems to be a problem. Most of the comtemporary computer operators, i.e. humans, believe that vertical scrolling is fine. Mostly, horizontal scrolling isn't fine with anyone. There are some very rare cases of humans who actually seriously think other way around, quite literally. We do not support either camp, because this is why: **scrolling isn't fine at all**, on neither axis.
+
 * The main pain point is best captured in "tall, lean, sparse, readable vs. robust, wide, dense, cryptic", further referenced as `tlsr` and `rwdc` for short.
 
 * While most prominent developer communities around most widespread languages preach for `tlsr`, exemplified by C and Java, this results in untold damages daily worldwide, paid in full in precious currency called **time**. The "canonical" k answer to the space question is all the way down `rwdc` road, and then all the way down from there. As it happens, the answer is somewhere between two extremes, and you are the only one who can answer it for you.
