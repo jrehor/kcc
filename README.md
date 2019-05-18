@@ -13,7 +13,7 @@
 **[numbers](#numbers)**
 
 * vector math → [vectors vs atoms](#vectors-vs-atoms) | [v+v](#v-plus-v) | [v+a](#v-plus-a) | [idx](#v-indexing)
-* type system → [two types of types](#two-types-of-types) | [\`i\`f](#typ-num) | [\`c\`n](#typ-char) | [\`d\`t](#typ-time) | [composite](#typ-composite) | [cst](#typ-cast)
+* type system → [two types of types](#two-types-of-types) | [\`i\`f](#typ-num) | [\`c\`n](#typ-char) | [\`d\`t](#typ-time) | [mix](#typ-composite) | [cst](#typ-cast)
 * evaluation → [right to left](#right-to-left-and-back-again) | [precedence](#rtl-precedence)
 * adverbs → [no stinking loops](#no-stinking-loops)
 
@@ -472,7 +472,7 @@ However, k has something C doesn't. We have a type called **name**, which is the
 ```
 
 <a name="typ-composite"></a>
-Of special mention is the **composite vector** type. Such vectors are either a mixture of atoms of disparate types, or contain something more complex than atoms, e.g. other vectors.
+Of special mention is the **composite vector** type, or could also say **mix vector**. Such vectors are either a mixture of atoms of disparate types, or contain something more complex than atoms, e.g. other vectors.
 
 ```q
  c:0,1,"a",2,3          /a char impostor among ints, c is composite
