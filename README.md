@@ -230,11 +230,11 @@ On this high note, we will conclude the chapter on style.
 
 **Practice:**
 
-This is your first, and a tough one. Try not to type any new computer programs into your local binary computer terminal. Just join us in celebrating life, for a short 5 minutes.
+This is your first, and a tough one. Make an effort not to type any new instructions into your local binary computer terminal. Just join us in celebrating life, for a short 30 seconds.
 
 -------------------
 
-You managed to do that, so we have some spare entropy for some more source code, so push on.
+You managed to do that, so we have some spare entropy in the Universe for some more source code, so push on.
 
 ### remarks on parlance
 
