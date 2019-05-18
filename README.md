@@ -7,7 +7,7 @@
 **[exodus](#exodus)**
 
 * [install](#install) | [run](#run)
-* [style](#remarks-on-style) → [comments](#style-annot) | [separator](#style-sep) | [tabs](#style-ident) | [caps](#style-caps) | [spacetime](#style-space)
+* [style](#remarks-on-style) → [comments](#style-annot) | [separator](#style-sep) | [tabs](#style-ident) | [caps](#style-caps) | [spacetime](#style-space) | [bad](#style-bad)
 * [parlance](#remarks-on-parlance) → [xyz](#parl-xyz) | [rank](#parl-rank)
 
 **[numbers](#numbers)**
@@ -197,8 +197,6 @@ kei:42         /kenneth eugene iverson
 
 * Screen space is of essence. Surely you do not want to waste *your own* screen space, but **think of others before yourself** when you are writing code. By wasting space of others, you are wasting their **time**, and that is the only resource all of us of really truly have, and it is very limited.
 
-In this context, we need to add that by writing **bad code** you are wasting everybody's time directly, including your own, and that is not fine, so don't. Avoid writing code as much as you can — there is too much of it written already in the world, and most of it **very bad**. **Decrease entropy** of the Universe by destroying all inessential code within your reach, good or bad, yours or not.
-
 * "Screen space" is often misunderstood. The actual physical screen size, DPI and window dimensions are not a problem for anyone, we are all professionals and can all afford some decent eyesight hardware. Screen space conversation is mostly all about the following three keystrokes: **`tab`, `newline`**, and perhaps less surprisingly, **`space`**.
 
 * The main pain point is best captured in "tall, lean, sparse, readable vs. robust, wide, dense, cryptic", further referenced as `tlsr` and `rwdc` for short.
@@ -212,6 +210,26 @@ In this context, we need to add that by writing **bad code** you are wasting eve
 * **Scrolling** direction often seems to be a problem. Most of the contemporary computer operators, i.e. the majority of humans, believe that vertical scrolling is somehow fine. Most of the time, horizontal scrolling is not fine with anyone. There are some very rare cases of humans who actually seriously think the other way, i.e. sideways. We do not support either camp, because this is why: **scrolling source code should be avoided where possible**, on both axes. In this document, you will find a lot of useful code, but you will not see a single logically complete block of code that doesn't comfortably fit on your laptop screen.
 
 * And that is the best spoken word of advice on space question you will ever get. For the other half of the advice, pay very close attention to how **k code** snippets in this document are structured, formatted and annotated. If you like it, and also like MIT 3-clause, you are welcome.
+
+-------------------
+
+<a name="style-bad"></a>
+
+Expanding on the subject of space|time tradeoff in software industry, we need to add that by writing **bad code** you are wasting everybody's time and space, directly, including your own, and that is not ok, so don't. **Avoid writing new source code** as much as you can — there is too much of it written already in the world, and most of it **very bad**. Decrease entropy of the Universe by destroying all inessential source code within your reach, good or bad, yours or not, and writing as little new source code into the Universe as you can.
+
+But when you absolutely have to, write compact, useful, secure, maintainable and scalable software systems. And k language is not a bad choice.
+
+On this high note, we will conclude the chapter on style.
+
+-------------------
+
+**Practice:**
+
+This is your first, and a tough one. Try not to type any new computer programs into your binary computer terminal. Just join us in celebrating life, for a short 5 minutes.
+
+-------------------
+
+You managed to do that, so we have some spare entropy for some more source code, so push on.
 
 
 ### remarks on parlance
