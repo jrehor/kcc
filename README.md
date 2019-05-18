@@ -219,7 +219,7 @@ Expanding on the subject of space|time tradeoff in modern software industry, we 
 
 But if you are forced to, please write:
 
-* Secure, useful,
+* useful, secure,
 * compact, maintainable,
 * and scalable software systems,
 * and k language is not a bad choice.
