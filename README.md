@@ -209,8 +209,7 @@ kei:42         /kenneth eugene iverson
 
 * **Scrolling** direction often seems to be a problem. Most of the contemporary computer operators, i.e. the majority of humans, believe that vertical scrolling is somehow fine. Most of the time, horizontal scrolling is not fine with anyone. There are some very rare cases of humans who actually seriously think other way, i.e. sideways. We do not support either camp, because this is why: **scrolling isn't fine at all**, on either axis.
 
-* And that is the best spoken word of advice on space question you will ever get. For the other half of the advice, please pay very close attention to how **k code** snippets in this document are **structured, formatted and annotated**.
-
+* And that is the best spoken word of advice on space question you will ever get. For the other half of the advice, pay very close attention to how **k code** snippets in this document are structured, formatted and annotated. If you like it, and also like MIT 3-clause, you are welcome.
 
 
 ### remarks on parlance
