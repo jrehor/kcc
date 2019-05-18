@@ -13,7 +13,7 @@
 **[numbers](#numbers)**
 
 * vector math → [vectors vs atoms](#vectors-vs-atoms) | [v+v](#v-plus-v) | [v+a](#v-plus-a) | [indexing](#v-indexing)
-* type system → [two types of types](#two-types-of-types) | [num](#typ-num) | [char](#typ-char) | [name](#typ-name) | [time](#typ-time) | [composite](#typ-composite) | [cast](#typ-cast)
+* type system → [two types of types](#two-types-of-types) | [\`i\`f](#typ-num) | [\`c](#typ-char) | [\`n](#typ-name) | [\`d\`t](#typ-time) | [composite](#typ-composite) | [cst](#typ-cast)
 * evaluation → [right to left](#right-to-left-and-back-again) | [precedence](#rtl-precedence)
 * adverbs → [no stinking loops](#no-stinking-loops)
 
