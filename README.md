@@ -195,7 +195,9 @@ kei:42         /kenneth eugene iverson
 <a name="style-space"></a>
 **Space** is, and always will be a major point of contention not only with newbies but also often within the core k community. Similar to C, a number of mutually contradicting schools on k code formatting have emerged over the years, and coexist sometimes not so peacefully mostly because of the dreaded **space** question. We are going to try to formulate a sligthly modernized "canonical" way of thinking on the subject, and the rest is up to you.
 
-* Screen space is of essence. Surely you do not want to waste *your own* screen space, but **think of others before yourself** when you are writing code. By wasting space of others, you are wasting their **time**, and that is the only resource all of us of really truly have, and it is very limited. In this context, we need to add that by writing **bad code** you are wasting everybody's time directly, including your own, and that is not fine, so don't.
+* Screen space is of essence. Surely you do not want to waste *your own* screen space, but **think of others before yourself** when you are writing code. By wasting space of others, you are wasting their **time**, and that is the only resource all of us of really truly have, and it is very limited.
+
+In this context, we need to add that by writing **bad code** you are wasting everybody's time directly, including your own, and that is not fine, so don't. Avoid writing code as much as you can — there is too much of it written already in the world, and most of it **very bad**. **Decrease entropy** of the Universe by destroying all inessential code within your reach, good or bad, yours or not.
 
 * "Screen space" is often misunderstood. The actual physical screen size, DPI and window dimensions are not a problem for anyone, we are all professionals and can all afford some decent eyesight hardware. Screen space conversation is mostly all about the following three keystrokes: **`tab`, `newline`**, and perhaps less surprisingly, **`space`**.
 
