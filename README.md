@@ -152,6 +152,15 @@ At any time during k session, you can:
 
 However, at this point we highly recommend to avoid issuing any of the above commands, especially the latter.
 
+**Practice:**
+
+```q
+ +/∞            /of course, you couldn't resist
+∞               /and this happens to be correct
+```
+
+Unfortunately, we are not equipped yet to discuss what this is, but no worries, the answers are very simple and only few pages away.
+
 ### remarks on style
 
 As any other computer language, k expects a programmer to observe and follow certain conventions on coding style and terminology in order to understand the code written by the others and let their own code be understood. While some rules of the house of k are universal, some are not.
