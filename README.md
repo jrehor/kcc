@@ -193,7 +193,7 @@ kei:42         /kenneth eugene iverson
 -------------------
 
 <a name="style-space"></a>
-**Space** is, and will always be the major point of contention not only with newbies but also often within the core k community. Similar to C, a number of few mutually contradicting practices of k code formatting have emerged over the years, and coexist sometimes not so peacefully mostly because of the dreaded **space** question. We are going to try to formulate a sligthly modernized "canonical" way of thinking on the subject, and the rest is up to you.
+**Space** is, and always will be a major point of contention not only with newbies but also often within the core k community, and the software development community in general. Similar to C, a number of few mutually contradicting practices of k code formatting have emerged over the years, and coexist sometimes not so peacefully mostly because of the dreaded **space** question. We are going to try to formulate a sligthly modernized "canonical" way of thinking on the subject, and the rest is up to you.
 
 * Screen space is of essence. Surely you do not want to waste *your own* screen space, but **think of others before yourself** when you are writing code. By wasting space of others, you are wasting their **time**, and that is the only resource all of us of really truly have, and it is very limited.
 
