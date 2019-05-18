@@ -207,17 +207,22 @@ kei:42         /kenneth eugene iverson
 
 * Some people believe Earth is flat, some believe in God, some people do not believe in **syntax highlighting**, and the latter is not ok. If you are not happy with your k syntax highlighter, either write your own, either ask around. On this note, a crappy syntax highlighter is **worse than none**. Same applies for a decent code editor, and if you are, God forbid, are forced by someone to use some "IDE", then there is nothing we can do for you.
 
-* **Scrolling** direction often seems to be a problem. Most of the contemporary computer operators, i.e. the majority of humans, believe that vertical scrolling is somehow fine. Most of the time, horizontal scrolling is not fine with anyone. There are some very rare cases of humans who actually seriously think the other way, i.e. sideways. We do not support either camp, because this is why: **scrolling source code should be avoided where possible**, on both axes. In this document, you will find a lot of useful code, but you will not see a single logically complete block of code that doesn't comfortably fit on your laptop screen.
+* **Scrolling** is usually less of a problem. Most of the contemporary computer operators, i.e. the majority of humans, believe that vertical scrolling is somehow ok. Most of the time, horizontal scrolling is not ok with anyone. However, there are some very rare cases of humans who actually seriously think the other way, i.e. sideways. We do not support either camp, because: **scrolling source code should be avoided where possible**, on both axes. In this document, you will find a lot of meaninful source code, but you will not see a single logically complete block of code that doesn't comfortably fit on your laptop screen.
 
-* And that is the best spoken word of advice on space question you will ever get. For the other half of the advice, pay very close attention to how **k code** snippets in this document are structured, formatted and annotated. If you like it, and also like MIT 3-clause, you are welcome.
+* And that is the best spoken word of advice on space question you will ever get from anyone. For the other half of the advice, pay very close attention to how **k code** snippets in this document are structured, formatted and annotated. If you like it, and also like MIT three-clause, then you are welcome.
 
 -------------------
 
 <a name="style-bad"></a>
 
-Expanding on the subject of space|time tradeoff in software industry, we need to add that by writing **bad code** you are wasting everybody's time and space, directly, including your own, and that is not ok, so don't. **Avoid writing new source code** as much as you can — there is too much of it written already in the world, and most of it **very bad**. Decrease entropy of the Universe by destroying all inessential source code within your reach, good or bad, yours or not, and writing as little new source code into the Universe as you can.
+Expanding on the subject of space|time tradeoff in modern software industry, we need to add that by writing **bad code** you are wasting everybody's time and space directly, including your own, and that is not ok, so don't. **Avoid writing new source code** as much as you can — there is too much of it written already into the world, and most of it **extremely bad**. Decrease entropy of the Universe by destroying all inessential source code within your reach, good or bad, yours or not, and typing as little new source code into the Universe as you can.
 
-But when you absolutely have to, write compact, useful, secure, maintainable and scalable software systems. And k language is not a bad choice.
+But if you are forced to, please write:
+
+* Secure, useful,
+* compact, maintainable,
+* and scalable software systems,
+* and k language is not a bad choice.
 
 On this high note, we will conclude the chapter on style.
 
@@ -225,12 +230,11 @@ On this high note, we will conclude the chapter on style.
 
 **Practice:**
 
-This is your first, and a tough one. Try not to type any new computer programs into your binary computer terminal. Just join us in celebrating life, for a short 5 minutes.
+This is your first, and a tough one. Try not to type any new computer programs into your local binary computer terminal. Just join us in celebrating life, for a short 5 minutes.
 
 -------------------
 
 You managed to do that, so we have some spare entropy for some more source code, so push on.
-
 
 ### remarks on parlance
 
