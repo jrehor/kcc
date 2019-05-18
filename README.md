@@ -195,11 +195,11 @@ kei:42         /kenneth eugene iverson
 <a name="style-space"></a>
 **Space** is, and always will be a major point of contention not only with newbies but also often within the core k community, and the software development community in general. Similar to C, a number of mutually contradicting schools on k code formatting have emerged over the years, and coexist sometimes not so peacefully mostly because of the dreaded **space** question. We are going to try to formulate a sligthly modernized "canonical" way of thinking on the subject, and the rest is up to you.
 
-* Screen space is of essence. Surely you do not want to waste *your own* screen space, but **think of others before yourself** when you are writing code. By wasting space of others, you are wasting their **time**, and that is the only resource all of us of really truly have, and it is very limited. In this context we need to add that by writing **bad code**, you are wasting everybody's time directly, including your own, and that is not fine, so don't.
+* Screen space is of essence. Surely you do not want to waste *your own* screen space, but **think of others before yourself** when you are writing code. By wasting space of others, you are wasting their **time**, and that is the only resource all of us of really truly have, and it is very limited. In this context, we need to add that by writing **bad code** you are wasting everybody's time directly, including your own, and that is not fine, so don't.
 
 * "Screen space" is often misunderstood. The actual physical screen size, DPI and window dimensions are not a problem for anyone, we are all professionals and can all afford some decent eyesight hardware. Screen space conversation is mostly all about the following three keystrokes: **`tab`, `newline`**, and perhaps less surprisingly, **`space`**.
 
-* **Scrolling** direction often seems to be a problem. Most of the contemporary computer operators, i.e. the majority of humans, believe that vertical scrolling is somehow fine. Most of the time, horizontal scrolling is not fine with anyone. There are some very rare cases of humans who actually seriously think other way, i.e. sideways. We do not support either camp, because this is why: **scrolling isn't fine althogether**, on either axis.
+* **Scrolling** direction often seems to be a problem. Most of the contemporary computer operators, i.e. the majority of humans, believe that vertical scrolling is somehow fine. Most of the time, horizontal scrolling is not fine with anyone. There are some very rare cases of humans who actually seriously think other way, i.e. sideways. We do not support either camp, because this is why: **scrolling isn't fine at all**, on either axis.
 
 * The main pain point is best captured in "tall, lean, sparse, readable vs. robust, wide, dense, cryptic", further referenced as `tlsr` and `rwdc` for short.
 
@@ -207,7 +207,11 @@ kei:42         /kenneth eugene iverson
 
 * The zen of space question is **balance**, and the key to the enlightenment is found in the first section of this chapter. If can find the right balance between `rwdc` and `adequately and succintly annotated code`, you will live a happy life, love your job and will be loved by your colleagues.
 
+* Some people believe believe Earth is flat, some believe in God, some people do not believe in syntax highlighting, and the latter is **not fine**. If you are unhappy with your k syntax highlighter, either write your own, either ask around.
+
 * And that is the best spoken word of advice on space question you will ever get. For the other half of the advice, please pay very close attention to how **k code** snippets in this document are **structured, formatted and annotated**.
+
+
 
 ### remarks on parlance
 
