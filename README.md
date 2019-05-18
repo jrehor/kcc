@@ -8,7 +8,7 @@
 
 * [get](#get) | [run](#run)
 * [style](#remarks-on-style) → [cmt](#style-annot) | [sep](#style-sep) | [tab](#style-ident) | [caps](#style-caps) | [time](#style-space) | [bad](#style-bad)
-* [parlance](#remarks-on-parlance) → [xyz](#parl-xyz) | [rnk](#parl-rank)
+* [parlance](#remarks-on-parlance) → [xyz](#parl-xyz) | [rank](#parl-rank)
 
 **[numbers](#numbers)**
 
