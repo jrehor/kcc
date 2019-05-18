@@ -572,7 +572,7 @@ What you also know that k actively encourages you to omit brackets whenever poss
 
 This tiny example reveals an astonishing truth. Once we drop the brackets, it suddenly becomes absolutely natural to read this expression *from right to left*. Take your time to contemplate and process this statement. In very little time you will see how it works in practice, and once you put it to practice yourself, you will see that this way of functional composition is beautiful, elegant and intuituve.
 
-**k expressions are read, written and evaluated right to left.**
+**k expressions are read, written and evaluated right to left**
 
 Just to be clear, when we say "expressions" we don't mean "programs", and this is a very important distinction. Below is a diagram of a small **k program** that consists of three identical expressions `f d i` with parens added for clarity. Further down is the order of evaluation of the entire program:
 
@@ -585,14 +585,14 @@ Just to be clear, when we say "expressions" we don't mean "programs", and this i
 /   <       <       <
 ```
 
- **k programs are read, written and evaluated left to right.**
+ **k programs are read, written and evaluated left to right**
 
 <a name="rtl-precedence"></a>
 Now that we know which way the rivers flow in k land, we are ready to discuss a related, no less important subject of precedence.
 
 We all take it for granted that multiplication and division bind stronger than addition and substraction and should be calculated first, and it feels almost natural that a computer language must have complex operator precedence hierarchy to do anything useful, and k disagrees with that:
 
-**There is no operator precedence in k unless it is explicitly defined by round brackets.**
+**There is no operator precedence in k expressions unless explicitly overridden by round brackets**
 
 That is, by default **all operators** in a k expression are treated equally and evaluated strictly from **right to left**, and that includes **arithmetic** operators, e.g. `*` has no precedence over `+`. Here are some basic math expressions, annotated with their order of evaluation:
 
@@ -612,7 +612,7 @@ That is, by default **all operators** in a k expression are treated equally and 
 
 It is much easier to get used to lack of precedence than you may think, and once you do, you will generally want to avoid using parens unless you absolutely have to. The last example from above shows the basic strategy of ditching them: it is usually possible to rearrange the expressions so that the order of evaluation becomes linear. Although precedence override is often inevitable and can be beneficial, it can also have an adverse effect on readability, because it breaks the natural flow of code comprehension. That is:
 
-**Once you learn to read k expressions right to left, you want to go fast and uninterrupted, and round brackets get in your way.**
+**Once you learn to read k expressions right to left, you want to go fast and uninterrupted, but precedence override gets in your way, so when you write code, think of your readers and minimize the use of round brackets**
 
 ----------------
 
