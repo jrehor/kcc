@@ -1,4 +1,4 @@
-# +/∞
+# +/!∞
 
 **[genesis](#genesis)**
 
@@ -273,6 +273,11 @@ Two specific ranks are so important that they have their own names. A function o
 
 * that takes **one** argument is called **monadic**
 * that takes **two** arguments is called **dyadic**
+
+A function in k can be from **rank 1 to rank 9**. That is:
+
+* it is not really possible to define a function with no arguments (rank 0 or "niladic" functions do not exist k)
+* a function cannot take more than nine explicit arguments (which some say is an overly generous limit)
 
 As you will see, the vast majority of native operators in `k` have exactly two completely different meanings based on the context where they are used, which is in turn defined by the number of arguments offered to the operator. To overlook this fact is a grave mistake, so you better get a very strong grip on the idea that some things in life are **monadic**, while others are **dyadic**. For ranks of higher and lesser order it is fine to worry less. For example, when you used your first ever k operator in the expression `2+2`, you have used the **+** operator in a **dyadic** context, which basically meant that you offered it *two* operands to work on, left and right, respectively. However, once you discover what the **+** operator stands for when used in a **monadic** context, it will change your life forever, so let us skip this discussion for now.
 
