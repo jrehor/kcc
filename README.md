@@ -199,15 +199,15 @@ kei:42         /kenneth eugene iverson
 
 * "Screen space" is often misunderstood. The actual physical screen size, DPI and window dimensions are not a problem for anyone, we are all professionals and can all afford some decent eyesight hardware. Screen space conversation is mostly all about the following three keystrokes: **`tab`, `newline`**, and perhaps less surprisingly, **`space`**.
 
-* **Scrolling** direction often seems to be a problem. Most of the contemporary computer operators, i.e. the majority of humans, believe that vertical scrolling is somehow fine. Most of the time, horizontal scrolling is not fine with anyone. There are some very rare cases of humans who actually seriously think other way, i.e. sideways. We do not support either camp, because this is why: **scrolling isn't fine at all**, on either axis.
-
 * The main pain point is best captured in "tall, lean, sparse, readable vs. robust, wide, dense, cryptic", further referenced as `tlsr` and `rwdc` for short.
 
 * While most prominent developer communities around most widespread languages preach for `tlsr`, exemplified by C and Java, this results in untold damages daily worldwide, paid in full in precious currency called **time**. The "canonical" k answer to the space question is all the way down `rwdc` road, and then all the way down from there. As it happens, the answer is somewhere between two extremes, and you are the only one who can answer it for you.
 
 * The zen of space question is **balance**, and the key to the enlightenment is found in the first section of this chapter. If can find the right balance between `rwdc` and `adequately and succintly annotated code`, you will live a happy life, love your job and will be loved by your colleagues.
 
-* Some people believe believe Earth is flat, some believe in God, some people do not believe in syntax highlighting, and the latter is **not fine**. If you are unhappy with your k syntax highlighter, either write your own, either ask around.
+* Some people believe believe Earth is flat, some believe in God, some people do not believe in **syntax highlighting**, and the latter is **not fine**. If you are unhappy with your k syntax highlighter, either write your own, either ask around. On this note, crappy syntax highlighter is **worse than none**. Same applies for a decent code editor, and if you are, God forbid, are forced by someone to use some "IDE", then there is nothing we can do for you.
+
+* **Scrolling** direction often seems to be a problem. Most of the contemporary computer operators, i.e. the majority of humans, believe that vertical scrolling is somehow fine. Most of the time, horizontal scrolling is not fine with anyone. There are some very rare cases of humans who actually seriously think other way, i.e. sideways. We do not support either camp, because this is why: **scrolling isn't fine at all**, on either axis.
 
 * And that is the best spoken word of advice on space question you will ever get. For the other half of the advice, please pay very close attention to how **k code** snippets in this document are **structured, formatted and annotated**.
 
