@@ -7,7 +7,7 @@
 **[exodus](#exodus)**
 
 * [install](#install) | [run](#run)
-* [style](#remarks-on-style) → [comments](#style-annot) | [separator](#style-sep) | [tabs](#style-ident) | [caps](#style-caps)
+* [style](#remarks-on-style) → [comments](#style-annot) | [separator](#style-sep) | [tabs](#style-ident) | [caps](#style-caps) | [**space**](#style-space)
 * [parlance](#remarks-on-parlance) → [xyz](#parl-xyz) | [rank](#parl-rank)
 
 **[numbers](#numbers)**
@@ -170,17 +170,16 @@ b:42 /now, always and forever
 -------------------
 
 <a name="style-sep"></a>
-**Separator** character in k is `;` and it is used for one thing and one thing only, to separate **k expressions**. As you have seen above, if there is just one expression on the line, k doesn't require you to terminate it explicitly because it is terminated by a newline. The same is true for the last expression on the line if you have more than one. Separator is used the same way and means the same thing everywhere, e.g. inside functions. Later we will see that separator is an essential part of certain language constructs, but even there it has the same meaning:
+**Separator** character in k is `;` and it is used for one thing and one thing only, to separate **k expressions**. As you can see above, k doesn't require you to terminate the line explicitly with `;` because **newline is also an expression separator**. Separator is used the same way and means the same thing everywhere in any context (except comments), e.g. to separate expressions inside a function body, vector declaration, function arguments, etc. Later we will see that separator is also a part of certain language constructs, but it has the same meaning there as well. But by far the most frequent implicit use of a separator you will encounter in the wild is to separate expressions within one line:
 
 ```q
 a:1; b:2; c:3       /one line three expressions
 a:1;b:2;c:3         /dense version of the above
 ```
-
 -------------------
 
 <a name="style-ident"></a>
-**Indentation** in k is a tricky subject. Basically, what you generally want is *no indentation*. This means if your k expression is getting so large that you are tempted to split it into separate lines, you either need to refactor, or your entire train of thought got derailed and you need to go back to the blackboard. Sometimes, however, indentation is fine and even necessary, and it is always *one space*. Not two, not four, one. Tabs will be frowned upon, because some day they will end up taking other people's precious screen real estate, and humans get really itchy when it comes to brick and mortar.
+**Indentation** in k is another tricky subject. Basically, what you generally want is *no indentation*. This means if your k expression is getting so large that you are tempted to split it into separate lines, you either need to refactor, or your entire train of thought got derailed and you need to go back to the blackboard. Sometimes, however, indentation is fine and even necessary, and it is always *one space*. Not two, not four, one. Tabs will be frowned upon, because some day they will end up taking other people's precious **space**, see below, and humans get really itchy when it comes to brick and mortar.
 
 -------------------
 
@@ -190,6 +189,23 @@ a:1;b:2;c:3         /dense version of the above
 ```q
 kei:42         /kenneth eugene iverson
 ```
+
+-------------------
+
+<a name="style-space"></a>
+**Space** is, and will always be the major point of contention not only with newbies but also often within the core k community. Similar to C, a number of few mutually contradicting practices of k code formatting have emerged over the years, and coexist sometimes not so peacefully mostly because of the dreaded **space** question. We are going to try to formulate a sligthly modernized "canonical" way of thinking on the subject, and the rest is up to you.
+
+* Screen space is of essence. Surely you do not want to waste *your own* screen space, but **think of others before yourself** when you are writing code. By wasting space of others, you are wasting their **time**, and that is the only resource all of us of really truly have, and it is very limited.
+
+* "Screen space" is often misunderstood. The actual physical screen size, DPI and window dimensions are not a problem for anyone, we are all professionals and can all afford some decent eyesight hardware. Screen space conversation is mostly all about the following three keystrokes: **`tab`, `newline`**, and perhaps less surprisingly, **`space`**.
+
+* The main pain point is best captured in "tall, lean, sparse, readable vs. robust, wide, dense, cryptic", further referenced as `tlsr` and `rwdc` for short.
+
+* While most prominent developer communities around most widespread languages beleve in and preach for `tlsr`, exemplified by C and Java, this results in untold damages daily worldwide paid in full in precious currency called `time`. The "canonical" k answer to the space question is all the way down `rwdc` road, and then all the way down from there. As it happens, the answer is somewhere between two extremes, and you are the only one who can answer it for you.
+
+* The zen of space question is **balance**, and the key to the enlightenment is found in the first section of this chapter. If can find the right balance between `rwdc` and `adequately and succintly annotated code`, you will live a happy life, love your job and will be loved by your colleagues.
+
+* And that is the best spoken word of advice on space question you will ever get. For the other half of the advice, please pay very close attention to how **k code** snippets in this document are **structured, formatted and annotated**.
 
 ### remarks on parlance
 
@@ -584,7 +600,7 @@ Last but not least, lets revisit the code from the very first snippet in this en
 ```q
  x:(1 2 3;4 5 6;7 8 9)
 
-/x=x+1            /we hope you now agree the problem here is fairly trivial
+/x=x+1            /we hope you now agree the problem is as trivial as it is bad
 ```
 
 
@@ -645,8 +661,8 @@ You could be tempted to see of what other use `over` could be. Let's introduce a
 
 By the way, by now it should be pretty clear for you:
 
-* **why division is `x%y`?**
-* **why do we need at least one space before an inline comment `/cmt`?**
+* **why division is `x%y`, really?**
+* **why do we need at least one space or newline before a comment `/cmt`?**
 
 Now that you parted ways with loops, you are ready to discover there are **6 adverbs** in k that modify verbs in very different ways. Please welcome the magnificent six, and note that only most trivial use cases are shown:
 
