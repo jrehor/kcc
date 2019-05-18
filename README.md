@@ -101,13 +101,13 @@ The k interpreter is currently available for `Linux` and `macOS` on `x86_64` arc
 Without further ado, go to https://anaconda.org and follow the instructions. Anaconda shell integration option is recommended. Once you install Anaconda, install the package called `shakti`, which is nothing else but `k` in disguise:
 
 ```sh
-kelas@failbowl ~ $ conda install -c shaktidb shakti
+conda install -c shaktidb shakti
 ```
 
 As with all things k, the development of k language itself is happening at terrifying pace. New builds are usually published several times a week, so make sure you always use the latest version:
 
 ```sh
-kelas@failbowl ~ $ conda update -c shaktidb shakti
+conda update -c shaktidb shakti
 ```
 
 ### run
@@ -115,8 +115,8 @@ kelas@failbowl ~ $ conda update -c shaktidb shakti
 Assuming conda's `bin` is in your PATH, make sure you have `rlwrap` utility installed, and put an alias `alias k="rlwrap k"` in your shell rc file. Start your very first k session like so:
 
 ```sh
-kelas@failbowl ~ $ alias k="rlwrap k"
-kelas@failbowl ~ $ k
+alias k="rlwrap k"
+k
 ```
 
 Type in your first k expression, and enjoy your first answer:
