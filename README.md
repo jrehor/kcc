@@ -229,10 +229,10 @@ The most important terminology in k that is essential for you to learn revolves 
  f:{x*x}      /f[] has only one argument
  f 2          /and you can omit brackets
  
- f:{[a;b;c]   /not so implicit, but why?
+ e:{[a;b;c]   /not so implicit, but why?
   a+b+c}
 
-f[1;2;3]
+ e[1;2;3]     /f with 9 extra keystrokes
 6
 ```
 
