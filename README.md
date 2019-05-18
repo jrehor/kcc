@@ -643,9 +643,12 @@ Last but not least, lets revisit the code from the very first snippet in this en
 ```q
  x:(1 2 3;4 5 6;7 8 9)
 
-/x=x+1            /we hope you now agree the problem is as trivial as it is bad
+/x=x+1                 /how can a universal truth be false?
 ```
 
+That was too easy, sorry. But we'll make up for it.
+
+----------------
 
 ### no stinking loops
 
