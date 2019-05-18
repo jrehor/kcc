@@ -1,4 +1,4 @@
-# kcc
+# k∞
 
 **[genesis](#genesis)**
 
