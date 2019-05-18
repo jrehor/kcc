@@ -228,7 +228,12 @@ The most important terminology in k that is essential for you to learn revolves 
   
  f:{x*x}      /f[] has only one argument
  f 2          /and you can omit brackets
-4
+ 
+ f:{[a;b;c]   /not so implicit, but why?
+  a+b+c}
+
+f[1;2;3]
+6
 ```
 
 Note that when calling a function with three arguments `f[1;2;3]` we had to use square brackets and use an expression separator, because each argument passed to a function is an expression in its own right. However, second function only takes one argument, and we were allowed to omit brackets, although we could also say `f[2]`.
