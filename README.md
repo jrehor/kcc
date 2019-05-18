@@ -6,7 +6,7 @@
 
 **[exodus](#exodus)**
 
-* [install](#install) | [run](#run)
+* [get](#get) | [run](#run)
 * [style](#remarks-on-style) → [cmt](#style-annot) | [sep](#style-sep) | [tab](#style-ident) | [caps](#style-caps) | [time](#style-space) | [bad](#style-bad)
 * [parlance](#remarks-on-parlance) → [xyz](#parl-xyz) | [rnk](#parl-rank)
 
@@ -92,7 +92,7 @@ All of k programming takes place in **REPL**, a concept which requires little in
 
 Since the only known way to learn how to program is to write programs, you will need a live k environment. Fortunately, as all things k, it takes very little effort.
 
-### install
+### get
 
 We will use a trial version of k, which comes with a reasonable limit of 1 gigabyte of workspace per k process. This limit is for your own protection, so that you don’t accidentally convert too much data into too much money too early, because, as any k programmer will tell you, with great power comes great responsibility.
 
