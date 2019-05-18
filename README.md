@@ -7,12 +7,12 @@
 **[exodus](#exodus)**
 
 * [install](#install) | [run](#run)
-* [style](#remarks-on-style) → [comments](#style-annot) | [separator](#style-sep) | [tabs](#style-ident) | [caps](#style-caps) | [space](#style-space) | [bad](#style-bad)
+* [style](#remarks-on-style) → [comments](#style-annot) | [sep](#style-sep) | [ident](#style-ident) | [caps](#style-caps) | [space](#style-space) | [bad](#style-bad)
 * [parlance](#remarks-on-parlance) → [xyz](#parl-xyz) | [rank](#parl-rank)
 
 **[numbers](#numbers)**
 
-* vector math → [vectors vs atoms](#vectors-vs-atoms) | [v+v](#v-plus-v) | [v+a](#v-plus-a) | [indexing](#v-indexing)
+* vector math → [vectors vs atoms](#vectors-vs-atoms) | [v+v](#v-plus-v) | [v+a](#v-plus-a) | [idx](#v-indexing)
 * type system → [two types of types](#two-types-of-types) | [\`i\`f](#typ-num) | [\`c\`n](#typ-char) | [\`d\`t](#typ-time) | [composite](#typ-composite) | [cst](#typ-cast)
 * evaluation → [right to left](#right-to-left-and-back-again) | [precedence](#rtl-precedence)
 * adverbs → [no stinking loops](#no-stinking-loops)
