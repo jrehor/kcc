@@ -168,7 +168,7 @@ However, at this point we highly recommend to avoid issuing any of the above com
 ∞               /and this happens to be correct
 ```
 
-Unfortunately, we are not equipped to discuss what this is yet, but no worries, the answers are very simple and only few pages away. And it wasn't even all that fruitless, if you think about it. All you need to know for now is that `+/∞` makes a lot of sense.
+Unfortunately, we are not equipped to discuss what this is yet, but the lesson it wasn't even all that fruitless, if you think about it. All you need to know for now is that `+/∞` makes a lot of sense, and the meaning of it is very simple and only few pages away.
 
 ### remarks on style
 
