@@ -1,6 +1,6 @@
 # +/∞
 
-a crash course in k, aka plus over infinity 
+plus over infinity, a crash course in k
 
 **[genesis](#genesis)**
 
