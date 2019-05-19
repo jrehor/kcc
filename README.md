@@ -2,8 +2,6 @@
 
 a crash course in k, aka plus over infinity 
 
----------------------
-
 **[genesis](#genesis)**
 
 * k → [ø](#ø) | [who](#who) | [why](#why) | [wha](#what) | [how](#how)
@@ -24,6 +22,8 @@ a crash course in k, aka plus over infinity
 **[proverbs](#proverbs)**
 
 * reading code → [how to solve it](#how-to-solve-it)
+
+---------------------
 
 ## genesis
 
