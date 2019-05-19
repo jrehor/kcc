@@ -4,7 +4,7 @@ plus over infinity, a crash course in k
 
 **[genesis](#genesis)**
 
-* k → [ø](#ø) | [who](#who) | [why](#why) | [wha](#what) | [how](#how)
+* k → [ø](#ø) | [who](#who) | [why](#why) | [wha](#wha) | [how](#how)
 
 **[exodus](#exodus)**
 
@@ -74,7 +74,7 @@ In comparison, a k solution is typically a few factors of magnitude less code, i
 
 At first it could be hard to understand how this can even be true, but compare the effort of keeping 100 lines of code in sync with rapidly changing requirements and free of bugs, compared to 10,000 lines of code that do the same thing. Against all intuition, it is not 100 times easier, but 10,000 times easier. And if you think we are exaggerating, refresh your memory of the concept of cyclomatic complexity, then try prove us wrong, and this will be a start of a beautiful friendship.
 
-### what
+### wha
 
 `k` is a remarkable piece of software that has many faces. For now we will assume it is an interpreter of a computer language. A language that is very powerful.
 
