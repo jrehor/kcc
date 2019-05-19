@@ -199,7 +199,7 @@ a:1;b:2;c:3         /denser version of the above
 -------------------
 
 <a name="style-ident"></a>
-**Indentation** in k is another tricky subject. Basically, what you generally want is *no indentation*. This means if your k expression is getting so large that you are tempted to split it into separate lines, you either need to refactor, or your entire train of thought got derailed and you need to go back to the blackboard. Sometimes, however, indentation is fine and even necessary, and it is always *one space*. Not two, not four, one. Tabs will be frowned upon, because some day they will end up taking other people's precious **space**, see below, and humans get really itchy when it comes to brick and mortar.
+**Indentation** in k is a tricky subject. Basically, what you generally want is *no indentation*. This means if your k expression is getting so large that you are tempted to split it into separate lines, you either need to refactor, or your entire train of thought got derailed and you need to go back to the blackboard. Sometimes, however, indentation is fine and even necessary, and it is always *one space*. Not two, not four, one. Tabs will be frowned upon, because some day they will end up taking other people's precious **space**, see below, and humans get really itchy when it comes to brick and mortar.
 
 -------------------
 
