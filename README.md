@@ -39,7 +39,7 @@ Computer languages have been around for a while, but in the beginning was the w*
 x = x + 1
 ```
 
-Most programmers will readily agree that this expression makes perfect sense, but if you show it to a mathematician, be ready to hear "no, it isn't". And once you see why he didn't say "doesn't", and why he used a negative to begin with, you will also see why we assign values with `:` in k. The above expression looks nonsensical to a k programmer for *exactly* the same reason it is to a math guy, and k interpreter evaluates it to false. However, once you can produce a k expression where `x = x + 1` evaluates to **true**, please don't be a stranger, submit a pull request and say "hello".
+Most programmers will readily agree that this expression makes perfect sense, but if you show it to a mathematician, be ready to hear "no, it isn't". And once you see why he didn't say "doesn't", and why he used a negative to begin with, you will also see why we assign values with `:` in k. The above expression looks nonsensical to a k programmer for *exactly* the same reason it is to a math guy, and k interpreter evaluates it to **false**. However, you can produce a k expression where `x = x + 1` evaluates to **true**, and once you do, please don't be a stranger, submit a pull request and say "hello".
 
 The point is, k has a different perspective on a few other things as well, but it is not necessarily wrong. It can just as well be right, but in a different way, this short introduction invites you to look at those things that other way. And we hope they might also feel obvious and natural to you, like `x ≠ x + 1` just did.
 
