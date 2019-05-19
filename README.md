@@ -29,7 +29,7 @@ plus over infinity, a crash course in k
 
 ### ø
 
-Computer languages have been around for a while, but in the beginning was the Wørd. We will be writing code in a language called k, but it will help to talk about it first.
+Computer languages have been around for a while, but in the beginning was the w**ø**rd. We will be writing code in a language called k, but it will help to talk about it first.
 
 ---------------------
 
