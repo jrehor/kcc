@@ -221,7 +221,7 @@ kei:42         /kenneth eugene iverson
 
 * While most prominent developer communities around most widespread languages preach for `tlsr`, exemplified by C and Java, this results in untold damages daily worldwide, paid in full in precious currency called **time**. The "canonical" k answer to the space question is all the way down `rwdc` road, and then all the way down from there. As it happens, the answer is somewhere between two extremes, and you are the only one who can answer it for you.
 
-* The zen of space question is **balance**, and the key to the enlightenment is found in the first section of this chapter. If can find the right balance between `rwdc` and `asac`, or "adequately and succintly annotated code", you will live a happy life, love your job and be loved by your colleagues and your kid will know you're cool.
+* The zen of space question is **balance**, and the key to the enlightenment is found in the first section of this chapter. If can find the right balance between `rwdc` and `asac`, or "adequately and succintly annotated code", you will live a happy life, love your job and be loved by your colleagues, and your kids will think you're cool.
 
 * Some people believe Earth is flat, some believe in God, some people do not believe in **syntax highlighting**, and the latter is not ok. If you are not happy with your k syntax highlighter, either write your own, either ask around. On this note, a crappy syntax highlighter is **worse than none**. Same applies for a decent code editor, and if you are, God forbid, are forced by someone to use some "IDE", then there is nothing we can do for you.
 
