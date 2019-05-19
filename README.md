@@ -14,7 +14,7 @@ plus over infinity, a crash course in k
 
 **[numbers](#numbers)**
 
-* vector math → [vectors vs atoms](#vectors-vs-atoms) | [v+v](#v-plus-v) | [v+a](#v-plus-a) | [idx](#v-indexing)
+* vector math → [v≠a](#vectors-vs-atoms) | [v+v](#v-plus-v) | [v+a](#v-plus-a) | [idx](#v-indexing)
 * type system → [types of types](#two-types-of-types) | [\`i\`f](#typ-num) | [\`c\`n](#typ-char) | [\`d\`t](#typ-time) | [mix](#typ-composite) | [cst](#typ-cast)
 * evaluation → [right to left](#right-to-left-and-back-again) | [precedence](#rtl-precedence)
 * adverbs → [no stinking loops](#no-stinking-loops)
@@ -29,7 +29,7 @@ plus over infinity, a crash course in k
 
 ### ø
 
-Computer languages have been around for a while, but in the beginning was the w**ø**rd. We will be writing code in a language called k, but it will help to talk about it first.
+Computer languages have been around for a while, but in the beginning was the wørd. We will be writing code in a language called k, but it will help to talk about it first.
 
 ---------------------
 
