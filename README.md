@@ -48,7 +48,7 @@ This crash course is not looking to make you an expert k programmer, because tha
 * This text assumes a fair amount of insight and will cut a lot of corners on general programming and CS at some expense of readability.
 * The course is driven entirely by densely annotated code which expects undivided attention.
 * New syntax is often introduced inline, some meanings are left to be inferred, some assumed self-explanatory, some rely on your intuition.
-* Most annotations in the code contain essential learning material that cannot be overlooked.
+* Most annotations in the code are essential and cannot be overlooked.
 * The narrative is strictly linear, each chapter builds on all previous.
 * Skipping any exercise is guaranteed to halt any further progress.
 
@@ -74,9 +74,9 @@ At first it could be hard to understand how this can even be true, but compare t
 
 ### what
 
-`k` is a remarkable piece of software that has many faces. For now we will accept it is an interpreter of a computer language. A language that is very powerful.
+`k` is a remarkable piece of software that has many faces. For now we will assume it is an interpreter of a computer language. A language that is very powerful.
 
-The power stems from the fact that k was designed from ground up primarily as a *tool of thought*. The vocabulary, syntax and the choice of abstractions offered by the language drive you to think about problems in a focused, clear and uncluttered way that quickly takes you to efficient and elegant solutions. And the reason why thinking in terms of this language is so effective is absolutely nothing supernatural. Is is captured in a proverb that predates history and is known to all cultures: brevity is a soul of wit.
+The power stems from the fact that k was designed from ground up primarily as a *tool of thought*. The vocabulary, syntax and the choice of abstractions offered by the language drive you to think about problems in a focused, clear and uncluttered way that quickly takes you to efficient and elegant solutions. And the reason why thinking in terms of this language is so effective is absolutely nothing supernatural. It is captured in a proverb that predates history: **brevity is a soul of wit**.
 
 Indeed, k programs tend to be very *concise*, the syntax of the language is very *terse*, and k programmers have no idea what you mean when you say “boilerplate code”. Unlike in most software development workflows, a k programmer spends most of his time thinking about the problem rather than typing stuff into the terminal and browsing the source code tree. In humans, such mechanical activities are known to interfere with abstract thinking and greatly impair their focus — and k minimizes these losses for you.
 
@@ -84,7 +84,13 @@ The latest version of k is now available for testing, and this is exciting news 
 
 ### how
 
-In addition to being an excellent tool to assist efficient thinking, k is also an astonishingly efficient computer language. The entire system, a tiny binary executable only **200Kb** in size without a single external dependency that fits comfortably in the cache of a commodity CPU, implements a selection of fundamental algorithms, data structures, techniques and computational primitives that withstood the test of many decades of production use in some of the world's most demanding data processing environments. The inner components of the system are polished to fit together and complement each other to deliver performance which many outsiders find very difficult to believe at first. It is also not uncommon for k newcomers to experience total shock when they first realize what kind of power they can wield with just a few precise keystrokes.
+In addition to being an excellent tool to assist efficient thinking, k is also an astonishingly efficient computer language. The entire system is:
+
+* a tiny **230kb** executable
+* without a single external dependency
+* that fits in the the cache your CPU
+
+And that implements a selection of fundamental algorithms, data structures, techniques and computational primitives that withstood the test of many decades of production use in some of the world's most demanding data processing environments, where inefficiency directly translates into loss of revenue. The inner components of the system are polished to fit together and complement each other to deliver performance which many outsiders find very difficult to believe at first. It is also not uncommon for k newcomers to experience shock when they first realize what kind of power can be weld with just a few precise keystrokes.
 
 All of k programming takes place in **REPL**, a concept which requires little introduction these days, but is actually much older than many seem to think. It has been around for at least half a century, and is known as *dialogue approach*, a live conversation between a human and machine as a flow of questions and answers. And in k, this conversation is much more fluent than in any other modern REPL-driven system you may be familiar with, because the questions are short and the answers are fast. This is the essence of the way of k, an experience that all k programmers consider immensely aesthetically and intellectually satisfying. This is why people who write software in k love their jobs, and this has nothing to do with their paychecks.
 
@@ -107,12 +113,13 @@ conda install -c shaktidb shakti
 As with all things k, the development of k language itself is happening at terrifying pace. New builds are usually published several times a week, so make sure you always use the latest version:
 
 ```sh
-conda update -c shaktidb shakti
+alias kup="conda update -c shaktidb shakti"
+kup
 ```
 
 ### run
 
-Assuming conda's `bin` is in your PATH, make sure you have `rlwrap` utility installed, and put an alias `alias k="rlwrap k"` in your shell rc file. Start your very first k session like so:
+Assuming conda's `bin` is in your PATH, make sure you have `rlwrap` utility installed, and put an alias `alias k="rlwrap k"` into your rc file. Start your very first k session like so:
 
 ```sh
 alias k="rlwrap k"
@@ -137,8 +144,8 @@ There isn't much to write home about your k skills yet, so lets take a look at t
 | avx2                | the best your cpu can do      |
 | shakti              | the company behind k          |
 | m                   | `m` for macos, `l` for linux  |
-| 2.0                 | well, 2.0 is better than 1.0  |
-| prod                | be prepared to see `test`     |
+| 2.0                 | because it is better than 1.0 |
+| prod                | your build is `test` for now  |
 
 If it ever comes to that, always include your banner in your bug reports.
 
@@ -159,7 +166,7 @@ However, at this point we highly recommend to avoid issuing any of the above com
 ∞               /and this happens to be correct
 ```
 
-Unfortunately, we are not equipped yet to discuss what this is, but no worries, the answers are very simple and only few pages away. And excercise isn't even all that fruitless, if you think about it.
+Unfortunately, we are not equipped yet to discuss what this is about yet, but no worries, the answers are very simple and only few pages away. And it wasn't even all that fruitless, if you think about it.
 
 ### remarks on style
 
@@ -212,11 +219,11 @@ kei:42         /kenneth eugene iverson
 
 * While most prominent developer communities around most widespread languages preach for `tlsr`, exemplified by C and Java, this results in untold damages daily worldwide, paid in full in precious currency called **time**. The "canonical" k answer to the space question is all the way down `rwdc` road, and then all the way down from there. As it happens, the answer is somewhere between two extremes, and you are the only one who can answer it for you.
 
-* The zen of space question is **balance**, and the key to the enlightenment is found in the first section of this chapter. If can find the right balance between `rwdc` and `adequately and succintly annotated code`, you will live a happy life, love your job and will be loved by your colleagues. Cool dad, too.
+* The zen of space question is **balance**, and the key to the enlightenment is found in the first section of this chapter. If can find the right balance between `rwdc` and `asac`, or "adequately and succintly annotated code", you will live a happy life, love your job and be loved by your colleagues and your kid will know you're cool.
 
 * Some people believe Earth is flat, some believe in God, some people do not believe in **syntax highlighting**, and the latter is not ok. If you are not happy with your k syntax highlighter, either write your own, either ask around. On this note, a crappy syntax highlighter is **worse than none**. Same applies for a decent code editor, and if you are, God forbid, are forced by someone to use some "IDE", then there is nothing we can do for you.
 
-* **Scrolling** is usually less of a problem. Most of the contemporary computer operators, i.e. the majority of humans, believe that vertical scrolling is somehow ok. Most of the time, horizontal scrolling is not ok with anyone. However, there are some very rare cases of humans who actually seriously think the other way, i.e. sideways. We do not support either camp, because: **scrolling source code should be avoided where possible**, on both axes. In this document, you will find a lot of meaninful source code, but you will not see a single logically complete block of code that doesn't comfortably fit on your laptop screen.
+* **Scrolling** is usually less of a problem. Most of the contemporary computer operators, i.e. the majority of humans, believe that vertical scrolling is somehow ok. Most of the time, horizontal scrolling is not ok with anyone. However, there are some very rare cases of humans who actually seriously think the other way, i.e. sideways. We do not support either camp, because: **scrolling source code should be avoided where possible**, on both axes. In this document, you will find a lot of meaninful source code, but you will not see a single logically complete block of code that doesn't comfortably fit on your laptop screen. On your mobile, depending on orientation, you may experience some scrolling, but we are working on that. Your wristwatch, well, we are working on that, too.
 
 * And that is the best spoken word of advice on space question you will ever get from anyone. For the other half of the advice, pay very close attention to how **k code** snippets in this document are structured, formatted and annotated. If you like it, and also like MIT three-clause, then you are welcome.
 
