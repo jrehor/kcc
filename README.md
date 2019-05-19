@@ -227,7 +227,7 @@ kei:42         /kenneth eugene iverson
 
 * **Scrolling** is usually less of a problem. Most of the contemporary computer operators, i.e. the majority of humans, believe that vertical scrolling is somehow ok. Most of the time, horizontal scrolling is not ok with anyone. However, there are some very rare cases of humans who actually seriously think the other way, i.e. sideways. We do not support either camp, because: **scrolling source code should be avoided where possible**, on both axes. In this document, you will find a lot of meaninful source code, but you will not see a single logically complete block of code that doesn't comfortably fit on your laptop screen. On your mobile, depending on orientation, you may experience some scrolling, but we are working on that. Your wristwatch, well, we are working on that, too.
 
-* And that is the best spoken word of advice on space question you will ever get from anyone. For the other half of the advice, pay very close attention to how **k code** snippets in this document are structured, formatted and annotated. If you like it, and also like MIT three-clause, then you are welcome.
+* And that is the best spoken word of advice on space question you will ever get from anyone. For the other half of the advice, pay very close attention to how **k code** snippets in this document are structured, formatted and annotated. And if you like it, and also like MIT three-clause, you are very welcome.
 
 -------------------
 
