@@ -88,7 +88,7 @@ In addition to being an excellent tool to assist efficient thinking, k is also a
 
 * a single binary executable
 * without any external dependencies
-* that fits in the cache your CPU
+* that fits in the cache of your CPU
 
 And that implements a selection of fundamental algorithms, data structures, techniques and computational primitives that withstood the test of many decades of production use in some of the world's most demanding data processing environments, where inefficiency directly translates into loss of revenue. The inner components of the system are polished to fit together and complement each other to deliver performance which many outsiders find very difficult to believe at first. It is also not uncommon for k newcomers to experience shock when they first realize what kind of power can be weld with just a few precise keystrokes.
 
