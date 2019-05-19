@@ -1,5 +1,9 @@
 # +/∞
 
+a crash course in k, aka plus over infinity 
+
+---------------------
+
 **[genesis](#genesis)**
 
 * k → [ø](#ø) | [who](#who) | [why](#why) | [wha](#what) | [how](#how)
